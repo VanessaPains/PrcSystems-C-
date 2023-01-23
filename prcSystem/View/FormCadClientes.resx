@@ -1,0 +1,1616 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BtnCancelarCli.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TxtEmailCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtBairroCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BtnCancelarCli.Name" xml:space="preserve">
+    <value>BtnCancelarCli</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="DtCadastroCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>664, 48</value>
+  </data>
+  <data name="&gt;&gt;LblDtCadastroCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox12.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BtnSalvar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>803, 32</value>
+  </data>
+  <data name="&gt;&gt;dt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TxtCepCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtCepCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblSiteCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 308</value>
+  </data>
+  <data name="&gt;&gt;LblCnpjCpfCli.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;TxtBairooCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dt.Name" xml:space="preserve">
+    <value>dt</value>
+  </data>
+  <data name="textBox12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 345</value>
+  </data>
+  <data name="&gt;&gt;TxtCelularCli.Name" xml:space="preserve">
+    <value>TxtCelularCli</value>
+  </data>
+  <data name="&gt;&gt;textBox7.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;dt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 300</value>
+  </data>
+  <data name="&gt;&gt;LblUfCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtComplementoCli.Name" xml:space="preserve">
+    <value>TxtComplementoCli</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblEndCobCli.Name" xml:space="preserve">
+    <value>LblEndCobCli</value>
+  </data>
+  <data name="TxtEnderecoCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 322</value>
+  </data>
+  <data name="&gt;&gt;LblCepCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtBairroCli.Name" xml:space="preserve">
+    <value>TxtBairroCli</value>
+  </data>
+  <data name="&gt;&gt;LblSiteCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblBairroCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblIdCodCli.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnSairCadCli.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox11.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;TxtBairroCli.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="TxtObservacaoCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 410</value>
+  </data>
+  <data name="LblComplementoCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="LblUfCli.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;btnSair.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblEmailCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TxtCelularCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 277</value>
+  </data>
+  <data name="&gt;&gt;TxtIdCliente.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;LblFormCadCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblComplementoCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;TxtBairooCli.Name" xml:space="preserve">
+    <value>TxtBairooCli</value>
+  </data>
+  <data name="&gt;&gt;TxtIdCodCli.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 61</value>
+  </data>
+  <data name="TxtBairooCli.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="TxtCnpjCpfCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 102</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 14</value>
+  </data>
+  <data name="&gt;&gt;LblCelularCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblCidadeCli.Name" xml:space="preserve">
+    <value>LblCidadeCli</value>
+  </data>
+  <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtCepCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblUfCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>705, 231</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtInscEstadualCli.Name" xml:space="preserve">
+    <value>TxtInscEstadualCli</value>
+  </data>
+  <data name="&gt;&gt;TxtInscEstadualCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblEmailCli.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;TxtDtCadastroCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtBairroCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 371</value>
+  </data>
+  <data name="&gt;&gt;DtCadastroCli.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;LblEndCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtCnpjCpfCli.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="TxtDtCadastroCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>663, 49</value>
+  </data>
+  <data name="textBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 394</value>
+  </data>
+  <data name="TxtComplementoCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 204</value>
+  </data>
+  <data name="textBox15.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;LblEmailCli.Name" xml:space="preserve">
+    <value>LblEmailCli</value>
+  </data>
+  <data name="&gt;&gt;LblBairroCli.ZOrder" xml:space="preserve">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;TxtUfCobCli.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtRazaoSocialCli.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;LblCidadeCli.ZOrder" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;LblEndCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 394</value>
+  </data>
+  <data name="&gt;&gt;textBox8.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="BtnSalvar.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TxtOutrasInscCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>644, 79</value>
+  </data>
+  <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 62</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radioButton3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 370</value>
+  </data>
+  <data name="&gt;&gt;TxtUfCobCli.Name" xml:space="preserve">
+    <value>TxtUfCobCli</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtComplementoCobCli.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;textBox10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblCepCli.Name" xml:space="preserve">
+    <value>LblCepCli</value>
+  </data>
+  <data name="&gt;&gt;LblEmailCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox9.Name" xml:space="preserve">
+    <value>textBox9</value>
+  </data>
+  <data name="btnSairCadCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>845, 9</value>
+  </data>
+  <data name="&gt;&gt;TxtDtCadastroCli.Name" xml:space="preserve">
+    <value>TxtDtCadastroCli</value>
+  </data>
+  <data name="&gt;&gt;TxtUfCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LblCidadeCli.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;TxtComplementoCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblBairroCli.Name" xml:space="preserve">
+    <value>LblBairroCli</value>
+  </data>
+  <data name="&gt;&gt;LblComplementoCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>657, 370</value>
+  </data>
+  <data name="&gt;&gt;TxtCelularCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtNumCli.Name" xml:space="preserve">
+    <value>TxtNumCli</value>
+  </data>
+  <data name="TxtComplementoCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;LblSiteCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblCnpjCpfCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LblNumCli.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;TxtCepCobCli.Name" xml:space="preserve">
+    <value>TxtCepCobCli</value>
+  </data>
+  <data name="TxtObservacaoCli.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;LblCidadeCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtOutrasInscCli.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;TxtOutrasInscCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtEmailCli.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="LblCidadeCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>379, 234</value>
+  </data>
+  <data name="TxtIdCodCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 70</value>
+  </data>
+  <data name="BtnSalvarCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 9</value>
+  </data>
+  <data name="&gt;&gt;IdCodCliente.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtEmailCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSair.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TxtBairooCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 228</value>
+  </data>
+  <data name="textBox12.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;textBox12.Name" xml:space="preserve">
+    <value>textBox12</value>
+  </data>
+  <data name="&gt;&gt;LblBairroCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtCidadeCobCli.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;LblNomeCadCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TxtBairroCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 205</value>
+  </data>
+  <data name="TxtComplementoCli.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;TxtBairooCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtObservacaoCli.Name" xml:space="preserve">
+    <value>TxtObservacaoCli</value>
+  </data>
+  <data name="TxtTelefoneCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 252</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="textBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;LblBairroCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblOutrasInscCli.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;LblCepCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtNumCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtInscEstadualCli.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="LblEndCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;LblRazaoSocialCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LblTelefoneCli.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;LblEndCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblNomeCadCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 138</value>
+  </data>
+  <data name="&gt;&gt;TxtEnderecoCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtRazaoSocialCli.Name" xml:space="preserve">
+    <value>TxtRazaoSocialCli</value>
+  </data>
+  <data name="&gt;&gt;TxtCidadeCli.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="TxtEnderecoCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 179</value>
+  </data>
+  <data name="LblNumCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>626, 185</value>
+  </data>
+  <data name="TxtNumCli.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="radioButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="textBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 345</value>
+  </data>
+  <data name="btnSairCadCli.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;LblIdCodCli.Name" xml:space="preserve">
+    <value>LblIdCodCli</value>
+  </data>
+  <data name="&gt;&gt;TxtOutrasInscCli.Name" xml:space="preserve">
+    <value>TxtOutrasInscCli</value>
+  </data>
+  <data name="&gt;&gt;LblInscEstadualCli.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;TxtTelefoneCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 104</value>
+  </data>
+  <data name="&gt;&gt;radioButton3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblNumCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="TxtNumCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;textBox10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="TxtUfCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 371</value>
+  </data>
+  <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TxtIdCliente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 47</value>
+  </data>
+  <data name="&gt;&gt;TxtIdCodCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>664, 48</value>
+  </data>
+  <data name="&gt;&gt;LblSiteCli.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;TxtComplementoCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnCancelarCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 9</value>
+  </data>
+  <data name="&gt;&gt;LblNomeCadCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblDtCadastroCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblOutrasInscCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 85</value>
+  </data>
+  <data name="lblBairroCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TxtInscEstadualCli.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;BtnSalvar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblIdCodCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblBairroCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 400</value>
+  </data>
+  <data name="&gt;&gt;LblCidadeCobCli.Name" xml:space="preserve">
+    <value>LblCidadeCobCli</value>
+  </data>
+  <data name="&gt;&gt;TxtBairooCli.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="TxtCnpjCpfCli.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="TxtComplementoCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 347</value>
+  </data>
+  <data name="&gt;&gt;TxtUfCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtIdCliente.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblBairroCobCli.Name" xml:space="preserve">
+    <value>LblBairroCobCli</value>
+  </data>
+  <data name="&gt;&gt;TxtNumCobCli.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;BtnSalvar.Name" xml:space="preserve">
+    <value>BtnSalvar</value>
+  </data>
+  <data name="&gt;&gt;BtnSalvarCli.Name" xml:space="preserve">
+    <value>BtnSalvarCli</value>
+  </data>
+  <data name="&gt;&gt;LblNumCobCli.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;LblComplementoCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtDtCadastroCli.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="LblCelularCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 308</value>
+  </data>
+  <data name="&gt;&gt;LblInscEstadualCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtBairroCli.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;textBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtComplementoCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;btnSairCadCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtCidadeCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtSiteCli.Name" xml:space="preserve">
+    <value>TxtSiteCli</value>
+  </data>
+  <data name="&gt;&gt;textBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LblEmailCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 283</value>
+  </data>
+  <data name="LblComplementoCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 377</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;TxtNomeCli.Name" xml:space="preserve">
+    <value>TxtNomeCli</value>
+  </data>
+  <data name="&gt;&gt;TxtInscEstadualCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox9.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;LblComplementoCli.Name" xml:space="preserve">
+    <value>LblComplementoCli</value>
+  </data>
+  <data name="&gt;&gt;TxtSiteCli.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;lblBairroCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblEmailCli.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;LblCelularCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtNumCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 322</value>
+  </data>
+  <data name="&gt;&gt;lblBairroCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>505, 62</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;TxtEnderecoCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtUfCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
+    <value>textBox5</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>437, 540</value>
+  </data>
+  <data name="&gt;&gt;TxtCepCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TxtTelefoneCli.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;BtnCancelar.ZOrder" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;LblUfCobCli.Name" xml:space="preserve">
+    <value>LblUfCobCli</value>
+  </data>
+  <data name="&gt;&gt;lblBairroCobCli.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;LblIdCodCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TxtCidadeCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 371</value>
+  </data>
+  <data name="LblIdCodCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 78</value>
+  </data>
+  <data name="&gt;&gt;textBox6.Name" xml:space="preserve">
+    <value>textBox6</value>
+  </data>
+  <data name="LblCelularCli.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="LblUfCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TxtTelefoneCli.Name" xml:space="preserve">
+    <value>TxtTelefoneCli</value>
+  </data>
+  <data name="btnSairCadCli.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;TxtBairroCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtUfCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 332</value>
+  </data>
+  <data name="&gt;&gt;LblComplementoCobCli.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="LblOutrasInscCli.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;TxtCnpjCpfCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblCidadeCobCli.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;IdCodCliente.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblRazaoSocialCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 162</value>
+  </data>
+  <data name="&gt;&gt;dt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnCancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>702, 32</value>
+  </data>
+  <data name="TxtIdCliente.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="LblSiteCli.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblDtCadastroCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>616, 53</value>
+  </data>
+  <data name="TxtCepCli.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>890, 408</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormCadClientes</value>
+  </data>
+  <data name="&gt;&gt;TxtCelularCli.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;LblBairroCobCli.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;textBox7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;LblCidadeCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSalvarCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblTelefoneCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblNomeCadCli.Name" xml:space="preserve">
+    <value>LblNomeCadCli</value>
+  </data>
+  <data name="&gt;&gt;LblFormCadCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TxtUfCli.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;radioButton3.Name" xml:space="preserve">
+    <value>radioButton3</value>
+  </data>
+  <data name="&gt;&gt;LblDtCadastroCli.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;TxtUfCli.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;textBox12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LblRazaoSocialCli.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TxtDtCadastroCli.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TxtCnpjCpfCli.Name" xml:space="preserve">
+    <value>TxtCnpjCpfCli</value>
+  </data>
+  <data name="&gt;&gt;LblTelefoneCli.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;TxtEnderecoCobCli.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSalvar.ZOrder" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;textBox15.Name" xml:space="preserve">
+    <value>textBox15</value>
+  </data>
+  <data name="&gt;&gt;TxtCidadeCobCli.Name" xml:space="preserve">
+    <value>TxtCidadeCobCli</value>
+  </data>
+  <data name="&gt;&gt;TxtObservacaoCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
+  </data>
+  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
+    <value>textBox4</value>
+  </data>
+  <data name="TxtCelularCli.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;LblObservacaoCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 262</value>
+  </data>
+  <data name="&gt;&gt;textBox12.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;TxtCnpjCpfCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblUfCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblCnpjCpfCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblSiteCli.Name" xml:space="preserve">
+    <value>LblSiteCli</value>
+  </data>
+  <data name="&gt;&gt;LblOutrasInscCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtSiteCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 300</value>
+  </data>
+  <data name="&gt;&gt;TxtBairroCobCli.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;textBox11.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btnSair.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtEmailCli.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="btnSair.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;textBox15.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LblComplementoCli.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;LblNumCli.Name" xml:space="preserve">
+    <value>LblNumCli</value>
+  </data>
+  <data name="&gt;&gt;DtCadastroCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtIdCodCli.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;TxtNomeCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblUfCli.ZOrder" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="LblDtCadastroCli.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="TxtIdCodCli.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="&gt;&gt;TxtRazaoSocialCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtNumCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dt.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;BtnCancelar.Name" xml:space="preserve">
+    <value>BtnCancelar</value>
+  </data>
+  <data name="TxtRazaoSocialCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 154</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblUfCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFormCadCli.Name" xml:space="preserve">
+    <value>LblFormCadCli</value>
+  </data>
+  <data name="&gt;&gt;LblBairroCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnCancelarCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtSiteCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtBairroCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblNomeCadCli.ZOrder" xml:space="preserve">
+    <value>58</value>
+  </data>
+  <data name="BtnSalvar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="LblCnpjCpfCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 108</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>644, 102</value>
+  </data>
+  <data name="&gt;&gt;TxtNumCli.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;LblObservacaoCli.Name" xml:space="preserve">
+    <value>LblObservacaoCli</value>
+  </data>
+  <data name="&gt;&gt;textBox7.Name" xml:space="preserve">
+    <value>textBox7</value>
+  </data>
+  <data name="&gt;&gt;LblCidadeCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblInscEstadualCli.Name" xml:space="preserve">
+    <value>LblInscEstadualCli</value>
+  </data>
+  <data name="LblInscEstadualCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 108</value>
+  </data>
+  <data name="TxtUfCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 228</value>
+  </data>
+  <data name="LblComplementoCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 211</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LblBairroCli.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;TxtOutrasInscCli.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="TxtCidadeCli.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="textBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cadastro de Clientes</value>
+  </data>
+  <data name="LblUfCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>705, 397</value>
+  </data>
+  <data name="LblEndCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 351</value>
+  </data>
+  <data name="LblFormCadCli.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;LblNumCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblOutrasInscCli.Name" xml:space="preserve">
+    <value>LblOutrasInscCli</value>
+  </data>
+  <data name="LblCepCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 211</value>
+  </data>
+  <data name="&gt;&gt;TxtRazaoSocialCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtUfCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="TxtCepCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>657, 347</value>
+  </data>
+  <data name="&gt;&gt;LblNumCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 61</value>
+  </data>
+  <data name="IdCodCliente.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="LblEndCli.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;LblIdCodCli.ZOrder" xml:space="preserve">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;TxtEnderecoCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblNumCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;LblFormCadCli.ZOrder" xml:space="preserve">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;TxtCepCli.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="LblCepCli.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
+    <value>textBox3</value>
+  </data>
+  <data name="TxtEnderecoCli.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;TxtBairroCobCli.Name" xml:space="preserve">
+    <value>TxtBairroCobCli</value>
+  </data>
+  <data name="&gt;&gt;TxtComplementoCli.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="LblCnpjCpfCli.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;LblComplementoCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 394</value>
+  </data>
+  <data name="&gt;&gt;DtCadastroCli.Name" xml:space="preserve">
+    <value>DtCadastroCli</value>
+  </data>
+  <data name="&gt;&gt;LblRazaoSocialCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblObservacaoCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtComplementoCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox11.Name" xml:space="preserve">
+    <value>textBox11</value>
+  </data>
+  <data name="&gt;&gt;TxtOutrasInscCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblEndCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblEndCobCli.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;TxtNumCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblUfCli.Name" xml:space="preserve">
+    <value>LblUfCli</value>
+  </data>
+  <data name="BtnSalvarCli.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;TxtCidadeCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtEnderecoCli.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;LblCepCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;LblCidadeCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblCidadeCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;lblBairroCobCli.Name" xml:space="preserve">
+    <value>lblBairroCobCli</value>
+  </data>
+  <data name="LblObservacaoCli.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;LblNumCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtRazaoSocialCli.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;textBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblEndCli.Name" xml:space="preserve">
+    <value>LblEndCli</value>
+  </data>
+  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 275</value>
+  </data>
+  <data name="&gt;&gt;LblTelefoneCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtCepCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>657, 204</value>
+  </data>
+  <data name="&gt;&gt;TxtDtCadastroCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtBairroCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblFormCadCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="&gt;&gt;TxtCelularCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;IdCodCliente.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TxtObservacaoCli.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="LblBairroCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 377</value>
+  </data>
+  <data name="BtnCancelar.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBox8.Name" xml:space="preserve">
+    <value>textBox8</value>
+  </data>
+  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="btnSair.Location" type="System.Drawing.Point, System.Drawing">
+    <value>847, 9</value>
+  </data>
+  <data name="&gt;&gt;BtnSalvarCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtNomeCli.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="TxtIdCliente.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="TxtBairroCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;BtnCancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LblNomeCadCli.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="TxtNumCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 179</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="&gt;&gt;BtnSalvar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSair.Name" xml:space="preserve">
+    <value>btnSair</value>
+  </data>
+  <data name="TxtEnderecoCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;TxtNomeCli.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="TxtEmailCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 275</value>
+  </data>
+  <data name="&gt;&gt;BtnCancelar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="IdCodCliente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 83</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
+    <value>radioButton1</value>
+  </data>
+  <data name="&gt;&gt;LblNumCobCli.Name" xml:space="preserve">
+    <value>LblNumCobCli</value>
+  </data>
+  <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TxtNomeCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 130</value>
+  </data>
+  <data name="&gt;&gt;TxtEnderecoCobCli.Name" xml:space="preserve">
+    <value>TxtEnderecoCobCli</value>
+  </data>
+  <data name="&gt;&gt;TxtEnderecoCli.Name" xml:space="preserve">
+    <value>TxtEnderecoCli</value>
+  </data>
+  <data name="&gt;&gt;LblTelefoneCli.Name" xml:space="preserve">
+    <value>LblTelefoneCli</value>
+  </data>
+  <data name="LblCepCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="LblObservacaoCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 413</value>
+  </data>
+  <data name="&gt;&gt;TxtCepCobCli.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="LblInscEstadualCli.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="TxtCepCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;TxtIdCliente.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtObservacaoCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtEnderecoCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtComplementoCobCli.Name" xml:space="preserve">
+    <value>TxtComplementoCobCli</value>
+  </data>
+  <data name="&gt;&gt;textBox10.Name" xml:space="preserve">
+    <value>textBox10</value>
+  </data>
+  <data name="&gt;&gt;LblComplementoCobCli.Name" xml:space="preserve">
+    <value>LblComplementoCobCli</value>
+  </data>
+  <data name="&gt;&gt;TxtCidadeCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TxtCidadeCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 228</value>
+  </data>
+  <data name="&gt;&gt;LblCelularCli.Name" xml:space="preserve">
+    <value>LblCelularCli</value>
+  </data>
+  <data name="&gt;&gt;btnSairCadCli.Name" xml:space="preserve">
+    <value>btnSairCadCli</value>
+  </data>
+  <data name="TxtSiteCli.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;textBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DtCadastroCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblCepCobCli.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;TxtNumCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblCepCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 377</value>
+  </data>
+  <data name="LblTelefoneCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 283</value>
+  </data>
+  <data name="&gt;&gt;LblCelularCli.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;LblOutrasInscCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblCepCobCli.Name" xml:space="preserve">
+    <value>LblCepCobCli</value>
+  </data>
+  <data name="&gt;&gt;IdCodCliente.Name" xml:space="preserve">
+    <value>IdCodCliente</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;TxtCepCli.Name" xml:space="preserve">
+    <value>TxtCepCli</value>
+  </data>
+  <data name="&gt;&gt;TxtCidadeCli.Name" xml:space="preserve">
+    <value>TxtCidadeCli</value>
+  </data>
+  <data name="TxtCidadeCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="TxtInscEstadualCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 102</value>
+  </data>
+  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;LblUfCobCli.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;LblDtCadastroCli.Name" xml:space="preserve">
+    <value>LblDtCadastroCli</value>
+  </data>
+  <data name="LblNumCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>626, 351</value>
+  </data>
+  <data name="&gt;&gt;LblNumCli.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="LblCidadeCobCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>379, 400</value>
+  </data>
+  <data name="&gt;&gt;LblCepCobCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;TxtIdCliente.Name" xml:space="preserve">
+    <value>TxtIdCliente</value>
+  </data>
+  <data name="&gt;&gt;LblCnpjCpfCli.Name" xml:space="preserve">
+    <value>LblCnpjCpfCli</value>
+  </data>
+  <data name="&gt;&gt;textBox10.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;LblInscEstadualCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblCepCli.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;LblComplementoCli.ZOrder" xml:space="preserve">
+    <value>55</value>
+  </data>
+  <data name="BtnSalvarCli.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
+    <value>radioButton2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnSair.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;TxtUfCli.Name" xml:space="preserve">
+    <value>TxtUfCli</value>
+  </data>
+  <data name="&gt;&gt;TxtTelefoneCli.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="LblBairroCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 234</value>
+  </data>
+  <data name="&gt;&gt;TxtTelefoneCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radioButton3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LblEndCli.ZOrder" xml:space="preserve">
+    <value>56</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LblObservacaoCli.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="LblEndCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 185</value>
+  </data>
+  <data name="&gt;&gt;TxtNomeCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSalvarCli.ZOrder" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;TxtIdCodCli.Name" xml:space="preserve">
+    <value>TxtIdCodCli</value>
+  </data>
+  <data name="&gt;&gt;LblRazaoSocialCli.Name" xml:space="preserve">
+    <value>LblRazaoSocialCli</value>
+  </data>
+  <data name="&gt;&gt;LblUfCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtCadastroCli.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;btnSairCadCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtIdCodCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtNumCobCli.Name" xml:space="preserve">
+    <value>TxtNumCobCli</value>
+  </data>
+  <data name="&gt;&gt;BtnCancelarCli.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblBairroCobCli.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;TxtSiteCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblRazaoSocialCli.ZOrder" xml:space="preserve">
+    <value>57</value>
+  </data>
+  <data name="textBox10.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;TxtEmailCli.Name" xml:space="preserve">
+    <value>TxtEmailCli</value>
+  </data>
+  <data name="&gt;&gt;TxtCidadeCobCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BtnCancelarCli.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBox15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>pt-BR</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

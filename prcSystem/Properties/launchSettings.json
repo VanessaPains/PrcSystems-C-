@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "prcSystem": {
+      "commandName": "Project",
+      "sqlDebugging": true,
+      "nativeDebugging": true,
+      "hotReloadEnabled": true
+    }
+  }
+}
