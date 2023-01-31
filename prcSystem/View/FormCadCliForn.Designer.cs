@@ -39,7 +39,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.LblFormCadCliForn = new System.Windows.Forms.Label();
-            this.BtnSalvar = new System.Windows.Forms.Button();
             this.LblIdCod = new System.Windows.Forms.Label();
             this.LblNomeRazao = new System.Windows.Forms.Label();
             this.LblFantasia = new System.Windows.Forms.Label();
@@ -51,7 +50,7 @@
             this.LblCep = new System.Windows.Forms.Label();
             this.LblNum = new System.Windows.Forms.Label();
             this.TxtIdPessoa = new System.Windows.Forms.TextBox();
-            this.RazaoNome = new System.Windows.Forms.TextBox();
+            this.TxtRazaoNome = new System.Windows.Forms.TextBox();
             this.TxtFantasia = new System.Windows.Forms.TextBox();
             this.TxtEndereco = new System.Windows.Forms.TextBox();
             this.TxtComplemento = new System.Windows.Forms.TextBox();
@@ -95,8 +94,9 @@
             this.LblDtCadastroCli = new System.Windows.Forms.Label();
             this.DtCadPessoa = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.BtnCancelar = new System.Windows.Forms.Button();
             this.picBoxLogo = new System.Windows.Forms.PictureBox();
+            this.BtnSalvar = new System.Windows.Forms.Button();
+            this.BtnLimpar = new System.Windows.Forms.Button();
             this.gpBox1.SuspendLayout();
             this.gpBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).BeginInit();
@@ -224,20 +224,6 @@
             this.LblFormCadCliForn.TabIndex = 65;
             this.LblFormCadCliForn.Text = "CADASTRO DE CLIENTES / FORNECEDORES";
             // 
-            // BtnSalvar
-            // 
-            this.BtnSalvar.BackColor = System.Drawing.SystemColors.Menu;
-            this.BtnSalvar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnSalvar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnSalvar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnSalvar.Location = new System.Drawing.Point(841, 9);
-            this.BtnSalvar.Name = "BtnSalvar";
-            this.BtnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.BtnSalvar.TabIndex = 66;
-            this.BtnSalvar.Text = "SALVAR";
-            this.BtnSalvar.UseVisualStyleBackColor = false;
-            this.BtnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
-            // 
             // LblIdCod
             // 
             this.LblIdCod.AutoSize = true;
@@ -356,13 +342,13 @@
             this.TxtIdPessoa.Size = new System.Drawing.Size(100, 18);
             this.TxtIdPessoa.TabIndex = 77;
             // 
-            // RazaoNome
+            // TxtRazaoNome
             // 
-            this.RazaoNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.RazaoNome.Location = new System.Drawing.Point(373, 192);
-            this.RazaoNome.Name = "RazaoNome";
-            this.RazaoNome.Size = new System.Drawing.Size(536, 18);
-            this.RazaoNome.TabIndex = 78;
+            this.TxtRazaoNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TxtRazaoNome.Location = new System.Drawing.Point(373, 192);
+            this.TxtRazaoNome.Name = "TxtRazaoNome";
+            this.TxtRazaoNome.Size = new System.Drawing.Size(536, 18);
+            this.TxtRazaoNome.TabIndex = 78;
             // 
             // TxtFantasia
             // 
@@ -773,19 +759,6 @@
             this.label3.TabIndex = 121;
             this.label3.Text = "PRC Systems @";
             // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.BackColor = System.Drawing.SystemColors.Menu;
-            this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnCancelar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnCancelar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnCancelar.Location = new System.Drawing.Point(732, 9);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(100, 23);
-            this.BtnCancelar.TabIndex = 123;
-            this.BtnCancelar.Text = "CANCELAR";
-            this.BtnCancelar.UseVisualStyleBackColor = false;
-            // 
             // picBoxLogo
             // 
             this.picBoxLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -797,17 +770,45 @@
             this.picBoxLogo.TabStop = false;
             this.picBoxLogo.DoubleClick += new System.EventHandler(this.picBoxLogo_DoubleClick);
             // 
+            // BtnSalvar
+            // 
+            this.BtnSalvar.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnSalvar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnSalvar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnSalvar.Location = new System.Drawing.Point(736, 9);
+            this.BtnSalvar.Name = "BtnSalvar";
+            this.BtnSalvar.Size = new System.Drawing.Size(89, 25);
+            this.BtnSalvar.TabIndex = 318;
+            this.BtnSalvar.Text = "SALVAR";
+            this.BtnSalvar.UseVisualStyleBackColor = false;
+            this.BtnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
+            // 
+            // BtnLimpar
+            // 
+            this.BtnLimpar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnLimpar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnLimpar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnLimpar.Location = new System.Drawing.Point(831, 9);
+            this.BtnLimpar.Name = "BtnLimpar";
+            this.BtnLimpar.Size = new System.Drawing.Size(89, 25);
+            this.BtnLimpar.TabIndex = 316;
+            this.BtnLimpar.Text = "LIMPAR";
+            this.BtnLimpar.UseVisualStyleBackColor = false;
+            this.BtnLimpar.Click += new System.EventHandler(this.BtnLimpar_Click);
+            // 
             // FormCadCliForn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.BtnSalvar);
+            this.Controls.Add(this.BtnLimpar);
             this.Controls.Add(this.gpBox1);
             this.Controls.Add(this.gpBox2);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.picBoxLogo);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.DtCadPessoa);
             this.Controls.Add(this.LblDtCadastroCli);
@@ -851,7 +852,7 @@
             this.Controls.Add(this.TxtComplemento);
             this.Controls.Add(this.TxtEndereco);
             this.Controls.Add(this.TxtFantasia);
-            this.Controls.Add(this.RazaoNome);
+            this.Controls.Add(this.TxtRazaoNome);
             this.Controls.Add(this.TxtIdPessoa);
             this.Controls.Add(this.LblNum);
             this.Controls.Add(this.LblCep);
@@ -863,7 +864,6 @@
             this.Controls.Add(this.LblFantasia);
             this.Controls.Add(this.LblNomeRazao);
             this.Controls.Add(this.LblIdCod);
-            this.Controls.Add(this.BtnSalvar);
             this.Controls.Add(this.LblFormCadCliForn);
             this.Controls.Add(this.textBox1);
             this.Name = "FormCadCliForn";
@@ -893,7 +893,6 @@
         private TextBox textBox2;
         private TextBox textBox1;
         private Label LblFormCadCliForn;
-        private Button BtnSalvar;
         private Label LblIdCod;
         private Label LblNomeRazao;
         private Label LblFantasia;
@@ -905,7 +904,7 @@
         private Label LblCep;
         private Label LblNum;
         private TextBox TxtIdPessoa;
-        private TextBox RazaoNome;
+        private TextBox TxtRazaoNome;
         private TextBox TxtFantasia;
         private TextBox TxtEndereco;
         private TextBox TxtComplemento;
@@ -949,7 +948,8 @@
         private Label LblDtCadastroCli;
         private DateTimePicker DtCadPessoa;
         private Label label3;
-        private Button BtnCancelar;
         private PictureBox picBoxLogo;
+        private Button BtnSalvar;
+        private Button BtnLimpar;
     }
 }

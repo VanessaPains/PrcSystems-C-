@@ -29,5 +29,15 @@ namespace prcSystem.Models
         {
             return new PessoaController().Listar();
         }
+
+        public List<Pessoa> PesquisarCodCliForn(Pessoa Obj)
+        {
+            return new PessoaController().PesquisarCodCliForn(Obj);
+        }
+
+        public List<Pessoa> PesquisaRazaoNomeCliForn(Pessoa Obj)
+        {
+            return new PessoaController().PesquisaRazaoNomeCliForn(Obj);
+        }
     }
 }

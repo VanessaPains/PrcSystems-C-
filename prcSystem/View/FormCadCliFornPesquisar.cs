@@ -10,19 +10,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace prcSystem.View
 {
     public partial class FormCadCliFornPesquisar : Form
     {
         Pessoa obj = new Pessoa();
+
+        //FormCadCliForn obj = new FormCadCliForn();
         
 
         public FormCadCliFornPesquisar()
         {
           
-
             InitializeComponent();
+            Listar();
+
             
 
            
@@ -76,10 +80,86 @@ namespace prcSystem.View
             }
         }
 
-        
+        private void limpar()
+        {
+            TxtPesquisaCodCliForn.Select();////onde o cursor fica inicializada depois de incluir
+
+            TxtPesquisaCodCliForn.Text = "";
+            TxtPesquisarNomeRazaoCpfCnpj.Text = "";
+
+        }
+
+        private void pesquisaCodCliForn()
+        {
+            if (TxtPesquisaCodCliForn.Text == "")
+            {
+                Listar();
+                return;
+
+            }
+            obj.IdPessoa = Convert.ToInt32(TxtPesquisaCodCliForn.Text);
+
+            List<Pessoa> lista = new List<Pessoa>();
+            lista = new PessoaModel().PesquisarCodCliForn(obj);
+            DgExibirCliForn.AutoGenerateColumns = false;
+            DgExibirCliForn.DataSource = lista;
+        }
+
+        public void pesquisaRazaoNomeCliForn()
+        {
+            if (TxtPesquisarNomeRazaoCpfCnpj.Text == "")
+            {
+                Listar();
+                return;
+
+            }
+            obj.RazaoNome = Convert.ToString(TxtPesquisarNomeRazaoCpfCnpj.Text);
+
+            List<Pessoa> lista = new List<Pessoa>();
+            lista = new PessoaModel().PesquisaRazaoNomeCliForn(obj);
+            DgExibirCliForn.AutoGenerateColumns = false;
+            DgExibirCliForn.DataSource = lista;
+        }
+
         private void DgExibirCliForn_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             
+            // configuração que marca a linha completa.
+            DgExibirCliForn.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DgExibirCliForn.Update();
+            DgExibirCliForn.Select();
+            // configuração do estilo da linha
+            DgExibirCliForn.CurrentRow.DefaultCellStyle.BackColor = Color.Azure;
+        }
+
+        private void BtnPesquisarCliForn_Click(object sender, EventArgs e)
+        {
+            pesquisaCodCliForn();                       
+        }
+
+        private void BtnLimpar_Click(object sender, EventArgs e)
+        {
+            limpar();
+            BtnPesquisarRazaoNomeCliForn.Visible = true;
+            BtnPesquisarCliForn.Visible = true;
+            Listar();
+        }
+
+        private void BtnPesquisarRazaoNomeCliForn_Click(object sender, EventArgs e)
+        {
+            pesquisaRazaoNomeCliForn();
+        }
+
+        private void TxtPesquisaCodCliForn_TextChanged(object sender, EventArgs e)
+        {
+            BtnPesquisarRazaoNomeCliForn.Visible = false;
+            BtnPesquisarCliForn.Visible = true;
+        }
+
+        private void TxtPesquisarNomeRazaoCpfCnpj_TextChanged(object sender, EventArgs e)
+        {
+            BtnPesquisarCliForn.Visible = false;
+            BtnPesquisarRazaoNomeCliForn.Visible = true;
         }
     }
 }

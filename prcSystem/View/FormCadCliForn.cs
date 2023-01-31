@@ -35,20 +35,7 @@ namespace prcSystem.View
 
         }
 
-        private void BtnSalvar_Click(object sender, EventArgs e)
-        {
-            //verifica se todos os campos estao preenchidos
-            if (TxtCnpjCpf.Text == "" || RazaoNome.Text == "" || TxtFantasia.Text == "" || TxtEndereco.Text == "" || TxtNum.Text == "" || TxtComplemento.Text == "" || TxtCep.Text == "" || TxtBairro.Text == "" || TxtCidade.Text == "" || TxtUf.Text == "" || TxtTelefone.Text == "")
-            {
-                MessageBox.Show("Preencher todos os campos obrigatorios (*).", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                RazaoNome.Select();//colocar curso em login por padrao
-                return;
-            }
-            else
-            {
-                salvar();               
-            }
-        }
+
   
         /// <summary>
         /// função Clientes de salvar dados do formulario na tabela de clientes
@@ -82,7 +69,7 @@ namespace prcSystem.View
                 }
 
                 obj.CnpjCpf = Convert.ToInt32(TxtCnpjCpf.Text);
-                obj.RazaoNome = Convert.ToString(RazaoNome.Text);
+                obj.RazaoNome = Convert.ToString(TxtRazaoNome.Text);
                 obj.Fantasia = Convert.ToString(TxtFantasia.Text);
                 obj.InscEstadual = Convert.ToInt32(TxtInscEstadual.Text);
                 obj.OutrasInsc = Convert.ToInt32(TxtOutrasInsc.Text);
@@ -128,6 +115,46 @@ namespace prcSystem.View
             }
         }
 
+        private void limpar()
+        {
+            TxtCnpjCpf.Select();////onde o cursor fica inicializada depois de incluir
+
+            rbFornecedor.Checked = false;
+            rbCliente.Checked = false;
+            rbAmbos.Checked = false;
+
+            rbPessoaFis.Checked = false;
+            rbPessoaJur.Checked = false;
+
+            TxtCnpjCpf.Text = "";
+            TxtIdPessoa.Text = "";
+            TxtRazaoNome.Text = "";
+            TxtFantasia.Text = "";
+            TxtInscEstadual.Text = "";
+            TxtOutrasInsc.Text = "";
+            TxtEndereco.Text = "";
+            TxtNum.Text = "";
+            TxtComplemento.Text = "";
+            TxtCep.Text = "";
+            TxtBairro.Text = "";
+            TxtCidade.Text = "";
+            TxtUf.Text = "";
+            TxtEnderecoCob.Text = "";
+            TxtNumCob.Text = "";
+            TxtComplementoCob.Text = "";
+            TxtCepCob.Text = "";
+            TxtBairroCob.Text = "";
+            TxtCidadeCob.Text = "";
+            TxtUfCob.Text = "";
+            TxtTelefone.Text = "";
+            TxtCelular.Text = "";
+            TxtEmail.Text = "";
+            TxtSite.Text = "";
+            TxtObservacao.Text = "";
+            //PicBoxLogo.Image = ""; 
+
+        }
+
         private void picBoxLogo_DoubleClick(object sender, EventArgs e)
         {
             // abre a caixa de diálogo do arquivo   
@@ -143,6 +170,27 @@ namespace prcSystem.View
 
                     //obj.Foto = ExternalFunctions.ImageToBase64().
                 }
+            }
+        }
+
+        private void BtnLimpar_Click(object sender, EventArgs e)
+        {
+            limpar();
+        }
+
+        private void BtnSalvar_Click(object sender, EventArgs e)
+        {
+            //verifica se todos os campos estao preenchidos
+            if (TxtCnpjCpf.Text == "" || TxtRazaoNome.Text == "" || TxtFantasia.Text == "" || TxtEndereco.Text == "" || TxtNum.Text == "" || TxtComplemento.Text == "" || TxtCep.Text == "" || TxtBairro.Text == "" || TxtCidade.Text == "" || TxtUf.Text == "" || TxtTelefone.Text == "")
+            {
+                MessageBox.Show("Preencher todos os campos obrigatorios (*).", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TxtRazaoNome.Select();//colocar curso em login por padrao
+                return;
+            }
+            else
+            {
+                salvar();
+                limpar();
             }
         }
     }
