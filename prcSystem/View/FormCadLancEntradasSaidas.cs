@@ -21,30 +21,6 @@ namespace prcSystem.View
             InitializeComponent();
         }
 
-        private void btnAddItens_Click(object sender, EventArgs e)
-        {
-            add();
-        }
-        public void add()
-        {
-            Label label1 = new Label()
-            {
-                
-                Location = new Point(71, 339),//localização onde vai incluir novo itens formulario
-                TabIndex = 10
-            };
-
-            TextBox field1 = new TextBox()
-            {
-                Location = new Point(label1.Location.X, label1.Bounds.Bottom + Padding.Top),
-                TabIndex = 11
-            };
-
-            Controls.Add(TxtUnidadeProduto);
-            Controls.Add(field1);
-
-        }
-
         private void picBoxPesqCliForn_Click(object sender, EventArgs e)
         {
             //criando link para outra pagina de cadastro de clientes.
@@ -55,9 +31,5 @@ namespace prcSystem.View
             
         }
 
-        private void FormCadLancEntradasSaidas_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
