@@ -16,6 +16,9 @@ namespace prcSystem.View
 {
     public partial class FormPesquisarCliForn : Form
     {
+    
+        /*
+
         Clientes obj = new Clientes();
         Fornecedores objForn = new Fornecedores();
 
@@ -185,8 +188,9 @@ namespace prcSystem.View
                 dgPesquisarForn.DataSource = listaForn;
                 return;
             }   
-
         }
 
+
+    */
     }
 }

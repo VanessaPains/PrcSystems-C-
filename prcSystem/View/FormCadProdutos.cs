@@ -11,7 +11,6 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Data.Common;
-using prcSystem.DAO;
 using prcSystem.Entidades;
 using prcSystem.Models;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
@@ -170,9 +169,7 @@ namespace prcSystem.View
                 dgExibirProdutos.Columns[2].HeaderText = "Marca";
                 dgExibirProdutos.Columns[3].HeaderText = "Unidade";
                 dgExibirProdutos.Columns[4].HeaderText = "Valor";
-                dgExibirProdutos.Columns[5].HeaderText = "Data";
-                
-
+                dgExibirProdutos.Columns[5].HeaderText = "Data";                
             }
             catch (Exception ex)
             {
@@ -195,18 +192,17 @@ namespace prcSystem.View
             TxtValorProduto.Text = dgExibirProdutos.CurrentRow.Cells[4].Value.ToString();
             DtCadastroProduto.Text = dgExibirProdutos.CurrentRow.Cells[5].Value.ToString();
 
-
             // configuração que marca a linha completa.
             dgExibirProdutos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgExibirProdutos.Update();
             dgExibirProdutos.Select();
             // configuração do estilo da linha
             dgExibirProdutos.CurrentRow.DefaultCellStyle.BackColor = Color.Azure;
-
         }
 
         private void dgExibirProdutos_MouseDoubleClick(object sender, MouseEventArgs e)
-        {   //criando link para outra pagina de cadastro de clientes.
+        {   //criando link para outra pagina de cadastro de
+            //.
             FormCadProdutosAlterar formCadProdutosAlterar = new FormCadProdutosAlterar();
             formCadProdutosAlterar.ShowDialog();
         }

@@ -116,7 +116,6 @@ namespace prcSystem.Controllers
                 con.Open();
                 cn.CommandText = "SELECT * FROM Cdc";
 
-
                 cn.Connection = con;
 
                 SqlDataReader dr;

@@ -157,6 +157,7 @@
             // 
             resources.ApplyResources(this.pESQUISARToolStripMenuItem, "pESQUISARToolStripMenuItem");
             this.pESQUISARToolStripMenuItem.Name = "pESQUISARToolStripMenuItem";
+            this.pESQUISARToolStripMenuItem.Click += new System.EventHandler(this.pESQUISARToolStripMenuItem_Click);
             // 
             // pAGAMENTOSToolStripMenuItem
             // 

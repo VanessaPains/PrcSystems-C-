@@ -373,14 +373,8 @@
   <data name="pRODUTOSToolStripMenuItem.Text" xml:space="preserve">
     <value>PRODUTOS</value>
   </data>
-  <data name="eNTRADASToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 22</value>
-  </data>
   <data name="eNTRADASToolStripMenuItem.Text" xml:space="preserve">
     <value>ENTRADAS/SAÍDAS</value>
-  </data>
-  <data name="pESQUISARToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 22</value>
   </data>
   <data name="pESQUISARToolStripMenuItem.Text" xml:space="preserve">
     <value>PESQUISAR</value>
@@ -774,13 +768,13 @@
     <value>PAGAMENTOS</value>
   </data>
   <data name="nOVOToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 22</value>
+    <value>183, 22</value>
   </data>
   <data name="nOVOToolStripMenuItem.Text" xml:space="preserve">
-    <value>NOVO</value>
+    <value>NOVO ORÇAMENTO</value>
   </data>
   <data name="lISTASToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 22</value>
+    <value>183, 22</value>
   </data>
   <data name="lISTASToolStripMenuItem.Text" xml:space="preserve">
     <value>PESQUISAR</value>
@@ -1007,20 +1001,26 @@
   <data name="rELATÓRIOSToolStripMenuItem.Text" xml:space="preserve">
     <value>RELATÓRIOS</value>
   </data>
+  <data name="btnCadastrarCdc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 22</value>
+  </data>
   <data name="btnCadastrarCdc.Text" xml:space="preserve">
     <value>CDC</value>
   </data>
   <data name="fUNCIONÁRIOSToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>159, 22</value>
   </data>
   <data name="fUNCIONÁRIOSToolStripMenuItem1.Text" xml:space="preserve">
     <value>FUNCIONÁRIOS</value>
   </data>
   <data name="vENDEDORESToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>159, 22</value>
   </data>
   <data name="vENDEDORESToolStripMenuItem1.Text" xml:space="preserve">
     <value>VENDEDORES</value>
+  </data>
+  <data name="btnUsuarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 22</value>
   </data>
   <data name="btnUsuarios.Text" xml:space="preserve">
     <value>USUÁRIOS</value>

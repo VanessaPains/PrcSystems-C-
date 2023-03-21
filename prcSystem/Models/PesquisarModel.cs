@@ -10,7 +10,7 @@ namespace prcSystem.Models
 {
     public class PesquisarModel
     {
-       
+  /*     
         public List<Clientes> BuscarCli(Clientes Obj)
         {
             return new PesquisarController().BuscarCli(Obj);
@@ -30,5 +30,7 @@ namespace prcSystem.Models
         {
             return new PesquisarController().ListarForn();
         }
+  */
+
     }
 }

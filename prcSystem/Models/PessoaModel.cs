@@ -15,15 +15,15 @@ namespace prcSystem.Models
             return new PessoaController().Inserir(obj);
         }
 
-        //public static int Editar(Pessoa obj)
-        //{
-            //return new PessoaController().Editar(obj);
-        //}
+        public static int Editar(Pessoa obj)
+        {
+            return new PessoaController().Editar(obj);
+        }
 
-        //public static int Deletar(Pessoa obj)
-        //{
-            //return new PessoaController().Deletar(obj);
-        //}
+        public static int Deletar(Pessoa obj)
+        {
+            return new PessoaController().Deletar(obj);
+        }
 
         public List<Pessoa> Listar()
         {

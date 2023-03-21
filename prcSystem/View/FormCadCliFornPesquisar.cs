@@ -25,13 +25,12 @@ namespace prcSystem.View
         {
           
             InitializeComponent();
-            Listar();
-
-            
-
-           
+            Listar();          
         }
 
+        /// <summary>
+        /// metodo de listar os fornecedores e clientes listados
+        /// </summary>
         private void Listar()
         {
             try
@@ -52,31 +51,54 @@ namespace prcSystem.View
                 DgExibirCliForn.Columns[6].HeaderText = "IE";
                 DgExibirCliForn.Columns[7].HeaderText = "Outras Insc.";
                 DgExibirCliForn.Columns[8].HeaderText = "End.";
-                DgExibirCliForn.Columns[9].HeaderText = "Comple.";
-                DgExibirCliForn.Columns[10].HeaderText = "Num.";
-                DgExibirCliForn.Columns[11].HeaderText = "Comple.";
-                DgExibirCliForn.Columns[12].HeaderText = "Cep";
-                DgExibirCliForn.Columns[13].HeaderText = "Bairro";
-                DgExibirCliForn.Columns[14].HeaderText = "Cidade";
-                DgExibirCliForn.Columns[15].HeaderText = "UF";
-                DgExibirCliForn.Columns[16].HeaderText = "Telefone";
-                DgExibirCliForn.Columns[17].HeaderText = "Celular.";
-                DgExibirCliForn.Columns[18].HeaderText = "Email";
-                DgExibirCliForn.Columns[19].HeaderText = "Site";
-                DgExibirCliForn.Columns[20].HeaderText = "End Cob.";
-                DgExibirCliForn.Columns[21].HeaderText = "Num Cob.";
-                DgExibirCliForn.Columns[22].HeaderText = "Compl Cob.";
-                DgExibirCliForn.Columns[23].HeaderText = "Cep Cob";
-                DgExibirCliForn.Columns[24].HeaderText = "Bairro Cob.";
-                DgExibirCliForn.Columns[25].HeaderText = "Cidade Cob.";
-                DgExibirCliForn.Columns[26].HeaderText = "UF Cob";
+                DgExibirCliForn.Columns[9].HeaderText = "Num.";
+                DgExibirCliForn.Columns[10].HeaderText = "Comple.";
+                DgExibirCliForn.Columns[11].HeaderText = "Cep";
+                DgExibirCliForn.Columns[12].HeaderText = "Bairro";
+                DgExibirCliForn.Columns[13].HeaderText = "Cidade";
+                DgExibirCliForn.Columns[14].HeaderText = "UF";
+                DgExibirCliForn.Columns[15].HeaderText = "Telefone";
+                DgExibirCliForn.Columns[16].HeaderText = "Celular.";
+                DgExibirCliForn.Columns[17].HeaderText = "Email";
+                DgExibirCliForn.Columns[18].HeaderText = "Site";
+                DgExibirCliForn.Columns[19].HeaderText = "End Cob.";
+                DgExibirCliForn.Columns[20].HeaderText = "Num Cob.";
+                DgExibirCliForn.Columns[21].HeaderText = "Compl Cob.";
+                DgExibirCliForn.Columns[22].HeaderText = "Cep Cob";
+                DgExibirCliForn.Columns[23].HeaderText = "Bairro Cob.";
+                DgExibirCliForn.Columns[24].HeaderText = "Cidade Cob.";
+                DgExibirCliForn.Columns[25].HeaderText = "UF Cob";
                 DgExibirCliForn.Columns[26].HeaderText = "Observação";
-                DgExibirCliForn.Columns[26].HeaderText = "DT Cad.";
+                DgExibirCliForn.Columns[27].HeaderText = "DT Cad.";
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Não foi possivel listar os dados" + ex);
+            }
+        }
+
+        /// <summary>
+        /// metodo excluir
+        /// </summary>
+        private void excluir()
+        {
+            try
+            {
+                obj.IdPessoa = Convert.ToInt32(txtIdPessoa.Text);
+                int x = PessoaModel.Deletar(obj);
+                if (x > 0)
+                {
+                    MessageBox.Show("Excluido com sucesso.");
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao excluir.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao excluir." + ex);
             }
         }
 
@@ -89,13 +111,15 @@ namespace prcSystem.View
 
         }
 
+        /// <summary>
+        /// metodo de pesquisar os clientes/fornecedores cadastrados pelo codigo
+        /// </summary>
         private void pesquisaCodCliForn()
         {
             if (TxtPesquisaCodCliForn.Text == "")
             {
                 Listar();
                 return;
-
             }
             obj.IdPessoa = Convert.ToInt32(TxtPesquisaCodCliForn.Text);
 
@@ -105,15 +129,20 @@ namespace prcSystem.View
             DgExibirCliForn.DataSource = lista;
         }
 
+        /// <summary>
+        /// metodo de pesquisar os clientes/fornecedores cadastrados pela razão social
+        /// </summary>
         public void pesquisaRazaoNomeCliForn()
         {
             if (TxtPesquisarNomeRazaoCpfCnpj.Text == "")
             {
                 Listar();
                 return;
-
             }
             obj.RazaoNome = Convert.ToString(TxtPesquisarNomeRazaoCpfCnpj.Text);
+            obj.CnpjCpf = Convert.ToString(TxtPesquisarNomeRazaoCpfCnpj.Text);
+
+            TxtPesquisaCodCliForn.Text = "";
 
             List<Pessoa> lista = new List<Pessoa>();
             lista = new PessoaModel().PesquisaRazaoNomeCliForn(obj);
@@ -124,19 +153,18 @@ namespace prcSystem.View
         private void DgExibirCliForn_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             
-            // configuração que marca a linha completa.
-            DgExibirCliForn.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            DgExibirCliForn.Update();
-            DgExibirCliForn.Select();
-            // configuração do estilo da linha
-            DgExibirCliForn.CurrentRow.DefaultCellStyle.BackColor = Color.Azure;
+            
         }
 
         private void BtnPesquisarCliForn_Click(object sender, EventArgs e)
         {
             pesquisaCodCliForn();                       
         }
-
+        /// <summary>
+        /// Botao de limpar dados da tela.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnLimpar_Click(object sender, EventArgs e)
         {
             limpar();
@@ -145,11 +173,21 @@ namespace prcSystem.View
             Listar();
         }
 
+        /// <summary>
+        /// botao de pesquisar pela razao social
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnPesquisarRazaoNomeCliForn_Click(object sender, EventArgs e)
         {
             pesquisaRazaoNomeCliForn();
         }
 
+        /// <summary>
+        /// botao de pesquisar pelo codigo do cliente fornecedor
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TxtPesquisaCodCliForn_TextChanged(object sender, EventArgs e)
         {
             BtnPesquisarRazaoNomeCliForn.Visible = false;
@@ -160,6 +198,17 @@ namespace prcSystem.View
         {
             BtnPesquisarCliForn.Visible = false;
             BtnPesquisarRazaoNomeCliForn.Visible = true;
+        }
+
+        private void BtnExcluir_Click(object sender, EventArgs e)
+        {
+            excluir();
+            Listar();
+        }
+
+        private void DgExibirCliForn_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtIdPessoa.Text = DgExibirCliForn.CurrentRow.Cells[0].Value.ToString();
         }
     }
 }

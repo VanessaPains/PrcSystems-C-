@@ -170,9 +170,9 @@
             this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnCancelar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BtnCancelar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnCancelar.Location = new System.Drawing.Point(731, 9);
+            this.BtnCancelar.Location = new System.Drawing.Point(736, 9);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(101, 23);
+            this.BtnCancelar.Size = new System.Drawing.Size(89, 25);
             this.BtnCancelar.TabIndex = 127;
             this.BtnCancelar.Text = "CANCELAR";
             this.BtnCancelar.UseVisualStyleBackColor = false;
@@ -183,9 +183,9 @@
             this.BtnSalvar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnSalvar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BtnSalvar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnSalvar.Location = new System.Drawing.Point(840, 9);
+            this.BtnSalvar.Location = new System.Drawing.Point(831, 9);
             this.BtnSalvar.Name = "BtnSalvar";
-            this.BtnSalvar.Size = new System.Drawing.Size(76, 23);
+            this.BtnSalvar.Size = new System.Drawing.Size(89, 25);
             this.BtnSalvar.TabIndex = 126;
             this.BtnSalvar.Text = "SALVAR";
             this.BtnSalvar.UseVisualStyleBackColor = false;

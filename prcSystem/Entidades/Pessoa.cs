@@ -12,26 +12,27 @@ namespace prcSystem.Entidades
         string tipoCadastro;
         string tipoPessoa;
 
-        int cnpjCpf;
+        string cnpjCpf;
         string razaoNome;
         string fantasia;
-        int inscEstadual;
-        int outrasInsc;
+        string inscEstadual;
+        string outrasInsc;
 
         string endereco;
-        int num;
+        string num;
         string complemento;
-        int cep;
+        string cep;
         string bairro;
         string cidade;
         string uf;
-
         string celular;
         string email;
         string site;
+
         string enderecoCob;
+        string numCob;
         string complementoCob;
-        int? cepCob;
+        string cepCob;
         string bairroCob;
         string cidadeCob;
         string ufCob;
@@ -39,24 +40,25 @@ namespace prcSystem.Entidades
         DateTime dtCadPessoa;
         Byte foto;
 
+        public static object DgExibirCliForn { get; internal set; }
 
         public int IdPessoa { get => idPessoa; set => idPessoa = value; }
         public string TipoCadastro { get => tipoCadastro; set => tipoCadastro = value; }
         public string TipoPessoa { get => tipoPessoa; set => tipoPessoa = value; }
 
-        public int CnpjCpf { get => cnpjCpf; set => cnpjCpf = value; }
+        public string CnpjCpf { get => cnpjCpf; set => cnpjCpf = value; }
         public string RazaoNome { get => razaoNome; set => razaoNome = value; }
         public string Fantasia { get => fantasia; set => fantasia = value; }
 
 
-        public int InscEstadual { get => inscEstadual; set => inscEstadual = value; }
-        public int OutrasInsc { get => outrasInsc; set => outrasInsc = value; }
+        public string InscEstadual { get => inscEstadual; set => inscEstadual = value; }
+        public string OutrasInsc { get => outrasInsc; set => outrasInsc = value; }
 
 
         public string Endereco { get => endereco; set => endereco = value; }
-        public int Num{ get => num; set => num = value; }
+        public string Num { get => num; set => num = value; }
         public string Complemento { get => complemento; set => complemento = value; }
-        public int Cep { get => cep; set => cep = value; }
+        public string Cep { get => cep; set => cep = value; }
         public string Bairro { get => bairro; set => bairro = value; }
         public string Cidade { get => cidade; set => cidade = value; }
         public string Uf { get => uf; set => uf = value; }
@@ -69,9 +71,9 @@ namespace prcSystem.Entidades
 
 
         public string EnderecoCob { get => enderecoCob; set => enderecoCob = value; }
-        public int? NumCob { get; set; }
+        public string? NumCob { get; set; }
         public string ComplementoCob { get => complementoCob; set => complementoCob = value; }
-        public int? CepCob { get => cepCob; set => cepCob = value; }
+        public string CepCob { get => cepCob; set => cepCob = value; }
         public string BairroCob { get => bairroCob; set => bairroCob = value; }
         public string CidadeCob { get => cidadeCob; set => cidadeCob = value; }
         public string UfCob { get => ufCob; set => ufCob = value; }

@@ -58,7 +58,7 @@
             this.BtnNovoCliente.TabIndex = 84;
             this.BtnNovoCliente.Text = " NOVO";
             this.BtnNovoCliente.UseVisualStyleBackColor = true;
-            this.BtnNovoCliente.Click += new System.EventHandler(this.BtnNovoCliente_Click);
+            //this.BtnNovoCliente.Click += new System.EventHandler(this.BtnNovoCliente_Click);
             // 
             // BtnCancelarProduto
             // 
@@ -116,7 +116,7 @@
             this.txtPesquisarNomeCliForn.Name = "txtPesquisarNomeCliForn";
             this.txtPesquisarNomeCliForn.Size = new System.Drawing.Size(300, 23);
             this.txtPesquisarNomeCliForn.TabIndex = 90;
-            this.txtPesquisarNomeCliForn.TextChanged += new System.EventHandler(this.txtPesquisarNomeCliForn_TextChanged);
+            //this.txtPesquisarNomeCliForn.TextChanged += new System.EventHandler(this.txtPesquisarNomeCliForn_TextChanged);
             // 
             // dgPesquisarCli
             // 
@@ -190,7 +190,7 @@
             this.BtnNovoFornecedor.TabIndex = 99;
             this.BtnNovoFornecedor.Text = " NOVO";
             this.BtnNovoFornecedor.UseVisualStyleBackColor = true;
-            this.BtnNovoFornecedor.Click += new System.EventHandler(this.BtnNovoFornecedor_Click);
+            //this.BtnNovoFornecedor.Click += new System.EventHandler(this.BtnNovoFornecedor_Click);
             // 
             // FormPesquisarCliForn
             // 

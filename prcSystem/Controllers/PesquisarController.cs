@@ -11,7 +11,7 @@ namespace prcSystem.Controllers
 {
     class PesquisarController
     {
-
+/*
         //buscar dos dados do db
         
         public List<Clientes> BuscarCli(Clientes obj)
@@ -248,7 +248,7 @@ namespace prcSystem.Controllers
                 return listaForn;
             }
         }
-        
+ */       
 
     }
 }

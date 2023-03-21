@@ -368,10 +368,5 @@ namespace prcSystem.View
                 PbxFotoFuncionario.Load(caminhoFoto);
             }
         }
-
-
-
-
-
     }
 }

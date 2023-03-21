@@ -33,6 +33,16 @@
             this.LblFormCadCliForn = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.DgExibirCliForn = new System.Windows.Forms.DataGridView();
+            this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.LblPesquisarCliForn = new System.Windows.Forms.Label();
+            this.TxtPesquisaCodCliForn = new System.Windows.Forms.TextBox();
+            this.TxtPesquisarNomeRazaoCpfCnpj = new System.Windows.Forms.TextBox();
+            this.BtnPesquisarCliForn = new System.Windows.Forms.Button();
+            this.BtnLimpar = new System.Windows.Forms.Button();
+            this.BtnPesquisarRazaoNomeCliForn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnExcluir = new System.Windows.Forms.Button();
+            this.txtIdPessoa = new System.Windows.Forms.TextBox();
             this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoCadastroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,16 +71,9 @@
             this.ufCobDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.observacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtCadPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.LblPesquisarCliForn = new System.Windows.Forms.Label();
-            this.TxtPesquisaCodCliForn = new System.Windows.Forms.TextBox();
-            this.TxtPesquisarNomeRazaoCpfCnpj = new System.Windows.Forms.TextBox();
-            this.BtnPesquisarCliForn = new System.Windows.Forms.Button();
-            this.BtnLimpar = new System.Windows.Forms.Button();
-            this.BtnPesquisarRazaoNomeCliForn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliForn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -90,11 +93,11 @@
             this.LblFormCadCliForn.AutoSize = true;
             this.LblFormCadCliForn.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblFormCadCliForn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblFormCadCliForn.Location = new System.Drawing.Point(14, 9);
+            this.LblFormCadCliForn.Location = new System.Drawing.Point(99, 9);
             this.LblFormCadCliForn.Name = "LblFormCadCliForn";
-            this.LblFormCadCliForn.Size = new System.Drawing.Size(415, 22);
+            this.LblFormCadCliForn.Size = new System.Drawing.Size(303, 22);
             this.LblFormCadCliForn.TabIndex = 125;
-            this.LblFormCadCliForn.Text = "PESQUISA DE CLIENTES / FORNECEDORES";
+            this.LblFormCadCliForn.Text = "PESQUISA DE FORNECEDORES";
             // 
             // textBox1
             // 
@@ -107,6 +110,8 @@
             // 
             // DgExibirCliForn
             // 
+            this.DgExibirCliForn.AllowUserToAddRows = false;
+            this.DgExibirCliForn.AllowUserToDeleteRows = false;
             this.DgExibirCliForn.AllowUserToOrderColumns = true;
             this.DgExibirCliForn.AutoGenerateColumns = false;
             this.DgExibirCliForn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -138,189 +143,17 @@
             this.cidadeCobDataGridViewTextBoxColumn,
             this.ufCobDataGridViewTextBoxColumn,
             this.observacaoDataGridViewTextBoxColumn,
-            this.dtCadPessoaDataGridViewTextBoxColumn,
-            this.fotoDataGridViewImageColumn});
+            this.dtCadPessoaDataGridViewTextBoxColumn});
             this.DgExibirCliForn.DataSource = this.pessoaBindingSource;
             this.DgExibirCliForn.Location = new System.Drawing.Point(14, 133);
             this.DgExibirCliForn.Name = "DgExibirCliForn";
+            this.DgExibirCliForn.ReadOnly = true;
             this.DgExibirCliForn.RowTemplate.Height = 25;
+            this.DgExibirCliForn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgExibirCliForn.Size = new System.Drawing.Size(910, 362);
             this.DgExibirCliForn.TabIndex = 128;
             this.DgExibirCliForn.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgExibirCliForn_CellClick);
-            // 
-            // idPessoaDataGridViewTextBoxColumn
-            // 
-            this.idPessoaDataGridViewTextBoxColumn.DataPropertyName = "IdPessoa";
-            this.idPessoaDataGridViewTextBoxColumn.HeaderText = "IdPessoa";
-            this.idPessoaDataGridViewTextBoxColumn.Name = "idPessoaDataGridViewTextBoxColumn";
-            // 
-            // tipoCadastroDataGridViewTextBoxColumn
-            // 
-            this.tipoCadastroDataGridViewTextBoxColumn.DataPropertyName = "TipoCadastro";
-            this.tipoCadastroDataGridViewTextBoxColumn.HeaderText = "TipoCadastro";
-            this.tipoCadastroDataGridViewTextBoxColumn.Name = "tipoCadastroDataGridViewTextBoxColumn";
-            // 
-            // tipoPessoaDataGridViewTextBoxColumn
-            // 
-            this.tipoPessoaDataGridViewTextBoxColumn.DataPropertyName = "TipoPessoa";
-            this.tipoPessoaDataGridViewTextBoxColumn.HeaderText = "TipoPessoa";
-            this.tipoPessoaDataGridViewTextBoxColumn.Name = "tipoPessoaDataGridViewTextBoxColumn";
-            // 
-            // cnpjCpfDataGridViewTextBoxColumn
-            // 
-            this.cnpjCpfDataGridViewTextBoxColumn.DataPropertyName = "CnpjCpf";
-            this.cnpjCpfDataGridViewTextBoxColumn.HeaderText = "CnpjCpf";
-            this.cnpjCpfDataGridViewTextBoxColumn.Name = "cnpjCpfDataGridViewTextBoxColumn";
-            // 
-            // razaoNomeDataGridViewTextBoxColumn
-            // 
-            this.razaoNomeDataGridViewTextBoxColumn.DataPropertyName = "RazaoNome";
-            this.razaoNomeDataGridViewTextBoxColumn.HeaderText = "RazaoNome";
-            this.razaoNomeDataGridViewTextBoxColumn.Name = "razaoNomeDataGridViewTextBoxColumn";
-            // 
-            // fantasiaDataGridViewTextBoxColumn
-            // 
-            this.fantasiaDataGridViewTextBoxColumn.DataPropertyName = "Fantasia";
-            this.fantasiaDataGridViewTextBoxColumn.HeaderText = "Fantasia";
-            this.fantasiaDataGridViewTextBoxColumn.Name = "fantasiaDataGridViewTextBoxColumn";
-            // 
-            // inscEstadualDataGridViewTextBoxColumn
-            // 
-            this.inscEstadualDataGridViewTextBoxColumn.DataPropertyName = "InscEstadual";
-            this.inscEstadualDataGridViewTextBoxColumn.HeaderText = "InscEstadual";
-            this.inscEstadualDataGridViewTextBoxColumn.Name = "inscEstadualDataGridViewTextBoxColumn";
-            // 
-            // outrasInscDataGridViewTextBoxColumn
-            // 
-            this.outrasInscDataGridViewTextBoxColumn.DataPropertyName = "OutrasInsc";
-            this.outrasInscDataGridViewTextBoxColumn.HeaderText = "OutrasInsc";
-            this.outrasInscDataGridViewTextBoxColumn.Name = "outrasInscDataGridViewTextBoxColumn";
-            // 
-            // enderecoDataGridViewTextBoxColumn
-            // 
-            this.enderecoDataGridViewTextBoxColumn.DataPropertyName = "Endereco";
-            this.enderecoDataGridViewTextBoxColumn.HeaderText = "Endereco";
-            this.enderecoDataGridViewTextBoxColumn.Name = "enderecoDataGridViewTextBoxColumn";
-            // 
-            // numDataGridViewTextBoxColumn
-            // 
-            this.numDataGridViewTextBoxColumn.DataPropertyName = "Num";
-            this.numDataGridViewTextBoxColumn.HeaderText = "Num";
-            this.numDataGridViewTextBoxColumn.Name = "numDataGridViewTextBoxColumn";
-            // 
-            // complementoDataGridViewTextBoxColumn
-            // 
-            this.complementoDataGridViewTextBoxColumn.DataPropertyName = "Complemento";
-            this.complementoDataGridViewTextBoxColumn.HeaderText = "Complemento";
-            this.complementoDataGridViewTextBoxColumn.Name = "complementoDataGridViewTextBoxColumn";
-            // 
-            // cepDataGridViewTextBoxColumn
-            // 
-            this.cepDataGridViewTextBoxColumn.DataPropertyName = "Cep";
-            this.cepDataGridViewTextBoxColumn.HeaderText = "Cep";
-            this.cepDataGridViewTextBoxColumn.Name = "cepDataGridViewTextBoxColumn";
-            // 
-            // bairroDataGridViewTextBoxColumn
-            // 
-            this.bairroDataGridViewTextBoxColumn.DataPropertyName = "Bairro";
-            this.bairroDataGridViewTextBoxColumn.HeaderText = "Bairro";
-            this.bairroDataGridViewTextBoxColumn.Name = "bairroDataGridViewTextBoxColumn";
-            // 
-            // cidadeDataGridViewTextBoxColumn
-            // 
-            this.cidadeDataGridViewTextBoxColumn.DataPropertyName = "Cidade";
-            this.cidadeDataGridViewTextBoxColumn.HeaderText = "Cidade";
-            this.cidadeDataGridViewTextBoxColumn.Name = "cidadeDataGridViewTextBoxColumn";
-            // 
-            // ufDataGridViewTextBoxColumn
-            // 
-            this.ufDataGridViewTextBoxColumn.DataPropertyName = "Uf";
-            this.ufDataGridViewTextBoxColumn.HeaderText = "Uf";
-            this.ufDataGridViewTextBoxColumn.Name = "ufDataGridViewTextBoxColumn";
-            // 
-            // telefoneDataGridViewTextBoxColumn
-            // 
-            this.telefoneDataGridViewTextBoxColumn.DataPropertyName = "Telefone";
-            this.telefoneDataGridViewTextBoxColumn.HeaderText = "Telefone";
-            this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
-            // 
-            // celularDataGridViewTextBoxColumn
-            // 
-            this.celularDataGridViewTextBoxColumn.DataPropertyName = "Celular";
-            this.celularDataGridViewTextBoxColumn.HeaderText = "Celular";
-            this.celularDataGridViewTextBoxColumn.Name = "celularDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // siteDataGridViewTextBoxColumn
-            // 
-            this.siteDataGridViewTextBoxColumn.DataPropertyName = "Site";
-            this.siteDataGridViewTextBoxColumn.HeaderText = "Site";
-            this.siteDataGridViewTextBoxColumn.Name = "siteDataGridViewTextBoxColumn";
-            // 
-            // enderecoCobDataGridViewTextBoxColumn
-            // 
-            this.enderecoCobDataGridViewTextBoxColumn.DataPropertyName = "EnderecoCob";
-            this.enderecoCobDataGridViewTextBoxColumn.HeaderText = "EnderecoCob";
-            this.enderecoCobDataGridViewTextBoxColumn.Name = "enderecoCobDataGridViewTextBoxColumn";
-            // 
-            // numCobDataGridViewTextBoxColumn
-            // 
-            this.numCobDataGridViewTextBoxColumn.DataPropertyName = "NumCob";
-            this.numCobDataGridViewTextBoxColumn.HeaderText = "NumCob";
-            this.numCobDataGridViewTextBoxColumn.Name = "numCobDataGridViewTextBoxColumn";
-            // 
-            // complementoCobDataGridViewTextBoxColumn
-            // 
-            this.complementoCobDataGridViewTextBoxColumn.DataPropertyName = "ComplementoCob";
-            this.complementoCobDataGridViewTextBoxColumn.HeaderText = "ComplementoCob";
-            this.complementoCobDataGridViewTextBoxColumn.Name = "complementoCobDataGridViewTextBoxColumn";
-            // 
-            // cepCobDataGridViewTextBoxColumn
-            // 
-            this.cepCobDataGridViewTextBoxColumn.DataPropertyName = "CepCob";
-            this.cepCobDataGridViewTextBoxColumn.HeaderText = "CepCob";
-            this.cepCobDataGridViewTextBoxColumn.Name = "cepCobDataGridViewTextBoxColumn";
-            // 
-            // bairroCobDataGridViewTextBoxColumn
-            // 
-            this.bairroCobDataGridViewTextBoxColumn.DataPropertyName = "BairroCob";
-            this.bairroCobDataGridViewTextBoxColumn.HeaderText = "BairroCob";
-            this.bairroCobDataGridViewTextBoxColumn.Name = "bairroCobDataGridViewTextBoxColumn";
-            // 
-            // cidadeCobDataGridViewTextBoxColumn
-            // 
-            this.cidadeCobDataGridViewTextBoxColumn.DataPropertyName = "CidadeCob";
-            this.cidadeCobDataGridViewTextBoxColumn.HeaderText = "CidadeCob";
-            this.cidadeCobDataGridViewTextBoxColumn.Name = "cidadeCobDataGridViewTextBoxColumn";
-            // 
-            // ufCobDataGridViewTextBoxColumn
-            // 
-            this.ufCobDataGridViewTextBoxColumn.DataPropertyName = "UfCob";
-            this.ufCobDataGridViewTextBoxColumn.HeaderText = "UfCob";
-            this.ufCobDataGridViewTextBoxColumn.Name = "ufCobDataGridViewTextBoxColumn";
-            // 
-            // observacaoDataGridViewTextBoxColumn
-            // 
-            this.observacaoDataGridViewTextBoxColumn.DataPropertyName = "Observacao";
-            this.observacaoDataGridViewTextBoxColumn.HeaderText = "Observacao";
-            this.observacaoDataGridViewTextBoxColumn.Name = "observacaoDataGridViewTextBoxColumn";
-            // 
-            // dtCadPessoaDataGridViewTextBoxColumn
-            // 
-            this.dtCadPessoaDataGridViewTextBoxColumn.DataPropertyName = "DtCadPessoa";
-            this.dtCadPessoaDataGridViewTextBoxColumn.HeaderText = "DtCadPessoa";
-            this.dtCadPessoaDataGridViewTextBoxColumn.Name = "dtCadPessoaDataGridViewTextBoxColumn";
-            // 
-            // fotoDataGridViewImageColumn
-            // 
-            this.fotoDataGridViewImageColumn.DataPropertyName = "Foto";
-            this.fotoDataGridViewImageColumn.HeaderText = "Foto";
-            this.fotoDataGridViewImageColumn.Name = "fotoDataGridViewImageColumn";
+            this.DgExibirCliForn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgExibirCliForn_CellContentClick);
             // 
             // pessoaBindingSource
             // 
@@ -340,14 +173,16 @@
             // 
             this.TxtPesquisaCodCliForn.Location = new System.Drawing.Point(14, 87);
             this.TxtPesquisaCodCliForn.Name = "TxtPesquisaCodCliForn";
-            this.TxtPesquisaCodCliForn.Size = new System.Drawing.Size(100, 23);
+            this.TxtPesquisaCodCliForn.PlaceholderText = "COD. DO CLIENTE";
+            this.TxtPesquisaCodCliForn.Size = new System.Drawing.Size(119, 23);
             this.TxtPesquisaCodCliForn.TabIndex = 130;
             this.TxtPesquisaCodCliForn.TextChanged += new System.EventHandler(this.TxtPesquisaCodCliForn_TextChanged);
             // 
             // TxtPesquisarNomeRazaoCpfCnpj
             // 
-            this.TxtPesquisarNomeRazaoCpfCnpj.Location = new System.Drawing.Point(120, 87);
+            this.TxtPesquisarNomeRazaoCpfCnpj.Location = new System.Drawing.Point(139, 87);
             this.TxtPesquisarNomeRazaoCpfCnpj.Name = "TxtPesquisarNomeRazaoCpfCnpj";
+            this.TxtPesquisarNomeRazaoCpfCnpj.PlaceholderText = "RAZÃO / NOME ";
             this.TxtPesquisarNomeRazaoCpfCnpj.Size = new System.Drawing.Size(309, 23);
             this.TxtPesquisarNomeRazaoCpfCnpj.TabIndex = 131;
             this.TxtPesquisarNomeRazaoCpfCnpj.TextChanged += new System.EventHandler(this.TxtPesquisarNomeRazaoCpfCnpj_TextChanged);
@@ -355,7 +190,7 @@
             // BtnPesquisarCliForn
             // 
             this.BtnPesquisarCliForn.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnPesquisarCliForn.Location = new System.Drawing.Point(439, 87);
+            this.BtnPesquisarCliForn.Location = new System.Drawing.Point(458, 87);
             this.BtnPesquisarCliForn.Name = "BtnPesquisarCliForn";
             this.BtnPesquisarCliForn.Size = new System.Drawing.Size(100, 23);
             this.BtnPesquisarCliForn.TabIndex = 132;
@@ -379,7 +214,7 @@
             // BtnPesquisarRazaoNomeCliForn
             // 
             this.BtnPesquisarRazaoNomeCliForn.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnPesquisarRazaoNomeCliForn.Location = new System.Drawing.Point(545, 87);
+            this.BtnPesquisarRazaoNomeCliForn.Location = new System.Drawing.Point(458, 87);
             this.BtnPesquisarRazaoNomeCliForn.Name = "BtnPesquisarRazaoNomeCliForn";
             this.BtnPesquisarRazaoNomeCliForn.Size = new System.Drawing.Size(100, 23);
             this.BtnPesquisarRazaoNomeCliForn.TabIndex = 318;
@@ -387,11 +222,242 @@
             this.BtnPesquisarRazaoNomeCliForn.UseVisualStyleBackColor = true;
             this.BtnPesquisarRazaoNomeCliForn.Click += new System.EventHandler(this.BtnPesquisarRazaoNomeCliForn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::prcSystem.Properties.Resources.logoComunicacaoVisual2;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 42);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 319;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BtnExcluir
+            // 
+            this.BtnExcluir.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnExcluir.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnExcluir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnExcluir.Location = new System.Drawing.Point(740, 9);
+            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Size = new System.Drawing.Size(89, 25);
+            this.BtnExcluir.TabIndex = 320;
+            this.BtnExcluir.Text = "EXCLUIR";
+            this.BtnExcluir.UseVisualStyleBackColor = false;
+            this.BtnExcluir.Click += new System.EventHandler(this.BtnExcluir_Click);
+            // 
+            // txtIdPessoa
+            // 
+            this.txtIdPessoa.Location = new System.Drawing.Point(822, 87);
+            this.txtIdPessoa.Name = "txtIdPessoa";
+            this.txtIdPessoa.Size = new System.Drawing.Size(100, 23);
+            this.txtIdPessoa.TabIndex = 321;
+            this.txtIdPessoa.Visible = false;
+            // 
+            // idPessoaDataGridViewTextBoxColumn
+            // 
+            this.idPessoaDataGridViewTextBoxColumn.DataPropertyName = "IdPessoa";
+            this.idPessoaDataGridViewTextBoxColumn.HeaderText = "IdPessoa";
+            this.idPessoaDataGridViewTextBoxColumn.Name = "idPessoaDataGridViewTextBoxColumn";
+            this.idPessoaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tipoCadastroDataGridViewTextBoxColumn
+            // 
+            this.tipoCadastroDataGridViewTextBoxColumn.DataPropertyName = "TipoCadastro";
+            this.tipoCadastroDataGridViewTextBoxColumn.HeaderText = "TipoCadastro";
+            this.tipoCadastroDataGridViewTextBoxColumn.Name = "tipoCadastroDataGridViewTextBoxColumn";
+            this.tipoCadastroDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tipoPessoaDataGridViewTextBoxColumn
+            // 
+            this.tipoPessoaDataGridViewTextBoxColumn.DataPropertyName = "TipoPessoa";
+            this.tipoPessoaDataGridViewTextBoxColumn.HeaderText = "TipoPessoa";
+            this.tipoPessoaDataGridViewTextBoxColumn.Name = "tipoPessoaDataGridViewTextBoxColumn";
+            this.tipoPessoaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cnpjCpfDataGridViewTextBoxColumn
+            // 
+            this.cnpjCpfDataGridViewTextBoxColumn.DataPropertyName = "CnpjCpf";
+            this.cnpjCpfDataGridViewTextBoxColumn.HeaderText = "CnpjCpf";
+            this.cnpjCpfDataGridViewTextBoxColumn.Name = "cnpjCpfDataGridViewTextBoxColumn";
+            this.cnpjCpfDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // razaoNomeDataGridViewTextBoxColumn
+            // 
+            this.razaoNomeDataGridViewTextBoxColumn.DataPropertyName = "RazaoNome";
+            this.razaoNomeDataGridViewTextBoxColumn.HeaderText = "RazaoNome";
+            this.razaoNomeDataGridViewTextBoxColumn.Name = "razaoNomeDataGridViewTextBoxColumn";
+            this.razaoNomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fantasiaDataGridViewTextBoxColumn
+            // 
+            this.fantasiaDataGridViewTextBoxColumn.DataPropertyName = "Fantasia";
+            this.fantasiaDataGridViewTextBoxColumn.HeaderText = "Fantasia";
+            this.fantasiaDataGridViewTextBoxColumn.Name = "fantasiaDataGridViewTextBoxColumn";
+            this.fantasiaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // inscEstadualDataGridViewTextBoxColumn
+            // 
+            this.inscEstadualDataGridViewTextBoxColumn.DataPropertyName = "InscEstadual";
+            this.inscEstadualDataGridViewTextBoxColumn.HeaderText = "InscEstadual";
+            this.inscEstadualDataGridViewTextBoxColumn.Name = "inscEstadualDataGridViewTextBoxColumn";
+            this.inscEstadualDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // outrasInscDataGridViewTextBoxColumn
+            // 
+            this.outrasInscDataGridViewTextBoxColumn.DataPropertyName = "OutrasInsc";
+            this.outrasInscDataGridViewTextBoxColumn.HeaderText = "OutrasInsc";
+            this.outrasInscDataGridViewTextBoxColumn.Name = "outrasInscDataGridViewTextBoxColumn";
+            this.outrasInscDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // enderecoDataGridViewTextBoxColumn
+            // 
+            this.enderecoDataGridViewTextBoxColumn.DataPropertyName = "Endereco";
+            this.enderecoDataGridViewTextBoxColumn.HeaderText = "Endereco";
+            this.enderecoDataGridViewTextBoxColumn.Name = "enderecoDataGridViewTextBoxColumn";
+            this.enderecoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // numDataGridViewTextBoxColumn
+            // 
+            this.numDataGridViewTextBoxColumn.DataPropertyName = "Num";
+            this.numDataGridViewTextBoxColumn.HeaderText = "Num";
+            this.numDataGridViewTextBoxColumn.Name = "numDataGridViewTextBoxColumn";
+            this.numDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // complementoDataGridViewTextBoxColumn
+            // 
+            this.complementoDataGridViewTextBoxColumn.DataPropertyName = "Complemento";
+            this.complementoDataGridViewTextBoxColumn.HeaderText = "Complemento";
+            this.complementoDataGridViewTextBoxColumn.Name = "complementoDataGridViewTextBoxColumn";
+            this.complementoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cepDataGridViewTextBoxColumn
+            // 
+            this.cepDataGridViewTextBoxColumn.DataPropertyName = "Cep";
+            this.cepDataGridViewTextBoxColumn.HeaderText = "Cep";
+            this.cepDataGridViewTextBoxColumn.Name = "cepDataGridViewTextBoxColumn";
+            this.cepDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bairroDataGridViewTextBoxColumn
+            // 
+            this.bairroDataGridViewTextBoxColumn.DataPropertyName = "Bairro";
+            this.bairroDataGridViewTextBoxColumn.HeaderText = "Bairro";
+            this.bairroDataGridViewTextBoxColumn.Name = "bairroDataGridViewTextBoxColumn";
+            this.bairroDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cidadeDataGridViewTextBoxColumn
+            // 
+            this.cidadeDataGridViewTextBoxColumn.DataPropertyName = "Cidade";
+            this.cidadeDataGridViewTextBoxColumn.HeaderText = "Cidade";
+            this.cidadeDataGridViewTextBoxColumn.Name = "cidadeDataGridViewTextBoxColumn";
+            this.cidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ufDataGridViewTextBoxColumn
+            // 
+            this.ufDataGridViewTextBoxColumn.DataPropertyName = "Uf";
+            this.ufDataGridViewTextBoxColumn.HeaderText = "Uf";
+            this.ufDataGridViewTextBoxColumn.Name = "ufDataGridViewTextBoxColumn";
+            this.ufDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telefoneDataGridViewTextBoxColumn
+            // 
+            this.telefoneDataGridViewTextBoxColumn.DataPropertyName = "Telefone";
+            this.telefoneDataGridViewTextBoxColumn.HeaderText = "Telefone";
+            this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
+            this.telefoneDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // celularDataGridViewTextBoxColumn
+            // 
+            this.celularDataGridViewTextBoxColumn.DataPropertyName = "Celular";
+            this.celularDataGridViewTextBoxColumn.HeaderText = "Celular";
+            this.celularDataGridViewTextBoxColumn.Name = "celularDataGridViewTextBoxColumn";
+            this.celularDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // siteDataGridViewTextBoxColumn
+            // 
+            this.siteDataGridViewTextBoxColumn.DataPropertyName = "Site";
+            this.siteDataGridViewTextBoxColumn.HeaderText = "Site";
+            this.siteDataGridViewTextBoxColumn.Name = "siteDataGridViewTextBoxColumn";
+            this.siteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // enderecoCobDataGridViewTextBoxColumn
+            // 
+            this.enderecoCobDataGridViewTextBoxColumn.DataPropertyName = "EnderecoCob";
+            this.enderecoCobDataGridViewTextBoxColumn.HeaderText = "EnderecoCob";
+            this.enderecoCobDataGridViewTextBoxColumn.Name = "enderecoCobDataGridViewTextBoxColumn";
+            this.enderecoCobDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // numCobDataGridViewTextBoxColumn
+            // 
+            this.numCobDataGridViewTextBoxColumn.DataPropertyName = "NumCob";
+            this.numCobDataGridViewTextBoxColumn.HeaderText = "NumCob";
+            this.numCobDataGridViewTextBoxColumn.Name = "numCobDataGridViewTextBoxColumn";
+            this.numCobDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // complementoCobDataGridViewTextBoxColumn
+            // 
+            this.complementoCobDataGridViewTextBoxColumn.DataPropertyName = "ComplementoCob";
+            this.complementoCobDataGridViewTextBoxColumn.HeaderText = "ComplementoCob";
+            this.complementoCobDataGridViewTextBoxColumn.Name = "complementoCobDataGridViewTextBoxColumn";
+            this.complementoCobDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cepCobDataGridViewTextBoxColumn
+            // 
+            this.cepCobDataGridViewTextBoxColumn.DataPropertyName = "CepCob";
+            this.cepCobDataGridViewTextBoxColumn.HeaderText = "CepCob";
+            this.cepCobDataGridViewTextBoxColumn.Name = "cepCobDataGridViewTextBoxColumn";
+            this.cepCobDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bairroCobDataGridViewTextBoxColumn
+            // 
+            this.bairroCobDataGridViewTextBoxColumn.DataPropertyName = "BairroCob";
+            this.bairroCobDataGridViewTextBoxColumn.HeaderText = "BairroCob";
+            this.bairroCobDataGridViewTextBoxColumn.Name = "bairroCobDataGridViewTextBoxColumn";
+            this.bairroCobDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cidadeCobDataGridViewTextBoxColumn
+            // 
+            this.cidadeCobDataGridViewTextBoxColumn.DataPropertyName = "CidadeCob";
+            this.cidadeCobDataGridViewTextBoxColumn.HeaderText = "CidadeCob";
+            this.cidadeCobDataGridViewTextBoxColumn.Name = "cidadeCobDataGridViewTextBoxColumn";
+            this.cidadeCobDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ufCobDataGridViewTextBoxColumn
+            // 
+            this.ufCobDataGridViewTextBoxColumn.DataPropertyName = "UfCob";
+            this.ufCobDataGridViewTextBoxColumn.HeaderText = "UfCob";
+            this.ufCobDataGridViewTextBoxColumn.Name = "ufCobDataGridViewTextBoxColumn";
+            this.ufCobDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // observacaoDataGridViewTextBoxColumn
+            // 
+            this.observacaoDataGridViewTextBoxColumn.DataPropertyName = "Observacao";
+            this.observacaoDataGridViewTextBoxColumn.HeaderText = "Observacao";
+            this.observacaoDataGridViewTextBoxColumn.Name = "observacaoDataGridViewTextBoxColumn";
+            this.observacaoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dtCadPessoaDataGridViewTextBoxColumn
+            // 
+            this.dtCadPessoaDataGridViewTextBoxColumn.DataPropertyName = "DtCadPessoa";
+            this.dtCadPessoaDataGridViewTextBoxColumn.HeaderText = "DtCadPessoa";
+            this.dtCadPessoaDataGridViewTextBoxColumn.Name = "dtCadPessoaDataGridViewTextBoxColumn";
+            this.dtCadPessoaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // FormCadCliFornPesquisar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.txtIdPessoa);
+            this.Controls.Add(this.BtnExcluir);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnPesquisarRazaoNomeCliForn);
             this.Controls.Add(this.BtnLimpar);
             this.Controls.Add(this.BtnPesquisarCliForn);
@@ -404,9 +470,10 @@
             this.Controls.Add(this.label3);
             this.Name = "FormCadCliFornPesquisar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormCadCliFornPesquisar";
+            this.Text = "PRC Systems";
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliForn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,6 +485,16 @@
         private Label LblFormCadCliForn;
         private TextBox textBox1;
         private DataGridView DgExibirCliForn;
+        private BindingSource pessoaBindingSource;
+        private Label LblPesquisarCliForn;
+        private TextBox TxtPesquisaCodCliForn;
+        private TextBox TxtPesquisarNomeRazaoCpfCnpj;
+        private Button BtnPesquisarCliForn;
+        private Button BtnLimpar;
+        private Button BtnPesquisarRazaoNomeCliForn;
+        private PictureBox pictureBox1;
+        private Button BtnExcluir;
+        private TextBox txtIdPessoa;
         private DataGridViewTextBoxColumn idPessoaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn tipoCadastroDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn tipoPessoaDataGridViewTextBoxColumn;
@@ -446,13 +523,5 @@
         private DataGridViewTextBoxColumn ufCobDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn observacaoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dtCadPessoaDataGridViewTextBoxColumn;
-        private DataGridViewImageColumn fotoDataGridViewImageColumn;
-        private BindingSource pessoaBindingSource;
-        private Label LblPesquisarCliForn;
-        private TextBox TxtPesquisaCodCliForn;
-        private TextBox TxtPesquisarNomeRazaoCpfCnpj;
-        private Button BtnPesquisarCliForn;
-        private Button BtnLimpar;
-        private Button BtnPesquisarRazaoNomeCliForn;
     }
 }

@@ -117,7 +117,8 @@ namespace prcSystem.View
 
         private void dgCadCdc_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            //criando link para outra pagina de cadastro de clientes.
+            //criando link para outra pagina de cadastro de
+            //.
             FormCadCDCAlterar formCadCDCAlterar = new FormCadCDCAlterar();
             formCadCDCAlterar.ShowDialog();
             HabibilitarCampos();

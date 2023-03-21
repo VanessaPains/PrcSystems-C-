@@ -1,5 +1,4 @@
-﻿using prcSystem.DAO;
-using prcSystem.Entidades;
+﻿using prcSystem.Entidades;
 using prcSystem.Models;
 using prcSystem.View;
 using System;

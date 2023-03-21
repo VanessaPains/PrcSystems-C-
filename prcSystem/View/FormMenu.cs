@@ -22,50 +22,6 @@ namespace prcSystem.View
 
         }
 
-        private void BtnMenuCadCli_Click(object sender, EventArgs e)
-        {   //criando link para outra pagina de cadastro de clientes.
-            FormPesquisarCliForn formCadClientePesquisar = new FormPesquisarCliForn();
-            formCadClientePesquisar.ShowDialog();       
-        }
-
-        private void BtnMenuCadForn_Click(object sender, EventArgs e)
-        {
-            //criando link para outra pagina de cadastro de clientes.
-            FormCadFornecedoores formCadFornecedores = new FormCadFornecedoores();
-            formCadFornecedores.ShowDialog();
-        }
-
-        private void BtnMenuCadProduto_Click(object sender, EventArgs e)
-        {
-            //criando link para outra pagina de cadastro de clientes.
-            FormCadProdutos formCadProdutos = new FormCadProdutos();
-            formCadProdutos.ShowDialog();
-        }
-
-
-      
-
-        private void toolStripLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void btnCadCli_Click(object sender, EventArgs e)
-        {
-            //criando link para outra pagina de cadastro de clientes.
-            //FormCadClientes formCadClientes = new FormCadClientes();
-            //formCadClientes.ShowDialog();
-        }
-
-        private void btnCadForn_Click(object sender, EventArgs e)
-        {
-            //criando link para outra pagina de cadastro de clientes.
-            //FormCadFornecedoores formCadFornecedores = new FormCadFornecedoores();
-            //formCadFornecedores.ShowDialog();
-        }
-
         private void btnCadProd_Click(object sender, EventArgs e)
         {
             //criando link para outra pagina de cadastro de clientes.
@@ -141,6 +97,12 @@ namespace prcSystem.View
             FormCadUsuarios formCadUsuarios = new FormCadUsuarios();
             formCadUsuarios.ShowDialog();
 
+        }
+
+        private void pESQUISARToolStripMenuItem_Click(object sender, EventArgs e)
+        {   //criando link para outra pagina de cadastro de usuarios
+            FormCadLancPesquisar formCadLancPesquisa = new FormCadLancPesquisar();
+            formCadLancPesquisa.ShowDialog();
         }
     }
 }
