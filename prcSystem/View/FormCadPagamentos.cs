@@ -194,17 +194,31 @@ namespace prcSystem.View
             AjustarDataGridDiminuir();*/
         }
 
+        //------------- INICIO: CAMPO DE PESQUISAR TEXTO ----------------------------------------------------
+        /// <summary>
+        /// Campo de texto para pesquisas
+        /// </summary>
+        /// <param name="sender">inseri informação que deseja pesquisar</param>
+        /// <param name="e">tras resutados do que digitou</param>
         private void txtNumDocumento_TextChanged(object sender, EventArgs e)
         {
             PesquisarNumDocCnpjCpfCodCdcRazaoNome();
         }
 
-
+        /// <summary>
+        /// Campo de texto para pesquisas
+        /// </summary>
+        /// <param name="sender">inseri informação que deseja pesquisar</param>
+        /// <param name="e">tras resutados do que digitou</param>
         private void txtCodCliForn_TextChanged(object sender, EventArgs e)
         {
             PesquisarCodCliPagamento();
         }
+        //------------- FIM: CAMPO DE PESQUISAR TEXTO ----------------------------------------------------
 
+
+
+        //------------- INICIO: CAMPO DE PESQUISAR BOTOES ----------------------------------------------------
         private void btnEntrada_Click(object sender, EventArgs e)
         {
             PesquisarTipoEntrada();
@@ -229,6 +243,7 @@ namespace prcSystem.View
         {
             PesquisarSituacaoPagas();
         }
+        //------------- FIN: CAMPO DE PESQUISAR BOTOES ----------------------------------------------------
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {

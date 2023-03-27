@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnSalvarLanc = new System.Windows.Forms.Button();
             this.LblFormCadCli = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -66,20 +66,6 @@
             this.dgCadCdc = new System.Windows.Forms.DataGridView();
             this.txtIdCdc = new System.Windows.Forms.TextBox();
             this.DgExibirLacamentos = new System.Windows.Forms.DataGridView();
-            this.lancamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txtPesquisarLancamentos = new System.Windows.Forms.TextBox();
-            this.lblPesquisarLancamentos = new System.Windows.Forms.Label();
-            this.BtnEditarLanc = new System.Windows.Forms.Button();
-            this.tipoLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numDocumentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtEmissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtVencimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbSituacaoAbertaPaga = new System.Windows.Forms.ComboBox();
-            this.lblSituacaoAbertaPaga = new System.Windows.Forms.Label();
             this.idLancamentoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoLancamentoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPessoaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -94,6 +80,20 @@
             this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SituacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lancamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtPesquisarLancamentos = new System.Windows.Forms.TextBox();
+            this.lblPesquisarLancamentos = new System.Windows.Forms.Label();
+            this.BtnEditarLanc = new System.Windows.Forms.Button();
+            this.tipoLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numDocumentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtEmissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtVencimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblSituacaoAbertaPaga = new System.Windows.Forms.Label();
+            this.cbSituacaoAbertaPaga = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliForn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgCadCdc)).BeginInit();
@@ -456,14 +456,14 @@
             this.dgCadCdc.AllowUserToAddRows = false;
             this.dgCadCdc.AllowUserToDeleteRows = false;
             this.dgCadCdc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgCadCdc.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgCadCdc.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgCadCdc.Location = new System.Drawing.Point(11, 260);
             this.dgCadCdc.Name = "dgCadCdc";
             this.dgCadCdc.ReadOnly = true;
@@ -513,113 +513,6 @@
             this.DgExibirLacamentos.TabIndex = 327;
             this.DgExibirLacamentos.Visible = false;
             this.DgExibirLacamentos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgExibirLacamentos_CellClick);
-            // 
-            // lancamentosBindingSource
-            // 
-            this.lancamentosBindingSource.DataSource = typeof(prcSystem.Entidades.Lancamentos);
-            // 
-            // txtPesquisarLancamentos
-            // 
-            this.txtPesquisarLancamentos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPesquisarLancamentos.Location = new System.Drawing.Point(12, 93);
-            this.txtPesquisarLancamentos.Multiline = true;
-            this.txtPesquisarLancamentos.Name = "txtPesquisarLancamentos";
-            this.txtPesquisarLancamentos.Size = new System.Drawing.Size(375, 18);
-            this.txtPesquisarLancamentos.TabIndex = 328;
-            // 
-            // lblPesquisarLancamentos
-            // 
-            this.lblPesquisarLancamentos.AutoSize = true;
-            this.lblPesquisarLancamentos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPesquisarLancamentos.Location = new System.Drawing.Point(12, 80);
-            this.lblPesquisarLancamentos.Name = "lblPesquisarLancamentos";
-            this.lblPesquisarLancamentos.Size = new System.Drawing.Size(136, 12);
-            this.lblPesquisarLancamentos.TabIndex = 329;
-            this.lblPesquisarLancamentos.Text = "PESQUISAR LANÇAMENTOS:";
-            // 
-            // BtnEditarLanc
-            // 
-            this.BtnEditarLanc.BackColor = System.Drawing.SystemColors.Menu;
-            this.BtnEditarLanc.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnEditarLanc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnEditarLanc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnEditarLanc.Location = new System.Drawing.Point(736, 9);
-            this.BtnEditarLanc.Name = "BtnEditarLanc";
-            this.BtnEditarLanc.Size = new System.Drawing.Size(89, 25);
-            this.BtnEditarLanc.TabIndex = 330;
-            this.BtnEditarLanc.Text = "EDITAR";
-            this.BtnEditarLanc.UseVisualStyleBackColor = false;
-            this.BtnEditarLanc.Click += new System.EventHandler(this.BtnEditarLanc_Click);
-            // 
-            // tipoLancamentoDataGridViewTextBoxColumn
-            // 
-            this.tipoLancamentoDataGridViewTextBoxColumn.DataPropertyName = "TipoLancamento";
-            this.tipoLancamentoDataGridViewTextBoxColumn.HeaderText = "TipoLancamento";
-            this.tipoLancamentoDataGridViewTextBoxColumn.Name = "tipoLancamentoDataGridViewTextBoxColumn";
-            // 
-            // idLancamentoDataGridViewTextBoxColumn
-            // 
-            this.idLancamentoDataGridViewTextBoxColumn.DataPropertyName = "IdLancamento";
-            this.idLancamentoDataGridViewTextBoxColumn.HeaderText = "IdLancamento";
-            this.idLancamentoDataGridViewTextBoxColumn.Name = "idLancamentoDataGridViewTextBoxColumn";
-            // 
-            // idPessoaDataGridViewTextBoxColumn
-            // 
-            this.idPessoaDataGridViewTextBoxColumn.DataPropertyName = "IdPessoa";
-            this.idPessoaDataGridViewTextBoxColumn.HeaderText = "IdPessoa";
-            this.idPessoaDataGridViewTextBoxColumn.Name = "idPessoaDataGridViewTextBoxColumn";
-            // 
-            // idCdcDataGridViewTextBoxColumn
-            // 
-            this.idCdcDataGridViewTextBoxColumn.DataPropertyName = "IdCdc";
-            this.idCdcDataGridViewTextBoxColumn.HeaderText = "IdCdc";
-            this.idCdcDataGridViewTextBoxColumn.Name = "idCdcDataGridViewTextBoxColumn";
-            // 
-            // numDocumentoDataGridViewTextBoxColumn
-            // 
-            this.numDocumentoDataGridViewTextBoxColumn.DataPropertyName = "NumDocumento";
-            this.numDocumentoDataGridViewTextBoxColumn.HeaderText = "NumDocumento";
-            this.numDocumentoDataGridViewTextBoxColumn.Name = "numDocumentoDataGridViewTextBoxColumn";
-            // 
-            // dtLancamentoDataGridViewTextBoxColumn
-            // 
-            this.dtLancamentoDataGridViewTextBoxColumn.DataPropertyName = "DtLancamento";
-            this.dtLancamentoDataGridViewTextBoxColumn.HeaderText = "DtLancamento";
-            this.dtLancamentoDataGridViewTextBoxColumn.Name = "dtLancamentoDataGridViewTextBoxColumn";
-            // 
-            // dtEmissaoDataGridViewTextBoxColumn
-            // 
-            this.dtEmissaoDataGridViewTextBoxColumn.DataPropertyName = "DtEmissao";
-            this.dtEmissaoDataGridViewTextBoxColumn.HeaderText = "DtEmissao";
-            this.dtEmissaoDataGridViewTextBoxColumn.Name = "dtEmissaoDataGridViewTextBoxColumn";
-            // 
-            // dtVencimentoDataGridViewTextBoxColumn
-            // 
-            this.dtVencimentoDataGridViewTextBoxColumn.DataPropertyName = "DtVencimento";
-            this.dtVencimentoDataGridViewTextBoxColumn.HeaderText = "DtVencimento";
-            this.dtVencimentoDataGridViewTextBoxColumn.Name = "dtVencimentoDataGridViewTextBoxColumn";
-            // 
-            // cbSituacaoAbertaPaga
-            // 
-            this.cbSituacaoAbertaPaga.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbSituacaoAbertaPaga.FormattingEnabled = true;
-            this.cbSituacaoAbertaPaga.Items.AddRange(new object[] {
-            "EM ABERTO",
-            "PAGAS"});
-            this.cbSituacaoAbertaPaga.Location = new System.Drawing.Point(592, 164);
-            this.cbSituacaoAbertaPaga.Name = "cbSituacaoAbertaPaga";
-            this.cbSituacaoAbertaPaga.Size = new System.Drawing.Size(117, 20);
-            this.cbSituacaoAbertaPaga.TabIndex = 331;
-            // 
-            // lblSituacaoAbertaPaga
-            // 
-            this.lblSituacaoAbertaPaga.AutoSize = true;
-            this.lblSituacaoAbertaPaga.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSituacaoAbertaPaga.Location = new System.Drawing.Point(530, 168);
-            this.lblSituacaoAbertaPaga.Name = "lblSituacaoAbertaPaga";
-            this.lblSituacaoAbertaPaga.Size = new System.Drawing.Size(56, 12);
-            this.lblSituacaoAbertaPaga.TabIndex = 332;
-            this.lblSituacaoAbertaPaga.Text = "SITUAÇÃO:";
             // 
             // idLancamentoDataGridViewTextBoxColumn1
             // 
@@ -719,13 +612,119 @@
             this.SituacaoDataGridViewTextBoxColumn.Name = "SituacaoDataGridViewTextBoxColumn";
             this.SituacaoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // lancamentosBindingSource
+            // 
+            this.lancamentosBindingSource.DataSource = typeof(prcSystem.Entidades.Lancamentos);
+            // 
+            // txtPesquisarLancamentos
+            // 
+            this.txtPesquisarLancamentos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPesquisarLancamentos.Location = new System.Drawing.Point(12, 93);
+            this.txtPesquisarLancamentos.Multiline = true;
+            this.txtPesquisarLancamentos.Name = "txtPesquisarLancamentos";
+            this.txtPesquisarLancamentos.Size = new System.Drawing.Size(375, 18);
+            this.txtPesquisarLancamentos.TabIndex = 328;
+            // 
+            // lblPesquisarLancamentos
+            // 
+            this.lblPesquisarLancamentos.AutoSize = true;
+            this.lblPesquisarLancamentos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPesquisarLancamentos.Location = new System.Drawing.Point(12, 80);
+            this.lblPesquisarLancamentos.Name = "lblPesquisarLancamentos";
+            this.lblPesquisarLancamentos.Size = new System.Drawing.Size(136, 12);
+            this.lblPesquisarLancamentos.TabIndex = 329;
+            this.lblPesquisarLancamentos.Text = "PESQUISAR LANÇAMENTOS:";
+            // 
+            // BtnEditarLanc
+            // 
+            this.BtnEditarLanc.BackColor = System.Drawing.SystemColors.Menu;
+            this.BtnEditarLanc.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnEditarLanc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnEditarLanc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnEditarLanc.Location = new System.Drawing.Point(736, 9);
+            this.BtnEditarLanc.Name = "BtnEditarLanc";
+            this.BtnEditarLanc.Size = new System.Drawing.Size(89, 25);
+            this.BtnEditarLanc.TabIndex = 330;
+            this.BtnEditarLanc.Text = "EDITAR";
+            this.BtnEditarLanc.UseVisualStyleBackColor = false;
+            this.BtnEditarLanc.Click += new System.EventHandler(this.BtnEditarLanc_Click);
+            // 
+            // tipoLancamentoDataGridViewTextBoxColumn
+            // 
+            this.tipoLancamentoDataGridViewTextBoxColumn.DataPropertyName = "TipoLancamento";
+            this.tipoLancamentoDataGridViewTextBoxColumn.HeaderText = "TipoLancamento";
+            this.tipoLancamentoDataGridViewTextBoxColumn.Name = "tipoLancamentoDataGridViewTextBoxColumn";
+            // 
+            // idLancamentoDataGridViewTextBoxColumn
+            // 
+            this.idLancamentoDataGridViewTextBoxColumn.DataPropertyName = "IdLancamento";
+            this.idLancamentoDataGridViewTextBoxColumn.HeaderText = "IdLancamento";
+            this.idLancamentoDataGridViewTextBoxColumn.Name = "idLancamentoDataGridViewTextBoxColumn";
+            // 
+            // idPessoaDataGridViewTextBoxColumn
+            // 
+            this.idPessoaDataGridViewTextBoxColumn.DataPropertyName = "IdPessoa";
+            this.idPessoaDataGridViewTextBoxColumn.HeaderText = "IdPessoa";
+            this.idPessoaDataGridViewTextBoxColumn.Name = "idPessoaDataGridViewTextBoxColumn";
+            // 
+            // idCdcDataGridViewTextBoxColumn
+            // 
+            this.idCdcDataGridViewTextBoxColumn.DataPropertyName = "IdCdc";
+            this.idCdcDataGridViewTextBoxColumn.HeaderText = "IdCdc";
+            this.idCdcDataGridViewTextBoxColumn.Name = "idCdcDataGridViewTextBoxColumn";
+            // 
+            // numDocumentoDataGridViewTextBoxColumn
+            // 
+            this.numDocumentoDataGridViewTextBoxColumn.DataPropertyName = "NumDocumento";
+            this.numDocumentoDataGridViewTextBoxColumn.HeaderText = "NumDocumento";
+            this.numDocumentoDataGridViewTextBoxColumn.Name = "numDocumentoDataGridViewTextBoxColumn";
+            // 
+            // dtLancamentoDataGridViewTextBoxColumn
+            // 
+            this.dtLancamentoDataGridViewTextBoxColumn.DataPropertyName = "DtLancamento";
+            this.dtLancamentoDataGridViewTextBoxColumn.HeaderText = "DtLancamento";
+            this.dtLancamentoDataGridViewTextBoxColumn.Name = "dtLancamentoDataGridViewTextBoxColumn";
+            // 
+            // dtEmissaoDataGridViewTextBoxColumn
+            // 
+            this.dtEmissaoDataGridViewTextBoxColumn.DataPropertyName = "DtEmissao";
+            this.dtEmissaoDataGridViewTextBoxColumn.HeaderText = "DtEmissao";
+            this.dtEmissaoDataGridViewTextBoxColumn.Name = "dtEmissaoDataGridViewTextBoxColumn";
+            // 
+            // dtVencimentoDataGridViewTextBoxColumn
+            // 
+            this.dtVencimentoDataGridViewTextBoxColumn.DataPropertyName = "DtVencimento";
+            this.dtVencimentoDataGridViewTextBoxColumn.HeaderText = "DtVencimento";
+            this.dtVencimentoDataGridViewTextBoxColumn.Name = "dtVencimentoDataGridViewTextBoxColumn";
+            // 
+            // lblSituacaoAbertaPaga
+            // 
+            this.lblSituacaoAbertaPaga.AutoSize = true;
+            this.lblSituacaoAbertaPaga.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSituacaoAbertaPaga.Location = new System.Drawing.Point(530, 168);
+            this.lblSituacaoAbertaPaga.Name = "lblSituacaoAbertaPaga";
+            this.lblSituacaoAbertaPaga.Size = new System.Drawing.Size(56, 12);
+            this.lblSituacaoAbertaPaga.TabIndex = 332;
+            this.lblSituacaoAbertaPaga.Text = "SITUAÇÃO:";
+            // 
+            // cbSituacaoAbertaPaga
+            // 
+            this.cbSituacaoAbertaPaga.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbSituacaoAbertaPaga.FormattingEnabled = true;
+            this.cbSituacaoAbertaPaga.Items.AddRange(new object[] {
+            "EM ABERTO"});
+            this.cbSituacaoAbertaPaga.Location = new System.Drawing.Point(592, 164);
+            this.cbSituacaoAbertaPaga.Name = "cbSituacaoAbertaPaga";
+            this.cbSituacaoAbertaPaga.Size = new System.Drawing.Size(117, 20);
+            this.cbSituacaoAbertaPaga.TabIndex = 333;
+            // 
             // FormCadLancEntradasSaidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
-            this.Controls.Add(this.lblSituacaoAbertaPaga);
             this.Controls.Add(this.cbSituacaoAbertaPaga);
+            this.Controls.Add(this.lblSituacaoAbertaPaga);
             this.Controls.Add(this.BtnEditarLanc);
             this.Controls.Add(this.lblPesquisarLancamentos);
             this.Controls.Add(this.txtPesquisarLancamentos);
@@ -838,7 +837,6 @@
         private DataGridViewTextBoxColumn dtVencimentoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn razaoNomeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn descricaoCdcDataGridViewTextBoxColumn;
-        private ComboBox cbSituacaoAbertaPaga;
         private Label lblSituacaoAbertaPaga;
         private BindingSource lancamentosBindingSource;
         private DataGridViewTextBoxColumn idLancamentoDataGridViewTextBoxColumn1;
@@ -855,5 +853,6 @@
         private DataGridViewTextBoxColumn valorTotalDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn SituacaoDataGridViewTextBoxColumn;
+        private ComboBox cbSituacaoAbertaPaga;
     }
 }
