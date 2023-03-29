@@ -20,6 +20,7 @@ namespace prcSystem.View
         {
             InitializeComponent();
             Listar();
+            DesabilitarTelaFormPagamento();
         }
 
         /// <summary>
@@ -175,23 +176,46 @@ namespace prcSystem.View
             txtNumDocumento.Text = "";
         }
 
-        private void dgPagamentos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        /// <summary>
+        /// metodo de verificar se os campos de tipo de lancamento é ENTRADA ou SAIDA
+        /// </summary>
+        public void RbDgExibirLancamentos()
         {
-            /*txtIdLancamento.Text = dgPagamentos.CurrentRow.Cells[1].Value.ToString();
-            txtCodCliForn.Text = dgPagamentos.CurrentRow.Cells[2].Value.ToString();
-            txtRazaoNome.Text = dgPagamentos.CurrentRow.Cells[3].Value.ToString();
-            txtIdCdc.Text = dgPagamentos.CurrentRow.Cells[4].Value.ToString();
-            txtDescricaoCdc.Text = dgPagamentos.CurrentRow.Cells[5].Value.ToString();
-            txtNumDocumento.Text = dgPagamentos.CurrentRow.Cells[6].Value.ToString();
-            dtLancamento.Text = dgPagamentos.CurrentRow.Cells[7].Value.ToString();
-            dtEmissao.Text = dgPagamentos.CurrentRow.Cells[8].Value.ToString();
-            dtVencimento.Text = dgPagamentos.CurrentRow.Cells[9].Value.ToString();
-            dtPagamento.Text = dgPagamentos.CurrentRow.Cells[10].Value.ToString();
-            txtValorTotal.Text = dgPagamentos.CurrentRow.Cells[11].Value.ToString();
-            txtComentarios.Text = dgPagamentos.CurrentRow.Cells[12].Value.ToString();
-            dgPagamentos.Visible = false;
+            if (dgPagamentos.CurrentRow.Cells[0].Value.ToString() == "ENTRADA")
+            {
+                rbEntrada.Checked = true;
+            }
+            else if (dgPagamentos.CurrentRow.Cells[0].Value.ToString() == "SAIDA")
+            {
+                rbSaida.Checked = true;
+            }
+        }
 
-            AjustarDataGridDiminuir();*/
+
+        private void dgPagamentos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            RbDgExibirLancamentos();
+
+            txtIdLancamento.Text = dgPagamentos.CurrentRow.Cells[0].Value.ToString();
+            cbSituacaoAbertaPaga.SelectedItem = dgPagamentos.CurrentRow.Cells[1].Value.ToString();
+            txtCodCliFornPgto.Text = dgPagamentos.CurrentRow.Cells[3].Value.ToString();
+            txtRazaoNomeDescricao.Text = dgPagamentos.CurrentRow.Cells[4].Value.ToString();
+            txtIdCdc.Text = dgPagamentos.CurrentRow.Cells[6].Value.ToString();
+            txtDescricaoCdc.Text = dgPagamentos.CurrentRow.Cells[7].Value.ToString();
+            txtNumDoc.Text = dgPagamentos.CurrentRow.Cells[8].Value.ToString();
+            dtLancamento.Text = dgPagamentos.CurrentRow.Cells[9].Value.ToString();
+            dtEmissao.Text = dgPagamentos.CurrentRow.Cells[10].Value.ToString();
+            dtVencimento.Text = dgPagamentos.CurrentRow.Cells[11].Value.ToString();
+            dtPagamento.Text = dgPagamentos.CurrentRow.Cells[12].Value.ToString();
+            txtValorTotal.Text = dgPagamentos.CurrentRow.Cells[1/3].Value.ToString();
+            txtComentarios.Text = dgPagamentos.CurrentRow.Cells[14].Value.ToString();
+
+            dgPagamentos.Visible = true;
+            AjustarTelaFormPagamento();
+            HabilitarTelaFormPagamento();
+            DesabilitarTelaFormPagamentosPesquisas();
+
+
         }
 
         //------------- INICIO: CAMPO DE PESQUISAR TEXTO ----------------------------------------------------
@@ -250,5 +274,243 @@ namespace prcSystem.View
             Limpar();
             Listar();
         }
+
+        private void HabilitarTelaFormPagamentosPesquisas()
+        {
+            lblPesquisarPor.Visible = true;
+            lblTipo.Visible = true;
+            lblSituacao.Visible = true;
+            btnEntrada.Visible = true;
+            btnSaida.Visible = true;
+            btnTodos.Visible = true;
+            btnAberto.Visible = true;
+            btnPagas.Visible = true;
+
+            txtlinha01.Visible = true;
+            txtlinha02.Visible = true;
+            txtlinha03.Visible = true;
+            txtlinha04.Visible = true;
+            txtlinha05.Visible = true;
+
+            lblDtLancPesq.Visible = true;
+            lblDe01.Visible = true;
+            DtDeLanc.Visible = true;
+            lblAte01.Visible = true;
+            DtAteLanc.Visible = true;
+
+            lblDtEmisPesq.Visible = true;
+            lblDe02.Visible = true;
+            DtDeEmis.Visible = true;
+            lblAte02.Visible = true;
+            DtAteEmis.Visible = true;
+
+            lblDtVencPesq.Visible = true;
+            lblDe03.Visible = true;
+            DtDeVenc.Visible = true;
+            lblAte03.Visible = true;
+            DtAteVenc.Visible = true;
+
+            lblDtPgtoPesq.Visible = true;
+            lblDe04.Visible = true;
+            DtDePgto.Visible = true;
+            lblAte04.Visible = true;
+            DtAtePgto.Visible = true;
+
+            lblNumDocumento.Visible = true;
+            lblIdCdc.Visible = true;
+            lblCnpjCpf.Visible = true;
+            lblRazaoNome.Visible = true;
+            txtNumDocumento.Visible = true;
+            lblCodCliForn.Visible = true;
+            txtCodCliForn.Visible = true;
+        }
+
+        private void DesabilitarTelaFormPagamentosPesquisas()
+        {
+            lblPesquisarPor.Visible = false;
+            lblTipo.Visible = false;
+            lblSituacao.Visible = false;
+            btnEntrada.Visible = false;
+            btnSaida.Visible = false;
+            btnTodos.Visible = false;
+            btnAberto.Visible = false;  
+            btnPagas.Visible = false;
+
+            txtlinha01.Visible = false;
+            txtlinha02.Visible = false;
+            txtlinha03.Visible = false;
+            txtlinha04.Visible = false;
+            txtlinha05.Visible = false;
+
+            lblDtLancPesq.Visible = false;
+            lblDe01.Visible = false;
+            DtDeLanc.Visible = false;
+            lblAte01.Visible = false;
+            DtAteLanc.Visible = false;
+
+            lblDtEmisPesq.Visible = false;
+            lblDe02.Visible = false;
+            DtDeEmis.Visible = false;
+            lblAte02.Visible = false;
+            DtAteEmis.Visible = false;
+
+            lblDtVencPesq.Visible = false;
+            lblDe03.Visible = false;
+            DtDeVenc.Visible = false;
+            lblAte03.Visible = false;
+            DtAteVenc.Visible = false;
+
+            lblDtPgtoPesq.Visible = false;
+            lblDe04.Visible = false;
+            DtDePgto.Visible = false;
+            lblAte04.Visible = false;
+            DtAtePgto.Visible = false;
+
+            lblNumDocumento.Visible = false;
+            lblIdCdc.Visible = false;
+            lblCnpjCpf.Visible = false;
+            lblRazaoNome.Visible = false;
+            txtNumDocumento.Visible = false;
+            lblCodCliForn.Visible = false;
+            txtCodCliForn.Visible = false;
+        }
+
+        /// <summary>
+        /// metodo de aumentar tamanho datagrid e desabilitar os formularios
+        /// </summary>
+        public void AjustarDataGridAumentar()
+        {
+            dgPagamentos.Visible = true;
+            dgPagamentos.Enabled = false;
+            dgPagamentos.Height = 250;
+            dgPagamentos.Location = new Point(12, 270);
+        }
+
+
+        private void AjustarTelaFormPagamento()
+        {
+            AjustarDataGridAumentar();
+
+            lblTipoLancPgto.Location = new Point(12, 65);
+            lblIdLancPgto.Location = new Point(414, 65);
+            lblLancamentoPgto.Location = new Point(747, 65);
+            lblCodCliFornPgto.Location = new Point(45, 114);
+            lblNumDocPgto.Location = new Point(487, 114);
+            lblValorTotalPgto.Location = new Point(592, 114);
+            lblDtEmisPgto.Location = new Point(715, 114);
+            lblIdCdcCodPgto.Location = new Point(46, 151);
+            lblSituacaoAbertaPagaPgto.Location = new Point(530, 166);
+            lblDtVencPgto.Location = new Point(716, 151);
+            lblComentariosPgto.Location = new Point(46, 191);
+            lblDtProgramacaoPgto.Location = new Point(716, 190);
+
+            rbEntrada.Location = new Point(184, 64);
+            rbSaida.Location = new Point(272, 64);
+
+            txtCodCliFornPgto.Location = new Point(45, 129);
+            txtRazaoNomeDescricao.Location = new Point(106, 129);
+            txtNumDoc.Location = new Point(487, 129);
+            txtValorTotal.Location = new Point(592, 129);
+            txtIdCdc.Location = new Point(46, 166);
+            txtDescricaoCdc.Location = new Point(107, 166);
+            txtComentarios.Location = new Point(46, 205);
+            txtIdLancamento.Location = new Point(414, 80);
+
+            dtLancamento.Location = new Point(795, 60);                                                    
+            dtEmissao.Location = new Point(715, 129);
+            dtVencimento.Location = new Point(716, 166);
+            dtPagamento.Location = new Point(716, 205);
+
+            cbSituacaoAbertaPaga.Location = new Point(592, 166);
+
+        }
+
+        private void DesabilitarTelaFormPagamento()
+        {
+            lblTipoLancPgto.Visible = false;
+            lblIdLancPgto.Visible = false;
+            lblLancamentoPgto.Visible = false;
+            lblCodCliFornPgto.Visible = false;
+            lblNumDocPgto.Visible = false;
+            lblValorTotalPgto.Visible = false;
+            lblDtEmisPgto.Visible = false;
+            lblIdCdcCodPgto.Visible = false;
+            lblSituacaoAbertaPagaPgto.Visible = false;
+            lblDtVencPgto.Visible = false;
+            lblComentariosPgto.Visible = false;
+            lblDtProgramacaoPgto.Visible = false;
+
+            rbEntrada.Visible = false;
+            rbSaida.Visible = false;
+
+            txtIdLancamento.Visible = false;
+            txtCodCliFornPgto.Visible = false;
+            txtRazaoNomeDescricao.Visible = false;
+            txtNumDoc.Visible = false;
+            txtValorTotal.Visible = false;
+            txtIdCdc.Visible = false;
+            txtDescricaoCdc.Visible = false;
+            txtComentarios.Visible = false;
+
+            dtLancamento.Visible = false;
+            dtEmissao.Visible = false;
+            dtVencimento.Visible = false;
+            dtPagamento.Visible = false;
+
+            cbSituacaoAbertaPaga.Visible = false;
+
+            txtIdLancamento.Enabled = false;
+            txtCodCliFornPgto.Enabled = false;
+            txtRazaoNomeDescricao.Enabled = false;
+            txtNumDoc.Enabled = false;
+            txtValorTotal.Enabled = false;
+            txtIdCdc.Enabled = false;
+            txtDescricaoCdc.Enabled = false;
+            txtComentarios.Enabled = false;
+
+            dtLancamento.Enabled = false;
+            dtEmissao.Enabled = false;
+            dtVencimento.Enabled = false;
+            dtPagamento.Enabled = true;
+
+            cbSituacaoAbertaPaga.Enabled = true;
+        }
+
+        private void HabilitarTelaFormPagamento()
+        {
+            lblTipoLancPgto.Visible = true;
+            lblIdLancPgto.Visible = true;
+            lblLancamentoPgto.Visible = true;
+            lblCodCliFornPgto.Visible = true;
+            lblNumDocPgto.Visible = true;
+            lblValorTotalPgto.Visible = true;
+            lblDtEmisPgto.Visible = true;
+            lblIdCdcCodPgto.Visible = true;
+            lblSituacaoAbertaPagaPgto.Visible = true;
+            lblDtVencPgto.Visible = true;
+            lblComentariosPgto.Visible = true;
+            lblDtProgramacaoPgto.Visible = true;
+
+            rbEntrada.Visible = true;
+            rbSaida.Visible = true;
+
+            txtIdLancamento.Visible = true;
+            txtCodCliFornPgto.Visible = true;
+            txtRazaoNomeDescricao.Visible = true;
+            txtNumDoc.Visible = true;
+            txtValorTotal.Visible = true;
+            txtIdCdc.Visible = true;
+            txtDescricaoCdc.Visible = true;
+            txtComentarios.Visible = true;
+
+            dtLancamento.Visible = true;
+            dtEmissao.Visible = true;
+            dtVencimento.Visible = true;
+            dtPagamento.Visible = true;
+
+            cbSituacaoAbertaPaga.Visible = true;
+
+        }
+
     }
 }

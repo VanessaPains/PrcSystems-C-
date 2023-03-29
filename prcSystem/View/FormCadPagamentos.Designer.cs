@@ -51,48 +51,76 @@
             this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lancamentosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lancamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label9 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.lblPesquisarPor = new System.Windows.Forms.Label();
+            this.lblSituacao = new System.Windows.Forms.Label();
             this.btnEntrada = new System.Windows.Forms.Button();
             this.btnSaida = new System.Windows.Forms.Button();
             this.btnTodos = new System.Windows.Forms.Button();
             this.btnAberto = new System.Windows.Forms.Button();
             this.btnPagas = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.DtCadastro = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblDtLancPesq = new System.Windows.Forms.Label();
+            this.DtDeLanc = new System.Windows.Forms.DateTimePicker();
+            this.DtAteLanc = new System.Windows.Forms.DateTimePicker();
+            this.lblDe01 = new System.Windows.Forms.Label();
+            this.lblAte01 = new System.Windows.Forms.Label();
+            this.lblAte02 = new System.Windows.Forms.Label();
+            this.lblDe02 = new System.Windows.Forms.Label();
+            this.DtAteEmis = new System.Windows.Forms.DateTimePicker();
+            this.DtDeEmis = new System.Windows.Forms.DateTimePicker();
+            this.lblDtEmisPesq = new System.Windows.Forms.Label();
+            this.lblAte03 = new System.Windows.Forms.Label();
+            this.lblDe03 = new System.Windows.Forms.Label();
+            this.DtAteVenc = new System.Windows.Forms.DateTimePicker();
+            this.DtDeVenc = new System.Windows.Forms.DateTimePicker();
+            this.lblDtVencPesq = new System.Windows.Forms.Label();
             this.txtNumDocumento = new System.Windows.Forms.TextBox();
             this.lblNumDocumento = new System.Windows.Forms.Label();
             this.lblIdCdc = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.lblAte04 = new System.Windows.Forms.Label();
+            this.lblDe04 = new System.Windows.Forms.Label();
+            this.DtAtePgto = new System.Windows.Forms.DateTimePicker();
+            this.DtDePgto = new System.Windows.Forms.DateTimePicker();
+            this.lblDtPgtoPesq = new System.Windows.Forms.Label();
+            this.txtlinha05 = new System.Windows.Forms.TextBox();
+            this.txtlinha03 = new System.Windows.Forms.TextBox();
+            this.txtlinha04 = new System.Windows.Forms.TextBox();
+            this.txtlinha02 = new System.Windows.Forms.TextBox();
+            this.txtlinha01 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.txtCodCliForn = new System.Windows.Forms.TextBox();
             this.lblCodCliForn = new System.Windows.Forms.Label();
             this.lblRazaoNome = new System.Windows.Forms.Label();
             this.lblCnpjCpf = new System.Windows.Forms.Label();
+            this.cbSituacaoAbertaPaga = new System.Windows.Forms.ComboBox();
+            this.lblSituacaoAbertaPagaPgto = new System.Windows.Forms.Label();
+            this.txtIdCdc = new System.Windows.Forms.TextBox();
+            this.rbEntrada = new System.Windows.Forms.RadioButton();
+            this.rbSaida = new System.Windows.Forms.RadioButton();
+            this.lblIdLancPgto = new System.Windows.Forms.Label();
+            this.txtIdLancamento = new System.Windows.Forms.TextBox();
+            this.dtPagamento = new System.Windows.Forms.DateTimePicker();
+            this.lblDtProgramacaoPgto = new System.Windows.Forms.Label();
+            this.lblValorTotalPgto = new System.Windows.Forms.Label();
+            this.txtValorTotal = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblTipoLancPgto = new System.Windows.Forms.Label();
+            this.dtEmissao = new System.Windows.Forms.DateTimePicker();
+            this.dtVencimento = new System.Windows.Forms.DateTimePicker();
+            this.dtLancamento = new System.Windows.Forms.DateTimePicker();
+            this.lblLancamentoPgto = new System.Windows.Forms.Label();
+            this.txtDescricaoCdc = new System.Windows.Forms.TextBox();
+            this.lblDtVencPgto = new System.Windows.Forms.Label();
+            this.txtComentarios = new System.Windows.Forms.TextBox();
+            this.lblComentariosPgto = new System.Windows.Forms.Label();
+            this.txtCodCliFornPgto = new System.Windows.Forms.TextBox();
+            this.lblCodCliFornPgto = new System.Windows.Forms.Label();
+            this.lblIdCdcCodPgto = new System.Windows.Forms.Label();
+            this.txtNumDoc = new System.Windows.Forms.TextBox();
+            this.lblNumDocPgto = new System.Windows.Forms.Label();
+            this.txtRazaoNomeDescricao = new System.Windows.Forms.TextBox();
+            this.lblDtEmisPgto = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPagamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource1)).BeginInit();
@@ -174,9 +202,10 @@
             this.dgPagamentos.Name = "dgPagamentos";
             this.dgPagamentos.ReadOnly = true;
             this.dgPagamentos.RowTemplate.Height = 25;
+            this.dgPagamentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgPagamentos.Size = new System.Drawing.Size(912, 308);
             this.dgPagamentos.TabIndex = 132;
-            this.dgPagamentos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPagamentos_CellContentClick);
+            this.dgPagamentos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPagamentos_CellClick);
             // 
             // idLancamentoDataGridViewTextBoxColumn
             // 
@@ -291,38 +320,38 @@
             // 
             this.lancamentosBindingSource.DataSource = typeof(prcSystem.Entidades.Lancamentos);
             // 
-            // label9
+            // lblTipo
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(132, 78);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 12);
-            this.label9.TabIndex = 136;
-            this.label9.Text = "TIPO:";
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTipo.Location = new System.Drawing.Point(132, 78);
+            this.lblTipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(30, 12);
+            this.lblTipo.TabIndex = 136;
+            this.lblTipo.Text = "TIPO:";
             // 
-            // label2
+            // lblPesquisarPor
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(16, 78);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 12);
-            this.label2.TabIndex = 139;
-            this.label2.Text = "PESQUISAR POR:";
+            this.lblPesquisarPor.AutoSize = true;
+            this.lblPesquisarPor.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPesquisarPor.Location = new System.Drawing.Point(16, 78);
+            this.lblPesquisarPor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPesquisarPor.Name = "lblPesquisarPor";
+            this.lblPesquisarPor.Size = new System.Drawing.Size(83, 12);
+            this.lblPesquisarPor.TabIndex = 139;
+            this.lblPesquisarPor.Text = "PESQUISAR POR:";
             // 
-            // label4
+            // lblSituacao
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(106, 105);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 12);
-            this.label4.TabIndex = 140;
-            this.label4.Text = "SITUAÇÃO:";
+            this.lblSituacao.AutoSize = true;
+            this.lblSituacao.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSituacao.Location = new System.Drawing.Point(106, 105);
+            this.lblSituacao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSituacao.Name = "lblSituacao";
+            this.lblSituacao.Size = new System.Drawing.Size(56, 12);
+            this.lblSituacao.TabIndex = 140;
+            this.lblSituacao.Text = "SITUAÇÃO:";
             // 
             // btnEntrada
             // 
@@ -404,176 +433,176 @@
             this.btnPagas.UseVisualStyleBackColor = false;
             this.btnPagas.Click += new System.EventHandler(this.btnPagas_Click);
             // 
-            // label1
+            // lblDtLancPesq
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(461, 70);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
-            this.label1.TabIndex = 146;
-            this.label1.Text = "DATA LANÇ.:";
+            this.lblDtLancPesq.AutoSize = true;
+            this.lblDtLancPesq.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDtLancPesq.Location = new System.Drawing.Point(461, 70);
+            this.lblDtLancPesq.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDtLancPesq.Name = "lblDtLancPesq";
+            this.lblDtLancPesq.Size = new System.Drawing.Size(76, 13);
+            this.lblDtLancPesq.TabIndex = 146;
+            this.lblDtLancPesq.Text = "DATA LANÇ.:";
             // 
-            // DtCadastro
+            // DtDeLanc
             // 
-            this.DtCadastro.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DtCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DtCadastro.Location = new System.Drawing.Point(445, 86);
-            this.DtCadastro.Margin = new System.Windows.Forms.Padding(2);
-            this.DtCadastro.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.DtCadastro.Name = "DtCadastro";
-            this.DtCadastro.Size = new System.Drawing.Size(88, 18);
-            this.DtCadastro.TabIndex = 261;
-            this.DtCadastro.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            this.DtDeLanc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DtDeLanc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtDeLanc.Location = new System.Drawing.Point(445, 86);
+            this.DtDeLanc.Margin = new System.Windows.Forms.Padding(2);
+            this.DtDeLanc.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.DtDeLanc.Name = "DtDeLanc";
+            this.DtDeLanc.Size = new System.Drawing.Size(88, 18);
+            this.DtDeLanc.TabIndex = 261;
+            this.DtDeLanc.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
-            // dateTimePicker1
+            // DtAteLanc
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(445, 107);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(88, 18);
-            this.dateTimePicker1.TabIndex = 262;
-            this.dateTimePicker1.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            this.DtAteLanc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DtAteLanc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtAteLanc.Location = new System.Drawing.Point(445, 107);
+            this.DtAteLanc.Margin = new System.Windows.Forms.Padding(2);
+            this.DtAteLanc.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.DtAteLanc.Name = "DtAteLanc";
+            this.DtAteLanc.Size = new System.Drawing.Size(88, 18);
+            this.DtAteLanc.TabIndex = 262;
+            this.DtAteLanc.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
-            // label5
+            // lblDe01
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(425, 88);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(18, 12);
-            this.label5.TabIndex = 263;
-            this.label5.Text = "De:";
+            this.lblDe01.AutoSize = true;
+            this.lblDe01.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDe01.Location = new System.Drawing.Point(425, 88);
+            this.lblDe01.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDe01.Name = "lblDe01";
+            this.lblDe01.Size = new System.Drawing.Size(18, 12);
+            this.lblDe01.TabIndex = 263;
+            this.lblDe01.Text = "De:";
             // 
-            // label6
+            // lblAte01
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(421, 109);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(22, 12);
-            this.label6.TabIndex = 264;
-            this.label6.Text = "Até:";
+            this.lblAte01.AutoSize = true;
+            this.lblAte01.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAte01.Location = new System.Drawing.Point(421, 109);
+            this.lblAte01.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAte01.Name = "lblAte01";
+            this.lblAte01.Size = new System.Drawing.Size(22, 12);
+            this.lblAte01.TabIndex = 264;
+            this.lblAte01.Text = "Até:";
             // 
-            // label7
+            // lblAte02
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(552, 109);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(22, 12);
-            this.label7.TabIndex = 269;
-            this.label7.Text = "Até:";
+            this.lblAte02.AutoSize = true;
+            this.lblAte02.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAte02.Location = new System.Drawing.Point(552, 109);
+            this.lblAte02.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAte02.Name = "lblAte02";
+            this.lblAte02.Size = new System.Drawing.Size(22, 12);
+            this.lblAte02.TabIndex = 269;
+            this.lblAte02.Text = "Até:";
             // 
-            // label8
+            // lblDe02
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(557, 88);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(18, 12);
-            this.label8.TabIndex = 268;
-            this.label8.Text = "De:";
+            this.lblDe02.AutoSize = true;
+            this.lblDe02.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDe02.Location = new System.Drawing.Point(557, 88);
+            this.lblDe02.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDe02.Name = "lblDe02";
+            this.lblDe02.Size = new System.Drawing.Size(18, 12);
+            this.lblDe02.TabIndex = 268;
+            this.lblDe02.Text = "De:";
             // 
-            // dateTimePicker2
+            // DtAteEmis
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(577, 107);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker2.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(88, 18);
-            this.dateTimePicker2.TabIndex = 267;
-            this.dateTimePicker2.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            this.DtAteEmis.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DtAteEmis.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtAteEmis.Location = new System.Drawing.Point(577, 107);
+            this.DtAteEmis.Margin = new System.Windows.Forms.Padding(2);
+            this.DtAteEmis.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.DtAteEmis.Name = "DtAteEmis";
+            this.DtAteEmis.Size = new System.Drawing.Size(88, 18);
+            this.DtAteEmis.TabIndex = 267;
+            this.DtAteEmis.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
-            // dateTimePicker3
+            // DtDeEmis
             // 
-            this.dateTimePicker3.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(577, 86);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker3.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(88, 18);
-            this.dateTimePicker3.TabIndex = 266;
-            this.dateTimePicker3.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            this.DtDeEmis.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DtDeEmis.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtDeEmis.Location = new System.Drawing.Point(577, 86);
+            this.DtDeEmis.Margin = new System.Windows.Forms.Padding(2);
+            this.DtDeEmis.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.DtDeEmis.Name = "DtDeEmis";
+            this.DtDeEmis.Size = new System.Drawing.Size(88, 18);
+            this.DtDeEmis.TabIndex = 266;
+            this.DtDeEmis.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
-            // label10
+            // lblDtEmisPesq
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(577, 70);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(93, 13);
-            this.label10.TabIndex = 265;
-            this.label10.Text = "DATA EMISSÃO:";
+            this.lblDtEmisPesq.AutoSize = true;
+            this.lblDtEmisPesq.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDtEmisPesq.Location = new System.Drawing.Point(577, 70);
+            this.lblDtEmisPesq.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDtEmisPesq.Name = "lblDtEmisPesq";
+            this.lblDtEmisPesq.Size = new System.Drawing.Size(93, 13);
+            this.lblDtEmisPesq.TabIndex = 265;
+            this.lblDtEmisPesq.Text = "DATA EMISSÃO:";
             // 
-            // label11
+            // lblAte03
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(682, 109);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(22, 12);
-            this.label11.TabIndex = 274;
-            this.label11.Text = "Até:";
+            this.lblAte03.AutoSize = true;
+            this.lblAte03.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAte03.Location = new System.Drawing.Point(682, 109);
+            this.lblAte03.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAte03.Name = "lblAte03";
+            this.lblAte03.Size = new System.Drawing.Size(22, 12);
+            this.lblAte03.TabIndex = 274;
+            this.lblAte03.Text = "Até:";
             // 
-            // label12
+            // lblDe03
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(686, 88);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(18, 12);
-            this.label12.TabIndex = 273;
-            this.label12.Text = "De:";
+            this.lblDe03.AutoSize = true;
+            this.lblDe03.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDe03.Location = new System.Drawing.Point(686, 88);
+            this.lblDe03.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDe03.Name = "lblDe03";
+            this.lblDe03.Size = new System.Drawing.Size(18, 12);
+            this.lblDe03.TabIndex = 273;
+            this.lblDe03.Text = "De:";
             // 
-            // dateTimePicker4
+            // DtAteVenc
             // 
-            this.dateTimePicker4.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker4.Location = new System.Drawing.Point(706, 107);
-            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker4.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(88, 18);
-            this.dateTimePicker4.TabIndex = 272;
-            this.dateTimePicker4.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            this.DtAteVenc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DtAteVenc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtAteVenc.Location = new System.Drawing.Point(706, 107);
+            this.DtAteVenc.Margin = new System.Windows.Forms.Padding(2);
+            this.DtAteVenc.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.DtAteVenc.Name = "DtAteVenc";
+            this.DtAteVenc.Size = new System.Drawing.Size(88, 18);
+            this.DtAteVenc.TabIndex = 272;
+            this.DtAteVenc.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
-            // dateTimePicker5
+            // DtDeVenc
             // 
-            this.dateTimePicker5.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker5.Location = new System.Drawing.Point(706, 86);
-            this.dateTimePicker5.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker5.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(88, 18);
-            this.dateTimePicker5.TabIndex = 271;
-            this.dateTimePicker5.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            this.DtDeVenc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DtDeVenc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtDeVenc.Location = new System.Drawing.Point(706, 86);
+            this.DtDeVenc.Margin = new System.Windows.Forms.Padding(2);
+            this.DtDeVenc.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.DtDeVenc.Name = "DtDeVenc";
+            this.DtDeVenc.Size = new System.Drawing.Size(88, 18);
+            this.DtDeVenc.TabIndex = 271;
+            this.DtDeVenc.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
-            // label13
+            // lblDtVencPesq
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(724, 70);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(75, 13);
-            this.label13.TabIndex = 270;
-            this.label13.Text = "DATA VENC.:";
+            this.lblDtVencPesq.AutoSize = true;
+            this.lblDtVencPesq.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDtVencPesq.Location = new System.Drawing.Point(724, 70);
+            this.lblDtVencPesq.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDtVencPesq.Name = "lblDtVencPesq";
+            this.lblDtVencPesq.Size = new System.Drawing.Size(75, 13);
+            this.lblDtVencPesq.TabIndex = 270;
+            this.lblDtVencPesq.Text = "DATA VENC.:";
             // 
             // txtNumDocumento
             // 
@@ -609,112 +638,112 @@
             this.lblIdCdc.TabIndex = 277;
             this.lblIdCdc.Text = "CDC:";
             // 
-            // label15
+            // lblAte04
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(810, 110);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(22, 12);
-            this.label15.TabIndex = 284;
-            this.label15.Text = "Até:";
+            this.lblAte04.AutoSize = true;
+            this.lblAte04.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAte04.Location = new System.Drawing.Point(810, 110);
+            this.lblAte04.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAte04.Name = "lblAte04";
+            this.lblAte04.Size = new System.Drawing.Size(22, 12);
+            this.lblAte04.TabIndex = 284;
+            this.lblAte04.Text = "Até:";
             // 
-            // label16
+            // lblDe04
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(814, 89);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(18, 12);
-            this.label16.TabIndex = 283;
-            this.label16.Text = "De:";
+            this.lblDe04.AutoSize = true;
+            this.lblDe04.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDe04.Location = new System.Drawing.Point(814, 89);
+            this.lblDe04.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDe04.Name = "lblDe04";
+            this.lblDe04.Size = new System.Drawing.Size(18, 12);
+            this.lblDe04.TabIndex = 283;
+            this.lblDe04.Text = "De:";
             // 
-            // dateTimePicker6
+            // DtAtePgto
             // 
-            this.dateTimePicker6.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker6.Location = new System.Drawing.Point(833, 108);
-            this.dateTimePicker6.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker6.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(88, 18);
-            this.dateTimePicker6.TabIndex = 282;
-            this.dateTimePicker6.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            this.DtAtePgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DtAtePgto.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtAtePgto.Location = new System.Drawing.Point(833, 108);
+            this.DtAtePgto.Margin = new System.Windows.Forms.Padding(2);
+            this.DtAtePgto.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.DtAtePgto.Name = "DtAtePgto";
+            this.DtAtePgto.Size = new System.Drawing.Size(88, 18);
+            this.DtAtePgto.TabIndex = 282;
+            this.DtAtePgto.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
-            // dateTimePicker7
+            // DtDePgto
             // 
-            this.dateTimePicker7.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker7.Location = new System.Drawing.Point(833, 87);
-            this.dateTimePicker7.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker7.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker7.Name = "dateTimePicker7";
-            this.dateTimePicker7.Size = new System.Drawing.Size(88, 18);
-            this.dateTimePicker7.TabIndex = 281;
-            this.dateTimePicker7.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            this.DtDePgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DtDePgto.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtDePgto.Location = new System.Drawing.Point(833, 87);
+            this.DtDePgto.Margin = new System.Windows.Forms.Padding(2);
+            this.DtDePgto.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.DtDePgto.Name = "DtDePgto";
+            this.DtDePgto.Size = new System.Drawing.Size(88, 18);
+            this.DtDePgto.TabIndex = 281;
+            this.DtDePgto.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
-            // label17
+            // lblDtPgtoPesq
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(849, 71);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(76, 13);
-            this.label17.TabIndex = 280;
-            this.label17.Text = "DATA PGTO.:";
+            this.lblDtPgtoPesq.AutoSize = true;
+            this.lblDtPgtoPesq.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDtPgtoPesq.Location = new System.Drawing.Point(849, 71);
+            this.lblDtPgtoPesq.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDtPgtoPesq.Name = "lblDtPgtoPesq";
+            this.lblDtPgtoPesq.Size = new System.Drawing.Size(76, 13);
+            this.lblDtPgtoPesq.TabIndex = 280;
+            this.lblDtPgtoPesq.Text = "DATA PGTO.:";
             // 
-            // textBox2
+            // txtlinha05
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox2.Location = new System.Drawing.Point(100, 97);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 1);
-            this.textBox2.TabIndex = 285;
+            this.txtlinha05.BackColor = System.Drawing.Color.DarkGray;
+            this.txtlinha05.Location = new System.Drawing.Point(100, 97);
+            this.txtlinha05.Margin = new System.Windows.Forms.Padding(2);
+            this.txtlinha05.Multiline = true;
+            this.txtlinha05.Name = "txtlinha05";
+            this.txtlinha05.Size = new System.Drawing.Size(300, 1);
+            this.txtlinha05.TabIndex = 285;
             // 
-            // textBox4
+            // txtlinha03
             // 
-            this.textBox4.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox4.Location = new System.Drawing.Point(100, 127);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(300, 1);
-            this.textBox4.TabIndex = 286;
+            this.txtlinha03.BackColor = System.Drawing.Color.DarkGray;
+            this.txtlinha03.Location = new System.Drawing.Point(100, 127);
+            this.txtlinha03.Margin = new System.Windows.Forms.Padding(2);
+            this.txtlinha03.Multiline = true;
+            this.txtlinha03.Name = "txtlinha03";
+            this.txtlinha03.Size = new System.Drawing.Size(300, 1);
+            this.txtlinha03.TabIndex = 286;
             // 
-            // textBox5
+            // txtlinha04
             // 
-            this.textBox5.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox5.Location = new System.Drawing.Point(100, 67);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(300, 1);
-            this.textBox5.TabIndex = 287;
+            this.txtlinha04.BackColor = System.Drawing.Color.DarkGray;
+            this.txtlinha04.Location = new System.Drawing.Point(100, 67);
+            this.txtlinha04.Margin = new System.Windows.Forms.Padding(2);
+            this.txtlinha04.Multiline = true;
+            this.txtlinha04.Name = "txtlinha04";
+            this.txtlinha04.Size = new System.Drawing.Size(300, 1);
+            this.txtlinha04.TabIndex = 287;
             // 
-            // textBox6
+            // txtlinha02
             // 
-            this.textBox6.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox6.Location = new System.Drawing.Point(399, 67);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(1, 61);
-            this.textBox6.TabIndex = 288;
+            this.txtlinha02.BackColor = System.Drawing.Color.DarkGray;
+            this.txtlinha02.Location = new System.Drawing.Point(399, 67);
+            this.txtlinha02.Margin = new System.Windows.Forms.Padding(2);
+            this.txtlinha02.Multiline = true;
+            this.txtlinha02.Name = "txtlinha02";
+            this.txtlinha02.Size = new System.Drawing.Size(1, 61);
+            this.txtlinha02.TabIndex = 288;
             // 
-            // textBox7
+            // txtlinha01
             // 
-            this.textBox7.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox7.Location = new System.Drawing.Point(100, 67);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(1, 61);
-            this.textBox7.TabIndex = 289;
+            this.txtlinha01.BackColor = System.Drawing.Color.DarkGray;
+            this.txtlinha01.Location = new System.Drawing.Point(100, 67);
+            this.txtlinha01.Margin = new System.Windows.Forms.Padding(2);
+            this.txtlinha01.Multiline = true;
+            this.txtlinha01.Name = "txtlinha01";
+            this.txtlinha01.Size = new System.Drawing.Size(1, 61);
+            this.txtlinha01.TabIndex = 289;
             // 
             // button5
             // 
@@ -789,53 +818,360 @@
             this.lblCnpjCpf.TabIndex = 298;
             this.lblCnpjCpf.Text = "CNPJ / CPF:";
             // 
+            // cbSituacaoAbertaPaga
+            // 
+            this.cbSituacaoAbertaPaga.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbSituacaoAbertaPaga.FormattingEnabled = true;
+            this.cbSituacaoAbertaPaga.Items.AddRange(new object[] {
+            "EM ABERTO"});
+            this.cbSituacaoAbertaPaga.Location = new System.Drawing.Point(595, 362);
+            this.cbSituacaoAbertaPaga.Name = "cbSituacaoAbertaPaga";
+            this.cbSituacaoAbertaPaga.Size = new System.Drawing.Size(117, 20);
+            this.cbSituacaoAbertaPaga.TabIndex = 361;
+            // 
+            // lblSituacaoAbertaPagaPgto
+            // 
+            this.lblSituacaoAbertaPagaPgto.AutoSize = true;
+            this.lblSituacaoAbertaPagaPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSituacaoAbertaPagaPgto.Location = new System.Drawing.Point(533, 366);
+            this.lblSituacaoAbertaPagaPgto.Name = "lblSituacaoAbertaPagaPgto";
+            this.lblSituacaoAbertaPagaPgto.Size = new System.Drawing.Size(56, 12);
+            this.lblSituacaoAbertaPagaPgto.TabIndex = 360;
+            this.lblSituacaoAbertaPagaPgto.Text = "SITUAÇÃO:";
+            // 
+            // txtIdCdc
+            // 
+            this.txtIdCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtIdCdc.Location = new System.Drawing.Point(49, 364);
+            this.txtIdCdc.Name = "txtIdCdc";
+            this.txtIdCdc.Size = new System.Drawing.Size(60, 18);
+            this.txtIdCdc.TabIndex = 359;
+            // 
+            // rbEntrada
+            // 
+            this.rbEntrada.AutoSize = true;
+            this.rbEntrada.Checked = true;
+            this.rbEntrada.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbEntrada.Location = new System.Drawing.Point(187, 262);
+            this.rbEntrada.Name = "rbEntrada";
+            this.rbEntrada.Size = new System.Drawing.Size(82, 19);
+            this.rbEntrada.TabIndex = 358;
+            this.rbEntrada.TabStop = true;
+            this.rbEntrada.Text = "ENTRADA";
+            this.rbEntrada.UseVisualStyleBackColor = true;
+            this.rbEntrada.Visible = false;
+            // 
+            // rbSaida
+            // 
+            this.rbSaida.AutoSize = true;
+            this.rbSaida.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbSaida.Location = new System.Drawing.Point(275, 262);
+            this.rbSaida.Name = "rbSaida";
+            this.rbSaida.Size = new System.Drawing.Size(62, 19);
+            this.rbSaida.TabIndex = 357;
+            this.rbSaida.Text = "SAIDA";
+            this.rbSaida.UseVisualStyleBackColor = true;
+            this.rbSaida.Visible = false;
+            // 
+            // lblIdLancPgto
+            // 
+            this.lblIdLancPgto.AutoSize = true;
+            this.lblIdLancPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIdLancPgto.Location = new System.Drawing.Point(417, 263);
+            this.lblIdLancPgto.Name = "lblIdLancPgto";
+            this.lblIdLancPgto.Size = new System.Drawing.Size(96, 12);
+            this.lblIdLancPgto.TabIndex = 356;
+            this.lblIdLancPgto.Text = "COD. LANÇAMENTO";
+            // 
+            // txtIdLancamento
+            // 
+            this.txtIdLancamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtIdLancamento.Location = new System.Drawing.Point(417, 278);
+            this.txtIdLancamento.Name = "txtIdLancamento";
+            this.txtIdLancamento.Size = new System.Drawing.Size(100, 18);
+            this.txtIdLancamento.TabIndex = 355;
+            // 
+            // dtPagamento
+            // 
+            this.dtPagamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtPagamento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtPagamento.Location = new System.Drawing.Point(719, 403);
+            this.dtPagamento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtPagamento.Name = "dtPagamento";
+            this.dtPagamento.Size = new System.Drawing.Size(127, 18);
+            this.dtPagamento.TabIndex = 354;
+            this.dtPagamento.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            // 
+            // lblDtProgramacaoPgto
+            // 
+            this.lblDtProgramacaoPgto.AutoSize = true;
+            this.lblDtProgramacaoPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDtProgramacaoPgto.Location = new System.Drawing.Point(719, 388);
+            this.lblDtProgramacaoPgto.Name = "lblDtProgramacaoPgto";
+            this.lblDtProgramacaoPgto.Size = new System.Drawing.Size(139, 12);
+            this.lblDtProgramacaoPgto.TabIndex = 353;
+            this.lblDtProgramacaoPgto.Text = "DT DE PROGRAMAÇÃO PGTO:";
+            // 
+            // lblValorTotalPgto
+            // 
+            this.lblValorTotalPgto.AutoSize = true;
+            this.lblValorTotalPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblValorTotalPgto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblValorTotalPgto.Location = new System.Drawing.Point(595, 312);
+            this.lblValorTotalPgto.Name = "lblValorTotalPgto";
+            this.lblValorTotalPgto.Size = new System.Drawing.Size(70, 12);
+            this.lblValorTotalPgto.TabIndex = 352;
+            this.lblValorTotalPgto.Text = "VALOR TOTAL";
+            // 
+            // txtValorTotal
+            // 
+            this.txtValorTotal.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtValorTotal.Location = new System.Drawing.Point(595, 327);
+            this.txtValorTotal.Name = "txtValorTotal";
+            this.txtValorTotal.Size = new System.Drawing.Size(117, 18);
+            this.txtValorTotal.TabIndex = 351;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox3.Location = new System.Drawing.Point(14, 433);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(910, 2);
+            this.textBox3.TabIndex = 350;
+            // 
+            // lblTipoLancPgto
+            // 
+            this.lblTipoLancPgto.AutoSize = true;
+            this.lblTipoLancPgto.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTipoLancPgto.Location = new System.Drawing.Point(15, 263);
+            this.lblTipoLancPgto.Name = "lblTipoLancPgto";
+            this.lblTipoLancPgto.Size = new System.Drawing.Size(166, 17);
+            this.lblTipoLancPgto.TabIndex = 349;
+            this.lblTipoLancPgto.Text = "TIPO LANÇAMENTO:";
+            // 
+            // dtEmissao
+            // 
+            this.dtEmissao.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtEmissao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtEmissao.Location = new System.Drawing.Point(718, 327);
+            this.dtEmissao.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtEmissao.Name = "dtEmissao";
+            this.dtEmissao.Size = new System.Drawing.Size(127, 18);
+            this.dtEmissao.TabIndex = 348;
+            this.dtEmissao.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            // 
+            // dtVencimento
+            // 
+            this.dtVencimento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtVencimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtVencimento.Location = new System.Drawing.Point(719, 364);
+            this.dtVencimento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtVencimento.Name = "dtVencimento";
+            this.dtVencimento.Size = new System.Drawing.Size(127, 18);
+            this.dtVencimento.TabIndex = 347;
+            this.dtVencimento.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            // 
+            // dtLancamento
+            // 
+            this.dtLancamento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtLancamento.Location = new System.Drawing.Point(798, 258);
+            this.dtLancamento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtLancamento.Name = "dtLancamento";
+            this.dtLancamento.Size = new System.Drawing.Size(127, 23);
+            this.dtLancamento.TabIndex = 346;
+            this.dtLancamento.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            // 
+            // lblLancamentoPgto
+            // 
+            this.lblLancamentoPgto.AutoSize = true;
+            this.lblLancamentoPgto.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblLancamentoPgto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblLancamentoPgto.Location = new System.Drawing.Point(750, 263);
+            this.lblLancamentoPgto.Name = "lblLancamentoPgto";
+            this.lblLancamentoPgto.Size = new System.Drawing.Size(44, 15);
+            this.lblLancamentoPgto.TabIndex = 345;
+            this.lblLancamentoPgto.Text = "DATA:";
+            // 
+            // txtDescricaoCdc
+            // 
+            this.txtDescricaoCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescricaoCdc.Location = new System.Drawing.Point(110, 364);
+            this.txtDescricaoCdc.Name = "txtDescricaoCdc";
+            this.txtDescricaoCdc.PlaceholderText = "Descrição";
+            this.txtDescricaoCdc.Size = new System.Drawing.Size(412, 18);
+            this.txtDescricaoCdc.TabIndex = 344;
+            // 
+            // lblDtVencPgto
+            // 
+            this.lblDtVencPgto.AutoSize = true;
+            this.lblDtVencPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDtVencPgto.Location = new System.Drawing.Point(719, 349);
+            this.lblDtVencPgto.Name = "lblDtVencPgto";
+            this.lblDtVencPgto.Size = new System.Drawing.Size(48, 12);
+            this.lblDtVencPgto.TabIndex = 343;
+            this.lblDtVencPgto.Text = "DT VENC:";
+            // 
+            // txtComentarios
+            // 
+            this.txtComentarios.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtComentarios.Location = new System.Drawing.Point(48, 403);
+            this.txtComentarios.Multiline = true;
+            this.txtComentarios.Name = "txtComentarios";
+            this.txtComentarios.Size = new System.Drawing.Size(664, 18);
+            this.txtComentarios.TabIndex = 341;
+            // 
+            // lblComentariosPgto
+            // 
+            this.lblComentariosPgto.AutoSize = true;
+            this.lblComentariosPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblComentariosPgto.Location = new System.Drawing.Point(48, 389);
+            this.lblComentariosPgto.Name = "lblComentariosPgto";
+            this.lblComentariosPgto.Size = new System.Drawing.Size(78, 12);
+            this.lblComentariosPgto.TabIndex = 340;
+            this.lblComentariosPgto.Text = "COMENTARIOS:";
+            // 
+            // txtCodCliFornPgto
+            // 
+            this.txtCodCliFornPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodCliFornPgto.Location = new System.Drawing.Point(48, 327);
+            this.txtCodCliFornPgto.Name = "txtCodCliFornPgto";
+            this.txtCodCliFornPgto.Size = new System.Drawing.Size(60, 18);
+            this.txtCodCliFornPgto.TabIndex = 339;
+            // 
+            // lblCodCliFornPgto
+            // 
+            this.lblCodCliFornPgto.AutoSize = true;
+            this.lblCodCliFornPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCodCliFornPgto.Location = new System.Drawing.Point(48, 312);
+            this.lblCodCliFornPgto.Name = "lblCodCliFornPgto";
+            this.lblCodCliFornPgto.Size = new System.Drawing.Size(58, 12);
+            this.lblCodCliFornPgto.TabIndex = 338;
+            this.lblCodCliFornPgto.Text = "CLI / FORN:";
+            // 
+            // lblIdCdcCodPgto
+            // 
+            this.lblIdCdcCodPgto.AutoSize = true;
+            this.lblIdCdcCodPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIdCdcCodPgto.Location = new System.Drawing.Point(49, 349);
+            this.lblIdCdcCodPgto.Name = "lblIdCdcCodPgto";
+            this.lblIdCdcCodPgto.Size = new System.Drawing.Size(28, 12);
+            this.lblIdCdcCodPgto.TabIndex = 337;
+            this.lblIdCdcCodPgto.Text = "CDC:";
+            // 
+            // txtNumDoc
+            // 
+            this.txtNumDoc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNumDoc.Location = new System.Drawing.Point(490, 327);
+            this.txtNumDoc.Name = "txtNumDoc";
+            this.txtNumDoc.Size = new System.Drawing.Size(99, 18);
+            this.txtNumDoc.TabIndex = 336;
+            // 
+            // lblNumDocPgto
+            // 
+            this.lblNumDocPgto.AutoSize = true;
+            this.lblNumDocPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNumDocPgto.Location = new System.Drawing.Point(490, 312);
+            this.lblNumDocPgto.Name = "lblNumDocPgto";
+            this.lblNumDocPgto.Size = new System.Drawing.Size(42, 12);
+            this.lblNumDocPgto.TabIndex = 335;
+            this.lblNumDocPgto.Text = "Nº. DOC:";
+            // 
+            // txtRazaoNomeDescricao
+            // 
+            this.txtRazaoNomeDescricao.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtRazaoNomeDescricao.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.txtRazaoNomeDescricao.Location = new System.Drawing.Point(109, 327);
+            this.txtRazaoNomeDescricao.Name = "txtRazaoNomeDescricao";
+            this.txtRazaoNomeDescricao.PlaceholderText = "Descrição";
+            this.txtRazaoNomeDescricao.Size = new System.Drawing.Size(375, 18);
+            this.txtRazaoNomeDescricao.TabIndex = 334;
+            // 
+            // lblDtEmisPgto
+            // 
+            this.lblDtEmisPgto.AutoSize = true;
+            this.lblDtEmisPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDtEmisPgto.Location = new System.Drawing.Point(718, 312);
+            this.lblDtEmisPgto.Name = "lblDtEmisPgto";
+            this.lblDtEmisPgto.Size = new System.Drawing.Size(63, 12);
+            this.lblDtEmisPgto.TabIndex = 362;
+            this.lblDtEmisPgto.Text = "DT EMISSÃO:";
+            // 
             // FormCadPagamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 561);
+            this.Controls.Add(this.lblDtEmisPgto);
+            this.Controls.Add(this.cbSituacaoAbertaPaga);
+            this.Controls.Add(this.lblSituacaoAbertaPagaPgto);
+            this.Controls.Add(this.txtIdCdc);
+            this.Controls.Add(this.rbEntrada);
+            this.Controls.Add(this.rbSaida);
+            this.Controls.Add(this.lblIdLancPgto);
+            this.Controls.Add(this.txtIdLancamento);
+            this.Controls.Add(this.dtPagamento);
+            this.Controls.Add(this.lblDtProgramacaoPgto);
+            this.Controls.Add(this.lblValorTotalPgto);
+            this.Controls.Add(this.txtValorTotal);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.lblTipoLancPgto);
+            this.Controls.Add(this.dtEmissao);
+            this.Controls.Add(this.dtVencimento);
+            this.Controls.Add(this.dtLancamento);
+            this.Controls.Add(this.lblLancamentoPgto);
+            this.Controls.Add(this.txtDescricaoCdc);
+            this.Controls.Add(this.lblDtVencPgto);
+            this.Controls.Add(this.txtComentarios);
+            this.Controls.Add(this.lblComentariosPgto);
+            this.Controls.Add(this.txtCodCliFornPgto);
+            this.Controls.Add(this.lblCodCliFornPgto);
+            this.Controls.Add(this.lblIdCdcCodPgto);
+            this.Controls.Add(this.txtNumDoc);
+            this.Controls.Add(this.lblNumDocPgto);
+            this.Controls.Add(this.txtRazaoNomeDescricao);
             this.Controls.Add(this.lblCnpjCpf);
             this.Controls.Add(this.lblRazaoNome);
             this.Controls.Add(this.txtCodCliForn);
             this.Controls.Add(this.lblCodCliForn);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.dateTimePicker6);
-            this.Controls.Add(this.dateTimePicker7);
-            this.Controls.Add(this.label17);
+            this.Controls.Add(this.txtlinha01);
+            this.Controls.Add(this.txtlinha02);
+            this.Controls.Add(this.txtlinha04);
+            this.Controls.Add(this.txtlinha03);
+            this.Controls.Add(this.txtlinha05);
+            this.Controls.Add(this.lblAte04);
+            this.Controls.Add(this.lblDe04);
+            this.Controls.Add(this.DtAtePgto);
+            this.Controls.Add(this.DtDePgto);
+            this.Controls.Add(this.lblDtPgtoPesq);
             this.Controls.Add(this.lblIdCdc);
             this.Controls.Add(this.txtNumDocumento);
             this.Controls.Add(this.lblNumDocumento);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.dateTimePicker4);
-            this.Controls.Add(this.dateTimePicker5);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.DtCadastro);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblAte03);
+            this.Controls.Add(this.lblDe03);
+            this.Controls.Add(this.DtAteVenc);
+            this.Controls.Add(this.DtDeVenc);
+            this.Controls.Add(this.lblDtVencPesq);
+            this.Controls.Add(this.lblAte02);
+            this.Controls.Add(this.lblDe02);
+            this.Controls.Add(this.DtAteEmis);
+            this.Controls.Add(this.DtDeEmis);
+            this.Controls.Add(this.lblDtEmisPesq);
+            this.Controls.Add(this.lblAte01);
+            this.Controls.Add(this.lblDe01);
+            this.Controls.Add(this.DtAteLanc);
+            this.Controls.Add(this.DtDeLanc);
+            this.Controls.Add(this.lblDtLancPesq);
             this.Controls.Add(this.btnPagas);
             this.Controls.Add(this.btnAberto);
             this.Controls.Add(this.btnTodos);
             this.Controls.Add(this.btnSaida);
             this.Controls.Add(this.btnEntrada);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lblSituacao);
+            this.Controls.Add(this.lblPesquisarPor);
+            this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.dgPagamentos);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LblFormCadCliForn);
@@ -861,42 +1197,42 @@
         private Label LblFormCadCliForn;
         private TextBox textBox1;
         private DataGridView dgPagamentos;
-        private Label label9;
-        private Label label2;
-        private Label label4;
+        private Label lblTipo;
+        private Label lblPesquisarPor;
+        private Label lblSituacao;
         private Button btnEntrada;
         private Button btnSaida;
         private Button btnTodos;
         private Button btnAberto;
         private Button btnPagas;
-        private Label label1;
-        private DateTimePicker DtCadastro;
-        private DateTimePicker dateTimePicker1;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private DateTimePicker dateTimePicker2;
-        private DateTimePicker dateTimePicker3;
-        private Label label10;
-        private Label label11;
-        private Label label12;
-        private DateTimePicker dateTimePicker4;
-        private DateTimePicker dateTimePicker5;
-        private Label label13;
+        private Label lblDtLancPesq;
+        private DateTimePicker DtDeLanc;
+        private DateTimePicker DtAteLanc;
+        private Label lblDe01;
+        private Label lblAte01;
+        private Label lblAte02;
+        private Label lblDe02;
+        private DateTimePicker DtAteEmis;
+        private DateTimePicker DtDeEmis;
+        private Label lblDtEmisPesq;
+        private Label lblAte03;
+        private Label lblDe03;
+        private DateTimePicker DtAteVenc;
+        private DateTimePicker DtDeVenc;
+        private Label lblDtVencPesq;
         private TextBox txtNumDocumento;
         private Label lblNumDocumento;
         private Label lblIdCdc;
-        private Label label15;
-        private Label label16;
-        private DateTimePicker dateTimePicker6;
-        private DateTimePicker dateTimePicker7;
-        private Label label17;
-        private TextBox textBox2;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
+        private Label lblAte04;
+        private Label lblDe04;
+        private DateTimePicker DtAtePgto;
+        private DateTimePicker DtDePgto;
+        private Label lblDtPgtoPesq;
+        private TextBox txtlinha05;
+        private TextBox txtlinha03;
+        private TextBox txtlinha04;
+        private TextBox txtlinha02;
+        private TextBox txtlinha01;
         private Button button5;
         private Button btnLimpar;
         private TextBox txtCodCliForn;
@@ -920,5 +1256,44 @@
         private DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
         private BindingSource lancamentosBindingSource1;
         private Label lblCnpjCpf;
+        private ComboBox cbSituacaoAbertaPaga;
+        private Label lblSituacaoAbertaPaga;
+        private TextBox txtIdCdc;
+        private RadioButton rbEntrada;
+        private RadioButton rbSaida;
+        private Label lblIdLancamento;
+        private TextBox txtIdLancamento;
+        private DateTimePicker dtPagamento;
+        private Label lblDtProgramacaoPgto;
+        private Label lblValorTotal;
+        private TextBox txtValorTotal;
+        private TextBox textBox3;
+        private Label lblTipoLancamento;
+        private DateTimePicker dtEmissao;
+        private DateTimePicker dtVencimento;
+        private DateTimePicker dtLancamento;
+        private Label lblLancamento;
+        private TextBox txtDescricaoCdc;
+        private Label lblDtVenc;
+        private TextBox txtComentarios;
+        private Label lblComentarios;
+        private TextBox txtCodCliFornPgto;
+        private Label lblCodCliForne;
+        private Label lblCodCdc;
+        private TextBox txtNumDoc;
+        private Label lblNumDoc;
+        private TextBox txtRazaoNomeDescricao;
+        private Label lblDtEmis;
+        private Label lblSituacaoAbertaPagaPgto;
+        private Label lblIdLancPgto;
+        private Label lblValorTotalPgto;
+        private Label lblTipoLancPgto;
+        private Label lblLancamentoPgto;
+        private Label lblDtVencPgto;
+        private Label lblComentariosPgto;
+        private Label lblCodCliFornPgto;
+        private Label lblIdCdcCodPgto;
+        private Label lblNumDocPgto;
+        private Label lblDtEmisPgto;
     }
 }
