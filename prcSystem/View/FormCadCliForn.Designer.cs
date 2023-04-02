@@ -321,9 +321,9 @@
             this.LblComplemento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.LblComplemento.Location = new System.Drawing.Point(281, 302);
             this.LblComplemento.Name = "LblComplemento";
-            this.LblComplemento.Size = new System.Drawing.Size(88, 12);
+            this.LblComplemento.Size = new System.Drawing.Size(83, 12);
             this.LblComplemento.TabIndex = 71;
-            this.LblComplemento.Text = "COMPLEMENTO: *";
+            this.LblComplemento.Text = "COMPLEMENTO: ";
             // 
             // LblBairro
             // 
@@ -376,9 +376,9 @@
             this.LblNum.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.LblNum.Location = new System.Drawing.Point(790, 284);
             this.LblNum.Name = "LblNum";
-            this.LblNum.Size = new System.Drawing.Size(32, 12);
+            this.LblNum.Size = new System.Drawing.Size(37, 12);
             this.LblNum.TabIndex = 76;
-            this.LblNum.Text = "NUM: ";
+            this.LblNum.Text = "NUM: *";
             // 
             // TxtIdPessoa
             // 
@@ -391,14 +391,17 @@
             // 
             // TxtRazaoNome
             // 
+            this.TxtRazaoNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtRazaoNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtRazaoNome.Location = new System.Drawing.Point(373, 192);
             this.TxtRazaoNome.Name = "TxtRazaoNome";
             this.TxtRazaoNome.Size = new System.Drawing.Size(536, 18);
             this.TxtRazaoNome.TabIndex = 3;
+            this.TxtRazaoNome.Leave += new System.EventHandler(this.FormataUpper);
             // 
             // TxtFantasia
             // 
+            this.TxtFantasia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtFantasia.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtFantasia.Location = new System.Drawing.Point(373, 212);
             this.TxtFantasia.Name = "TxtFantasia";
@@ -407,6 +410,7 @@
             // 
             // TxtEndereco
             // 
+            this.TxtEndereco.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtEndereco.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtEndereco.Location = new System.Drawing.Point(374, 280);
             this.TxtEndereco.Name = "TxtEndereco";
@@ -415,6 +419,7 @@
             // 
             // TxtComplemento
             // 
+            this.TxtComplemento.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtComplemento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtComplemento.Location = new System.Drawing.Point(374, 300);
             this.TxtComplemento.Name = "TxtComplemento";
@@ -423,6 +428,7 @@
             // 
             // TxtBairro
             // 
+            this.TxtBairro.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtBairro.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtBairro.Location = new System.Drawing.Point(374, 320);
             this.TxtBairro.Name = "TxtBairro";
@@ -431,6 +437,7 @@
             // 
             // TxtCidade
             // 
+            this.TxtCidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtCidade.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtCidade.Location = new System.Drawing.Point(605, 321);
             this.TxtCidade.Name = "TxtCidade";
@@ -458,6 +465,7 @@
             // 
             // TxtUf
             // 
+            this.TxtUf.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtUf.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtUf.Location = new System.Drawing.Point(871, 321);
             this.TxtUf.MaxLength = 2;
@@ -547,6 +555,7 @@
             // 
             // TxtSite
             // 
+            this.TxtSite.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtSite.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtSite.Location = new System.Drawing.Point(79, 287);
             this.TxtSite.Name = "TxtSite";
@@ -642,6 +651,7 @@
             // 
             // TxtEnderecoCob
             // 
+            this.TxtEnderecoCob.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtEnderecoCob.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtEnderecoCob.Location = new System.Drawing.Point(373, 368);
             this.TxtEnderecoCob.Name = "TxtEnderecoCob";
@@ -650,6 +660,7 @@
             // 
             // TxtComplementoCob
             // 
+            this.TxtComplementoCob.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtComplementoCob.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtComplementoCob.Location = new System.Drawing.Point(373, 388);
             this.TxtComplementoCob.Name = "TxtComplementoCob";
@@ -658,6 +669,7 @@
             // 
             // TxtBairroCob
             // 
+            this.TxtBairroCob.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtBairroCob.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtBairroCob.Location = new System.Drawing.Point(373, 408);
             this.TxtBairroCob.Name = "TxtBairroCob";
@@ -666,6 +678,7 @@
             // 
             // TxtCidadeCob
             // 
+            this.TxtCidadeCob.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtCidadeCob.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtCidadeCob.Location = new System.Drawing.Point(604, 408);
             this.TxtCidadeCob.Name = "TxtCidadeCob";
@@ -690,6 +703,7 @@
             // 
             // TxtUfCob
             // 
+            this.TxtUfCob.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtUfCob.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtUfCob.Location = new System.Drawing.Point(874, 409);
             this.TxtUfCob.Name = "TxtUfCob";
@@ -709,6 +723,7 @@
             // 
             // TxtCnpjCpf
             // 
+            this.TxtCnpjCpf.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtCnpjCpf.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtCnpjCpf.Location = new System.Drawing.Point(373, 152);
             this.TxtCnpjCpf.Name = "TxtCnpjCpf";
@@ -755,6 +770,7 @@
             // 
             // TxtObservacao
             // 
+            this.TxtObservacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtObservacao.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxtObservacao.Location = new System.Drawing.Point(122, 446);
             this.TxtObservacao.Multiline = true;
@@ -861,11 +877,11 @@
             this.btnPesquisarEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnPesquisarEditar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnPesquisarEditar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnPesquisarEditar.Location = new System.Drawing.Point(569, 9);
+            this.btnPesquisarEditar.Location = new System.Drawing.Point(489, 9);
             this.btnPesquisarEditar.Name = "btnPesquisarEditar";
-            this.btnPesquisarEditar.Size = new System.Drawing.Size(161, 25);
+            this.btnPesquisarEditar.Size = new System.Drawing.Size(241, 25);
             this.btnPesquisarEditar.TabIndex = 320;
-            this.btnPesquisarEditar.Text = "EDITAR CADASTRO";
+            this.btnPesquisarEditar.Text = "PESQUISAR PARA EDITAR CADASTROS";
             this.btnPesquisarEditar.UseVisualStyleBackColor = false;
             this.btnPesquisarEditar.Click += new System.EventHandler(this.btnPesquisarEditar_Click);
             // 
@@ -1140,6 +1156,7 @@
             // 
             // TxtPesquisarNomeRazaoCpfCnpj
             // 
+            this.TxtPesquisarNomeRazaoCpfCnpj.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.TxtPesquisarNomeRazaoCpfCnpj.Location = new System.Drawing.Point(138, 87);
             this.TxtPesquisarNomeRazaoCpfCnpj.Name = "TxtPesquisarNomeRazaoCpfCnpj";
             this.TxtPesquisarNomeRazaoCpfCnpj.PlaceholderText = "RAZÃO / NOME ";

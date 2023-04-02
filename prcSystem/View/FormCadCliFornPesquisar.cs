@@ -71,10 +71,12 @@ namespace prcSystem.View
                 DgExibirCliForn.Columns[26].HeaderText = "Observação";
                 DgExibirCliForn.Columns[27].HeaderText = "DT Cad.";
 
+                DgExibirCliForn.Columns[0].Width = 60;//determinar a largura das colunas
+                DgExibirCliForn.Columns[4].Width = 250;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel listar os dados" + ex);
+                MessageBox.Show("NÃO FOI POSSIVEL LISTAR OS DADOS. " + ex);
             }
         }
 
@@ -89,16 +91,16 @@ namespace prcSystem.View
                 int x = PessoaModel.Deletar(obj);
                 if (x > 0)
                 {
-                    MessageBox.Show("Excluido com sucesso.");
+                    MessageBox.Show("CADASTRO EXCLUIDO COM SUCESSO.");
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao excluir.");
+                    MessageBox.Show("ERRO AO EXCLUIR CADASTRO.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao excluir." + ex);
+                MessageBox.Show("ERRO AO EXCLUIR CADASTRO." + ex);
             }
         }
 
@@ -150,12 +152,6 @@ namespace prcSystem.View
             DgExibirCliForn.DataSource = lista;
         }
 
-        private void DgExibirCliForn_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-            
-        }
-
         private void BtnPesquisarCliForn_Click(object sender, EventArgs e)
         {
             pesquisaCodCliForn();                       
@@ -202,8 +198,15 @@ namespace prcSystem.View
 
         private void BtnExcluir_Click(object sender, EventArgs e)
         {
-            excluir();
-            Listar();
+            if (MessageBox.Show("DESEJA MESMO EXCLUIR O CADASTRO?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
+            {
+                return;
+            }
+            else
+            {
+                excluir();
+                Listar();
+            }
         }
 
         private void DgExibirCliForn_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -28,19 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LblFormCadCliForn = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgPagamentos = new System.Windows.Forms.DataGridView();
+            this.idLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.razaoNomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricaoCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numDocumentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtEmissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtVencimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtPagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Situacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lancamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.BtnCancelar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnEntrada = new System.Windows.Forms.Button();
+            this.btnSaida = new System.Windows.Forms.Button();
+            this.btnTodos = new System.Windows.Forms.Button();
+            this.btnAberto = new System.Windows.Forms.Button();
+            this.btnPagas = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.DtCadastro = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -56,10 +72,10 @@
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
-            this.TxtId = new System.Windows.Forms.TextBox();
-            this.LblIdCod = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNumDocumento = new System.Windows.Forms.TextBox();
+            this.lblNumDocumento = new System.Windows.Forms.Label();
+            this.lblIdCdc = new System.Windows.Forms.Label();
+            this.txtIdCdc = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
@@ -72,8 +88,22 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.txtCodCliForn = new System.Windows.Forms.TextBox();
+            this.lblCodCliForn = new System.Windows.Forms.Label();
+            this.txtRazaoNome = new System.Windows.Forms.TextBox();
+            this.lblRazaoNome = new System.Windows.Forms.Label();
+            this.gpBox1 = new System.Windows.Forms.GroupBox();
+            this.rbSaida = new System.Windows.Forms.RadioButton();
+            this.rbEntrada = new System.Windows.Forms.RadioButton();
+            this.rbTodos = new System.Windows.Forms.RadioButton();
+            this.gpBox2 = new System.Windows.Forms.GroupBox();
+            this.rbAberto = new System.Windows.Forms.RadioButton();
+            this.rbPagas = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgPagamentos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource)).BeginInit();
+            this.gpBox1.SuspendLayout();
+            this.gpBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -123,16 +153,138 @@
             this.textBox1.Size = new System.Drawing.Size(912, 2);
             this.textBox1.TabIndex = 129;
             // 
-            // dataGridView1
+            // dgPagamentos
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 208);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(912, 308);
-            this.dataGridView1.TabIndex = 132;
+            this.dgPagamentos.AllowUserToAddRows = false;
+            this.dgPagamentos.AllowUserToDeleteRows = false;
+            this.dgPagamentos.AutoGenerateColumns = false;
+            this.dgPagamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgPagamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idLancamentoDataGridViewTextBoxColumn,
+            this.tipoLancamentoDataGridViewTextBoxColumn,
+            this.idPessoaDataGridViewTextBoxColumn,
+            this.razaoNomeDataGridViewTextBoxColumn,
+            this.codCdcDataGridViewTextBoxColumn,
+            this.descricaoCdcDataGridViewTextBoxColumn,
+            this.numDocumentoDataGridViewTextBoxColumn,
+            this.dtLancamentoDataGridViewTextBoxColumn,
+            this.dtEmissaoDataGridViewTextBoxColumn,
+            this.dtVencimentoDataGridViewTextBoxColumn,
+            this.dtPagamentoDataGridViewTextBoxColumn,
+            this.valorTotalDataGridViewTextBoxColumn,
+            this.comentariosDataGridViewTextBoxColumn,
+            this.Situacao});
+            this.dgPagamentos.DataSource = this.lancamentosBindingSource;
+            this.dgPagamentos.Location = new System.Drawing.Point(14, 208);
+            this.dgPagamentos.Margin = new System.Windows.Forms.Padding(2);
+            this.dgPagamentos.Name = "dgPagamentos";
+            this.dgPagamentos.ReadOnly = true;
+            this.dgPagamentos.RowTemplate.Height = 25;
+            this.dgPagamentos.Size = new System.Drawing.Size(912, 308);
+            this.dgPagamentos.TabIndex = 132;
+            this.dgPagamentos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPagamentos_CellContentClick);
+            // 
+            // idLancamentoDataGridViewTextBoxColumn
+            // 
+            this.idLancamentoDataGridViewTextBoxColumn.DataPropertyName = "IdLancamento";
+            this.idLancamentoDataGridViewTextBoxColumn.HeaderText = "IdLancamento";
+            this.idLancamentoDataGridViewTextBoxColumn.Name = "idLancamentoDataGridViewTextBoxColumn";
+            this.idLancamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tipoLancamentoDataGridViewTextBoxColumn
+            // 
+            this.tipoLancamentoDataGridViewTextBoxColumn.DataPropertyName = "TipoLancamento";
+            this.tipoLancamentoDataGridViewTextBoxColumn.HeaderText = "TipoLancamento";
+            this.tipoLancamentoDataGridViewTextBoxColumn.Name = "tipoLancamentoDataGridViewTextBoxColumn";
+            this.tipoLancamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idPessoaDataGridViewTextBoxColumn
+            // 
+            this.idPessoaDataGridViewTextBoxColumn.DataPropertyName = "IdPessoa";
+            this.idPessoaDataGridViewTextBoxColumn.HeaderText = "IdPessoa";
+            this.idPessoaDataGridViewTextBoxColumn.Name = "idPessoaDataGridViewTextBoxColumn";
+            this.idPessoaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // razaoNomeDataGridViewTextBoxColumn
+            // 
+            this.razaoNomeDataGridViewTextBoxColumn.DataPropertyName = "RazaoNome";
+            this.razaoNomeDataGridViewTextBoxColumn.HeaderText = "RazaoNome";
+            this.razaoNomeDataGridViewTextBoxColumn.Name = "razaoNomeDataGridViewTextBoxColumn";
+            this.razaoNomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // codCdcDataGridViewTextBoxColumn
+            // 
+            this.codCdcDataGridViewTextBoxColumn.DataPropertyName = "CodCdc";
+            this.codCdcDataGridViewTextBoxColumn.HeaderText = "CodCdc";
+            this.codCdcDataGridViewTextBoxColumn.Name = "codCdcDataGridViewTextBoxColumn";
+            this.codCdcDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descricaoCdcDataGridViewTextBoxColumn
+            // 
+            this.descricaoCdcDataGridViewTextBoxColumn.DataPropertyName = "DescricaoCdc";
+            this.descricaoCdcDataGridViewTextBoxColumn.HeaderText = "DescricaoCdc";
+            this.descricaoCdcDataGridViewTextBoxColumn.Name = "descricaoCdcDataGridViewTextBoxColumn";
+            this.descricaoCdcDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // numDocumentoDataGridViewTextBoxColumn
+            // 
+            this.numDocumentoDataGridViewTextBoxColumn.DataPropertyName = "NumDocumento";
+            this.numDocumentoDataGridViewTextBoxColumn.HeaderText = "NumDocumento";
+            this.numDocumentoDataGridViewTextBoxColumn.Name = "numDocumentoDataGridViewTextBoxColumn";
+            this.numDocumentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dtLancamentoDataGridViewTextBoxColumn
+            // 
+            this.dtLancamentoDataGridViewTextBoxColumn.DataPropertyName = "DtLancamento";
+            this.dtLancamentoDataGridViewTextBoxColumn.HeaderText = "DtLancamento";
+            this.dtLancamentoDataGridViewTextBoxColumn.Name = "dtLancamentoDataGridViewTextBoxColumn";
+            this.dtLancamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dtEmissaoDataGridViewTextBoxColumn
+            // 
+            this.dtEmissaoDataGridViewTextBoxColumn.DataPropertyName = "DtEmissao";
+            this.dtEmissaoDataGridViewTextBoxColumn.HeaderText = "DtEmissao";
+            this.dtEmissaoDataGridViewTextBoxColumn.Name = "dtEmissaoDataGridViewTextBoxColumn";
+            this.dtEmissaoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dtVencimentoDataGridViewTextBoxColumn
+            // 
+            this.dtVencimentoDataGridViewTextBoxColumn.DataPropertyName = "DtVencimento";
+            this.dtVencimentoDataGridViewTextBoxColumn.HeaderText = "DtVencimento";
+            this.dtVencimentoDataGridViewTextBoxColumn.Name = "dtVencimentoDataGridViewTextBoxColumn";
+            this.dtVencimentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dtPagamentoDataGridViewTextBoxColumn
+            // 
+            this.dtPagamentoDataGridViewTextBoxColumn.DataPropertyName = "DtPagamento";
+            this.dtPagamentoDataGridViewTextBoxColumn.HeaderText = "DtPagamento";
+            this.dtPagamentoDataGridViewTextBoxColumn.Name = "dtPagamentoDataGridViewTextBoxColumn";
+            this.dtPagamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // valorTotalDataGridViewTextBoxColumn
+            // 
+            this.valorTotalDataGridViewTextBoxColumn.DataPropertyName = "ValorTotal";
+            this.valorTotalDataGridViewTextBoxColumn.HeaderText = "ValorTotal";
+            this.valorTotalDataGridViewTextBoxColumn.Name = "valorTotalDataGridViewTextBoxColumn";
+            this.valorTotalDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // comentariosDataGridViewTextBoxColumn
+            // 
+            this.comentariosDataGridViewTextBoxColumn.DataPropertyName = "Comentarios";
+            this.comentariosDataGridViewTextBoxColumn.HeaderText = "Comentarios";
+            this.comentariosDataGridViewTextBoxColumn.Name = "comentariosDataGridViewTextBoxColumn";
+            this.comentariosDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Situacao
+            // 
+            this.Situacao.DataPropertyName = "Situacao";
+            this.Situacao.HeaderText = "Situacao";
+            this.Situacao.Name = "Situacao";
+            this.Situacao.ReadOnly = true;
+            // 
+            // lancamentosBindingSource
+            // 
+            this.lancamentosBindingSource.DataSource = typeof(prcSystem.Entidades.Lancamentos);
             // 
             // label9
             // 
@@ -167,80 +319,83 @@
             this.label4.TabIndex = 140;
             this.label4.Text = "SITUAÇÃO:";
             // 
-            // BtnCancelar
+            // btnEntrada
             // 
-            this.BtnCancelar.BackColor = System.Drawing.SystemColors.Menu;
-            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnCancelar.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnCancelar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnCancelar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnCancelar.Location = new System.Drawing.Point(164, 72);
-            this.BtnCancelar.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(70, 22);
-            this.BtnCancelar.TabIndex = 141;
-            this.BtnCancelar.Text = "ENTRADA";
-            this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.btnEntrada.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnEntrada.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnEntrada.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEntrada.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnEntrada.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnEntrada.Location = new System.Drawing.Point(164, 72);
+            this.btnEntrada.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEntrada.Name = "btnEntrada";
+            this.btnEntrada.Size = new System.Drawing.Size(70, 22);
+            this.btnEntrada.TabIndex = 141;
+            this.btnEntrada.Text = "ENTRADA";
+            this.btnEntrada.UseVisualStyleBackColor = false;
+            this.btnEntrada.Click += new System.EventHandler(this.btnEntrada_Click);
             // 
-            // button1
+            // btnSaida
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Menu;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(241, 72);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 22);
-            this.button1.TabIndex = 142;
-            this.button1.Text = "SAÍDA";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSaida.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnSaida.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSaida.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSaida.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnSaida.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSaida.Location = new System.Drawing.Point(241, 72);
+            this.btnSaida.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSaida.Name = "btnSaida";
+            this.btnSaida.Size = new System.Drawing.Size(70, 22);
+            this.btnSaida.TabIndex = 142;
+            this.btnSaida.Text = "SAÍDA";
+            this.btnSaida.UseVisualStyleBackColor = false;
+            this.btnSaida.Click += new System.EventHandler(this.btnSaida_Click);
             // 
-            // button2
+            // btnTodos
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Menu;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(317, 72);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 22);
-            this.button2.TabIndex = 143;
-            this.button2.Text = "TODOS";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnTodos.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnTodos.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnTodos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTodos.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnTodos.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnTodos.Location = new System.Drawing.Point(317, 72);
+            this.btnTodos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTodos.Name = "btnTodos";
+            this.btnTodos.Size = new System.Drawing.Size(70, 22);
+            this.btnTodos.TabIndex = 143;
+            this.btnTodos.Text = "TODOS";
+            this.btnTodos.UseVisualStyleBackColor = false;
+            this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
             // 
-            // button3
+            // btnAberto
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Menu;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button3.Location = new System.Drawing.Point(164, 101);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(70, 22);
-            this.button3.TabIndex = 144;
-            this.button3.Text = "EM ABERTO";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAberto.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnAberto.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnAberto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAberto.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnAberto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnAberto.Location = new System.Drawing.Point(164, 101);
+            this.btnAberto.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAberto.Name = "btnAberto";
+            this.btnAberto.Size = new System.Drawing.Size(70, 22);
+            this.btnAberto.TabIndex = 144;
+            this.btnAberto.Text = "EM ABERTO";
+            this.btnAberto.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnPagas
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Menu;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button4.Location = new System.Drawing.Point(241, 101);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(70, 22);
-            this.button4.TabIndex = 145;
-            this.button4.Text = "PAGAS";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnPagas.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnPagas.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnPagas.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPagas.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnPagas.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnPagas.Location = new System.Drawing.Point(241, 101);
+            this.btnPagas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPagas.Name = "btnPagas";
+            this.btnPagas.Size = new System.Drawing.Size(70, 22);
+            this.btnPagas.TabIndex = 145;
+            this.btnPagas.Text = "PAGAS";
+            this.btnPagas.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -413,47 +568,48 @@
             this.label13.TabIndex = 270;
             this.label13.Text = "DATA VENC.:";
             // 
-            // TxtId
+            // txtNumDocumento
             // 
-            this.TxtId.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtId.Location = new System.Drawing.Point(23, 176);
-            this.TxtId.Margin = new System.Windows.Forms.Padding(2);
-            this.TxtId.Name = "TxtId";
-            this.TxtId.Size = new System.Drawing.Size(68, 18);
-            this.TxtId.TabIndex = 276;
+            this.txtNumDocumento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtNumDocumento.Location = new System.Drawing.Point(14, 176);
+            this.txtNumDocumento.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNumDocumento.Name = "txtNumDocumento";
+            this.txtNumDocumento.Size = new System.Drawing.Size(100, 18);
+            this.txtNumDocumento.TabIndex = 276;
+            this.txtNumDocumento.TextChanged += new System.EventHandler(this.txtNumDocumento_TextChanged);
             // 
-            // LblIdCod
+            // lblNumDocumento
             // 
-            this.LblIdCod.AutoSize = true;
-            this.LblIdCod.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblIdCod.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblIdCod.Location = new System.Drawing.Point(23, 162);
-            this.LblIdCod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblIdCod.Name = "LblIdCod";
-            this.LblIdCod.Size = new System.Drawing.Size(56, 12);
-            this.LblIdCod.TabIndex = 275;
-            this.LblIdCod.Text = "Nº TITULO:";
+            this.lblNumDocumento.AutoSize = true;
+            this.lblNumDocumento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNumDocumento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblNumDocumento.Location = new System.Drawing.Point(14, 162);
+            this.lblNumDocumento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNumDocumento.Name = "lblNumDocumento";
+            this.lblNumDocumento.Size = new System.Drawing.Size(56, 12);
+            this.lblNumDocumento.TabIndex = 275;
+            this.lblNumDocumento.Text = "Nº TITULO:";
             // 
-            // label14
+            // lblIdCdc
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(99, 162);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(28, 12);
-            this.label14.TabIndex = 277;
-            this.label14.Text = "CDC:";
+            this.lblIdCdc.AutoSize = true;
+            this.lblIdCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIdCdc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblIdCdc.Location = new System.Drawing.Point(118, 162);
+            this.lblIdCdc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIdCdc.Name = "lblIdCdc";
+            this.lblIdCdc.Size = new System.Drawing.Size(28, 12);
+            this.lblIdCdc.TabIndex = 277;
+            this.lblIdCdc.Text = "CDC:";
             // 
-            // textBox3
+            // txtIdCdc
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(99, 176);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(68, 18);
-            this.textBox3.TabIndex = 279;
+            this.txtIdCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtIdCdc.Location = new System.Drawing.Point(118, 176);
+            this.txtIdCdc.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIdCdc.Name = "txtIdCdc";
+            this.txtIdCdc.Size = new System.Drawing.Size(88, 18);
+            this.txtIdCdc.TabIndex = 279;
             // 
             // label15
             // 
@@ -588,11 +744,145 @@
             this.button6.Text = "LIMPAR";
             this.button6.UseVisualStyleBackColor = false;
             // 
+            // txtCodCliForn
+            // 
+            this.txtCodCliForn.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtCodCliForn.Location = new System.Drawing.Point(210, 176);
+            this.txtCodCliForn.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCodCliForn.Name = "txtCodCliForn";
+            this.txtCodCliForn.Size = new System.Drawing.Size(101, 18);
+            this.txtCodCliForn.TabIndex = 296;
+            // 
+            // lblCodCliForn
+            // 
+            this.lblCodCliForn.AutoSize = true;
+            this.lblCodCliForn.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCodCliForn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblCodCliForn.Location = new System.Drawing.Point(210, 162);
+            this.lblCodCliForn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCodCliForn.Name = "lblCodCliForn";
+            this.lblCodCliForn.Size = new System.Drawing.Size(79, 12);
+            this.lblCodCliForn.TabIndex = 295;
+            this.lblCodCliForn.Text = "COD. CLI./FORN.";
+            // 
+            // txtRazaoNome
+            // 
+            this.txtRazaoNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtRazaoNome.Location = new System.Drawing.Point(315, 176);
+            this.txtRazaoNome.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRazaoNome.Name = "txtRazaoNome";
+            this.txtRazaoNome.Size = new System.Drawing.Size(313, 18);
+            this.txtRazaoNome.TabIndex = 298;
+            // 
+            // lblRazaoNome
+            // 
+            this.lblRazaoNome.AutoSize = true;
+            this.lblRazaoNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblRazaoNome.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblRazaoNome.Location = new System.Drawing.Point(315, 162);
+            this.lblRazaoNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRazaoNome.Name = "lblRazaoNome";
+            this.lblRazaoNome.Size = new System.Drawing.Size(72, 12);
+            this.lblRazaoNome.TabIndex = 297;
+            this.lblRazaoNome.Text = "RAZÃO / NOME";
+            // 
+            // gpBox1
+            // 
+            this.gpBox1.Controls.Add(this.rbSaida);
+            this.gpBox1.Controls.Add(this.rbEntrada);
+            this.gpBox1.Controls.Add(this.rbTodos);
+            this.gpBox1.Location = new System.Drawing.Point(655, 131);
+            this.gpBox1.Name = "gpBox1";
+            this.gpBox1.Size = new System.Drawing.Size(120, 75);
+            this.gpBox1.TabIndex = 300;
+            this.gpBox1.TabStop = false;
+            // 
+            // rbSaida
+            // 
+            this.rbSaida.AutoSize = true;
+            this.rbSaida.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbSaida.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rbSaida.Location = new System.Drawing.Point(6, 33);
+            this.rbSaida.Name = "rbSaida";
+            this.rbSaida.Size = new System.Drawing.Size(52, 16);
+            this.rbSaida.TabIndex = 125;
+            this.rbSaida.Text = "SAÍDA";
+            this.rbSaida.UseVisualStyleBackColor = true;
+            // 
+            // rbEntrada
+            // 
+            this.rbEntrada.AutoSize = true;
+            this.rbEntrada.Checked = true;
+            this.rbEntrada.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbEntrada.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rbEntrada.Location = new System.Drawing.Point(6, 16);
+            this.rbEntrada.Name = "rbEntrada";
+            this.rbEntrada.Size = new System.Drawing.Size(69, 16);
+            this.rbEntrada.TabIndex = 124;
+            this.rbEntrada.TabStop = true;
+            this.rbEntrada.Tag = "";
+            this.rbEntrada.Text = "ENTRADA";
+            this.rbEntrada.UseVisualStyleBackColor = true;
+            // 
+            // rbTodos
+            // 
+            this.rbTodos.AutoSize = true;
+            this.rbTodos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbTodos.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rbTodos.Location = new System.Drawing.Point(6, 51);
+            this.rbTodos.Name = "rbTodos";
+            this.rbTodos.Size = new System.Drawing.Size(54, 16);
+            this.rbTodos.TabIndex = 126;
+            this.rbTodos.Text = "TODOS";
+            this.rbTodos.UseVisualStyleBackColor = true;
+            // 
+            // gpBox2
+            // 
+            this.gpBox2.Controls.Add(this.rbAberto);
+            this.gpBox2.Controls.Add(this.rbPagas);
+            this.gpBox2.Location = new System.Drawing.Point(779, 131);
+            this.gpBox2.Name = "gpBox2";
+            this.gpBox2.Size = new System.Drawing.Size(120, 75);
+            this.gpBox2.TabIndex = 299;
+            this.gpBox2.TabStop = false;
+            // 
+            // rbAberto
+            // 
+            this.rbAberto.AutoSize = true;
+            this.rbAberto.Checked = true;
+            this.rbAberto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbAberto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rbAberto.Location = new System.Drawing.Point(7, 16);
+            this.rbAberto.Name = "rbAberto";
+            this.rbAberto.Size = new System.Drawing.Size(79, 16);
+            this.rbAberto.TabIndex = 128;
+            this.rbAberto.TabStop = true;
+            this.rbAberto.Text = "EM ABERTO";
+            this.rbAberto.UseVisualStyleBackColor = true;
+            // 
+            // rbPagas
+            // 
+            this.rbPagas.AutoSize = true;
+            this.rbPagas.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbPagas.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.rbPagas.Location = new System.Drawing.Point(7, 33);
+            this.rbPagas.Name = "rbPagas";
+            this.rbPagas.Size = new System.Drawing.Size(54, 16);
+            this.rbPagas.TabIndex = 129;
+            this.rbPagas.Text = "PAGAS";
+            this.rbPagas.UseVisualStyleBackColor = true;
+            // 
             // FormCadPagamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 561);
+            this.Controls.Add(this.gpBox1);
+            this.Controls.Add(this.gpBox2);
+            this.Controls.Add(this.txtRazaoNome);
+            this.Controls.Add(this.lblRazaoNome);
+            this.Controls.Add(this.txtCodCliForn);
+            this.Controls.Add(this.lblCodCliForn);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox7);
@@ -605,10 +895,10 @@
             this.Controls.Add(this.dateTimePicker6);
             this.Controls.Add(this.dateTimePicker7);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.TxtId);
-            this.Controls.Add(this.LblIdCod);
+            this.Controls.Add(this.txtIdCdc);
+            this.Controls.Add(this.lblIdCdc);
+            this.Controls.Add(this.txtNumDocumento);
+            this.Controls.Add(this.lblNumDocumento);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.dateTimePicker4);
@@ -624,15 +914,15 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.DtCadastro);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.BtnCancelar);
+            this.Controls.Add(this.btnPagas);
+            this.Controls.Add(this.btnAberto);
+            this.Controls.Add(this.btnTodos);
+            this.Controls.Add(this.btnSaida);
+            this.Controls.Add(this.btnEntrada);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgPagamentos);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LblFormCadCliForn);
             this.Controls.Add(this.textBox1);
@@ -642,7 +932,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PRC Systems";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgPagamentos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource)).EndInit();
+            this.gpBox1.ResumeLayout(false);
+            this.gpBox1.PerformLayout();
+            this.gpBox2.ResumeLayout(false);
+            this.gpBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -654,15 +949,15 @@
         private PictureBox pictureBox1;
         private Label LblFormCadCliForn;
         private TextBox textBox1;
-        private DataGridView dataGridView1;
+        private DataGridView dgPagamentos;
         private Label label9;
         private Label label2;
         private Label label4;
-        private Button BtnCancelar;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button btnEntrada;
+        private Button btnSaida;
+        private Button btnTodos;
+        private Button btnAberto;
+        private Button btnPagas;
         private Label label1;
         private DateTimePicker DtCadastro;
         private DateTimePicker dateTimePicker1;
@@ -678,10 +973,10 @@
         private DateTimePicker dateTimePicker4;
         private DateTimePicker dateTimePicker5;
         private Label label13;
-        private TextBox TxtId;
-        private Label LblIdCod;
-        private Label label14;
-        private TextBox textBox3;
+        private TextBox txtNumDocumento;
+        private Label lblNumDocumento;
+        private Label lblIdCdc;
+        private TextBox txtIdCdc;
         private Label label15;
         private Label label16;
         private DateTimePicker dateTimePicker6;
@@ -694,5 +989,31 @@
         private TextBox textBox7;
         private Button button5;
         private Button button6;
+        private TextBox txtCodCliForn;
+        private Label lblCodCliForn;
+        private TextBox txtRazaoNome;
+        private Label lblRazaoNome;
+        private BindingSource lancamentosBindingSource;
+        private DataGridViewTextBoxColumn idLancamentoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn tipoLancamentoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn idPessoaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn razaoNomeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn codCdcDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn descricaoCdcDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn numDocumentoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dtLancamentoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dtEmissaoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dtVencimentoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dtPagamentoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn valorTotalDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn Situacao;
+        private GroupBox gpBox1;
+        private RadioButton rbSaida;
+        private RadioButton rbEntrada;
+        private RadioButton rbTodos;
+        private GroupBox gpBox2;
+        private RadioButton rbAberto;
+        private RadioButton rbPagas;
     }
 }

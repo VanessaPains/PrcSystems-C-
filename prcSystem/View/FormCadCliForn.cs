@@ -19,6 +19,7 @@ using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using System.Runtime.CompilerServices;
 using Microsoft.VisualBasic;
+using System.Globalization;
 
 namespace prcSystem.View
 {
@@ -121,8 +122,15 @@ namespace prcSystem.View
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            editar();
-            limpar();
+            if (MessageBox.Show("DESEJA MESMO EDITAR O CADASTRO?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
+            {
+                return;
+            }
+            else
+            {
+                editar();
+                limpar();
+            }
         }
 
         /// <summary>
@@ -186,18 +194,19 @@ namespace prcSystem.View
                 obj.DtCadPessoa = Convert.ToDateTime(DtCadPessoa.Text);
 
                 int x = PessoaModel.Editar(obj);
+
                 if (x > 0)
                 {
-                    MessageBox.Show("Editado com sucesso.");
+                    MessageBox.Show("CADASTRO EDITADO COM SUCESSO.");
                 }
-                else
+                else         
                 {
-                    MessageBox.Show("Erro ao editar."+ErrorEventArgs.Equals);
-                }
+                    MessageBox.Show("ERRO AO EDITAR CADASTRO." + ErrorEventArgs.Equals);
+                }      
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao Editar." + ex);
+                MessageBox.Show("ERRO AO EDITAR CADASTRO." + ex);
             }
         }
 
@@ -243,6 +252,9 @@ namespace prcSystem.View
                 DgExibirCliForn.Columns[25].HeaderText = "UF Cob";
                 DgExibirCliForn.Columns[26].HeaderText = "Observação";
                 DgExibirCliForn.Columns[27].HeaderText = "DT Cad.";
+
+                DgExibirCliForn.Columns[0].Width = 60;//determinar a largura das colunas
+                DgExibirCliForn.Columns[4].Width = 250;
             }
             catch (Exception ex)
             {
@@ -330,7 +342,7 @@ namespace prcSystem.View
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
             //verifica se todos os campos estao preenchidos
-            if (TxtCnpjCpf.Text == "" || TxtRazaoNome.Text == "" || TxtFantasia.Text == "" || TxtEndereco.Text == "" || TxtNum.Text == "" || TxtComplemento.Text == "" || TxtCep.Text == "" || TxtBairro.Text == "" || TxtCidade.Text == "" || TxtUf.Text == "" || TxtTelefone.Text == "")
+            if (TxtCnpjCpf.Text == "" || TxtRazaoNome.Text == "" || TxtFantasia.Text == "" || TxtEndereco.Text == "" || TxtNum.Text == "" || TxtCep.Text == "" || TxtBairro.Text == "" || TxtCidade.Text == "" || TxtUf.Text == "" || TxtTelefone.Text == "")
             {
                 MessageBox.Show("Preencher todos os campos obrigatorios (*).", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 TxtRazaoNome.Select();//colocar curso em login por padrao
@@ -338,8 +350,14 @@ namespace prcSystem.View
             }
             else
             {
-                salvar();
-                limpar();
+                if(MessageBox.Show("DESEJA MESMO SALVAR O CADASTRO?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
+                {
+                    return;
+                }
+                else{ 
+                    salvar();
+                    limpar();
+                }
             }
         }
 
@@ -463,6 +481,17 @@ namespace prcSystem.View
             DtCadPessoa.Text = DgExibirCliForn.CurrentRow.Cells[27].Value.ToString();
         }
 
+        private string TitleCase(string text)
+        {
+            CultureInfo cultureInfo = Thread.CurrentThread.CurrentCulture;
+            TextInfo textInfo = cultureInfo.TextInfo;
+
+            return textInfo.ToTitleCase(text);
+        }
+        private void FormataUpper(object sender, EventArgs e)
+        {
+            TxtRazaoNome.Text = TitleCase(TxtRazaoNome.Text);
+        }
 
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using prcSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,8 @@ namespace prcSystem.Entidades
         decimal valorTotal;
         string comentarios;
 
+        string situacao;
+
 
         public string? TipoLancamento { get => tipoLancamento; set => tipoLancamento = value; }
         public int IdLancamento { get => idLancamento; set => idLancamento = value; }
@@ -41,5 +44,11 @@ namespace prcSystem.Entidades
         public string RazaoNome { get => razaoNome; set => razaoNome = value; }
         public string DescricaoCdc { get => descricaoCdc; set => descricaoCdc = value; }
         public string CodCdc { get => codCdc; set => codCdc = value; }
+        public string Situacao { get => situacao; set => situacao = value; }
+
+        public static implicit operator Lancamentos(LancamentoModel v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

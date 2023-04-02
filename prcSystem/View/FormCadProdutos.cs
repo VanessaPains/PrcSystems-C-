@@ -50,9 +50,16 @@ namespace prcSystem.View
             }
             else
             {
-                salvar();
-                limpar();
-                Listar();
+                if (MessageBox.Show("DESEJA MESMO SALVAR O CADASTRO?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
+                {
+                    return;
+                }
+                else
+                {
+                    salvar();
+                    limpar();
+                    Listar();
+                }
             }
         }
 
@@ -69,16 +76,16 @@ namespace prcSystem.View
                 int x = ProdutoModel.Inserir(obj);
                 if (x > 0)
                 {
-                    MessageBox.Show("Inserido com sucesso.");
+                    MessageBox.Show("CADASTRO INSERIDO COM SUCESSO.");
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao inserir.");
+                    MessageBox.Show("ERRO AO INSERIR CADASTRO.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao inserir." + ex);
+                MessageBox.Show("ERRO AO INSERIR CADASTRO." + ex);
             }
         }
 
@@ -99,16 +106,16 @@ namespace prcSystem.View
                 int x = ProdutoModel.Editar(obj);
                 if (x > 0)
                 {
-                    MessageBox.Show("Editado com sucesso.");
+                    MessageBox.Show("CADASTRO EDITADO COM SUCESSO.");
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao editar.");
+                    MessageBox.Show("ERRO AO EDITAR CADASTRO.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao editar." + ex);
+                MessageBox.Show("ERRO AO EDITAR CADASTRO." + ex);
             }
         }
 
@@ -123,16 +130,16 @@ namespace prcSystem.View
                 int x = ProdutoModel.Deletar(obj);
                 if (x > 0)
                 {
-                    MessageBox.Show("Excluido com sucesso.");
+                    MessageBox.Show("CADASTRO EXCLUIDO COM SUCESSO.");
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao excluir.");
+                    MessageBox.Show("ERRO AO EXCLUIR CADASTRO.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao excluir." + ex);
+                MessageBox.Show("ERRO AO EXCLUIR CADASTRO." + ex);
             }
         }
 
@@ -173,11 +180,43 @@ namespace prcSystem.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel listar os dados" + ex);
+                MessageBox.Show("NÃO FOI POASIVEL LISTAR OS DADOS. " + ex);
             }
         }
 
-        private void dgExibirProdutos_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void BtnEditarProduto_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("DESEJA MESMO EDITAR O CADASTRO?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
+            {
+                return;
+            }
+            else
+            {
+                editar();
+                Listar();
+            }
+        }
+
+        private void BtnExcluirProduto_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("DESEJA MESMO EXCLUIR O CADASTRO?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
+            {
+                return;
+            }
+            else
+            {
+                excluir();
+                Listar();
+                limpar();
+            }
+        }
+
+        private void BtnLimparProduto_Click(object sender, EventArgs e)
+        {
+            limpar();
+        }
+
+        private void dgExibirProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DtCadastroProduto.Enabled = false;
             TxtIdProduto.Enabled = false;
@@ -192,37 +231,6 @@ namespace prcSystem.View
             TxtValorProduto.Text = dgExibirProdutos.CurrentRow.Cells[4].Value.ToString();
             DtCadastroProduto.Text = dgExibirProdutos.CurrentRow.Cells[5].Value.ToString();
 
-            // configuração que marca a linha completa.
-            dgExibirProdutos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgExibirProdutos.Update();
-            dgExibirProdutos.Select();
-            // configuração do estilo da linha
-            dgExibirProdutos.CurrentRow.DefaultCellStyle.BackColor = Color.Azure;
-        }
-
-        private void dgExibirProdutos_MouseDoubleClick(object sender, MouseEventArgs e)
-        {   //criando link para outra pagina de cadastro de
-            //.
-            FormCadProdutosAlterar formCadProdutosAlterar = new FormCadProdutosAlterar();
-            formCadProdutosAlterar.ShowDialog();
-        }
-
-        private void BtnEditarProduto_Click(object sender, EventArgs e)
-        {
-            editar();
-            Listar();
-        }
-
-        private void BtnExcluirProduto_Click(object sender, EventArgs e)
-        {
-            excluir();
-            Listar();
-            limpar();
-        }
-
-        private void BtnLimparProduto_Click(object sender, EventArgs e)
-        {
-            limpar();
         }
     }
 }

@@ -38,8 +38,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.BtnExcluirLanc = new System.Windows.Forms.Button();
-            this.tipoLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtIdLancamento = new System.Windows.Forms.TextBox();
             this.idLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.razaoNomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +52,7 @@
             this.dtPagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Situacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPesquisarLanc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource)).BeginInit();
@@ -58,7 +60,7 @@
             // 
             // txtPesquisaLancmentos
             // 
-            this.txtPesquisaLancmentos.Location = new System.Drawing.Point(14, 97);
+            this.txtPesquisaLancmentos.Location = new System.Drawing.Point(14, 98);
             this.txtPesquisaLancmentos.Name = "txtPesquisaLancmentos";
             this.txtPesquisaLancmentos.Size = new System.Drawing.Size(458, 23);
             this.txtPesquisaLancmentos.TabIndex = 0;
@@ -100,8 +102,8 @@
             this.dgPesquisarLanc.AutoGenerateColumns = false;
             this.dgPesquisarLanc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgPesquisarLanc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tipoLancamentoDataGridViewTextBoxColumn,
             this.idLancamentoDataGridViewTextBoxColumn,
+            this.tipoLancamentoDataGridViewTextBoxColumn,
             this.idPessoaDataGridViewTextBoxColumn,
             this.razaoNomeDataGridViewTextBoxColumn,
             this.codCdcDataGridViewTextBoxColumn,
@@ -112,13 +114,16 @@
             this.dtVencimentoDataGridViewTextBoxColumn,
             this.dtPagamentoDataGridViewTextBoxColumn,
             this.valorTotalDataGridViewTextBoxColumn,
-            this.comentariosDataGridViewTextBoxColumn});
+            this.comentariosDataGridViewTextBoxColumn,
+            this.Situacao});
             this.dgPesquisarLanc.DataSource = this.lancamentosBindingSource;
-            this.dgPesquisarLanc.Location = new System.Drawing.Point(14, 169);
+            this.dgPesquisarLanc.Location = new System.Drawing.Point(14, 149);
             this.dgPesquisarLanc.Name = "dgPesquisarLanc";
             this.dgPesquisarLanc.ReadOnly = true;
-            this.dgPesquisarLanc.Size = new System.Drawing.Size(910, 334);
+            this.dgPesquisarLanc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgPesquisarLanc.Size = new System.Drawing.Size(910, 375);
             this.dgPesquisarLanc.TabIndex = 336;
+            this.dgPesquisarLanc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPesquisarLanc_CellClick);
             // 
             // lancamentosBindingSource
             // 
@@ -141,7 +146,7 @@
             this.btnPesquisar.BackColor = System.Drawing.SystemColors.Menu;
             this.btnPesquisar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnPesquisar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnPesquisar.Location = new System.Drawing.Point(478, 97);
+            this.btnPesquisar.Location = new System.Drawing.Point(478, 98);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(89, 25);
             this.btnPesquisar.TabIndex = 338;
@@ -161,13 +166,15 @@
             this.BtnExcluirLanc.TabIndex = 335;
             this.BtnExcluirLanc.Text = "EXCLUIR";
             this.BtnExcluirLanc.UseVisualStyleBackColor = false;
+            this.BtnExcluirLanc.Click += new System.EventHandler(this.BtnExcluirLanc_Click);
             // 
-            // tipoLancamentoDataGridViewTextBoxColumn
+            // txtIdLancamento
             // 
-            this.tipoLancamentoDataGridViewTextBoxColumn.DataPropertyName = "TipoLancamento";
-            this.tipoLancamentoDataGridViewTextBoxColumn.HeaderText = "TipoLancamento";
-            this.tipoLancamentoDataGridViewTextBoxColumn.Name = "tipoLancamentoDataGridViewTextBoxColumn";
-            this.tipoLancamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.txtIdLancamento.Enabled = false;
+            this.txtIdLancamento.Location = new System.Drawing.Point(14, 69);
+            this.txtIdLancamento.Name = "txtIdLancamento";
+            this.txtIdLancamento.Size = new System.Drawing.Size(52, 23);
+            this.txtIdLancamento.TabIndex = 339;
             // 
             // idLancamentoDataGridViewTextBoxColumn
             // 
@@ -175,6 +182,13 @@
             this.idLancamentoDataGridViewTextBoxColumn.HeaderText = "IdLancamento";
             this.idLancamentoDataGridViewTextBoxColumn.Name = "idLancamentoDataGridViewTextBoxColumn";
             this.idLancamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tipoLancamentoDataGridViewTextBoxColumn
+            // 
+            this.tipoLancamentoDataGridViewTextBoxColumn.DataPropertyName = "TipoLancamento";
+            this.tipoLancamentoDataGridViewTextBoxColumn.HeaderText = "TipoLancamento";
+            this.tipoLancamentoDataGridViewTextBoxColumn.Name = "tipoLancamentoDataGridViewTextBoxColumn";
+            this.tipoLancamentoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // idPessoaDataGridViewTextBoxColumn
             // 
@@ -253,11 +267,19 @@
             this.comentariosDataGridViewTextBoxColumn.Name = "comentariosDataGridViewTextBoxColumn";
             this.comentariosDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // Situacao
+            // 
+            this.Situacao.DataPropertyName = "Situacao";
+            this.Situacao.HeaderText = "Situacao";
+            this.Situacao.Name = "Situacao";
+            this.Situacao.ReadOnly = true;
+            // 
             // FormCadLancPesquisar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.txtIdLancamento);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.dgPesquisarLanc);
@@ -288,8 +310,9 @@
         private Label label12;
         private Button btnPesquisar;
         private Button BtnExcluirLanc;
-        private DataGridViewTextBoxColumn tipoLancamentoDataGridViewTextBoxColumn;
+        private TextBox txtIdLancamento;
         private DataGridViewTextBoxColumn idLancamentoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn tipoLancamentoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn idPessoaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn razaoNomeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn codCdcDataGridViewTextBoxColumn;
@@ -301,5 +324,6 @@
         private DataGridViewTextBoxColumn dtPagamentoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn valorTotalDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn Situacao;
     }
 }

@@ -33,16 +33,6 @@
             this.LblFormCadCliForn = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.DgExibirCliForn = new System.Windows.Forms.DataGridView();
-            this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.LblPesquisarCliForn = new System.Windows.Forms.Label();
-            this.TxtPesquisaCodCliForn = new System.Windows.Forms.TextBox();
-            this.TxtPesquisarNomeRazaoCpfCnpj = new System.Windows.Forms.TextBox();
-            this.BtnPesquisarCliForn = new System.Windows.Forms.Button();
-            this.BtnLimpar = new System.Windows.Forms.Button();
-            this.BtnPesquisarRazaoNomeCliForn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnExcluir = new System.Windows.Forms.Button();
-            this.txtIdPessoa = new System.Windows.Forms.TextBox();
             this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoCadastroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,6 +61,16 @@
             this.ufCobDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.observacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtCadPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.LblPesquisarCliForn = new System.Windows.Forms.Label();
+            this.TxtPesquisaCodCliForn = new System.Windows.Forms.TextBox();
+            this.TxtPesquisarNomeRazaoCpfCnpj = new System.Windows.Forms.TextBox();
+            this.BtnPesquisarCliForn = new System.Windows.Forms.Button();
+            this.BtnLimpar = new System.Windows.Forms.Button();
+            this.BtnPesquisarRazaoNomeCliForn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnExcluir = new System.Windows.Forms.Button();
+            this.txtIdPessoa = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliForn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -152,107 +152,7 @@
             this.DgExibirCliForn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgExibirCliForn.Size = new System.Drawing.Size(910, 362);
             this.DgExibirCliForn.TabIndex = 128;
-            this.DgExibirCliForn.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgExibirCliForn_CellClick);
             this.DgExibirCliForn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgExibirCliForn_CellContentClick);
-            // 
-            // pessoaBindingSource
-            // 
-            this.pessoaBindingSource.DataSource = typeof(prcSystem.Entidades.Pessoa);
-            // 
-            // LblPesquisarCliForn
-            // 
-            this.LblPesquisarCliForn.AutoSize = true;
-            this.LblPesquisarCliForn.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblPesquisarCliForn.Location = new System.Drawing.Point(12, 72);
-            this.LblPesquisarCliForn.Name = "LblPesquisarCliForn";
-            this.LblPesquisarCliForn.Size = new System.Drawing.Size(94, 12);
-            this.LblPesquisarCliForn.TabIndex = 129;
-            this.LblPesquisarCliForn.Text = "PESQUISAR POR:";
-            // 
-            // TxtPesquisaCodCliForn
-            // 
-            this.TxtPesquisaCodCliForn.Location = new System.Drawing.Point(14, 87);
-            this.TxtPesquisaCodCliForn.Name = "TxtPesquisaCodCliForn";
-            this.TxtPesquisaCodCliForn.PlaceholderText = "COD. DO CLIENTE";
-            this.TxtPesquisaCodCliForn.Size = new System.Drawing.Size(119, 23);
-            this.TxtPesquisaCodCliForn.TabIndex = 130;
-            this.TxtPesquisaCodCliForn.TextChanged += new System.EventHandler(this.TxtPesquisaCodCliForn_TextChanged);
-            // 
-            // TxtPesquisarNomeRazaoCpfCnpj
-            // 
-            this.TxtPesquisarNomeRazaoCpfCnpj.Location = new System.Drawing.Point(139, 87);
-            this.TxtPesquisarNomeRazaoCpfCnpj.Name = "TxtPesquisarNomeRazaoCpfCnpj";
-            this.TxtPesquisarNomeRazaoCpfCnpj.PlaceholderText = "RAZÃO / NOME ";
-            this.TxtPesquisarNomeRazaoCpfCnpj.Size = new System.Drawing.Size(309, 23);
-            this.TxtPesquisarNomeRazaoCpfCnpj.TabIndex = 131;
-            this.TxtPesquisarNomeRazaoCpfCnpj.TextChanged += new System.EventHandler(this.TxtPesquisarNomeRazaoCpfCnpj_TextChanged);
-            // 
-            // BtnPesquisarCliForn
-            // 
-            this.BtnPesquisarCliForn.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnPesquisarCliForn.Location = new System.Drawing.Point(458, 87);
-            this.BtnPesquisarCliForn.Name = "BtnPesquisarCliForn";
-            this.BtnPesquisarCliForn.Size = new System.Drawing.Size(100, 23);
-            this.BtnPesquisarCliForn.TabIndex = 132;
-            this.BtnPesquisarCliForn.Text = "PESQUISAR";
-            this.BtnPesquisarCliForn.UseVisualStyleBackColor = true;
-            this.BtnPesquisarCliForn.Click += new System.EventHandler(this.BtnPesquisarCliForn_Click);
-            // 
-            // BtnLimpar
-            // 
-            this.BtnLimpar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnLimpar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnLimpar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnLimpar.Location = new System.Drawing.Point(835, 9);
-            this.BtnLimpar.Name = "BtnLimpar";
-            this.BtnLimpar.Size = new System.Drawing.Size(89, 25);
-            this.BtnLimpar.TabIndex = 317;
-            this.BtnLimpar.Text = "LIMPAR";
-            this.BtnLimpar.UseVisualStyleBackColor = false;
-            this.BtnLimpar.Click += new System.EventHandler(this.BtnLimpar_Click);
-            // 
-            // BtnPesquisarRazaoNomeCliForn
-            // 
-            this.BtnPesquisarRazaoNomeCliForn.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnPesquisarRazaoNomeCliForn.Location = new System.Drawing.Point(458, 87);
-            this.BtnPesquisarRazaoNomeCliForn.Name = "BtnPesquisarRazaoNomeCliForn";
-            this.BtnPesquisarRazaoNomeCliForn.Size = new System.Drawing.Size(100, 23);
-            this.BtnPesquisarRazaoNomeCliForn.TabIndex = 318;
-            this.BtnPesquisarRazaoNomeCliForn.Text = "PESQUISAR";
-            this.BtnPesquisarRazaoNomeCliForn.UseVisualStyleBackColor = true;
-            this.BtnPesquisarRazaoNomeCliForn.Click += new System.EventHandler(this.BtnPesquisarRazaoNomeCliForn_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::prcSystem.Properties.Resources.logoComunicacaoVisual2;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 42);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 319;
-            this.pictureBox1.TabStop = false;
-            // 
-            // BtnExcluir
-            // 
-            this.BtnExcluir.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnExcluir.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnExcluir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnExcluir.Location = new System.Drawing.Point(740, 9);
-            this.BtnExcluir.Name = "BtnExcluir";
-            this.BtnExcluir.Size = new System.Drawing.Size(89, 25);
-            this.BtnExcluir.TabIndex = 320;
-            this.BtnExcluir.Text = "EXCLUIR";
-            this.BtnExcluir.UseVisualStyleBackColor = false;
-            this.BtnExcluir.Click += new System.EventHandler(this.BtnExcluir_Click);
-            // 
-            // txtIdPessoa
-            // 
-            this.txtIdPessoa.Location = new System.Drawing.Point(822, 87);
-            this.txtIdPessoa.Name = "txtIdPessoa";
-            this.txtIdPessoa.Size = new System.Drawing.Size(100, 23);
-            this.txtIdPessoa.TabIndex = 321;
-            this.txtIdPessoa.Visible = false;
             // 
             // idPessoaDataGridViewTextBoxColumn
             // 
@@ -449,6 +349,105 @@
             this.dtCadPessoaDataGridViewTextBoxColumn.HeaderText = "DtCadPessoa";
             this.dtCadPessoaDataGridViewTextBoxColumn.Name = "dtCadPessoaDataGridViewTextBoxColumn";
             this.dtCadPessoaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // pessoaBindingSource
+            // 
+            this.pessoaBindingSource.DataSource = typeof(prcSystem.Entidades.Pessoa);
+            // 
+            // LblPesquisarCliForn
+            // 
+            this.LblPesquisarCliForn.AutoSize = true;
+            this.LblPesquisarCliForn.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblPesquisarCliForn.Location = new System.Drawing.Point(12, 72);
+            this.LblPesquisarCliForn.Name = "LblPesquisarCliForn";
+            this.LblPesquisarCliForn.Size = new System.Drawing.Size(94, 12);
+            this.LblPesquisarCliForn.TabIndex = 129;
+            this.LblPesquisarCliForn.Text = "PESQUISAR POR:";
+            // 
+            // TxtPesquisaCodCliForn
+            // 
+            this.TxtPesquisaCodCliForn.Location = new System.Drawing.Point(14, 87);
+            this.TxtPesquisaCodCliForn.Name = "TxtPesquisaCodCliForn";
+            this.TxtPesquisaCodCliForn.PlaceholderText = "COD. DO CLIENTE";
+            this.TxtPesquisaCodCliForn.Size = new System.Drawing.Size(119, 23);
+            this.TxtPesquisaCodCliForn.TabIndex = 130;
+            this.TxtPesquisaCodCliForn.TextChanged += new System.EventHandler(this.TxtPesquisaCodCliForn_TextChanged);
+            // 
+            // TxtPesquisarNomeRazaoCpfCnpj
+            // 
+            this.TxtPesquisarNomeRazaoCpfCnpj.Location = new System.Drawing.Point(139, 87);
+            this.TxtPesquisarNomeRazaoCpfCnpj.Name = "TxtPesquisarNomeRazaoCpfCnpj";
+            this.TxtPesquisarNomeRazaoCpfCnpj.PlaceholderText = "RAZÃO / NOME ";
+            this.TxtPesquisarNomeRazaoCpfCnpj.Size = new System.Drawing.Size(309, 23);
+            this.TxtPesquisarNomeRazaoCpfCnpj.TabIndex = 131;
+            this.TxtPesquisarNomeRazaoCpfCnpj.TextChanged += new System.EventHandler(this.TxtPesquisarNomeRazaoCpfCnpj_TextChanged);
+            // 
+            // BtnPesquisarCliForn
+            // 
+            this.BtnPesquisarCliForn.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnPesquisarCliForn.Location = new System.Drawing.Point(458, 87);
+            this.BtnPesquisarCliForn.Name = "BtnPesquisarCliForn";
+            this.BtnPesquisarCliForn.Size = new System.Drawing.Size(100, 23);
+            this.BtnPesquisarCliForn.TabIndex = 132;
+            this.BtnPesquisarCliForn.Text = "PESQUISAR";
+            this.BtnPesquisarCliForn.UseVisualStyleBackColor = true;
+            this.BtnPesquisarCliForn.Click += new System.EventHandler(this.BtnPesquisarCliForn_Click);
+            // 
+            // BtnLimpar
+            // 
+            this.BtnLimpar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnLimpar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnLimpar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnLimpar.Location = new System.Drawing.Point(835, 9);
+            this.BtnLimpar.Name = "BtnLimpar";
+            this.BtnLimpar.Size = new System.Drawing.Size(89, 25);
+            this.BtnLimpar.TabIndex = 317;
+            this.BtnLimpar.Text = "LIMPAR";
+            this.BtnLimpar.UseVisualStyleBackColor = false;
+            this.BtnLimpar.Click += new System.EventHandler(this.BtnLimpar_Click);
+            // 
+            // BtnPesquisarRazaoNomeCliForn
+            // 
+            this.BtnPesquisarRazaoNomeCliForn.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnPesquisarRazaoNomeCliForn.Location = new System.Drawing.Point(458, 87);
+            this.BtnPesquisarRazaoNomeCliForn.Name = "BtnPesquisarRazaoNomeCliForn";
+            this.BtnPesquisarRazaoNomeCliForn.Size = new System.Drawing.Size(100, 23);
+            this.BtnPesquisarRazaoNomeCliForn.TabIndex = 318;
+            this.BtnPesquisarRazaoNomeCliForn.Text = "PESQUISAR";
+            this.BtnPesquisarRazaoNomeCliForn.UseVisualStyleBackColor = true;
+            this.BtnPesquisarRazaoNomeCliForn.Click += new System.EventHandler(this.BtnPesquisarRazaoNomeCliForn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::prcSystem.Properties.Resources.logoComunicacaoVisual2;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 42);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 319;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BtnExcluir
+            // 
+            this.BtnExcluir.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnExcluir.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnExcluir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnExcluir.Location = new System.Drawing.Point(740, 9);
+            this.BtnExcluir.Name = "BtnExcluir";
+            this.BtnExcluir.Size = new System.Drawing.Size(89, 25);
+            this.BtnExcluir.TabIndex = 320;
+            this.BtnExcluir.Text = "EXCLUIR";
+            this.BtnExcluir.UseVisualStyleBackColor = false;
+            this.BtnExcluir.Click += new System.EventHandler(this.BtnExcluir_Click);
+            // 
+            // txtIdPessoa
+            // 
+            this.txtIdPessoa.Location = new System.Drawing.Point(822, 87);
+            this.txtIdPessoa.Name = "txtIdPessoa";
+            this.txtIdPessoa.Size = new System.Drawing.Size(100, 23);
+            this.txtIdPessoa.TabIndex = 321;
+            this.txtIdPessoa.Visible = false;
             // 
             // FormCadCliFornPesquisar
             // 

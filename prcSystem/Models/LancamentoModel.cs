@@ -58,5 +58,30 @@ namespace prcSystem.Models
         {
             return new LancamentoController().PesquisarFornCLi(obj);
         }
+
+        public List<Lancamentos> PesquisarTipoSituacaoPagamentos(Lancamentos obj)
+        {
+            return new LancamentoController().PesquisarTipoSituacaoPagamentos(obj);
+        }
+
+        public List<Lancamentos> PesquisarTipoEntrada(Lancamentos obj)
+        {
+            return new LancamentoController().PesquisarTipoSituacaoPagamentos(obj);
+        }
+
+        public List<Lancamentos> PesquisarTipoSaida(Lancamentos obj)
+        {
+            return new LancamentoController().PesquisarTipoSituacaoPagamentos(obj);
+        }
+
+        public List<Lancamentos> PesquisarTipoTodos(Lancamentos obj)
+        {
+            return new LancamentoController().PesquisarTipoSituacaoPagamentos(obj);
+        }
+
+        public List<Lancamentos> PesquisarCodCdcRazaoNome(Lancamentos obj)
+        {
+            return new LancamentoController().PesquisarCodCdcRazaoNome(obj);
+        }
     }
 }

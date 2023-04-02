@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,7 +21,8 @@ namespace prcSystem.View
         Produtos produtos= new Produtos();
         Cdc cdc= new Cdc();
 
-        ProdutoModel modelP = new ProdutoModel();
+        LancamentoModel modelL = new LancamentoModel(); 
+        ProdutoModel modelP = new();
         PessoaModel modelCF = new PessoaModel();
 
         public FormCadLancEntradasSaidas()
@@ -37,6 +39,7 @@ namespace prcSystem.View
             txtPesquisarLancamentos.Visible = false;
             lblPesquisarLancamentos.Visible = false;
         }
+
 
         /// <summary>
         /// metodos de habilitar os radio button
@@ -72,6 +75,7 @@ namespace prcSystem.View
             }
             else
             {
+
                 salvar();
                 limpar();
                 //Listar();
@@ -140,6 +144,7 @@ namespace prcSystem.View
                 obj.DtPagamento = Convert.ToDateTime(dtPagamento.Text);
                 obj.ValorTotal = Convert.ToDecimal(txtValorTotal.Text);
                 obj.Comentarios = Convert.ToString(txtComentarios.Text);
+                obj.Situacao = Convert.ToString(cbSituacaoAbertaPaga.SelectedValue);
 
                 int x = LancamentoModel.Inserir(obj);
                 if (x > 0)
@@ -171,19 +176,28 @@ namespace prcSystem.View
                 DgExibirLacamentos.DataSource = lista;
                 // dg.Columns[0].Visible = false;//colunas datagrid
 
-                /*DgExibirLacamentos.Columns[1].HeaderText = "Cod. Lanç.";
-                DgExibirLacamentos.Columns[0].HeaderText = "Tipo Lanç.";
+                DgExibirLacamentos.Columns[0].HeaderText = "Cod. Lanç.";
+                DgExibirLacamentos.Columns[1].HeaderText = "Tipo Lanç.";
                 DgExibirLacamentos.Columns[2].HeaderText = "Cod. Cli/Forn.";
-                DgExibirLacamentos.Columns[2].HeaderText = "Razão/Nome. ";
+                DgExibirLacamentos.Columns[3].HeaderText = "Razão/Nome ";
                 DgExibirLacamentos.Columns[4].HeaderText = "Cod. CDC";
-                DgExibirLacamentos.Columns[4].HeaderText = "Desc. CDC";
+                DgExibirLacamentos.Columns[5].HeaderText = "Desc. CDC";
                 DgExibirLacamentos.Columns[6].HeaderText = "Nº Doc.";
                 DgExibirLacamentos.Columns[7].HeaderText = "Dt. Lanç.";
-                DgExibirLacamentos.Columns[8].HeaderText = "Dt. Emissão.";
+                DgExibirLacamentos.Columns[8].HeaderText = "Dt. Emissão";
                 DgExibirLacamentos.Columns[9].HeaderText = "Dt. Venc.";
-                DgExibirLacamentos.Columns[10].HeaderText = "Dt. Pgto.";
+                DgExibirLacamentos.Columns[10].HeaderText = "Dt. Prog. de Pgto.";
                 DgExibirLacamentos.Columns[11].HeaderText = "Valor.";
-                DgExibirLacamentos.Columns[12].HeaderText = "Comentarios.";*/
+                DgExibirLacamentos.Columns[12].HeaderText = "Comentarios.";
+                DgExibirLacamentos.Columns[13].HeaderText = "Situação.";
+
+                DgExibirLacamentos.Columns[0].Width = 90;//determinar a largura das colunas
+                DgExibirLacamentos.Columns[1].Width = 70;
+                DgExibirLacamentos.Columns[2].Width = 70;
+                DgExibirLacamentos.Columns[3].Width = 280;
+                DgExibirLacamentos.Columns[4].Width = 60;
+                DgExibirLacamentos.Columns[5].Width = 250;
+                DgExibirLacamentos.Columns[12].Width = 290;
             }
             catch (Exception ex)
             {
@@ -236,7 +250,10 @@ namespace prcSystem.View
                 DgExibirCliForn.Columns[26].HeaderText = "Observação";
                 DgExibirCliForn.Columns[26].HeaderText = "DT Cad.";
 
-                DgExibirCliForn.Columns[0].Width = 90;//determinar a largura das colunas
+                DgExibirCliForn.Columns[0].Width = 60;//determinar a largura das colunas
+                DgExibirCliForn.Columns[3].Width = 130;
+                DgExibirCliForn.Columns[6].Width = 100;
+                DgExibirCliForn.Columns[7].Width = 110;
                 DgExibirCliForn.Columns[4].Width = 250;
             }
             catch (Exception ex)
@@ -320,6 +337,7 @@ namespace prcSystem.View
                 obj.DtPagamento = Convert.ToDateTime(dtPagamento.Text);
                 obj.ValorTotal = Convert.ToDecimal(txtValorTotal.Text);
                 obj.Comentarios = Convert.ToString(txtComentarios.Text);
+                obj.Situacao = cbSituacaoAbertaPaga.Text;
 
                 int x = LancamentoModel.Editar(obj);
                 if (x > 0)
@@ -334,30 +352,6 @@ namespace prcSystem.View
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao editar." + ex);
-            }
-        }
-
-        /// <summary>
-        /// metodo excluir lancamentos
-        /// </summary>
-        private void excluir()
-        {
-            try
-            {
-                obj.IdLancamento = Convert.ToInt32(txtIdLancamento.Text);
-                int x = LancamentoModel.Deletar(obj);
-                if (x > 0)
-                {
-                    MessageBox.Show("Excluido com sucesso.");
-                }
-                else
-                {
-                    MessageBox.Show("Erro ao excluir.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao excluir." + ex);
             }
         }
 
@@ -378,6 +372,7 @@ namespace prcSystem.View
             txtComentarios.Text = "";
             txtDescricaoCdc.Text = "";
             txtRazaoNome.Text = "";
+            cbSituacaoAbertaPaga.Text = "";
             txtCodCliForn.Select();////onde o cursor fica inicializada depois de incluir
         }
 
@@ -399,30 +394,6 @@ namespace prcSystem.View
         private void txtIdCdc_Click(object sender, EventArgs e)
         {
             dgCadCdc.Visible = true;
-        }
-
-        /// <summary>
-        /// metodo de mostrar no textbox os dados selecionados do datagrid do CDC cadastrados
-        /// </summary>
-        /// <param name="sender">leva para os textbox dados do datagrid</param>
-        /// <param name="e">retornas dados do datagrig</param>
-        private void DgExibirCliForn_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txtCodCliForn.Text = DgExibirCliForn.CurrentRow.Cells[0].Value.ToString();
-            txtRazaoNome.Text = DgExibirCliForn.CurrentRow.Cells[4].Value.ToString();
-            DgExibirCliForn.Visible = false;           
-        }
-
-        /// <summary>
-        /// metodo de mostrar no textbox os dados selecionados do datagrid do CDC cadastrados
-        /// </summary>
-        /// <param name="sender">leva para os textbox dados do datagrid</param>
-        /// <param name="e">retornas dados do datagrig</param>
-        private void dgCadCdc_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txtIdCdc.Text = dgCadCdc.CurrentRow.Cells[1].Value.ToString();
-            txtDescricaoCdc.Text = dgCadCdc.CurrentRow.Cells[2].Value.ToString();
-            dgCadCdc.Visible = false;
         }
 
         /// <summary>
@@ -455,6 +426,8 @@ namespace prcSystem.View
             lblCodCliForn.Visible = false;
             lblCodCdc.Visible = false;
             lblTipoLancamento.Visible = false;
+            lblSituacaoAbertaPaga.Visible = false;  
+
             dtLancamento.Visible = false;
             dtPagamento.Visible = false;
             dtPgto.Visible = false;
@@ -462,6 +435,8 @@ namespace prcSystem.View
             dtVenc.Visible = false;
             dtEmissao.Visible = false;
             dtEmis.Visible = false;
+
+            cbSituacaoAbertaPaga.Visible = false;
 
             lblPesquisarLancamentos.Visible = true;
             txtPesquisarLancamentos.Visible = true;
@@ -499,6 +474,8 @@ namespace prcSystem.View
             lblCodCliForn.Visible = true;
             lblCodCdc.Visible = true;
             lblTipoLancamento.Visible = true;
+            lblSituacaoAbertaPaga.Visible = true;       
+
             dtLancamento.Visible = true;
             dtPagamento.Visible = true;
             dtPgto.Visible = true;
@@ -506,6 +483,8 @@ namespace prcSystem.View
             dtVenc.Visible = true;
             dtEmissao.Visible = true;
             dtEmis.Visible = true;
+
+            cbSituacaoAbertaPaga.Visible = true;    
 
             lblPesquisarLancamentos.Visible = false;
             txtPesquisarLancamentos.Visible = false;
@@ -529,18 +508,18 @@ namespace prcSystem.View
         }
 
         /// <summary>
-        /// data grid
+        /// metodo de mostrar no textbox os dados selecionados do datagrid do CLIENTES E FORNECEDORES cadastrados
         /// </summary>
-        /// <param name="sender">busca campos do BD </param>
-        /// <param name="e">mostra os dados do banco de dados para o datagrig</param>
-        private void DgExibirLacamentos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        /// <param name="sender">leva para os textbox dados do datagrid</param>
+        /// <param name="e">retornas dados do datagrig</param>
+        private void DgExibirLacamentos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             RbDgExibirLancamentos();
             txtRazaoNome.Enabled = false;
-            txtDescricaoCdc.Enabled = false; 
-            
-            
-            txtIdLancamento.Text = DgExibirLacamentos.CurrentRow.Cells[1].Value.ToString();
+            txtDescricaoCdc.Enabled = false;
+
+
+            txtIdLancamento.Text = DgExibirLacamentos.CurrentRow.Cells[0].Value.ToString();
             txtCodCliForn.Text = DgExibirLacamentos.CurrentRow.Cells[2].Value.ToString();
             txtRazaoNome.Text = DgExibirLacamentos.CurrentRow.Cells[3].Value.ToString();
             txtIdCdc.Text = DgExibirLacamentos.CurrentRow.Cells[4].Value.ToString();
@@ -552,9 +531,35 @@ namespace prcSystem.View
             dtPagamento.Text = DgExibirLacamentos.CurrentRow.Cells[10].Value.ToString();
             txtValorTotal.Text = DgExibirLacamentos.CurrentRow.Cells[11].Value.ToString();
             txtComentarios.Text = DgExibirLacamentos.CurrentRow.Cells[12].Value.ToString();
+            cbSituacaoAbertaPaga.SelectedItem = DgExibirLacamentos.CurrentRow.Cells[13].Value.ToString();
+
             DgExibirLacamentos.Visible = false;
 
             AjustarDataGridDiminuir();
+        }
+
+        /// <summary>
+        /// metodo de mostrar no textbox os dados selecionados do datagrid do CDC cadastrados
+        /// </summary>
+        /// <param name="sender">leva para os textbox dados do datagrid</param>
+        /// <param name="e">retornas dados do datagrig</param>
+        private void dgCadCdc_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtIdCdc.Text = dgCadCdc.CurrentRow.Cells[1].Value.ToString();
+            txtDescricaoCdc.Text = dgCadCdc.CurrentRow.Cells[2].Value.ToString();
+            dgCadCdc.Visible = false;
+        }
+
+        /// <summary>
+        /// metodo de mostrar no textbox os dados selecionados do datagrid do CDC cadastrados
+        /// </summary>
+        /// <param name="sender">leva para os textbox dados do datagrid</param>
+        /// <param name="e">retornas dados do datagrig</param>
+        private void DgExibirCliForn_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtCodCliForn.Text = DgExibirCliForn.CurrentRow.Cells[0].Value.ToString();
+            txtRazaoNome.Text = DgExibirCliForn.CurrentRow.Cells[4].Value.ToString();
+            DgExibirCliForn.Visible = false;
         }
     }
 }

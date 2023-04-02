@@ -85,7 +85,7 @@
             this.BtnSalvarProduto.Location = new System.Drawing.Point(546, 9);
             this.BtnSalvarProduto.Name = "BtnSalvarProduto";
             this.BtnSalvarProduto.Size = new System.Drawing.Size(89, 25);
-            this.BtnSalvarProduto.TabIndex = 93;
+            this.BtnSalvarProduto.TabIndex = 5;
             this.BtnSalvarProduto.Text = "SALVAR";
             this.BtnSalvarProduto.UseVisualStyleBackColor = false;
             this.BtnSalvarProduto.Click += new System.EventHandler(this.BtnSalvarProduto_Click);
@@ -169,7 +169,7 @@
             this.TxtDescProduto.Location = new System.Drawing.Point(153, 101);
             this.TxtDescProduto.Name = "TxtDescProduto";
             this.TxtDescProduto.Size = new System.Drawing.Size(615, 18);
-            this.TxtDescProduto.TabIndex = 85;
+            this.TxtDescProduto.TabIndex = 1;
             // 
             // TxtUnidadeProduto
             // 
@@ -177,7 +177,7 @@
             this.TxtUnidadeProduto.Location = new System.Drawing.Point(450, 121);
             this.TxtUnidadeProduto.Name = "TxtUnidadeProduto";
             this.TxtUnidadeProduto.Size = new System.Drawing.Size(111, 18);
-            this.TxtUnidadeProduto.TabIndex = 86;
+            this.TxtUnidadeProduto.TabIndex = 3;
             // 
             // TxtValorProduto
             // 
@@ -185,7 +185,7 @@
             this.TxtValorProduto.Location = new System.Drawing.Point(153, 141);
             this.TxtValorProduto.Name = "TxtValorProduto";
             this.TxtValorProduto.Size = new System.Drawing.Size(111, 18);
-            this.TxtValorProduto.TabIndex = 87;
+            this.TxtValorProduto.TabIndex = 4;
             // 
             // LblMarcaProduto
             // 
@@ -203,7 +203,7 @@
             this.TxtMarcaProduto.Location = new System.Drawing.Point(153, 121);
             this.TxtMarcaProduto.Name = "TxtMarcaProduto";
             this.TxtMarcaProduto.Size = new System.Drawing.Size(181, 18);
-            this.TxtMarcaProduto.TabIndex = 89;
+            this.TxtMarcaProduto.TabIndex = 2;
             // 
             // dgExibirProdutos
             // 
@@ -223,10 +223,10 @@
             this.dgExibirProdutos.Name = "dgExibirProdutos";
             this.dgExibirProdutos.ReadOnly = true;
             this.dgExibirProdutos.RowTemplate.Height = 25;
+            this.dgExibirProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgExibirProdutos.Size = new System.Drawing.Size(877, 296);
             this.dgExibirProdutos.TabIndex = 90;
-            this.dgExibirProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgExibirProdutos_CellClick);
-            this.dgExibirProdutos.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgExibirProdutos_MouseDoubleClick);
+            this.dgExibirProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgExibirProdutos_CellContentClick);
             // 
             // idProdutoDataGridViewTextBoxColumn
             // 
@@ -376,7 +376,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "FormCadProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PRC Systens";
+            this.Text = "0000";
             this.Load += new System.EventHandler(this.FormCadProdutos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgExibirProdutos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).EndInit();
