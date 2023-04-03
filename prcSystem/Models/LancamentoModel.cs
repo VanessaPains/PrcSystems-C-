@@ -59,9 +59,24 @@ namespace prcSystem.Models
             return new LancamentoController().PesquisarFornCLi(obj);
         }
 
-        public List<Lancamentos> PesquisarTipoSituacaoPagamentos(Lancamentos obj)
+        public List<Lancamentos> PesquisarCodCliPagamento(Lancamentos obj)
         {
-            return new LancamentoController().PesquisarTipoSituacaoPagamentos(obj);
+            return new LancamentoController().PesquisarCodCliPagamento(obj);
+        }
+
+        /// <summary>
+        /// pesquisar pagamentos em aberto
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>lista </returns>
+        public List<Lancamentos> PesquisarSituacaoAberto(Lancamentos obj)
+        {
+            return new LancamentoController().PesquisarTipoSituacao(obj);
+        }
+
+        public List<Lancamentos> PesquisarSituacaoPagas(Lancamentos obj)
+        {
+            return new LancamentoController().PesquisarTipoSituacao(obj);
         }
 
         public List<Lancamentos> PesquisarTipoEntrada(Lancamentos obj)
@@ -79,9 +94,9 @@ namespace prcSystem.Models
             return new LancamentoController().PesquisarTipoSituacaoPagamentos(obj);
         }
 
-        public List<Lancamentos> PesquisarCodCdcRazaoNome(Lancamentos obj)
+        public List<Lancamentos> PesquisarNumDocCnpjCpfCodCdcRazaoNome(Lancamentos obj)
         {
-            return new LancamentoController().PesquisarCodCdcRazaoNome(obj);
+            return new LancamentoController().PesquisarNumDocCnpjCpfCodCdcRazaoNome(obj);
         }
     }
 }

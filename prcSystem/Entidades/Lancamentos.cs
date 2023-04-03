@@ -13,6 +13,7 @@ namespace prcSystem.Entidades
         string tipoLancamento;
         int idPessoa;
         string razaoNome;
+        string cnpjCpf;
         int idCdc;
         
         string descricaoCdc;
@@ -45,6 +46,7 @@ namespace prcSystem.Entidades
         public string DescricaoCdc { get => descricaoCdc; set => descricaoCdc = value; }
         public string CodCdc { get => codCdc; set => codCdc = value; }
         public string Situacao { get => situacao; set => situacao = value; }
+        public string CnpjCpf { get => cnpjCpf; set => cnpjCpf = value; }
 
         public static implicit operator Lancamentos(LancamentoModel v)
         {

@@ -35,9 +35,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dgPagamentos = new System.Windows.Forms.DataGridView();
             this.idLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Situacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.razaoNomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cnpjCpfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numDocumentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,7 +49,7 @@
             this.dtPagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Situacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lancamentosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lancamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -75,7 +77,6 @@
             this.txtNumDocumento = new System.Windows.Forms.TextBox();
             this.lblNumDocumento = new System.Windows.Forms.Label();
             this.lblIdCdc = new System.Windows.Forms.Label();
-            this.txtIdCdc = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
@@ -87,23 +88,15 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.txtCodCliForn = new System.Windows.Forms.TextBox();
             this.lblCodCliForn = new System.Windows.Forms.Label();
-            this.txtRazaoNome = new System.Windows.Forms.TextBox();
             this.lblRazaoNome = new System.Windows.Forms.Label();
-            this.gpBox1 = new System.Windows.Forms.GroupBox();
-            this.rbSaida = new System.Windows.Forms.RadioButton();
-            this.rbEntrada = new System.Windows.Forms.RadioButton();
-            this.rbTodos = new System.Windows.Forms.RadioButton();
-            this.gpBox2 = new System.Windows.Forms.GroupBox();
-            this.rbAberto = new System.Windows.Forms.RadioButton();
-            this.rbPagas = new System.Windows.Forms.RadioButton();
+            this.lblCnpjCpf = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPagamentos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource)).BeginInit();
-            this.gpBox1.SuspendLayout();
-            this.gpBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -161,9 +154,11 @@
             this.dgPagamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgPagamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idLancamentoDataGridViewTextBoxColumn,
+            this.Situacao,
             this.tipoLancamentoDataGridViewTextBoxColumn,
             this.idPessoaDataGridViewTextBoxColumn,
             this.razaoNomeDataGridViewTextBoxColumn,
+            this.cnpjCpfDataGridViewTextBoxColumn,
             this.codCdcDataGridViewTextBoxColumn,
             this.descricaoCdcDataGridViewTextBoxColumn,
             this.numDocumentoDataGridViewTextBoxColumn,
@@ -172,9 +167,8 @@
             this.dtVencimentoDataGridViewTextBoxColumn,
             this.dtPagamentoDataGridViewTextBoxColumn,
             this.valorTotalDataGridViewTextBoxColumn,
-            this.comentariosDataGridViewTextBoxColumn,
-            this.Situacao});
-            this.dgPagamentos.DataSource = this.lancamentosBindingSource;
+            this.comentariosDataGridViewTextBoxColumn});
+            this.dgPagamentos.DataSource = this.lancamentosBindingSource1;
             this.dgPagamentos.Location = new System.Drawing.Point(14, 208);
             this.dgPagamentos.Margin = new System.Windows.Forms.Padding(2);
             this.dgPagamentos.Name = "dgPagamentos";
@@ -190,6 +184,13 @@
             this.idLancamentoDataGridViewTextBoxColumn.HeaderText = "IdLancamento";
             this.idLancamentoDataGridViewTextBoxColumn.Name = "idLancamentoDataGridViewTextBoxColumn";
             this.idLancamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Situacao
+            // 
+            this.Situacao.DataPropertyName = "Situacao";
+            this.Situacao.HeaderText = "Situacao";
+            this.Situacao.Name = "Situacao";
+            this.Situacao.ReadOnly = true;
             // 
             // tipoLancamentoDataGridViewTextBoxColumn
             // 
@@ -211,6 +212,13 @@
             this.razaoNomeDataGridViewTextBoxColumn.HeaderText = "RazaoNome";
             this.razaoNomeDataGridViewTextBoxColumn.Name = "razaoNomeDataGridViewTextBoxColumn";
             this.razaoNomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cnpjCpfDataGridViewTextBoxColumn
+            // 
+            this.cnpjCpfDataGridViewTextBoxColumn.DataPropertyName = "CnpjCpf";
+            this.cnpjCpfDataGridViewTextBoxColumn.HeaderText = "CnpjCpf";
+            this.cnpjCpfDataGridViewTextBoxColumn.Name = "cnpjCpfDataGridViewTextBoxColumn";
+            this.cnpjCpfDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // codCdcDataGridViewTextBoxColumn
             // 
@@ -275,12 +283,9 @@
             this.comentariosDataGridViewTextBoxColumn.Name = "comentariosDataGridViewTextBoxColumn";
             this.comentariosDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // Situacao
+            // lancamentosBindingSource1
             // 
-            this.Situacao.DataPropertyName = "Situacao";
-            this.Situacao.HeaderText = "Situacao";
-            this.Situacao.Name = "Situacao";
-            this.Situacao.ReadOnly = true;
+            this.lancamentosBindingSource1.DataSource = typeof(prcSystem.Entidades.Lancamentos);
             // 
             // lancamentosBindingSource
             // 
@@ -381,6 +386,7 @@
             this.btnAberto.TabIndex = 144;
             this.btnAberto.Text = "EM ABERTO";
             this.btnAberto.UseVisualStyleBackColor = false;
+            this.btnAberto.Click += new System.EventHandler(this.btnAberto_Click);
             // 
             // btnPagas
             // 
@@ -396,6 +402,7 @@
             this.btnPagas.TabIndex = 145;
             this.btnPagas.Text = "PAGAS";
             this.btnPagas.UseVisualStyleBackColor = false;
+            this.btnPagas.Click += new System.EventHandler(this.btnPagas_Click);
             // 
             // label1
             // 
@@ -574,7 +581,7 @@
             this.txtNumDocumento.Location = new System.Drawing.Point(14, 176);
             this.txtNumDocumento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumDocumento.Name = "txtNumDocumento";
-            this.txtNumDocumento.Size = new System.Drawing.Size(100, 18);
+            this.txtNumDocumento.Size = new System.Drawing.Size(407, 18);
             this.txtNumDocumento.TabIndex = 276;
             this.txtNumDocumento.TextChanged += new System.EventHandler(this.txtNumDocumento_TextChanged);
             // 
@@ -595,21 +602,12 @@
             this.lblIdCdc.AutoSize = true;
             this.lblIdCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblIdCdc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblIdCdc.Location = new System.Drawing.Point(118, 162);
+            this.lblIdCdc.Location = new System.Drawing.Point(74, 162);
             this.lblIdCdc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIdCdc.Name = "lblIdCdc";
             this.lblIdCdc.Size = new System.Drawing.Size(28, 12);
             this.lblIdCdc.TabIndex = 277;
             this.lblIdCdc.Text = "CDC:";
-            // 
-            // txtIdCdc
-            // 
-            this.txtIdCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtIdCdc.Location = new System.Drawing.Point(118, 176);
-            this.txtIdCdc.Margin = new System.Windows.Forms.Padding(2);
-            this.txtIdCdc.Name = "txtIdCdc";
-            this.txtIdCdc.Size = new System.Drawing.Size(88, 18);
-            this.txtIdCdc.TabIndex = 279;
             // 
             // label15
             // 
@@ -731,160 +729,77 @@
             this.button5.Text = "PESQUISAR";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnLimpar
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.Menu;
-            this.button6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button6.Location = new System.Drawing.Point(825, 10);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(101, 23);
-            this.button6.TabIndex = 293;
-            this.button6.Text = "LIMPAR";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnLimpar.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnLimpar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLimpar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnLimpar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnLimpar.Location = new System.Drawing.Point(825, 10);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(101, 23);
+            this.btnLimpar.TabIndex = 293;
+            this.btnLimpar.Text = "LIMPAR";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // txtCodCliForn
             // 
             this.txtCodCliForn.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtCodCliForn.Location = new System.Drawing.Point(210, 176);
+            this.txtCodCliForn.Location = new System.Drawing.Point(425, 176);
             this.txtCodCliForn.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodCliForn.Name = "txtCodCliForn";
-            this.txtCodCliForn.Size = new System.Drawing.Size(101, 18);
+            this.txtCodCliForn.Size = new System.Drawing.Size(128, 18);
             this.txtCodCliForn.TabIndex = 296;
+            this.txtCodCliForn.TextChanged += new System.EventHandler(this.txtCodCliForn_TextChanged);
             // 
             // lblCodCliForn
             // 
             this.lblCodCliForn.AutoSize = true;
             this.lblCodCliForn.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblCodCliForn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblCodCliForn.Location = new System.Drawing.Point(210, 162);
+            this.lblCodCliForn.Location = new System.Drawing.Point(425, 162);
             this.lblCodCliForn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodCliForn.Name = "lblCodCliForn";
             this.lblCodCliForn.Size = new System.Drawing.Size(79, 12);
             this.lblCodCliForn.TabIndex = 295;
             this.lblCodCliForn.Text = "COD. CLI./FORN.";
             // 
-            // txtRazaoNome
-            // 
-            this.txtRazaoNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtRazaoNome.Location = new System.Drawing.Point(315, 176);
-            this.txtRazaoNome.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRazaoNome.Name = "txtRazaoNome";
-            this.txtRazaoNome.Size = new System.Drawing.Size(313, 18);
-            this.txtRazaoNome.TabIndex = 298;
-            // 
             // lblRazaoNome
             // 
             this.lblRazaoNome.AutoSize = true;
             this.lblRazaoNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblRazaoNome.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblRazaoNome.Location = new System.Drawing.Point(315, 162);
+            this.lblRazaoNome.Location = new System.Drawing.Point(166, 162);
             this.lblRazaoNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRazaoNome.Name = "lblRazaoNome";
-            this.lblRazaoNome.Size = new System.Drawing.Size(72, 12);
+            this.lblRazaoNome.Size = new System.Drawing.Size(75, 12);
             this.lblRazaoNome.TabIndex = 297;
-            this.lblRazaoNome.Text = "RAZÃO / NOME";
+            this.lblRazaoNome.Text = "RAZÃO / NOME:";
             // 
-            // gpBox1
+            // lblCnpjCpf
             // 
-            this.gpBox1.Controls.Add(this.rbSaida);
-            this.gpBox1.Controls.Add(this.rbEntrada);
-            this.gpBox1.Controls.Add(this.rbTodos);
-            this.gpBox1.Location = new System.Drawing.Point(655, 131);
-            this.gpBox1.Name = "gpBox1";
-            this.gpBox1.Size = new System.Drawing.Size(120, 75);
-            this.gpBox1.TabIndex = 300;
-            this.gpBox1.TabStop = false;
-            // 
-            // rbSaida
-            // 
-            this.rbSaida.AutoSize = true;
-            this.rbSaida.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbSaida.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.rbSaida.Location = new System.Drawing.Point(6, 33);
-            this.rbSaida.Name = "rbSaida";
-            this.rbSaida.Size = new System.Drawing.Size(52, 16);
-            this.rbSaida.TabIndex = 125;
-            this.rbSaida.Text = "SAÍDA";
-            this.rbSaida.UseVisualStyleBackColor = true;
-            // 
-            // rbEntrada
-            // 
-            this.rbEntrada.AutoSize = true;
-            this.rbEntrada.Checked = true;
-            this.rbEntrada.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbEntrada.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.rbEntrada.Location = new System.Drawing.Point(6, 16);
-            this.rbEntrada.Name = "rbEntrada";
-            this.rbEntrada.Size = new System.Drawing.Size(69, 16);
-            this.rbEntrada.TabIndex = 124;
-            this.rbEntrada.TabStop = true;
-            this.rbEntrada.Tag = "";
-            this.rbEntrada.Text = "ENTRADA";
-            this.rbEntrada.UseVisualStyleBackColor = true;
-            // 
-            // rbTodos
-            // 
-            this.rbTodos.AutoSize = true;
-            this.rbTodos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbTodos.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.rbTodos.Location = new System.Drawing.Point(6, 51);
-            this.rbTodos.Name = "rbTodos";
-            this.rbTodos.Size = new System.Drawing.Size(54, 16);
-            this.rbTodos.TabIndex = 126;
-            this.rbTodos.Text = "TODOS";
-            this.rbTodos.UseVisualStyleBackColor = true;
-            // 
-            // gpBox2
-            // 
-            this.gpBox2.Controls.Add(this.rbAberto);
-            this.gpBox2.Controls.Add(this.rbPagas);
-            this.gpBox2.Location = new System.Drawing.Point(779, 131);
-            this.gpBox2.Name = "gpBox2";
-            this.gpBox2.Size = new System.Drawing.Size(120, 75);
-            this.gpBox2.TabIndex = 299;
-            this.gpBox2.TabStop = false;
-            // 
-            // rbAberto
-            // 
-            this.rbAberto.AutoSize = true;
-            this.rbAberto.Checked = true;
-            this.rbAberto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbAberto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.rbAberto.Location = new System.Drawing.Point(7, 16);
-            this.rbAberto.Name = "rbAberto";
-            this.rbAberto.Size = new System.Drawing.Size(79, 16);
-            this.rbAberto.TabIndex = 128;
-            this.rbAberto.TabStop = true;
-            this.rbAberto.Text = "EM ABERTO";
-            this.rbAberto.UseVisualStyleBackColor = true;
-            // 
-            // rbPagas
-            // 
-            this.rbPagas.AutoSize = true;
-            this.rbPagas.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbPagas.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.rbPagas.Location = new System.Drawing.Point(7, 33);
-            this.rbPagas.Name = "rbPagas";
-            this.rbPagas.Size = new System.Drawing.Size(54, 16);
-            this.rbPagas.TabIndex = 129;
-            this.rbPagas.Text = "PAGAS";
-            this.rbPagas.UseVisualStyleBackColor = true;
+            this.lblCnpjCpf.AutoSize = true;
+            this.lblCnpjCpf.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCnpjCpf.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblCnpjCpf.Location = new System.Drawing.Point(106, 162);
+            this.lblCnpjCpf.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCnpjCpf.Name = "lblCnpjCpf";
+            this.lblCnpjCpf.Size = new System.Drawing.Size(56, 12);
+            this.lblCnpjCpf.TabIndex = 298;
+            this.lblCnpjCpf.Text = "CNPJ / CPF:";
             // 
             // FormCadPagamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 561);
-            this.Controls.Add(this.gpBox1);
-            this.Controls.Add(this.gpBox2);
-            this.Controls.Add(this.txtRazaoNome);
+            this.Controls.Add(this.lblCnpjCpf);
             this.Controls.Add(this.lblRazaoNome);
             this.Controls.Add(this.txtCodCliForn);
             this.Controls.Add(this.lblCodCliForn);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -895,7 +810,6 @@
             this.Controls.Add(this.dateTimePicker6);
             this.Controls.Add(this.dateTimePicker7);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.txtIdCdc);
             this.Controls.Add(this.lblIdCdc);
             this.Controls.Add(this.txtNumDocumento);
             this.Controls.Add(this.lblNumDocumento);
@@ -933,11 +847,8 @@
             this.Text = "PRC Systems";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPagamentos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource)).EndInit();
-            this.gpBox1.ResumeLayout(false);
-            this.gpBox1.PerformLayout();
-            this.gpBox2.ResumeLayout(false);
-            this.gpBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -976,7 +887,6 @@
         private TextBox txtNumDocumento;
         private Label lblNumDocumento;
         private Label lblIdCdc;
-        private TextBox txtIdCdc;
         private Label label15;
         private Label label16;
         private DateTimePicker dateTimePicker6;
@@ -988,16 +898,17 @@
         private TextBox textBox6;
         private TextBox textBox7;
         private Button button5;
-        private Button button6;
+        private Button btnLimpar;
         private TextBox txtCodCliForn;
         private Label lblCodCliForn;
-        private TextBox txtRazaoNome;
         private Label lblRazaoNome;
         private BindingSource lancamentosBindingSource;
         private DataGridViewTextBoxColumn idLancamentoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn Situacao;
         private DataGridViewTextBoxColumn tipoLancamentoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn idPessoaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn razaoNomeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn cnpjCpfDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn codCdcDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn descricaoCdcDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn numDocumentoDataGridViewTextBoxColumn;
@@ -1007,13 +918,7 @@
         private DataGridViewTextBoxColumn dtPagamentoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn valorTotalDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn Situacao;
-        private GroupBox gpBox1;
-        private RadioButton rbSaida;
-        private RadioButton rbEntrada;
-        private RadioButton rbTodos;
-        private GroupBox gpBox2;
-        private RadioButton rbAberto;
-        private RadioButton rbPagas;
+        private BindingSource lancamentosBindingSource1;
+        private Label lblCnpjCpf;
     }
 }
