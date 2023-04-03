@@ -53,7 +53,7 @@ namespace prcSystem.View
                 dgPagamentos.Columns[14].HeaderText = "Comentarios";
 
 
-                dgPagamentos.Columns[0].Width = 90;//determinar a largura das colunas
+                dgPagamentos.Columns[0].Width = 50;//determinar a largura das colunas
                 dgPagamentos.Columns[1].Width = 90;
                 dgPagamentos.Columns[2].Width = 90;
                 dgPagamentos.Columns[3].Width = 70;
