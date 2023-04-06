@@ -466,7 +466,6 @@ namespace prcSystem.View
             txtValorTotal.Enabled = false;
             txtIdCdc.Enabled = false;
             txtDescricaoCdc.Enabled = false;
-
             txtComentarios.Enabled = false;
 
             dtLancamento.Enabled = false;
