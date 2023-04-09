@@ -126,16 +126,16 @@ namespace prcSystem.View
                 int x = LancamentoModel.Editar(lanc);
                 if (x > 0)
                 {
-                    MessageBox.Show("Editado com sucesso.");
+                    MessageBox.Show("PAGAMENTO EDITADO COM SUCESSO.");
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao editar.");
+                    MessageBox.Show("ERRO AO EDITAT PAGAMENTO.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao editar." + ex);
+                MessageBox.Show("ERRO AO EDITAR PAGEMENTO." + ex);
             }
         }
 
