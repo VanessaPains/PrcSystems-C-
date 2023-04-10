@@ -408,6 +408,13 @@ namespace prcSystem.View
         {
             PesquisarSituacaoPagas();
         }
+
+        private void btnSalvarPgto_Click(object sender, EventArgs e)
+        {
+            salvar();
+            Limpar();
+            editar();
+        }
         //------------- FIN: CAMPO DE PESQUISAR BOTOES ----------------------------------------------------
 
         //------------- INICIO: DOS METODOS DE AJUSTAR AS POSIÇÕES DOS CAMPOS ----------------------------------------------------
@@ -693,13 +700,6 @@ namespace prcSystem.View
 
             cbSituacaoAbertaPaga.Visible = true;
             cbPagoEm.Visible = true;    
-        }
-
-        private void btnSalvarPgto_Click(object sender, EventArgs e)
-        {
-            salvar();
-            Limpar();
-            editar();
         }
         //------------- FIM: DOS METODOS DE HABILITAR E DESABILITAR CAMPOS ----------------------------------------------------
 
