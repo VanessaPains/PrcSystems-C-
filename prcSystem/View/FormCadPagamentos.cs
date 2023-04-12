@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace prcSystem.View
 {
@@ -70,7 +71,7 @@ namespace prcSystem.View
         }
 
         /// <summary>
-        /// metodo de pesquisar os clientes/fornecedores cadastrados pela razão social
+        /// metodo de pesquisar os clientes/fornecedores cadastrados TIPO ENTRADA
         /// </summary>
         public void PesquisarTipoEntrada()
         {
@@ -83,6 +84,9 @@ namespace prcSystem.View
             dgPagamentos.DataSource = lista;
         }
 
+        /// <summary>
+        /// metodo de pesquisar os clientes/fornecedores cadastrados TIPO SAIDA
+        /// </summary>
         public void PesquisarTipoSaida()
         {
             obj.TipoLancamento = Convert.ToString(btnSaida.Text = "SAIDA");
@@ -93,12 +97,13 @@ namespace prcSystem.View
             dgPagamentos.DataSource = lista;
         }
 
+        /// <summary>
+        /// metodo de pesquisar os clientes/fornecedores cadastrados TIPO TODOS
+        /// </summary>
         public void PesquisarTipoTodos()
         {
-
             obj.TipoLancamento = Convert.ToString(btnTodos.Text);
-
-            
+          
             List<Lancamentos> lista = new List<Lancamentos>();
             lista = new LancamentoModel().PesquisarTipoTodos(obj);
             dgPagamentos.AutoGenerateColumns = false;
@@ -106,11 +111,12 @@ namespace prcSystem.View
             Listar();
         }
 
+        /// <summary>
+        /// metodo de pesquisar os clientes/fornecedores cadastrados TIPO EM ABERTO
+        /// </summary>
         public void PesquisarSituacaoAberto()
         {
-
             obj.Situacao = Convert.ToString(btnAberto.Text = "EM ABERTO");
-
 
             List<Lancamentos> lista = new List<Lancamentos>();
             lista = new LancamentoModel().PesquisarSituacaoAberto(obj);
@@ -118,11 +124,12 @@ namespace prcSystem.View
             dgPagamentos.DataSource = lista;          
         }
 
+        /// <summary>
+        /// metodo de pesquisar os clientes/fornecedores cadastrados TIPO PAGAS
+        /// </summary>
         public void PesquisarSituacaoPagas()
         {
-
             obj.Situacao = Convert.ToString(btnPagas.Text = "PAGAS");
-
 
             List<Lancamentos> lista = new List<Lancamentos>();
             lista = new LancamentoModel().PesquisarSituacaoPagas(obj);
@@ -163,7 +170,6 @@ namespace prcSystem.View
             }
             obj.IdPessoa = Convert.ToInt32(txtCodCliForn.Text);
 
-
             List<Lancamentos> lista = new List<Lancamentos>();
             lista = new LancamentoModel().PesquisarCodCliPagamento(obj);
             dgPagamentos.AutoGenerateColumns = false;
@@ -177,24 +183,40 @@ namespace prcSystem.View
         }
 
         /// <summary>
+        /// botão de limpar e listar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            Limpar();
+            Listar();
+        }
+
+        //------------- INICIO: CAMPOS DATAGRID MOSTRAR NO FORMULARIO ----------------------------------------------------
+        /// <summary>
         /// metodo de verificar se os campos de tipo de lancamento é ENTRADA ou SAIDA
         /// </summary>
-        public void RbDgExibirLancamentos()
+        public void RbDgExibirPagamentos()
         {
-            if (dgPagamentos.CurrentRow.Cells[0].Value.ToString() == "ENTRADA")
+            if (dgPagamentos.CurrentRow.Cells[2].Value.ToString() == "ENTRADA")
             {
                 rbEntrada.Checked = true;
             }
-            else if (dgPagamentos.CurrentRow.Cells[0].Value.ToString() == "SAIDA")
+            else if (dgPagamentos.CurrentRow.Cells[2].Value.ToString() == "SAIDA")
             {
                 rbSaida.Checked = true;
             }
         }
 
-
+        /// <summary>
+        /// datagrid pagamentos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dgPagamentos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            RbDgExibirLancamentos();
+            RbDgExibirPagamentos();
 
             txtIdLancamento.Text = dgPagamentos.CurrentRow.Cells[0].Value.ToString();
             cbSituacaoAbertaPaga.SelectedItem = dgPagamentos.CurrentRow.Cells[1].Value.ToString();
@@ -207,18 +229,18 @@ namespace prcSystem.View
             dtEmissao.Text = dgPagamentos.CurrentRow.Cells[10].Value.ToString();
             dtVencimento.Text = dgPagamentos.CurrentRow.Cells[11].Value.ToString();
             dtPagamento.Text = dgPagamentos.CurrentRow.Cells[12].Value.ToString();
-            txtValorTotal.Text = dgPagamentos.CurrentRow.Cells[1/3].Value.ToString();
+            txtValorTotal.Text = dgPagamentos.CurrentRow.Cells[13].Value.ToString();
             txtComentarios.Text = dgPagamentos.CurrentRow.Cells[14].Value.ToString();
 
             dgPagamentos.Visible = true;
             AjustarTelaFormPagamento();
             HabilitarTelaFormPagamento();
             DesabilitarTelaFormPagamentosPesquisas();
-
-
         }
+        //------------- FIM: CAMPOS DATAGRID MOSTRAR NO FORMULARIO ----------------------------------------------------
 
-        //------------- INICIO: CAMPO DE PESQUISAR TEXTO ----------------------------------------------------
+
+        //------------- INICIO: METODOS/FUNCOES DOS CAMPO DE PESQUISAR TEXTO ----------------------------------------------------
         /// <summary>
         /// Campo de texto para pesquisas
         /// </summary>
@@ -269,12 +291,66 @@ namespace prcSystem.View
         }
         //------------- FIN: CAMPO DE PESQUISAR BOTOES ----------------------------------------------------
 
-        private void btnLimpar_Click(object sender, EventArgs e)
+        //------------- INICIO: DOS METODOS DE AJUSTAR AS POSIÇÕES DOS CAMPOS ----------------------------------------------------
+        /// <summary>
+        /// metodo de aumentar tamanho datagrid e desabilitar os formularios
+        /// </summary>
+        public void AjustarDataGridAumentar()
         {
-            Limpar();
-            Listar();
+            dgPagamentos.Visible = true;
+            dgPagamentos.Enabled = false;
+            dgPagamentos.Height = 250;
+            dgPagamentos.Location = new Point(12, 270);
         }
 
+        /// <summary>
+        /// ajustar localização do formulario de pagementos.
+        /// </summary>
+        private void AjustarTelaFormPagamento()
+        {
+            AjustarDataGridAumentar();
+
+            lblTipoLancPgto.Location = new Point(24, 63);
+            lblIdLancPgto.Location = new Point(455, 63);
+            lblLancamentoPgto.Location = new Point(53, 124);
+            lblCodCliFornPgto.Location = new Point(57, 172);
+            lblNumDocPgto.Location = new Point(659, 125);
+            lblValorTotalPgto.Location = new Point(623, 175);
+            lblDtEmisPgto.Location = new Point(51, 148);
+            lblIdCdcCodPgto.Location = new Point(88, 197);
+            lblSituacaoAbertaPagaPgto.Location = new Point(645, 149);
+            lblDtVencPgto.Location = new Point(376, 123);
+            lblComentariosPgto.Location = new Point(38, 221);
+            lblDtProgramacaoPgto.Location = new Point(286, 148);
+
+
+            rbEntrada.Location = new Point(184, 64);
+            rbSaida.Location = new Point(272, 64);
+
+            txtCodCliFornPgto.Location = new Point(45, 129);
+            txtRazaoNomeDescricao.Location = new Point(106, 129);
+            txtNumDoc.Location = new Point(487, 129);
+            txtValorTotal.Location = new Point(592, 129);
+            txtIdCdc.Location = new Point(46, 166);
+            txtDescricaoCdc.Location = new Point(107, 166);
+            txtComentarios.Location = new Point(46, 205);
+            txtIdLancamento.Location = new Point(414, 80);
+            textBox3.Location = new Point(11, 235);
+
+            dtLancamento.Location = new Point(795, 60);
+            dtEmissao.Location = new Point(715, 129);
+            dtVencimento.Location = new Point(716, 166);
+            dtPagamento.Location = new Point(716, 205);
+
+            cbSituacaoAbertaPaga.Location = new Point(592, 166);
+        }
+        //------------- FIM: DOS METODOS DE AJUSTAR AS POSIÇÕES DOS CAMPOS ----------------------------------------------------
+
+
+        //------------- INICIO: DOS METODOS DE HABILITAR E DESABILITAR CAMPOS ----------------------------------------------------
+        /// <summary>
+        /// habilitar da campos de pesquisas dos pagamentos. (mostrar novamente).
+        /// </summary>
         private void HabilitarTelaFormPagamentosPesquisas()
         {
             lblPesquisarPor.Visible = true;
@@ -325,6 +401,9 @@ namespace prcSystem.View
             txtCodCliForn.Visible = true;
         }
 
+        /// <summary>
+        /// desabilitar da campos de pesquisas dos pagamentos. (não mostrar na tela)
+        /// </summary>
         private void DesabilitarTelaFormPagamentosPesquisas()
         {
             lblPesquisarPor.Visible = false;
@@ -341,6 +420,8 @@ namespace prcSystem.View
             txtlinha03.Visible = false;
             txtlinha04.Visible = false;
             txtlinha05.Visible = false;
+
+            textBox3.Visible = false;
 
             lblDtLancPesq.Visible = false;
             lblDe01.Visible = false;
@@ -376,55 +457,8 @@ namespace prcSystem.View
         }
 
         /// <summary>
-        /// metodo de aumentar tamanho datagrid e desabilitar os formularios
+        /// desabilitar formulario de lançamentos. (não mostrar na tela).
         /// </summary>
-        public void AjustarDataGridAumentar()
-        {
-            dgPagamentos.Visible = true;
-            dgPagamentos.Enabled = false;
-            dgPagamentos.Height = 250;
-            dgPagamentos.Location = new Point(12, 270);
-        }
-
-
-        private void AjustarTelaFormPagamento()
-        {
-            AjustarDataGridAumentar();
-
-            lblTipoLancPgto.Location = new Point(12, 65);
-            lblIdLancPgto.Location = new Point(414, 65);
-            lblLancamentoPgto.Location = new Point(747, 65);
-            lblCodCliFornPgto.Location = new Point(45, 114);
-            lblNumDocPgto.Location = new Point(487, 114);
-            lblValorTotalPgto.Location = new Point(592, 114);
-            lblDtEmisPgto.Location = new Point(715, 114);
-            lblIdCdcCodPgto.Location = new Point(46, 151);
-            lblSituacaoAbertaPagaPgto.Location = new Point(530, 166);
-            lblDtVencPgto.Location = new Point(716, 151);
-            lblComentariosPgto.Location = new Point(46, 191);
-            lblDtProgramacaoPgto.Location = new Point(716, 190);
-
-            rbEntrada.Location = new Point(184, 64);
-            rbSaida.Location = new Point(272, 64);
-
-            txtCodCliFornPgto.Location = new Point(45, 129);
-            txtRazaoNomeDescricao.Location = new Point(106, 129);
-            txtNumDoc.Location = new Point(487, 129);
-            txtValorTotal.Location = new Point(592, 129);
-            txtIdCdc.Location = new Point(46, 166);
-            txtDescricaoCdc.Location = new Point(107, 166);
-            txtComentarios.Location = new Point(46, 205);
-            txtIdLancamento.Location = new Point(414, 80);
-
-            dtLancamento.Location = new Point(795, 60);                                                    
-            dtEmissao.Location = new Point(715, 129);
-            dtVencimento.Location = new Point(716, 166);
-            dtPagamento.Location = new Point(716, 205);
-
-            cbSituacaoAbertaPaga.Location = new Point(592, 166);
-
-        }
-
         private void DesabilitarTelaFormPagamento()
         {
             lblTipoLancPgto.Visible = false;
@@ -476,6 +510,9 @@ namespace prcSystem.View
             cbSituacaoAbertaPaga.Enabled = true;
         }
 
+        /// <summary>
+        /// habilitar formulario de lançamentos. (mostrar na tela novamente).
+        /// </summary>
         private void HabilitarTelaFormPagamento()
         {
             lblTipoLancPgto.Visible = true;
@@ -509,8 +546,8 @@ namespace prcSystem.View
             dtPagamento.Visible = true;
 
             cbSituacaoAbertaPaga.Visible = true;
-
         }
+        //------------- FIM: DOS METODOS DE HABILITAR E DESABILITAR CAMPOS ----------------------------------------------------
 
     }
 }

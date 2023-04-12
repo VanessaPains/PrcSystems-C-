@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnSalvarLanc = new System.Windows.Forms.Button();
             this.LblFormCadCli = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -94,11 +94,19 @@
             this.dtVencimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblSituacaoAbertaPaga = new System.Windows.Forms.Label();
             this.cbSituacaoAbertaPaga = new System.Windows.Forms.ComboBox();
+            this.cbPagoEm = new System.Windows.Forms.ComboBox();
+            this.cdcBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lblPagoEm = new System.Windows.Forms.Label();
+            this.lblTotaPagoPagto = new System.Windows.Forms.Label();
+            this.txtTotalPagoPagto = new System.Windows.Forms.TextBox();
+            this.lblJurosPagto = new System.Windows.Forms.Label();
+            this.txtJurosPagto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliForn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgCadCdc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirLacamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cdcBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnSalvarLanc
@@ -442,11 +450,11 @@
             // 
             this.DgExibirCliForn.AllowUserToOrderColumns = true;
             this.DgExibirCliForn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgExibirCliForn.Location = new System.Drawing.Point(11, 260);
+            this.DgExibirCliForn.Location = new System.Drawing.Point(11, 320);
             this.DgExibirCliForn.Name = "DgExibirCliForn";
             this.DgExibirCliForn.RowTemplate.Height = 25;
             this.DgExibirCliForn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgExibirCliForn.Size = new System.Drawing.Size(910, 248);
+            this.DgExibirCliForn.Size = new System.Drawing.Size(910, 188);
             this.DgExibirCliForn.TabIndex = 324;
             this.DgExibirCliForn.Visible = false;
             this.DgExibirCliForn.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgExibirCliForn_CellClick);
@@ -456,19 +464,19 @@
             this.dgCadCdc.AllowUserToAddRows = false;
             this.dgCadCdc.AllowUserToDeleteRows = false;
             this.dgCadCdc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgCadCdc.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgCadCdc.Location = new System.Drawing.Point(11, 260);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgCadCdc.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgCadCdc.Location = new System.Drawing.Point(11, 320);
             this.dgCadCdc.Name = "dgCadCdc";
             this.dgCadCdc.ReadOnly = true;
             this.dgCadCdc.RowTemplate.Height = 25;
-            this.dgCadCdc.Size = new System.Drawing.Size(910, 248);
+            this.dgCadCdc.Size = new System.Drawing.Size(910, 188);
             this.dgCadCdc.TabIndex = 325;
             this.dgCadCdc.Visible = false;
             this.dgCadCdc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCadCdc_CellClick);
@@ -504,12 +512,12 @@
             this.comentariosDataGridViewTextBoxColumn,
             this.SituacaoDataGridViewTextBoxColumn});
             this.DgExibirLacamentos.DataSource = this.lancamentosBindingSource;
-            this.DgExibirLacamentos.Location = new System.Drawing.Point(11, 260);
+            this.DgExibirLacamentos.Location = new System.Drawing.Point(11, 320);
             this.DgExibirLacamentos.Name = "DgExibirLacamentos";
             this.DgExibirLacamentos.ReadOnly = true;
             this.DgExibirLacamentos.RowTemplate.Height = 25;
             this.DgExibirLacamentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgExibirLacamentos.Size = new System.Drawing.Size(910, 248);
+            this.DgExibirLacamentos.Size = new System.Drawing.Size(910, 188);
             this.DgExibirLacamentos.TabIndex = 327;
             this.DgExibirLacamentos.Visible = false;
             this.DgExibirLacamentos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgExibirLacamentos_CellClick);
@@ -718,11 +726,79 @@
             this.cbSituacaoAbertaPaga.Size = new System.Drawing.Size(117, 20);
             this.cbSituacaoAbertaPaga.TabIndex = 333;
             // 
+            // cbPagoEm
+            // 
+            this.cbPagoEm.DataSource = this.cdcBindingSource;
+            this.cbPagoEm.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbPagoEm.FormattingEnabled = true;
+            this.cbPagoEm.Location = new System.Drawing.Point(715, 294);
+            this.cbPagoEm.Name = "cbPagoEm";
+            this.cbPagoEm.Size = new System.Drawing.Size(117, 20);
+            this.cbPagoEm.TabIndex = 431;
+            // 
+            // cdcBindingSource
+            // 
+            this.cdcBindingSource.DataSource = typeof(prcSystem.Entidades.Cdc);
+            // 
+            // lblPagoEm
+            // 
+            this.lblPagoEm.AutoSize = true;
+            this.lblPagoEm.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPagoEm.Location = new System.Drawing.Point(659, 297);
+            this.lblPagoEm.Name = "lblPagoEm";
+            this.lblPagoEm.Size = new System.Drawing.Size(50, 12);
+            this.lblPagoEm.TabIndex = 430;
+            this.lblPagoEm.Text = "PAGO EM:";
+            // 
+            // lblTotaPagoPagto
+            // 
+            this.lblTotaPagoPagto.AutoSize = true;
+            this.lblTotaPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotaPagoPagto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblTotaPagoPagto.Location = new System.Drawing.Point(642, 273);
+            this.lblTotaPagoPagto.Name = "lblTotaPagoPagto";
+            this.lblTotaPagoPagto.Size = new System.Drawing.Size(67, 12);
+            this.lblTotaPagoPagto.TabIndex = 429;
+            this.lblTotaPagoPagto.Text = "TOTAL PAGO:";
+            // 
+            // txtTotalPagoPagto
+            // 
+            this.txtTotalPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalPagoPagto.Location = new System.Drawing.Point(715, 270);
+            this.txtTotalPagoPagto.Name = "txtTotalPagoPagto";
+            this.txtTotalPagoPagto.Size = new System.Drawing.Size(117, 18);
+            this.txtTotalPagoPagto.TabIndex = 428;
+            // 
+            // lblJurosPagto
+            // 
+            this.lblJurosPagto.AutoSize = true;
+            this.lblJurosPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblJurosPagto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblJurosPagto.Location = new System.Drawing.Point(670, 249);
+            this.lblJurosPagto.Name = "lblJurosPagto";
+            this.lblJurosPagto.Size = new System.Drawing.Size(39, 12);
+            this.lblJurosPagto.TabIndex = 427;
+            this.lblJurosPagto.Text = "JUROS:";
+            // 
+            // txtJurosPagto
+            // 
+            this.txtJurosPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtJurosPagto.Location = new System.Drawing.Point(715, 246);
+            this.txtJurosPagto.Name = "txtJurosPagto";
+            this.txtJurosPagto.Size = new System.Drawing.Size(117, 18);
+            this.txtJurosPagto.TabIndex = 426;
+            // 
             // FormCadLancEntradasSaidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.cbPagoEm);
+            this.Controls.Add(this.lblPagoEm);
+            this.Controls.Add(this.lblTotaPagoPagto);
+            this.Controls.Add(this.txtTotalPagoPagto);
+            this.Controls.Add(this.lblJurosPagto);
+            this.Controls.Add(this.txtJurosPagto);
             this.Controls.Add(this.cbSituacaoAbertaPaga);
             this.Controls.Add(this.lblSituacaoAbertaPaga);
             this.Controls.Add(this.BtnEditarLanc);
@@ -774,6 +850,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgCadCdc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirLacamentos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cdcBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -854,5 +931,13 @@
         private DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn SituacaoDataGridViewTextBoxColumn;
         private ComboBox cbSituacaoAbertaPaga;
+        private ComboBox cbPagoEm;
+        private BindingSource cdcBindingSource;
+        private Label lblPagoEm;
+        private Label lblTotaPagoPagto;
+        private TextBox txtTotaPagoPagto;
+        private Label lblJurosPagto;
+        private TextBox txtJurosPagto;
+        private TextBox txtTotalPagoPagto;
     }
 }

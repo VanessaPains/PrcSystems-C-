@@ -93,34 +93,41 @@
             this.lblCodCliForn = new System.Windows.Forms.Label();
             this.lblRazaoNome = new System.Windows.Forms.Label();
             this.lblCnpjCpf = new System.Windows.Forms.Label();
-            this.cbSituacaoAbertaPaga = new System.Windows.Forms.ComboBox();
-            this.lblSituacaoAbertaPagaPgto = new System.Windows.Forms.Label();
-            this.txtIdCdc = new System.Windows.Forms.TextBox();
-            this.rbEntrada = new System.Windows.Forms.RadioButton();
-            this.rbSaida = new System.Windows.Forms.RadioButton();
-            this.lblIdLancPgto = new System.Windows.Forms.Label();
+            this.cbPagoEm = new System.Windows.Forms.ComboBox();
+            this.lblPagoEm = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lblTotaPagoPagto = new System.Windows.Forms.Label();
+            this.txtTotaPagoPagto = new System.Windows.Forms.TextBox();
+            this.lblJurosPagto = new System.Windows.Forms.Label();
+            this.txtJurosPagto = new System.Windows.Forms.TextBox();
             this.txtIdLancamento = new System.Windows.Forms.TextBox();
+            this.lblDtEmisPgto = new System.Windows.Forms.Label();
+            this.txtRazaoNomeDescricao = new System.Windows.Forms.TextBox();
+            this.cbSituacaoAbertaPaga = new System.Windows.Forms.ComboBox();
+            this.lblNumDocPgto = new System.Windows.Forms.Label();
+            this.lblSituacaoAbertaPagaPgto = new System.Windows.Forms.Label();
+            this.txtNumDoc = new System.Windows.Forms.TextBox();
+            this.txtIdCdc = new System.Windows.Forms.TextBox();
+            this.lblIdCdcCodPgto = new System.Windows.Forms.Label();
+            this.rbEntrada = new System.Windows.Forms.RadioButton();
+            this.lblCodCliFornPgto = new System.Windows.Forms.Label();
+            this.rbSaida = new System.Windows.Forms.RadioButton();
+            this.txtCodCliFornPgto = new System.Windows.Forms.TextBox();
+            this.lblIdLancPgto = new System.Windows.Forms.Label();
+            this.lblComentariosPgto = new System.Windows.Forms.Label();
+            this.txtComentarios = new System.Windows.Forms.TextBox();
             this.dtPagamento = new System.Windows.Forms.DateTimePicker();
+            this.lblDtVencPgto = new System.Windows.Forms.Label();
             this.lblDtProgramacaoPgto = new System.Windows.Forms.Label();
+            this.txtDescricaoCdc = new System.Windows.Forms.TextBox();
             this.lblValorTotalPgto = new System.Windows.Forms.Label();
+            this.lblLancamentoPgto = new System.Windows.Forms.Label();
             this.txtValorTotal = new System.Windows.Forms.TextBox();
+            this.dtLancamento = new System.Windows.Forms.DateTimePicker();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dtVencimento = new System.Windows.Forms.DateTimePicker();
             this.lblTipoLancPgto = new System.Windows.Forms.Label();
             this.dtEmissao = new System.Windows.Forms.DateTimePicker();
-            this.dtVencimento = new System.Windows.Forms.DateTimePicker();
-            this.dtLancamento = new System.Windows.Forms.DateTimePicker();
-            this.lblLancamentoPgto = new System.Windows.Forms.Label();
-            this.txtDescricaoCdc = new System.Windows.Forms.TextBox();
-            this.lblDtVencPgto = new System.Windows.Forms.Label();
-            this.txtComentarios = new System.Windows.Forms.TextBox();
-            this.lblComentariosPgto = new System.Windows.Forms.Label();
-            this.txtCodCliFornPgto = new System.Windows.Forms.TextBox();
-            this.lblCodCliFornPgto = new System.Windows.Forms.Label();
-            this.lblIdCdcCodPgto = new System.Windows.Forms.Label();
-            this.txtNumDoc = new System.Windows.Forms.TextBox();
-            this.lblNumDocPgto = new System.Windows.Forms.Label();
-            this.txtRazaoNomeDescricao = new System.Windows.Forms.TextBox();
-            this.lblDtEmisPgto = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPagamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource1)).BeginInit();
@@ -197,7 +204,7 @@
             this.valorTotalDataGridViewTextBoxColumn,
             this.comentariosDataGridViewTextBoxColumn});
             this.dgPagamentos.DataSource = this.lancamentosBindingSource1;
-            this.dgPagamentos.Location = new System.Drawing.Point(14, 208);
+            this.dgPagamentos.Location = new System.Drawing.Point(14, 206);
             this.dgPagamentos.Margin = new System.Windows.Forms.Padding(2);
             this.dgPagamentos.Name = "dgPagamentos";
             this.dgPagamentos.ReadOnly = true;
@@ -818,318 +825,393 @@
             this.lblCnpjCpf.TabIndex = 298;
             this.lblCnpjCpf.Text = "CNPJ / CPF:";
             // 
+            // cbPagoEm
+            // 
+            this.cbPagoEm.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbPagoEm.FormattingEnabled = true;
+            this.cbPagoEm.Location = new System.Drawing.Point(709, 436);
+            this.cbPagoEm.Name = "cbPagoEm";
+            this.cbPagoEm.Size = new System.Drawing.Size(117, 20);
+            this.cbPagoEm.TabIndex = 460;
+            // 
+            // lblPagoEm
+            // 
+            this.lblPagoEm.AutoSize = true;
+            this.lblPagoEm.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPagoEm.Location = new System.Drawing.Point(653, 439);
+            this.lblPagoEm.Name = "lblPagoEm";
+            this.lblPagoEm.Size = new System.Drawing.Size(50, 12);
+            this.lblPagoEm.TabIndex = 459;
+            this.lblPagoEm.Text = "PAGO EM:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox4.Location = new System.Drawing.Point(595, 300);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(2, 160);
+            this.textBox4.TabIndex = 458;
+            // 
+            // lblTotaPagoPagto
+            // 
+            this.lblTotaPagoPagto.AutoSize = true;
+            this.lblTotaPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotaPagoPagto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblTotaPagoPagto.Location = new System.Drawing.Point(636, 415);
+            this.lblTotaPagoPagto.Name = "lblTotaPagoPagto";
+            this.lblTotaPagoPagto.Size = new System.Drawing.Size(67, 12);
+            this.lblTotaPagoPagto.TabIndex = 457;
+            this.lblTotaPagoPagto.Text = "TOTAL PAGO:";
+            // 
+            // txtTotaPagoPagto
+            // 
+            this.txtTotaPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTotaPagoPagto.Location = new System.Drawing.Point(709, 412);
+            this.txtTotaPagoPagto.Name = "txtTotaPagoPagto";
+            this.txtTotaPagoPagto.Size = new System.Drawing.Size(117, 18);
+            this.txtTotaPagoPagto.TabIndex = 456;
+            // 
+            // lblJurosPagto
+            // 
+            this.lblJurosPagto.AutoSize = true;
+            this.lblJurosPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblJurosPagto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblJurosPagto.Location = new System.Drawing.Point(664, 391);
+            this.lblJurosPagto.Name = "lblJurosPagto";
+            this.lblJurosPagto.Size = new System.Drawing.Size(39, 12);
+            this.lblJurosPagto.TabIndex = 455;
+            this.lblJurosPagto.Text = "JUROS:";
+            // 
+            // txtJurosPagto
+            // 
+            this.txtJurosPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtJurosPagto.Location = new System.Drawing.Point(709, 388);
+            this.txtJurosPagto.Name = "txtJurosPagto";
+            this.txtJurosPagto.Size = new System.Drawing.Size(117, 18);
+            this.txtJurosPagto.TabIndex = 454;
+            // 
+            // txtIdLancamento
+            // 
+            this.txtIdLancamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtIdLancamento.Location = new System.Drawing.Point(454, 270);
+            this.txtIdLancamento.Name = "txtIdLancamento";
+            this.txtIdLancamento.Size = new System.Drawing.Size(100, 18);
+            this.txtIdLancamento.TabIndex = 446;
+            // 
+            // lblDtEmisPgto
+            // 
+            this.lblDtEmisPgto.AutoSize = true;
+            this.lblDtEmisPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDtEmisPgto.Location = new System.Drawing.Point(53, 340);
+            this.lblDtEmisPgto.Name = "lblDtEmisPgto";
+            this.lblDtEmisPgto.Size = new System.Drawing.Size(63, 12);
+            this.lblDtEmisPgto.TabIndex = 453;
+            this.lblDtEmisPgto.Text = "DT EMISSÃO:";
+            // 
+            // txtRazaoNomeDescricao
+            // 
+            this.txtRazaoNomeDescricao.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtRazaoNomeDescricao.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.txtRazaoNomeDescricao.Location = new System.Drawing.Point(184, 362);
+            this.txtRazaoNomeDescricao.Name = "txtRazaoNomeDescricao";
+            this.txtRazaoNomeDescricao.PlaceholderText = "Descrição";
+            this.txtRazaoNomeDescricao.Size = new System.Drawing.Size(375, 18);
+            this.txtRazaoNomeDescricao.TabIndex = 426;
+            // 
             // cbSituacaoAbertaPaga
             // 
             this.cbSituacaoAbertaPaga.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbSituacaoAbertaPaga.FormattingEnabled = true;
             this.cbSituacaoAbertaPaga.Items.AddRange(new object[] {
             "EM ABERTO"});
-            this.cbSituacaoAbertaPaga.Location = new System.Drawing.Point(595, 362);
+            this.cbSituacaoAbertaPaga.Location = new System.Drawing.Point(709, 338);
             this.cbSituacaoAbertaPaga.Name = "cbSituacaoAbertaPaga";
             this.cbSituacaoAbertaPaga.Size = new System.Drawing.Size(117, 20);
-            this.cbSituacaoAbertaPaga.TabIndex = 361;
+            this.cbSituacaoAbertaPaga.TabIndex = 452;
+            // 
+            // lblNumDocPgto
+            // 
+            this.lblNumDocPgto.AutoSize = true;
+            this.lblNumDocPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNumDocPgto.Location = new System.Drawing.Point(661, 317);
+            this.lblNumDocPgto.Name = "lblNumDocPgto";
+            this.lblNumDocPgto.Size = new System.Drawing.Size(42, 12);
+            this.lblNumDocPgto.TabIndex = 427;
+            this.lblNumDocPgto.Text = "Nº. DOC:";
             // 
             // lblSituacaoAbertaPagaPgto
             // 
             this.lblSituacaoAbertaPagaPgto.AutoSize = true;
             this.lblSituacaoAbertaPagaPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSituacaoAbertaPagaPgto.Location = new System.Drawing.Point(533, 366);
+            this.lblSituacaoAbertaPagaPgto.Location = new System.Drawing.Point(647, 341);
             this.lblSituacaoAbertaPagaPgto.Name = "lblSituacaoAbertaPagaPgto";
             this.lblSituacaoAbertaPagaPgto.Size = new System.Drawing.Size(56, 12);
-            this.lblSituacaoAbertaPagaPgto.TabIndex = 360;
+            this.lblSituacaoAbertaPagaPgto.TabIndex = 451;
             this.lblSituacaoAbertaPagaPgto.Text = "SITUAÇÃO:";
+            // 
+            // txtNumDoc
+            // 
+            this.txtNumDoc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNumDoc.Location = new System.Drawing.Point(709, 314);
+            this.txtNumDoc.Name = "txtNumDoc";
+            this.txtNumDoc.Size = new System.Drawing.Size(117, 18);
+            this.txtNumDoc.TabIndex = 428;
             // 
             // txtIdCdc
             // 
             this.txtIdCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtIdCdc.Location = new System.Drawing.Point(49, 364);
+            this.txtIdCdc.Location = new System.Drawing.Point(124, 386);
             this.txtIdCdc.Name = "txtIdCdc";
             this.txtIdCdc.Size = new System.Drawing.Size(60, 18);
-            this.txtIdCdc.TabIndex = 359;
+            this.txtIdCdc.TabIndex = 450;
+            // 
+            // lblIdCdcCodPgto
+            // 
+            this.lblIdCdcCodPgto.AutoSize = true;
+            this.lblIdCdcCodPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIdCdcCodPgto.Location = new System.Drawing.Point(90, 389);
+            this.lblIdCdcCodPgto.Name = "lblIdCdcCodPgto";
+            this.lblIdCdcCodPgto.Size = new System.Drawing.Size(28, 12);
+            this.lblIdCdcCodPgto.TabIndex = 429;
+            this.lblIdCdcCodPgto.Text = "CDC:";
             // 
             // rbEntrada
             // 
             this.rbEntrada.AutoSize = true;
             this.rbEntrada.Checked = true;
             this.rbEntrada.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbEntrada.Location = new System.Drawing.Point(187, 262);
+            this.rbEntrada.Location = new System.Drawing.Point(198, 254);
             this.rbEntrada.Name = "rbEntrada";
             this.rbEntrada.Size = new System.Drawing.Size(82, 19);
-            this.rbEntrada.TabIndex = 358;
+            this.rbEntrada.TabIndex = 449;
             this.rbEntrada.TabStop = true;
             this.rbEntrada.Text = "ENTRADA";
             this.rbEntrada.UseVisualStyleBackColor = true;
             this.rbEntrada.Visible = false;
             // 
+            // lblCodCliFornPgto
+            // 
+            this.lblCodCliFornPgto.AutoSize = true;
+            this.lblCodCliFornPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCodCliFornPgto.Location = new System.Drawing.Point(59, 364);
+            this.lblCodCliFornPgto.Name = "lblCodCliFornPgto";
+            this.lblCodCliFornPgto.Size = new System.Drawing.Size(58, 12);
+            this.lblCodCliFornPgto.TabIndex = 430;
+            this.lblCodCliFornPgto.Text = "CLI / FORN:";
+            // 
             // rbSaida
             // 
             this.rbSaida.AutoSize = true;
             this.rbSaida.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbSaida.Location = new System.Drawing.Point(275, 262);
+            this.rbSaida.Location = new System.Drawing.Point(286, 254);
             this.rbSaida.Name = "rbSaida";
             this.rbSaida.Size = new System.Drawing.Size(62, 19);
-            this.rbSaida.TabIndex = 357;
+            this.rbSaida.TabIndex = 448;
             this.rbSaida.Text = "SAIDA";
             this.rbSaida.UseVisualStyleBackColor = true;
             this.rbSaida.Visible = false;
+            // 
+            // txtCodCliFornPgto
+            // 
+            this.txtCodCliFornPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodCliFornPgto.Location = new System.Drawing.Point(123, 362);
+            this.txtCodCliFornPgto.Name = "txtCodCliFornPgto";
+            this.txtCodCliFornPgto.Size = new System.Drawing.Size(60, 18);
+            this.txtCodCliFornPgto.TabIndex = 431;
             // 
             // lblIdLancPgto
             // 
             this.lblIdLancPgto.AutoSize = true;
             this.lblIdLancPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblIdLancPgto.Location = new System.Drawing.Point(417, 263);
+            this.lblIdLancPgto.Location = new System.Drawing.Point(457, 255);
             this.lblIdLancPgto.Name = "lblIdLancPgto";
             this.lblIdLancPgto.Size = new System.Drawing.Size(96, 12);
-            this.lblIdLancPgto.TabIndex = 356;
+            this.lblIdLancPgto.TabIndex = 447;
             this.lblIdLancPgto.Text = "COD. LANÇAMENTO";
             // 
-            // txtIdLancamento
+            // lblComentariosPgto
             // 
-            this.txtIdLancamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtIdLancamento.Location = new System.Drawing.Point(417, 278);
-            this.txtIdLancamento.Name = "txtIdLancamento";
-            this.txtIdLancamento.Size = new System.Drawing.Size(100, 18);
-            this.txtIdLancamento.TabIndex = 355;
+            this.lblComentariosPgto.AutoSize = true;
+            this.lblComentariosPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblComentariosPgto.Location = new System.Drawing.Point(40, 413);
+            this.lblComentariosPgto.Name = "lblComentariosPgto";
+            this.lblComentariosPgto.Size = new System.Drawing.Size(78, 12);
+            this.lblComentariosPgto.TabIndex = 432;
+            this.lblComentariosPgto.Text = "COMENTARIOS:";
+            // 
+            // txtComentarios
+            // 
+            this.txtComentarios.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtComentarios.Location = new System.Drawing.Point(124, 410);
+            this.txtComentarios.Multiline = true;
+            this.txtComentarios.Name = "txtComentarios";
+            this.txtComentarios.Size = new System.Drawing.Size(436, 44);
+            this.txtComentarios.TabIndex = 433;
             // 
             // dtPagamento
             // 
             this.dtPagamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtPagamento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtPagamento.Location = new System.Drawing.Point(719, 403);
+            this.dtPagamento.Location = new System.Drawing.Point(432, 337);
             this.dtPagamento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtPagamento.Name = "dtPagamento";
             this.dtPagamento.Size = new System.Drawing.Size(127, 18);
-            this.dtPagamento.TabIndex = 354;
+            this.dtPagamento.TabIndex = 445;
             this.dtPagamento.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            // 
+            // lblDtVencPgto
+            // 
+            this.lblDtVencPgto.AutoSize = true;
+            this.lblDtVencPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDtVencPgto.Location = new System.Drawing.Point(378, 315);
+            this.lblDtVencPgto.Name = "lblDtVencPgto";
+            this.lblDtVencPgto.Size = new System.Drawing.Size(48, 12);
+            this.lblDtVencPgto.TabIndex = 434;
+            this.lblDtVencPgto.Text = "DT VENC:";
             // 
             // lblDtProgramacaoPgto
             // 
             this.lblDtProgramacaoPgto.AutoSize = true;
             this.lblDtProgramacaoPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDtProgramacaoPgto.Location = new System.Drawing.Point(719, 388);
+            this.lblDtProgramacaoPgto.Location = new System.Drawing.Point(288, 340);
             this.lblDtProgramacaoPgto.Name = "lblDtProgramacaoPgto";
             this.lblDtProgramacaoPgto.Size = new System.Drawing.Size(139, 12);
-            this.lblDtProgramacaoPgto.TabIndex = 353;
+            this.lblDtProgramacaoPgto.TabIndex = 444;
             this.lblDtProgramacaoPgto.Text = "DT DE PROGRAMAÇÃO PGTO:";
+            // 
+            // txtDescricaoCdc
+            // 
+            this.txtDescricaoCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescricaoCdc.Location = new System.Drawing.Point(185, 386);
+            this.txtDescricaoCdc.Name = "txtDescricaoCdc";
+            this.txtDescricaoCdc.PlaceholderText = "Descrição";
+            this.txtDescricaoCdc.Size = new System.Drawing.Size(375, 18);
+            this.txtDescricaoCdc.TabIndex = 435;
             // 
             // lblValorTotalPgto
             // 
             this.lblValorTotalPgto.AutoSize = true;
             this.lblValorTotalPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblValorTotalPgto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblValorTotalPgto.Location = new System.Drawing.Point(595, 312);
+            this.lblValorTotalPgto.Location = new System.Drawing.Point(625, 367);
             this.lblValorTotalPgto.Name = "lblValorTotalPgto";
-            this.lblValorTotalPgto.Size = new System.Drawing.Size(70, 12);
-            this.lblValorTotalPgto.TabIndex = 352;
-            this.lblValorTotalPgto.Text = "VALOR TOTAL";
+            this.lblValorTotalPgto.Size = new System.Drawing.Size(78, 12);
+            this.lblValorTotalPgto.TabIndex = 443;
+            this.lblValorTotalPgto.Text = "VALOR TITULO:";
+            // 
+            // lblLancamentoPgto
+            // 
+            this.lblLancamentoPgto.AutoSize = true;
+            this.lblLancamentoPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblLancamentoPgto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblLancamentoPgto.Location = new System.Drawing.Point(55, 316);
+            this.lblLancamentoPgto.Name = "lblLancamentoPgto";
+            this.lblLancamentoPgto.Size = new System.Drawing.Size(62, 12);
+            this.lblLancamentoPgto.TabIndex = 436;
+            this.lblLancamentoPgto.Text = "DATA LANÇ.:";
             // 
             // txtValorTotal
             // 
             this.txtValorTotal.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtValorTotal.Location = new System.Drawing.Point(595, 327);
+            this.txtValorTotal.Location = new System.Drawing.Point(709, 364);
             this.txtValorTotal.Name = "txtValorTotal";
             this.txtValorTotal.Size = new System.Drawing.Size(117, 18);
-            this.txtValorTotal.TabIndex = 351;
+            this.txtValorTotal.TabIndex = 442;
+            // 
+            // dtLancamento
+            // 
+            this.dtLancamento.CalendarFont = new System.Drawing.Font("Times New Roman", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtLancamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtLancamento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtLancamento.Location = new System.Drawing.Point(123, 313);
+            this.dtLancamento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtLancamento.Name = "dtLancamento";
+            this.dtLancamento.Size = new System.Drawing.Size(127, 18);
+            this.dtLancamento.TabIndex = 437;
+            this.dtLancamento.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox3.Location = new System.Drawing.Point(14, 433);
+            this.textBox3.Location = new System.Drawing.Point(15, 466);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(910, 2);
-            this.textBox3.TabIndex = 350;
+            this.textBox3.TabIndex = 441;
+            // 
+            // dtVencimento
+            // 
+            this.dtVencimento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtVencimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtVencimento.Location = new System.Drawing.Point(432, 313);
+            this.dtVencimento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtVencimento.Name = "dtVencimento";
+            this.dtVencimento.Size = new System.Drawing.Size(127, 18);
+            this.dtVencimento.TabIndex = 438;
+            this.dtVencimento.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
             // lblTipoLancPgto
             // 
             this.lblTipoLancPgto.AutoSize = true;
             this.lblTipoLancPgto.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTipoLancPgto.Location = new System.Drawing.Point(15, 263);
+            this.lblTipoLancPgto.Location = new System.Drawing.Point(26, 255);
             this.lblTipoLancPgto.Name = "lblTipoLancPgto";
             this.lblTipoLancPgto.Size = new System.Drawing.Size(166, 17);
-            this.lblTipoLancPgto.TabIndex = 349;
+            this.lblTipoLancPgto.TabIndex = 440;
             this.lblTipoLancPgto.Text = "TIPO LANÇAMENTO:";
             // 
             // dtEmissao
             // 
             this.dtEmissao.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtEmissao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEmissao.Location = new System.Drawing.Point(718, 327);
+            this.dtEmissao.Location = new System.Drawing.Point(123, 337);
             this.dtEmissao.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtEmissao.Name = "dtEmissao";
             this.dtEmissao.Size = new System.Drawing.Size(127, 18);
-            this.dtEmissao.TabIndex = 348;
+            this.dtEmissao.TabIndex = 439;
             this.dtEmissao.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
-            // 
-            // dtVencimento
-            // 
-            this.dtVencimento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtVencimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtVencimento.Location = new System.Drawing.Point(719, 364);
-            this.dtVencimento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dtVencimento.Name = "dtVencimento";
-            this.dtVencimento.Size = new System.Drawing.Size(127, 18);
-            this.dtVencimento.TabIndex = 347;
-            this.dtVencimento.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
-            // 
-            // dtLancamento
-            // 
-            this.dtLancamento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtLancamento.Location = new System.Drawing.Point(798, 258);
-            this.dtLancamento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dtLancamento.Name = "dtLancamento";
-            this.dtLancamento.Size = new System.Drawing.Size(127, 23);
-            this.dtLancamento.TabIndex = 346;
-            this.dtLancamento.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
-            // 
-            // lblLancamentoPgto
-            // 
-            this.lblLancamentoPgto.AutoSize = true;
-            this.lblLancamentoPgto.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLancamentoPgto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblLancamentoPgto.Location = new System.Drawing.Point(750, 263);
-            this.lblLancamentoPgto.Name = "lblLancamentoPgto";
-            this.lblLancamentoPgto.Size = new System.Drawing.Size(44, 15);
-            this.lblLancamentoPgto.TabIndex = 345;
-            this.lblLancamentoPgto.Text = "DATA:";
-            // 
-            // txtDescricaoCdc
-            // 
-            this.txtDescricaoCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDescricaoCdc.Location = new System.Drawing.Point(110, 364);
-            this.txtDescricaoCdc.Name = "txtDescricaoCdc";
-            this.txtDescricaoCdc.PlaceholderText = "Descrição";
-            this.txtDescricaoCdc.Size = new System.Drawing.Size(412, 18);
-            this.txtDescricaoCdc.TabIndex = 344;
-            // 
-            // lblDtVencPgto
-            // 
-            this.lblDtVencPgto.AutoSize = true;
-            this.lblDtVencPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDtVencPgto.Location = new System.Drawing.Point(719, 349);
-            this.lblDtVencPgto.Name = "lblDtVencPgto";
-            this.lblDtVencPgto.Size = new System.Drawing.Size(48, 12);
-            this.lblDtVencPgto.TabIndex = 343;
-            this.lblDtVencPgto.Text = "DT VENC:";
-            // 
-            // txtComentarios
-            // 
-            this.txtComentarios.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtComentarios.Location = new System.Drawing.Point(48, 403);
-            this.txtComentarios.Multiline = true;
-            this.txtComentarios.Name = "txtComentarios";
-            this.txtComentarios.Size = new System.Drawing.Size(664, 18);
-            this.txtComentarios.TabIndex = 341;
-            // 
-            // lblComentariosPgto
-            // 
-            this.lblComentariosPgto.AutoSize = true;
-            this.lblComentariosPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblComentariosPgto.Location = new System.Drawing.Point(48, 389);
-            this.lblComentariosPgto.Name = "lblComentariosPgto";
-            this.lblComentariosPgto.Size = new System.Drawing.Size(78, 12);
-            this.lblComentariosPgto.TabIndex = 340;
-            this.lblComentariosPgto.Text = "COMENTARIOS:";
-            // 
-            // txtCodCliFornPgto
-            // 
-            this.txtCodCliFornPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCodCliFornPgto.Location = new System.Drawing.Point(48, 327);
-            this.txtCodCliFornPgto.Name = "txtCodCliFornPgto";
-            this.txtCodCliFornPgto.Size = new System.Drawing.Size(60, 18);
-            this.txtCodCliFornPgto.TabIndex = 339;
-            // 
-            // lblCodCliFornPgto
-            // 
-            this.lblCodCliFornPgto.AutoSize = true;
-            this.lblCodCliFornPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCodCliFornPgto.Location = new System.Drawing.Point(48, 312);
-            this.lblCodCliFornPgto.Name = "lblCodCliFornPgto";
-            this.lblCodCliFornPgto.Size = new System.Drawing.Size(58, 12);
-            this.lblCodCliFornPgto.TabIndex = 338;
-            this.lblCodCliFornPgto.Text = "CLI / FORN:";
-            // 
-            // lblIdCdcCodPgto
-            // 
-            this.lblIdCdcCodPgto.AutoSize = true;
-            this.lblIdCdcCodPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblIdCdcCodPgto.Location = new System.Drawing.Point(49, 349);
-            this.lblIdCdcCodPgto.Name = "lblIdCdcCodPgto";
-            this.lblIdCdcCodPgto.Size = new System.Drawing.Size(28, 12);
-            this.lblIdCdcCodPgto.TabIndex = 337;
-            this.lblIdCdcCodPgto.Text = "CDC:";
-            // 
-            // txtNumDoc
-            // 
-            this.txtNumDoc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNumDoc.Location = new System.Drawing.Point(490, 327);
-            this.txtNumDoc.Name = "txtNumDoc";
-            this.txtNumDoc.Size = new System.Drawing.Size(99, 18);
-            this.txtNumDoc.TabIndex = 336;
-            // 
-            // lblNumDocPgto
-            // 
-            this.lblNumDocPgto.AutoSize = true;
-            this.lblNumDocPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNumDocPgto.Location = new System.Drawing.Point(490, 312);
-            this.lblNumDocPgto.Name = "lblNumDocPgto";
-            this.lblNumDocPgto.Size = new System.Drawing.Size(42, 12);
-            this.lblNumDocPgto.TabIndex = 335;
-            this.lblNumDocPgto.Text = "Nº. DOC:";
-            // 
-            // txtRazaoNomeDescricao
-            // 
-            this.txtRazaoNomeDescricao.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtRazaoNomeDescricao.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txtRazaoNomeDescricao.Location = new System.Drawing.Point(109, 327);
-            this.txtRazaoNomeDescricao.Name = "txtRazaoNomeDescricao";
-            this.txtRazaoNomeDescricao.PlaceholderText = "Descrição";
-            this.txtRazaoNomeDescricao.Size = new System.Drawing.Size(375, 18);
-            this.txtRazaoNomeDescricao.TabIndex = 334;
-            // 
-            // lblDtEmisPgto
-            // 
-            this.lblDtEmisPgto.AutoSize = true;
-            this.lblDtEmisPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDtEmisPgto.Location = new System.Drawing.Point(718, 312);
-            this.lblDtEmisPgto.Name = "lblDtEmisPgto";
-            this.lblDtEmisPgto.Size = new System.Drawing.Size(63, 12);
-            this.lblDtEmisPgto.TabIndex = 362;
-            this.lblDtEmisPgto.Text = "DT EMISSÃO:";
             // 
             // FormCadPagamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 561);
-            this.Controls.Add(this.lblDtEmisPgto);
-            this.Controls.Add(this.cbSituacaoAbertaPaga);
-            this.Controls.Add(this.lblSituacaoAbertaPagaPgto);
-            this.Controls.Add(this.txtIdCdc);
-            this.Controls.Add(this.rbEntrada);
-            this.Controls.Add(this.rbSaida);
-            this.Controls.Add(this.lblIdLancPgto);
+            this.Controls.Add(this.cbPagoEm);
+            this.Controls.Add(this.lblPagoEm);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.lblTotaPagoPagto);
+            this.Controls.Add(this.txtTotaPagoPagto);
+            this.Controls.Add(this.lblJurosPagto);
+            this.Controls.Add(this.txtJurosPagto);
             this.Controls.Add(this.txtIdLancamento);
+            this.Controls.Add(this.lblDtEmisPgto);
+            this.Controls.Add(this.txtRazaoNomeDescricao);
+            this.Controls.Add(this.cbSituacaoAbertaPaga);
+            this.Controls.Add(this.lblNumDocPgto);
+            this.Controls.Add(this.lblSituacaoAbertaPagaPgto);
+            this.Controls.Add(this.txtNumDoc);
+            this.Controls.Add(this.txtIdCdc);
+            this.Controls.Add(this.lblIdCdcCodPgto);
+            this.Controls.Add(this.rbEntrada);
+            this.Controls.Add(this.lblCodCliFornPgto);
+            this.Controls.Add(this.rbSaida);
+            this.Controls.Add(this.txtCodCliFornPgto);
+            this.Controls.Add(this.lblIdLancPgto);
+            this.Controls.Add(this.lblComentariosPgto);
+            this.Controls.Add(this.txtComentarios);
             this.Controls.Add(this.dtPagamento);
+            this.Controls.Add(this.lblDtVencPgto);
             this.Controls.Add(this.lblDtProgramacaoPgto);
+            this.Controls.Add(this.txtDescricaoCdc);
             this.Controls.Add(this.lblValorTotalPgto);
+            this.Controls.Add(this.lblLancamentoPgto);
             this.Controls.Add(this.txtValorTotal);
+            this.Controls.Add(this.dtLancamento);
             this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.dtVencimento);
             this.Controls.Add(this.lblTipoLancPgto);
             this.Controls.Add(this.dtEmissao);
-            this.Controls.Add(this.dtVencimento);
-            this.Controls.Add(this.dtLancamento);
-            this.Controls.Add(this.lblLancamentoPgto);
-            this.Controls.Add(this.txtDescricaoCdc);
-            this.Controls.Add(this.lblDtVencPgto);
-            this.Controls.Add(this.txtComentarios);
-            this.Controls.Add(this.lblComentariosPgto);
-            this.Controls.Add(this.txtCodCliFornPgto);
-            this.Controls.Add(this.lblCodCliFornPgto);
-            this.Controls.Add(this.lblIdCdcCodPgto);
-            this.Controls.Add(this.txtNumDoc);
-            this.Controls.Add(this.lblNumDocPgto);
-            this.Controls.Add(this.txtRazaoNomeDescricao);
             this.Controls.Add(this.lblCnpjCpf);
             this.Controls.Add(this.lblRazaoNome);
             this.Controls.Add(this.txtCodCliForn);
@@ -1256,44 +1338,51 @@
         private DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
         private BindingSource lancamentosBindingSource1;
         private Label lblCnpjCpf;
-        private ComboBox cbSituacaoAbertaPaga;
         private Label lblSituacaoAbertaPaga;
-        private TextBox txtIdCdc;
-        private RadioButton rbEntrada;
-        private RadioButton rbSaida;
         private Label lblIdLancamento;
-        private TextBox txtIdLancamento;
-        private DateTimePicker dtPagamento;
-        private Label lblDtProgramacaoPgto;
         private Label lblValorTotal;
-        private TextBox txtValorTotal;
-        private TextBox textBox3;
         private Label lblTipoLancamento;
-        private DateTimePicker dtEmissao;
-        private DateTimePicker dtVencimento;
-        private DateTimePicker dtLancamento;
         private Label lblLancamento;
-        private TextBox txtDescricaoCdc;
         private Label lblDtVenc;
-        private TextBox txtComentarios;
         private Label lblComentarios;
-        private TextBox txtCodCliFornPgto;
         private Label lblCodCliForne;
         private Label lblCodCdc;
-        private TextBox txtNumDoc;
         private Label lblNumDoc;
-        private TextBox txtRazaoNomeDescricao;
         private Label lblDtEmis;
-        private Label lblSituacaoAbertaPagaPgto;
-        private Label lblIdLancPgto;
-        private Label lblValorTotalPgto;
-        private Label lblTipoLancPgto;
-        private Label lblLancamentoPgto;
-        private Label lblDtVencPgto;
-        private Label lblComentariosPgto;
-        private Label lblCodCliFornPgto;
-        private Label lblIdCdcCodPgto;
-        private Label lblNumDocPgto;
+        private ComboBox cbPagoEm;
+        private Label lblPagoEm;
+        private TextBox textBox4;
+        private Label lblTotaPagoPagto;
+        private TextBox txtTotaPagoPagto;
+        private Label lblJurosPagto;
+        private TextBox txtJurosPagto;
+        private TextBox txtIdLancamento;
         private Label lblDtEmisPgto;
+        private TextBox txtRazaoNomeDescricao;
+        private ComboBox cbSituacaoAbertaPaga;
+        private Label lblNumDocPgto;
+        private Label lblSituacaoAbertaPagaPgto;
+        private TextBox txtNumDoc;
+        private TextBox txtIdCdc;
+        private Label lblIdCdcCodPgto;
+        private RadioButton rbEntrada;
+        private Label lblCodCliFornPgto;
+        private RadioButton rbSaida;
+        private TextBox txtCodCliFornPgto;
+        private Label lblIdLancPgto;
+        private Label lblComentariosPgto;
+        private TextBox txtComentarios;
+        private DateTimePicker dtPagamento;
+        private Label lblDtVencPgto;
+        private Label lblDtProgramacaoPgto;
+        private TextBox txtDescricaoCdc;
+        private Label lblValorTotalPgto;
+        private Label lblLancamentoPgto;
+        private TextBox txtValorTotal;
+        private DateTimePicker dtLancamento;
+        private TextBox textBox3;
+        private DateTimePicker dtVencimento;
+        private Label lblTipoLancPgto;
+        private DateTimePicker dtEmissao;
     }
 }

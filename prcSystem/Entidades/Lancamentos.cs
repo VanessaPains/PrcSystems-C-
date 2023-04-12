@@ -26,7 +26,10 @@ namespace prcSystem.Entidades
         DateTime dtPagamento;
         decimal valorTotal;
         string comentarios;
+        decimal jurosPagto;
+        decimal totalPagoPagto;
 
+        string pagoEm;
         string situacao;
 
 
@@ -47,6 +50,9 @@ namespace prcSystem.Entidades
         public string CodCdc { get => codCdc; set => codCdc = value; }
         public string Situacao { get => situacao; set => situacao = value; }
         public string CnpjCpf { get => cnpjCpf; set => cnpjCpf = value; }
+        public decimal JurosPagto { get => jurosPagto; set => jurosPagto = value; }
+        public decimal TotalPagoPagto { get => totalPagoPagto; set => totalPagoPagto = value; }
+        public string PagoEm { get => pagoEm; set => pagoEm = value; }
 
         public static implicit operator Lancamentos(LancamentoModel v)
         {
