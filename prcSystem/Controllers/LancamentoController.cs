@@ -463,8 +463,7 @@ namespace prcSystem.Controllers
                     "               p.IdPessoa, p.RazaoNome, p.CnpjCpf, " +
                     "               c.IdCdc, c.CodCdc, c.DescricaoCdc," +
                     "               l.NumDocumento, l.DtLancamento, l.DtEmissao, l.DtVencimento, " +
-                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao," +
-                    "               l.JurosPagto, l.TotalPagoPagto, l.PagoEm" +
+                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao" +
                     "               FROM Lancamentos l" +
                     "               INNER JOIN Pessoa p ON l.IdPessoa = p.IdPessoa" +
                     "               INNER JOIN Cdc c ON l.IdCdc = c.CodCdc";
@@ -500,9 +499,9 @@ namespace prcSystem.Controllers
                         dados.Comentarios = Convert.ToString(dr["Comentarios"]);
                         dados.Situacao = Convert.ToString(dr["Situacao"]);
 
-                        dados.JurosPagto = Convert.ToDecimal(dr["JurosPagto"]);
-                        dados.TotalPagoPagto = Convert.ToDecimal(dr["TotalPagoPagto"]);
-                        dados.PagoEm = Convert.ToString(dr["PagoEm"]);
+                        //dados.JurosPagto = Convert.ToDecimal(dr["JurosPagto"]);
+                        //dados.TotalPagoPagto = Convert.ToDecimal(dr["TotalPagoPagto"]);
+                        //dados.PagoEm = Convert.ToString(dr["PagoEm"]);
 
                         lista.Add(dados);
                     }

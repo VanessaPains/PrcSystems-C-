@@ -53,10 +53,5 @@ namespace prcSystem.Entidades
         public decimal JurosPagto { get => jurosPagto; set => jurosPagto = value; }
         public decimal TotalPagoPagto { get => totalPagoPagto; set => totalPagoPagto = value; }
         public string PagoEm { get => pagoEm; set => pagoEm = value; }
-
-        public static implicit operator Lancamentos(LancamentoModel v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

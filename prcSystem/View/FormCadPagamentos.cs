@@ -322,27 +322,32 @@ namespace prcSystem.View
             lblDtVencPgto.Location = new Point(376, 123);
             lblComentariosPgto.Location = new Point(38, 221);
             lblDtProgramacaoPgto.Location = new Point(286, 148);
-
+            lblJurosPagto.Location = new Point(662, 199);
+            lblTotalPagoPagto.Location = new Point(634, 223);
+            lblPagoEm.Location = new Point(651, 247);
 
             rbEntrada.Location = new Point(184, 64);
             rbSaida.Location = new Point(272, 64);
 
-            txtCodCliFornPgto.Location = new Point(45, 129);
-            txtRazaoNomeDescricao.Location = new Point(106, 129);
-            txtNumDoc.Location = new Point(487, 129);
-            txtValorTotal.Location = new Point(592, 129);
-            txtIdCdc.Location = new Point(46, 166);
-            txtDescricaoCdc.Location = new Point(107, 166);
-            txtComentarios.Location = new Point(46, 205);
+            txtCodCliFornPgto.Location = new Point(121, 170);
+            txtRazaoNomeDescricao.Location = new Point(182, 170);
+            txtNumDoc.Location = new Point(707, 122);
+            txtValorTotal.Location = new Point(707, 172);
+            txtIdCdc.Location = new Point(122, 194);
+            txtDescricaoCdc.Location = new Point(183, 194);
+            txtComentarios.Location = new Point(122, 218);
             txtIdLancamento.Location = new Point(414, 80);
+            txtJurosPagto.Location = new Point(707, 196);
+            txtTotalPagoPagto.Location = new Point(707, 220);
             textBox3.Location = new Point(11, 235);
 
-            dtLancamento.Location = new Point(795, 60);
-            dtEmissao.Location = new Point(715, 129);
-            dtVencimento.Location = new Point(716, 166);
-            dtPagamento.Location = new Point(716, 205);
+            dtLancamento.Location = new Point(121, 121);
+            dtEmissao.Location = new Point(121, 145);
+            dtVencimento.Location = new Point(430, 121);
+            dtPagamento.Location = new Point(430, 145);
 
-            cbSituacaoAbertaPaga.Location = new Point(592, 166);
+            cbSituacaoAbertaPaga.Location = new Point(707, 146);
+            cbPagoEm.Location = new Point(707, 244);
         }
         //------------- FIM: DOS METODOS DE AJUSTAR AS POSIÇÕES DOS CAMPOS ----------------------------------------------------
 
@@ -473,6 +478,9 @@ namespace prcSystem.View
             lblDtVencPgto.Visible = false;
             lblComentariosPgto.Visible = false;
             lblDtProgramacaoPgto.Visible = false;
+            lblJurosPagto.Visible = false;  
+            lblTotalPagoPagto.Visible = false;
+            lblPagoEm.Visible = false;
 
             rbEntrada.Visible = false;
             rbSaida.Visible = false;
@@ -485,6 +493,8 @@ namespace prcSystem.View
             txtIdCdc.Visible = false;
             txtDescricaoCdc.Visible = false;
             txtComentarios.Visible = false;
+            txtJurosPagto.Visible = false;
+            txtTotalPagoPagto.Visible = false;
 
             dtLancamento.Visible = false;
             dtEmissao.Visible = false;
@@ -492,6 +502,7 @@ namespace prcSystem.View
             dtPagamento.Visible = false;
 
             cbSituacaoAbertaPaga.Visible = false;
+            cbPagoEm.Visible = false;
 
             txtIdLancamento.Enabled = false;
             txtCodCliFornPgto.Enabled = false;
@@ -527,6 +538,9 @@ namespace prcSystem.View
             lblDtVencPgto.Visible = true;
             lblComentariosPgto.Visible = true;
             lblDtProgramacaoPgto.Visible = true;
+            lblJurosPagto.Visible = true;
+            lblTotalPagoPagto.Visible = true;
+            lblPagoEm.Visible = true;
 
             rbEntrada.Visible = true;
             rbSaida.Visible = true;
@@ -539,6 +553,9 @@ namespace prcSystem.View
             txtIdCdc.Visible = true;
             txtDescricaoCdc.Visible = true;
             txtComentarios.Visible = true;
+            txtJurosPagto.Visible = true;
+            txtTotalPagoPagto.Visible = true;
+
 
             dtLancamento.Visible = true;
             dtEmissao.Visible = true;
@@ -546,6 +563,7 @@ namespace prcSystem.View
             dtPagamento.Visible = true;
 
             cbSituacaoAbertaPaga.Visible = true;
+            cbPagoEm.Visible = true;    
         }
         //------------- FIM: DOS METODOS DE HABILITAR E DESABILITAR CAMPOS ----------------------------------------------------
 

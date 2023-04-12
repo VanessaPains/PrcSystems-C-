@@ -96,8 +96,8 @@
             this.cbPagoEm = new System.Windows.Forms.ComboBox();
             this.lblPagoEm = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.lblTotaPagoPagto = new System.Windows.Forms.Label();
-            this.txtTotaPagoPagto = new System.Windows.Forms.TextBox();
+            this.lblTotalPagoPagto = new System.Windows.Forms.Label();
+            this.txtTotalPagoPagto = new System.Windows.Forms.TextBox();
             this.lblJurosPagto = new System.Windows.Forms.Label();
             this.txtJurosPagto = new System.Windows.Forms.TextBox();
             this.txtIdLancamento = new System.Windows.Forms.TextBox();
@@ -853,24 +853,24 @@
             this.textBox4.Size = new System.Drawing.Size(2, 160);
             this.textBox4.TabIndex = 458;
             // 
-            // lblTotaPagoPagto
+            // lblTotalPagoPagto
             // 
-            this.lblTotaPagoPagto.AutoSize = true;
-            this.lblTotaPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTotaPagoPagto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblTotaPagoPagto.Location = new System.Drawing.Point(636, 415);
-            this.lblTotaPagoPagto.Name = "lblTotaPagoPagto";
-            this.lblTotaPagoPagto.Size = new System.Drawing.Size(67, 12);
-            this.lblTotaPagoPagto.TabIndex = 457;
-            this.lblTotaPagoPagto.Text = "TOTAL PAGO:";
+            this.lblTotalPagoPagto.AutoSize = true;
+            this.lblTotalPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalPagoPagto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblTotalPagoPagto.Location = new System.Drawing.Point(636, 415);
+            this.lblTotalPagoPagto.Name = "lblTotalPagoPagto";
+            this.lblTotalPagoPagto.Size = new System.Drawing.Size(67, 12);
+            this.lblTotalPagoPagto.TabIndex = 457;
+            this.lblTotalPagoPagto.Text = "TOTAL PAGO:";
             // 
-            // txtTotaPagoPagto
+            // txtTotalPagoPagto
             // 
-            this.txtTotaPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTotaPagoPagto.Location = new System.Drawing.Point(709, 412);
-            this.txtTotaPagoPagto.Name = "txtTotaPagoPagto";
-            this.txtTotaPagoPagto.Size = new System.Drawing.Size(117, 18);
-            this.txtTotaPagoPagto.TabIndex = 456;
+            this.txtTotalPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalPagoPagto.Location = new System.Drawing.Point(709, 412);
+            this.txtTotalPagoPagto.Name = "txtTotalPagoPagto";
+            this.txtTotalPagoPagto.Size = new System.Drawing.Size(117, 18);
+            this.txtTotalPagoPagto.TabIndex = 456;
             // 
             // lblJurosPagto
             // 
@@ -1180,8 +1180,8 @@
             this.Controls.Add(this.cbPagoEm);
             this.Controls.Add(this.lblPagoEm);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.lblTotaPagoPagto);
-            this.Controls.Add(this.txtTotaPagoPagto);
+            this.Controls.Add(this.lblTotalPagoPagto);
+            this.Controls.Add(this.txtTotalPagoPagto);
             this.Controls.Add(this.lblJurosPagto);
             this.Controls.Add(this.txtJurosPagto);
             this.Controls.Add(this.txtIdLancamento);
@@ -1352,8 +1352,8 @@
         private ComboBox cbPagoEm;
         private Label lblPagoEm;
         private TextBox textBox4;
-        private Label lblTotaPagoPagto;
-        private TextBox txtTotaPagoPagto;
+        private Label lblTotalPagoPagto;
+        private TextBox txtTotalPagoPagto;
         private Label lblJurosPagto;
         private TextBox txtJurosPagto;
         private TextBox txtIdLancamento;
