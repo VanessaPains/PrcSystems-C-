@@ -66,28 +66,6 @@
             this.dgCadCdc = new System.Windows.Forms.DataGridView();
             this.txtIdCdc = new System.Windows.Forms.TextBox();
             this.DgExibirLacamentos = new System.Windows.Forms.DataGridView();
-            this.lancamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txtPesquisarLancamentos = new System.Windows.Forms.TextBox();
-            this.lblPesquisarLancamentos = new System.Windows.Forms.Label();
-            this.BtnEditarLanc = new System.Windows.Forms.Button();
-            this.tipoLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numDocumentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtEmissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtVencimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblSituacaoAbertaPaga = new System.Windows.Forms.Label();
-            this.cbSituacaoAbertaPaga = new System.Windows.Forms.ComboBox();
-            this.cbPagoEm = new System.Windows.Forms.ComboBox();
-            this.cdcBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lblPagoEm = new System.Windows.Forms.Label();
-            this.lblTotaPagoPagto = new System.Windows.Forms.Label();
-            this.txtTotalPagoPagto = new System.Windows.Forms.TextBox();
-            this.lblJurosPagto = new System.Windows.Forms.Label();
-            this.txtJurosPagto2 = new System.Windows.Forms.TextBox();
-            this.txtJurosPagto = new System.Windows.Forms.TextBox();
             this.idLancamentoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoLancamentoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPessoaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -102,6 +80,21 @@
             this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SituacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lancamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtPesquisarLancamentos = new System.Windows.Forms.TextBox();
+            this.lblPesquisarLancamentos = new System.Windows.Forms.Label();
+            this.BtnEditarLanc = new System.Windows.Forms.Button();
+            this.tipoLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numDocumentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtEmissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtVencimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblSituacaoAbertaPaga = new System.Windows.Forms.Label();
+            this.cbSituacaoAbertaPaga = new System.Windows.Forms.ComboBox();
+            this.cdcBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliForn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgCadCdc)).BeginInit();
@@ -523,6 +516,104 @@
             this.DgExibirLacamentos.Visible = false;
             this.DgExibirLacamentos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgExibirLacamentos_CellClick);
             // 
+            // idLancamentoDataGridViewTextBoxColumn1
+            // 
+            this.idLancamentoDataGridViewTextBoxColumn1.DataPropertyName = "IdLancamento";
+            this.idLancamentoDataGridViewTextBoxColumn1.HeaderText = "IdLancamento";
+            this.idLancamentoDataGridViewTextBoxColumn1.Name = "idLancamentoDataGridViewTextBoxColumn1";
+            this.idLancamentoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // tipoLancamentoDataGridViewTextBoxColumn1
+            // 
+            this.tipoLancamentoDataGridViewTextBoxColumn1.DataPropertyName = "TipoLancamento";
+            this.tipoLancamentoDataGridViewTextBoxColumn1.HeaderText = "TipoLancamento";
+            this.tipoLancamentoDataGridViewTextBoxColumn1.Name = "tipoLancamentoDataGridViewTextBoxColumn1";
+            this.tipoLancamentoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // idPessoaDataGridViewTextBoxColumn1
+            // 
+            this.idPessoaDataGridViewTextBoxColumn1.DataPropertyName = "IdPessoa";
+            this.idPessoaDataGridViewTextBoxColumn1.HeaderText = "IdPessoa";
+            this.idPessoaDataGridViewTextBoxColumn1.Name = "idPessoaDataGridViewTextBoxColumn1";
+            this.idPessoaDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "RazaoNome";
+            this.dataGridViewTextBoxColumn1.HeaderText = "RazaoNome";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // codCdcDataGridViewTextBoxColumn
+            // 
+            this.codCdcDataGridViewTextBoxColumn.DataPropertyName = "CodCdc";
+            this.codCdcDataGridViewTextBoxColumn.HeaderText = "CodCdc";
+            this.codCdcDataGridViewTextBoxColumn.Name = "codCdcDataGridViewTextBoxColumn";
+            this.codCdcDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "DescricaoCdc";
+            this.dataGridViewTextBoxColumn2.HeaderText = "DescricaoCdc";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // numDocumentoDataGridViewTextBoxColumn1
+            // 
+            this.numDocumentoDataGridViewTextBoxColumn1.DataPropertyName = "NumDocumento";
+            this.numDocumentoDataGridViewTextBoxColumn1.HeaderText = "NumDocumento";
+            this.numDocumentoDataGridViewTextBoxColumn1.Name = "numDocumentoDataGridViewTextBoxColumn1";
+            this.numDocumentoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dtLancamentoDataGridViewTextBoxColumn1
+            // 
+            this.dtLancamentoDataGridViewTextBoxColumn1.DataPropertyName = "DtLancamento";
+            this.dtLancamentoDataGridViewTextBoxColumn1.HeaderText = "DtLancamento";
+            this.dtLancamentoDataGridViewTextBoxColumn1.Name = "dtLancamentoDataGridViewTextBoxColumn1";
+            this.dtLancamentoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dtEmissaoDataGridViewTextBoxColumn1
+            // 
+            this.dtEmissaoDataGridViewTextBoxColumn1.DataPropertyName = "DtEmissao";
+            this.dtEmissaoDataGridViewTextBoxColumn1.HeaderText = "DtEmissao";
+            this.dtEmissaoDataGridViewTextBoxColumn1.Name = "dtEmissaoDataGridViewTextBoxColumn1";
+            this.dtEmissaoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dtVencimentoDataGridViewTextBoxColumn1
+            // 
+            this.dtVencimentoDataGridViewTextBoxColumn1.DataPropertyName = "DtVencimento";
+            this.dtVencimentoDataGridViewTextBoxColumn1.HeaderText = "DtVencimento";
+            this.dtVencimentoDataGridViewTextBoxColumn1.Name = "dtVencimentoDataGridViewTextBoxColumn1";
+            this.dtVencimentoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dtPagamentoDataGridViewTextBoxColumn
+            // 
+            this.dtPagamentoDataGridViewTextBoxColumn.DataPropertyName = "DtPagamento";
+            this.dtPagamentoDataGridViewTextBoxColumn.HeaderText = "DtPagamento";
+            this.dtPagamentoDataGridViewTextBoxColumn.Name = "dtPagamentoDataGridViewTextBoxColumn";
+            this.dtPagamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // valorTotalDataGridViewTextBoxColumn
+            // 
+            this.valorTotalDataGridViewTextBoxColumn.DataPropertyName = "ValorTotal";
+            this.valorTotalDataGridViewTextBoxColumn.HeaderText = "ValorTotal";
+            this.valorTotalDataGridViewTextBoxColumn.Name = "valorTotalDataGridViewTextBoxColumn";
+            this.valorTotalDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // comentariosDataGridViewTextBoxColumn
+            // 
+            this.comentariosDataGridViewTextBoxColumn.DataPropertyName = "Comentarios";
+            this.comentariosDataGridViewTextBoxColumn.HeaderText = "Comentarios";
+            this.comentariosDataGridViewTextBoxColumn.Name = "comentariosDataGridViewTextBoxColumn";
+            this.comentariosDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // SituacaoDataGridViewTextBoxColumn
+            // 
+            this.SituacaoDataGridViewTextBoxColumn.DataPropertyName = "Situacao";
+            this.SituacaoDataGridViewTextBoxColumn.HeaderText = "Situacao";
+            this.SituacaoDataGridViewTextBoxColumn.Name = "SituacaoDataGridViewTextBoxColumn";
+            this.SituacaoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // lancamentosBindingSource
             // 
             this.lancamentosBindingSource.DataSource = typeof(prcSystem.Entidades.Lancamentos);
@@ -629,186 +720,15 @@
             this.cbSituacaoAbertaPaga.Size = new System.Drawing.Size(117, 20);
             this.cbSituacaoAbertaPaga.TabIndex = 333;
             // 
-            // cbPagoEm
-            // 
-            this.cbPagoEm.DataSource = this.cdcBindingSource;
-            this.cbPagoEm.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbPagoEm.FormattingEnabled = true;
-            this.cbPagoEm.Location = new System.Drawing.Point(715, 294);
-            this.cbPagoEm.Name = "cbPagoEm";
-            this.cbPagoEm.Size = new System.Drawing.Size(117, 20);
-            this.cbPagoEm.TabIndex = 431;
-            // 
             // cdcBindingSource
             // 
             this.cdcBindingSource.DataSource = typeof(prcSystem.Entidades.Cdc);
-            // 
-            // lblPagoEm
-            // 
-            this.lblPagoEm.AutoSize = true;
-            this.lblPagoEm.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPagoEm.Location = new System.Drawing.Point(659, 297);
-            this.lblPagoEm.Name = "lblPagoEm";
-            this.lblPagoEm.Size = new System.Drawing.Size(50, 12);
-            this.lblPagoEm.TabIndex = 430;
-            this.lblPagoEm.Text = "PAGO EM:";
-            // 
-            // lblTotaPagoPagto
-            // 
-            this.lblTotaPagoPagto.AutoSize = true;
-            this.lblTotaPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTotaPagoPagto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblTotaPagoPagto.Location = new System.Drawing.Point(642, 273);
-            this.lblTotaPagoPagto.Name = "lblTotaPagoPagto";
-            this.lblTotaPagoPagto.Size = new System.Drawing.Size(67, 12);
-            this.lblTotaPagoPagto.TabIndex = 429;
-            this.lblTotaPagoPagto.Text = "TOTAL PAGO:";
-            // 
-            // txtTotalPagoPagto
-            // 
-            this.txtTotalPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTotalPagoPagto.Location = new System.Drawing.Point(715, 270);
-            this.txtTotalPagoPagto.Name = "txtTotalPagoPagto";
-            this.txtTotalPagoPagto.Size = new System.Drawing.Size(117, 18);
-            this.txtTotalPagoPagto.TabIndex = 428;
-            // 
-            // lblJurosPagto
-            // 
-            this.lblJurosPagto.AutoSize = true;
-            this.lblJurosPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblJurosPagto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblJurosPagto.Location = new System.Drawing.Point(670, 249);
-            this.lblJurosPagto.Name = "lblJurosPagto";
-            this.lblJurosPagto.Size = new System.Drawing.Size(39, 12);
-            this.lblJurosPagto.TabIndex = 427;
-            this.lblJurosPagto.Text = "JUROS:";
-            // 
-            // txtJurosPagto2
-            // 
-            this.txtJurosPagto2.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtJurosPagto2.Location = new System.Drawing.Point(289, 249);
-            this.txtJurosPagto2.Name = "txtJurosPagto2";
-            this.txtJurosPagto2.Size = new System.Drawing.Size(117, 18);
-            this.txtJurosPagto2.TabIndex = 426;
-            // 
-            // txtJurosPagto
-            // 
-            this.txtJurosPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtJurosPagto.Location = new System.Drawing.Point(715, 246);
-            this.txtJurosPagto.Name = "txtJurosPagto";
-            this.txtJurosPagto.Size = new System.Drawing.Size(117, 18);
-            this.txtJurosPagto.TabIndex = 432;
-            // 
-            // idLancamentoDataGridViewTextBoxColumn1
-            // 
-            this.idLancamentoDataGridViewTextBoxColumn1.DataPropertyName = "IdLancamento";
-            this.idLancamentoDataGridViewTextBoxColumn1.HeaderText = "IdLancamento";
-            this.idLancamentoDataGridViewTextBoxColumn1.Name = "idLancamentoDataGridViewTextBoxColumn1";
-            this.idLancamentoDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // tipoLancamentoDataGridViewTextBoxColumn1
-            // 
-            this.tipoLancamentoDataGridViewTextBoxColumn1.DataPropertyName = "TipoLancamento";
-            this.tipoLancamentoDataGridViewTextBoxColumn1.HeaderText = "TipoLancamento";
-            this.tipoLancamentoDataGridViewTextBoxColumn1.Name = "tipoLancamentoDataGridViewTextBoxColumn1";
-            this.tipoLancamentoDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // idPessoaDataGridViewTextBoxColumn1
-            // 
-            this.idPessoaDataGridViewTextBoxColumn1.DataPropertyName = "IdPessoa";
-            this.idPessoaDataGridViewTextBoxColumn1.HeaderText = "IdPessoa";
-            this.idPessoaDataGridViewTextBoxColumn1.Name = "idPessoaDataGridViewTextBoxColumn1";
-            this.idPessoaDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "RazaoNome";
-            this.dataGridViewTextBoxColumn1.HeaderText = "RazaoNome";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // codCdcDataGridViewTextBoxColumn
-            // 
-            this.codCdcDataGridViewTextBoxColumn.DataPropertyName = "CodCdc";
-            this.codCdcDataGridViewTextBoxColumn.HeaderText = "CodCdc";
-            this.codCdcDataGridViewTextBoxColumn.Name = "codCdcDataGridViewTextBoxColumn";
-            this.codCdcDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "DescricaoCdc";
-            this.dataGridViewTextBoxColumn2.HeaderText = "DescricaoCdc";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // numDocumentoDataGridViewTextBoxColumn1
-            // 
-            this.numDocumentoDataGridViewTextBoxColumn1.DataPropertyName = "NumDocumento";
-            this.numDocumentoDataGridViewTextBoxColumn1.HeaderText = "NumDocumento";
-            this.numDocumentoDataGridViewTextBoxColumn1.Name = "numDocumentoDataGridViewTextBoxColumn1";
-            this.numDocumentoDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dtLancamentoDataGridViewTextBoxColumn1
-            // 
-            this.dtLancamentoDataGridViewTextBoxColumn1.DataPropertyName = "DtLancamento";
-            this.dtLancamentoDataGridViewTextBoxColumn1.HeaderText = "DtLancamento";
-            this.dtLancamentoDataGridViewTextBoxColumn1.Name = "dtLancamentoDataGridViewTextBoxColumn1";
-            this.dtLancamentoDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dtEmissaoDataGridViewTextBoxColumn1
-            // 
-            this.dtEmissaoDataGridViewTextBoxColumn1.DataPropertyName = "DtEmissao";
-            this.dtEmissaoDataGridViewTextBoxColumn1.HeaderText = "DtEmissao";
-            this.dtEmissaoDataGridViewTextBoxColumn1.Name = "dtEmissaoDataGridViewTextBoxColumn1";
-            this.dtEmissaoDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dtVencimentoDataGridViewTextBoxColumn1
-            // 
-            this.dtVencimentoDataGridViewTextBoxColumn1.DataPropertyName = "DtVencimento";
-            this.dtVencimentoDataGridViewTextBoxColumn1.HeaderText = "DtVencimento";
-            this.dtVencimentoDataGridViewTextBoxColumn1.Name = "dtVencimentoDataGridViewTextBoxColumn1";
-            this.dtVencimentoDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dtPagamentoDataGridViewTextBoxColumn
-            // 
-            this.dtPagamentoDataGridViewTextBoxColumn.DataPropertyName = "DtPagamento";
-            this.dtPagamentoDataGridViewTextBoxColumn.HeaderText = "DtPagamento";
-            this.dtPagamentoDataGridViewTextBoxColumn.Name = "dtPagamentoDataGridViewTextBoxColumn";
-            this.dtPagamentoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // valorTotalDataGridViewTextBoxColumn
-            // 
-            this.valorTotalDataGridViewTextBoxColumn.DataPropertyName = "ValorTotal";
-            this.valorTotalDataGridViewTextBoxColumn.HeaderText = "ValorTotal";
-            this.valorTotalDataGridViewTextBoxColumn.Name = "valorTotalDataGridViewTextBoxColumn";
-            this.valorTotalDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // comentariosDataGridViewTextBoxColumn
-            // 
-            this.comentariosDataGridViewTextBoxColumn.DataPropertyName = "Comentarios";
-            this.comentariosDataGridViewTextBoxColumn.HeaderText = "Comentarios";
-            this.comentariosDataGridViewTextBoxColumn.Name = "comentariosDataGridViewTextBoxColumn";
-            this.comentariosDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // SituacaoDataGridViewTextBoxColumn
-            // 
-            this.SituacaoDataGridViewTextBoxColumn.DataPropertyName = "Situacao";
-            this.SituacaoDataGridViewTextBoxColumn.HeaderText = "Situacao";
-            this.SituacaoDataGridViewTextBoxColumn.Name = "SituacaoDataGridViewTextBoxColumn";
-            this.SituacaoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // FormCadLancEntradasSaidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
-            this.Controls.Add(this.txtJurosPagto);
-            this.Controls.Add(this.cbPagoEm);
-            this.Controls.Add(this.lblPagoEm);
-            this.Controls.Add(this.lblTotaPagoPagto);
-            this.Controls.Add(this.txtTotalPagoPagto);
-            this.Controls.Add(this.lblJurosPagto);
-            this.Controls.Add(this.txtJurosPagto2);
             this.Controls.Add(this.cbSituacaoAbertaPaga);
             this.Controls.Add(this.lblSituacaoAbertaPaga);
             this.Controls.Add(this.BtnEditarLanc);
@@ -927,15 +847,8 @@
         private Label lblSituacaoAbertaPaga;
         private BindingSource lancamentosBindingSource;
         private ComboBox cbSituacaoAbertaPaga;
-        private ComboBox cbPagoEm;
         private BindingSource cdcBindingSource;
-        private Label lblPagoEm;
-        private Label lblTotaPagoPagto;
         private TextBox txtTotaPagoPagto;
-        private Label lblJurosPagto;
-        private TextBox txtJurosPagto2;
-        private TextBox txtTotalPagoPagto;
-        private TextBox txtJurosPagto;
         private DataGridViewTextBoxColumn idLancamentoDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn tipoLancamentoDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn idPessoaDataGridViewTextBoxColumn1;

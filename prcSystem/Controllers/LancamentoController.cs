@@ -29,8 +29,8 @@ namespace prcSystem.Controllers
                 //cn.CommandText = "INSERT INTO Lancamentos ([TipoLancamento], [IdPessoa], [IdCdc], [NumDocumento], [DtLancamento], [DtEmissao], [DtVencimento], [DtPagamento], [IdUsuario], [Prod01], [Prod02], [Prod03], [Prod04], [Prod05], [Qte01], [Qte02], [Qte03], [Qte04], [Qte05], [VrUnit01], [VrUnit02], [VrUnit03], [VrUnit04], [VrUnit05], [TtItens01], [TtItens02], [TtItens03], [TtItens04], [TtItens05], [ValorTotal], [Comentarios]) VALUES " +
                 //                                     "(@TipoLancamento, @IdPessoa, @IdCdc, @NumDocumento, @DtLancamento, @DtEmissao, @DtVencimento, @DtPagamento, @IdUsuario, @Prod01, @Prod02, @Prod03, @Prod04, @Prod05, @Qte01, @Qte02, @Qte03, @Qte04, @Qte05, @VrUnit01, @VrUnit02, @VrUnit03, @VrUnit04, @VrUnit05, @TtItens01, @TtItens02, @TtItens03, @TtItens04, @TtItens05, @ValorTotal, @Comentarios)";
 
-                cn.CommandText = "INSERT INTO Lancamentos ([TipoLancamento], [IdPessoa], [IdCdc], [NumDocumento], [DtLancamento], [DtEmissao], [DtVencimento], [DtPagamento], [ValorTotal], [Comentarios], [Situacao], [JurosPagto], [TotalPagoPagto], [PagoEm]) " +
-                                            "VALUES (@TipoLancamento, @IdPessoa, @IdCdc, @NumDocumento, @DtLancamento, @DtEmissao, @DtVencimento, @DtPagamento, @ValorTotal, @Comentarios, @Situacao, @JurosPagto, @TotalPagoPagto, @PagoEm)";
+                cn.CommandText = "INSERT INTO Lancamentos ([TipoLancamento], [IdPessoa], [IdCdc], [NumDocumento], [DtLancamento], [DtEmissao], [DtVencimento], [DtPagamento], [ValorTotal], [Comentarios], [Situacao]) " +
+                                            "VALUES (@TipoLancamento, @IdPessoa, @IdCdc, @NumDocumento, @DtLancamento, @DtEmissao, @DtVencimento, @DtPagamento, @ValorTotal, @Comentarios, @Situacao)";
                           
                 cn.Parameters.Add("TipoLancamento", SqlDbType.VarChar).Value = obj.TipoLancamento;
                 cn.Parameters.Add("IdPessoa", SqlDbType.Int).Value = obj.IdPessoa;
@@ -43,10 +43,6 @@ namespace prcSystem.Controllers
                 cn.Parameters.Add("ValorTotal", SqlDbType.Decimal).Value = obj.ValorTotal;
                 cn.Parameters.Add("Comentarios", SqlDbType.VarChar).Value = obj.Comentarios;
                 cn.Parameters.Add("Situacao", SqlDbType.VarChar).Value = obj.Situacao;
-
-                cn.Parameters.Add("JurosPagto", SqlDbType.Decimal).Value = obj.JurosPagto;
-                cn.Parameters.Add("TotalPagoPagto", SqlDbType.Decimal).Value = obj.TotalPagoPagto;
-                cn.Parameters.Add("PagoEm", SqlDbType.VarChar).Value = obj.PagoEm;
 
                 cn.Connection = con;
 
@@ -70,7 +66,7 @@ namespace prcSystem.Controllers
                 con.Open();
                 cn.CommandText = "UPDATE Lancamentos SET TipoLancamento = @TipoLancamento, IdPessoa = @IdPessoa, IdCdc = @IdCdc, NumDocumento = @NumDocumento, " +
                     "DtLancamento = @DtLancamento, DtEmissao = @DtEmissao, DtVencimento = @DtVencimento, DtPagamento = @DtPagamento, " +
-                    "ValorTotal = @ValorTotal, Comentarios = @Comentarios, Situacao = @Situacao, JurosPagto = @JurosPagto, TotalPagoPagto = @TotalPagoPagto, PagoEm = @PagoEm + WHERE IdLancamento = @IdLancamento";
+                    "ValorTotal = @ValorTotal, Comentarios = @Comentarios, Situacao = @Situacao WHERE IdLancamento = @IdLancamento";
 
                 cn.Parameters.Add("IdLancamento", SqlDbType.Int).Value = obj.IdLancamento;
                 cn.Parameters.Add("TipoLancamento", SqlDbType.VarChar).Value = obj.TipoLancamento;
@@ -84,10 +80,6 @@ namespace prcSystem.Controllers
                 cn.Parameters.Add("ValorTotal", SqlDbType.Decimal).Value = obj.ValorTotal;
                 cn.Parameters.Add("Comentarios", SqlDbType.VarChar).Value = obj.Comentarios;
                 cn.Parameters.Add("Situacao", SqlDbType.VarChar).Value = obj.Situacao;
-
-                cn.Parameters.Add("JurosPagto", SqlDbType.Decimal).Value = obj.JurosPagto;
-                cn.Parameters.Add("TotalPagoPagto", SqlDbType.Decimal).Value = obj.TotalPagoPagto;
-                cn.Parameters.Add("PagoEm", SqlDbType.VarChar).Value = obj.PagoEm;
 
                 cn.Connection = con;
 
@@ -129,8 +121,7 @@ namespace prcSystem.Controllers
                     "               p.IdPessoa, p.RazaoNome, " +
                     "               c.IdCdc, c.CodCdc, c.DescricaoCdc," +
                     "               l.NumDocumento, l.DtLancamento, l.DtEmissao, l.DtVencimento, " +
-                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao," +
-                    "               l.JurosPagto, l.TotalPagoPagto, l.PagoEm" +
+                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao" +
                     "               FROM Lancamentos l" +
                     "               INNER JOIN Cdc c ON l.IdCdc = c.CodCdc" +
                     "               INNER JOIN Pessoa p ON l.IdPessoa = p.IdPessoa WHERE RazaoNome = @RazaoNome";
@@ -167,10 +158,6 @@ namespace prcSystem.Controllers
                         dados.Comentarios = Convert.ToString(dr["Comentarios"]);
                         dados.Situacao = Convert.ToString(dr["Situacao"]);
 
-                        dados.JurosPagto = Convert.ToDecimal(dr["JurosPagto"]);
-                        dados.TotalPagoPagto = Convert.ToDecimal(dr["TotalPagoPagto"]);
-                        dados.PagoEm = Convert.ToString(dr["PagoEm"]);
-
                         lista.Add(dados);
                     }
                 }
@@ -192,8 +179,7 @@ namespace prcSystem.Controllers
                     "               p.IdPessoa, p.RazaoNome, p.CnpjCpf," +
                     "               c.IdCdc, c.CodCdc, c.DescricaoCdc," +
                     "               l.NumDocumento, l.DtLancamento, l.DtEmissao, l.DtVencimento, " +
-                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao," +
-                    "               l.JurosPagto, l.TotalPagoPagto, l.PagoEm" +
+                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao" +
                     "               FROM Lancamentos l" +
                     "               INNER JOIN Cdc c ON l.IdCdc = c.CodCdc" +
                     "               INNER JOIN Pessoa p ON l.IdPessoa = p.IdPessoa " +
@@ -232,10 +218,6 @@ namespace prcSystem.Controllers
                         dados.Comentarios = Convert.ToString(dr["Comentarios"]);
                         dados.Situacao = Convert.ToString(dr["Situacao"]);
 
-                        dados.JurosPagto = Convert.ToDecimal(dr["JurosPagto"]);
-                        dados.TotalPagoPagto = Convert.ToDecimal(dr["TotalPagoPagto"]);
-                        dados.PagoEm = Convert.ToString(dr["PagoEm"]);
-
                         lista.Add(dados);
                     }
                 }
@@ -257,8 +239,7 @@ namespace prcSystem.Controllers
                     "               p.IdPessoa, p.RazaoNome, p.CnpjCpf," +
                     "               c.IdCdc, c.CodCdc, c.DescricaoCdc," +
                     "               l.NumDocumento, l.DtLancamento, l.DtEmissao, l.DtVencimento, " +
-                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao," +
-                    "               l.JurosPagto, l.TotalPagoPagto, l.PagoEm" +
+                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao" +
                     "               FROM Lancamentos l" +
                     "               INNER JOIN Cdc c ON l.IdCdc = c.CodCdc" +
                     "               INNER JOIN Pessoa p ON l.IdPessoa = p.IdPessoa " +
@@ -297,10 +278,6 @@ namespace prcSystem.Controllers
                         dados.Comentarios = Convert.ToString(dr["Comentarios"]);
                         dados.Situacao = Convert.ToString(dr["Situacao"]);
 
-                        dados.JurosPagto = Convert.ToDecimal(dr["JurosPagto"]);
-                        dados.TotalPagoPagto = Convert.ToDecimal(dr["TotalPagoPagto"]);
-                        dados.PagoEm = Convert.ToString(dr["PagoEm"]);
-
                         lista.Add(dados);
                     }
                 }
@@ -324,8 +301,7 @@ namespace prcSystem.Controllers
                     "               p.IdPessoa, p.RazaoNome,p.CnpjCpf, " +
                     "               c.IdCdc, c.CodCdc, c.DescricaoCdc," +
                     "               l.NumDocumento, l.DtLancamento, l.DtEmissao, l.DtVencimento, " +
-                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao," +
-                    "               l.JurosPagto, l.TotalPagoPagto, l.PagoEm" +
+                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao" +
                     "               FROM Lancamentos l" +
                     "               INNER JOIN Cdc c ON l.IdCdc = c.CodCdc" +
                     "               INNER JOIN Pessoa p ON l.IdPessoa = p.IdPessoa " +
@@ -364,11 +340,6 @@ namespace prcSystem.Controllers
                         dados.ValorTotal = Convert.ToDecimal(dr["ValorTotal"]);
                         dados.Comentarios = Convert.ToString(dr["Comentarios"]);
 
-                        dados.JurosPagto = Convert.ToDecimal(dr["JurosPagto"]);
-                        dados.TotalPagoPagto = Convert.ToDecimal(dr["TotalPagoPagto"]);
-                        dados.PagoEm = Convert.ToString(dr["PagoEm"]);
-
-
                         lista.Add(dados);
                     }
                 }
@@ -391,8 +362,7 @@ namespace prcSystem.Controllers
                     "               p.IdPessoa, p.RazaoNome, p.CnpjCpf," +
                     "               c.IdCdc, c.CodCdc, c.DescricaoCdc," +
                     "               l.NumDocumento, l.DtLancamento, l.DtEmissao, l.DtVencimento, " +
-                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao," +
-                    "               l.JurosPagto, l.TotalPagoPagto, l.PagoEm" +
+                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao" +
                     "               FROM Lancamentos l" +
                     "               INNER JOIN Cdc c ON l.IdCdc = c.CodCdc" +
                     "               INNER JOIN Pessoa p ON l.IdPessoa = p.IdPessoa " +
@@ -402,8 +372,6 @@ namespace prcSystem.Controllers
                 cn.Parameters.Add("NumDocumento", SqlDbType.VarChar).Value = obj.NumDocumento;
                 cn.Parameters.Add("CodCdc", SqlDbType.VarChar).Value = obj.CodCdc;
                 cn.Parameters.Add("RazaoNome", SqlDbType.VarChar).Value = obj.RazaoNome;
-
-
 
                 cn.Connection = con;
 
@@ -435,11 +403,6 @@ namespace prcSystem.Controllers
                         dados.ValorTotal = Convert.ToDecimal(dr["ValorTotal"]);
                         dados.Comentarios = Convert.ToString(dr["Comentarios"]);
                         dados.Situacao = Convert.ToString(dr["Situacao"]);
-
-
-                        dados.JurosPagto = Convert.ToDecimal(dr["JurosPagto"]);
-                        dados.TotalPagoPagto = Convert.ToDecimal(dr["TotalPagoPagto"]);
-                        dados.PagoEm = Convert.ToString(dr["PagoEm"]);
 
                         lista.Add(dados);
                     }
@@ -498,10 +461,6 @@ namespace prcSystem.Controllers
                         dados.ValorTotal = Convert.ToDecimal(dr["ValorTotal"]);
                         dados.Comentarios = Convert.ToString(dr["Comentarios"]);
                         dados.Situacao = Convert.ToString(dr["Situacao"]);
-
-                        //dados.JurosPagto = Convert.ToDecimal(dr["JurosPagto"]);
-                        //dados.TotalPagoPagto = Convert.ToDecimal(dr["TotalPagoPagto"]);
-                        //dados.PagoEm = Convert.ToString(dr["PagoEm"]);
 
                         lista.Add(dados);
                     }

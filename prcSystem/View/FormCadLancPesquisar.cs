@@ -123,6 +123,7 @@ namespace prcSystem.View
         {
             excluir();
             limpar();
+            Listar();
         }
 
         private void dgPesquisarLanc_CellClick(object sender, DataGridViewCellEventArgs e)

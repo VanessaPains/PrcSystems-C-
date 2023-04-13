@@ -144,10 +144,7 @@ namespace prcSystem.View
                 obj.DtPagamento = Convert.ToDateTime(dtPagamento.Text);
                 obj.ValorTotal = Convert.ToDecimal(txtValorTotal.Text);
                 obj.Comentarios = Convert.ToString(txtComentarios.Text);
-                obj.Situacao = Convert.ToString(cbSituacaoAbertaPaga.SelectedValue);
-                obj.JurosPagto = Convert.ToDecimal(txtJurosPagto2.Text);
-                obj.TotalPagoPagto = Convert.ToDecimal(txtTotalPagoPagto.Text);
-                obj.PagoEm = Convert.ToString(cbPagoEm.SelectedValue);
+                obj.Situacao = Convert.ToString(cbSituacaoAbertaPaga.SelectedValue);               
 
                 int x = LancamentoModel.Inserir(obj);
                 if (x > 0)
@@ -179,7 +176,7 @@ namespace prcSystem.View
                 DgExibirLacamentos.DataSource = lista;
                 // dg.Columns[0].Visible = false;//colunas datagrid
 
-                /*DgExibirLacamentos.Columns[0].HeaderText = "Cod. Lanç.";
+                DgExibirLacamentos.Columns[0].HeaderText = "Cod. Lanç.";
                 DgExibirLacamentos.Columns[1].HeaderText = "Tipo Lanç.";
                 DgExibirLacamentos.Columns[2].HeaderText = "Cod. Cli/Forn.";
                 DgExibirLacamentos.Columns[3].HeaderText = "Razão/Nome ";
@@ -193,9 +190,6 @@ namespace prcSystem.View
                 DgExibirLacamentos.Columns[11].HeaderText = "Valor.";
                 DgExibirLacamentos.Columns[12].HeaderText = "Comentarios.";
                 DgExibirLacamentos.Columns[13].HeaderText = "Situação.";
-                DgExibirLacamentos.Columns[11].HeaderText = "Juros Pagto.";
-                //DgExibirLacamentos.Columns[16].HeaderText = "TT Pago Pagto.";
-                //DgExibirLacamentos.Columns[16].HeaderText = "Pago Em.";*/
 
                 DgExibirLacamentos.Columns[0].Width = 90;//determinar a largura das colunas
                 DgExibirLacamentos.Columns[1].Width = 70;
@@ -344,9 +338,6 @@ namespace prcSystem.View
                 obj.ValorTotal = Convert.ToDecimal(txtValorTotal.Text);
                 obj.Comentarios = Convert.ToString(txtComentarios.Text);
                 obj.Situacao = cbSituacaoAbertaPaga.Text;
-                obj.JurosPagto = Convert.ToDecimal(txtJurosPagto2.Text);
-                obj.TotalPagoPagto = Convert.ToDecimal(txtTotalPagoPagto.Text);
-                obj.PagoEm = cbPagoEm.Text;
 
                 int x = LancamentoModel.Editar(obj);
                 if (x > 0)
@@ -541,10 +532,6 @@ namespace prcSystem.View
             txtValorTotal.Text = DgExibirLacamentos.CurrentRow.Cells[11].Value.ToString();
             txtComentarios.Text = DgExibirLacamentos.CurrentRow.Cells[12].Value.ToString();
             cbSituacaoAbertaPaga.SelectedItem = DgExibirLacamentos.CurrentRow.Cells[13].Value.ToString();
-
-            //txtJurosPagto2.Text = DgExibirLacamentos.CurrentRow.Cells[16].Value.ToString();
-            //txtTotalPagoPagto.Text = DgExibirLacamentos.CurrentRow.Cells[15].Value.ToString();
-            //cbPagoEm.SelectedItem = DgExibirLacamentos.CurrentRow.Cells[16].Value.ToString();
 
             DgExibirLacamentos.Visible = false;
 

@@ -93,7 +93,6 @@
             this.lblCodCliForn = new System.Windows.Forms.Label();
             this.lblRazaoNome = new System.Windows.Forms.Label();
             this.lblCnpjCpf = new System.Windows.Forms.Label();
-            this.cbPagoEm = new System.Windows.Forms.ComboBox();
             this.lblPagoEm = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.lblTotalPagoPagto = new System.Windows.Forms.Label();
@@ -124,10 +123,11 @@
             this.lblLancamentoPgto = new System.Windows.Forms.Label();
             this.txtValorTotal = new System.Windows.Forms.TextBox();
             this.dtLancamento = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.dtVencimento = new System.Windows.Forms.DateTimePicker();
             this.lblTipoLancPgto = new System.Windows.Forms.Label();
             this.dtEmissao = new System.Windows.Forms.DateTimePicker();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cbPagoEm = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPagamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource1)).BeginInit();
@@ -825,15 +825,6 @@
             this.lblCnpjCpf.TabIndex = 298;
             this.lblCnpjCpf.Text = "CNPJ / CPF:";
             // 
-            // cbPagoEm
-            // 
-            this.cbPagoEm.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbPagoEm.FormattingEnabled = true;
-            this.cbPagoEm.Location = new System.Drawing.Point(709, 436);
-            this.cbPagoEm.Name = "cbPagoEm";
-            this.cbPagoEm.Size = new System.Drawing.Size(117, 20);
-            this.cbPagoEm.TabIndex = 460;
-            // 
             // lblPagoEm
             // 
             this.lblPagoEm.AutoSize = true;
@@ -1131,15 +1122,6 @@
             this.dtLancamento.TabIndex = 437;
             this.dtLancamento.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox3.Location = new System.Drawing.Point(15, 466);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(910, 2);
-            this.textBox3.TabIndex = 441;
-            // 
             // dtVencimento
             // 
             this.dtVencimento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -1172,12 +1154,33 @@
             this.dtEmissao.TabIndex = 439;
             this.dtEmissao.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox2.Location = new System.Drawing.Point(15, 466);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(910, 2);
+            this.textBox2.TabIndex = 461;
+            // 
+            // cbPagoEm
+            // 
+            this.cbPagoEm.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbPagoEm.FormattingEnabled = true;
+            this.cbPagoEm.Items.AddRange(new object[] {
+            "EM ABERTO"});
+            this.cbPagoEm.Location = new System.Drawing.Point(709, 434);
+            this.cbPagoEm.Name = "cbPagoEm";
+            this.cbPagoEm.Size = new System.Drawing.Size(117, 20);
+            this.cbPagoEm.TabIndex = 462;
+            // 
             // FormCadPagamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 561);
             this.Controls.Add(this.cbPagoEm);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lblPagoEm);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.lblTotalPagoPagto);
@@ -1208,7 +1211,6 @@
             this.Controls.Add(this.lblLancamentoPgto);
             this.Controls.Add(this.txtValorTotal);
             this.Controls.Add(this.dtLancamento);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.dtVencimento);
             this.Controls.Add(this.lblTipoLancPgto);
             this.Controls.Add(this.dtEmissao);
@@ -1349,7 +1351,6 @@
         private Label lblCodCdc;
         private Label lblNumDoc;
         private Label lblDtEmis;
-        private ComboBox cbPagoEm;
         private Label lblPagoEm;
         private TextBox textBox4;
         private Label lblTotalPagoPagto;
@@ -1380,9 +1381,10 @@
         private Label lblLancamentoPgto;
         private TextBox txtValorTotal;
         private DateTimePicker dtLancamento;
-        private TextBox textBox3;
         private DateTimePicker dtVencimento;
         private Label lblTipoLancPgto;
         private DateTimePicker dtEmissao;
+        private TextBox textBox2;
+        private ComboBox cbPagoEm;
     }
 }

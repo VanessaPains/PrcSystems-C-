@@ -299,8 +299,8 @@ namespace prcSystem.View
         {
             dgPagamentos.Visible = true;
             dgPagamentos.Enabled = false;
-            dgPagamentos.Height = 250;
-            dgPagamentos.Location = new Point(12, 270);
+            dgPagamentos.Height = 230;
+            dgPagamentos.Location = new Point(12, 290);
         }
 
         /// <summary>
@@ -310,8 +310,8 @@ namespace prcSystem.View
         {
             AjustarDataGridAumentar();
 
-            lblTipoLancPgto.Location = new Point(24, 63);
-            lblIdLancPgto.Location = new Point(455, 63);
+            lblTipoLancPgto.Location = new Point(12, 65);
+            lblIdLancPgto.Location = new Point(414, 65);
             lblLancamentoPgto.Location = new Point(53, 124);
             lblCodCliFornPgto.Location = new Point(57, 172);
             lblNumDocPgto.Location = new Point(659, 125);
@@ -339,7 +339,8 @@ namespace prcSystem.View
             txtIdLancamento.Location = new Point(414, 80);
             txtJurosPagto.Location = new Point(707, 196);
             txtTotalPagoPagto.Location = new Point(707, 220);
-            textBox3.Location = new Point(11, 235);
+            textBox2.Location = new Point(13, 275);
+            textBox4.Location = new Point(593, 108);
 
             dtLancamento.Location = new Point(121, 121);
             dtEmissao.Location = new Point(121, 145);
@@ -425,9 +426,7 @@ namespace prcSystem.View
             txtlinha03.Visible = false;
             txtlinha04.Visible = false;
             txtlinha05.Visible = false;
-
-            textBox3.Visible = false;
-
+          
             lblDtLancPesq.Visible = false;
             lblDe01.Visible = false;
             DtDeLanc.Visible = false;
@@ -495,6 +494,8 @@ namespace prcSystem.View
             txtComentarios.Visible = false;
             txtJurosPagto.Visible = false;
             txtTotalPagoPagto.Visible = false;
+            textBox2.Visible = false;
+            textBox4.Visible = false;
 
             dtLancamento.Visible = false;
             dtEmissao.Visible = false;
@@ -555,7 +556,8 @@ namespace prcSystem.View
             txtComentarios.Visible = true;
             txtJurosPagto.Visible = true;
             txtTotalPagoPagto.Visible = true;
-
+            textBox2.Visible = true;
+            textBox4.Visible = true;
 
             dtLancamento.Visible = true;
             dtEmissao.Visible = true;
