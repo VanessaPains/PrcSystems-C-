@@ -122,6 +122,7 @@ namespace prcSystem.View
         private void BtnExcluirLanc_Click(object sender, EventArgs e)
         {
             excluir();
+
             limpar();
             Listar();
         }
