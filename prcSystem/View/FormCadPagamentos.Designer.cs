@@ -128,10 +128,12 @@
             this.dtEmissao = new System.Windows.Forms.DateTimePicker();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.cbPagoEm = new System.Windows.Forms.ComboBox();
+            this.cdcBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPagamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cdcBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -860,7 +862,7 @@
             this.txtTotalPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTotalPagoPagto.Location = new System.Drawing.Point(709, 412);
             this.txtTotalPagoPagto.Name = "txtTotalPagoPagto";
-            this.txtTotalPagoPagto.Size = new System.Drawing.Size(117, 18);
+            this.txtTotalPagoPagto.Size = new System.Drawing.Size(136, 18);
             this.txtTotalPagoPagto.TabIndex = 456;
             // 
             // lblJurosPagto
@@ -879,7 +881,7 @@
             this.txtJurosPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtJurosPagto.Location = new System.Drawing.Point(709, 388);
             this.txtJurosPagto.Name = "txtJurosPagto";
-            this.txtJurosPagto.Size = new System.Drawing.Size(117, 18);
+            this.txtJurosPagto.Size = new System.Drawing.Size(136, 18);
             this.txtJurosPagto.TabIndex = 454;
             // 
             // txtIdLancamento
@@ -915,10 +917,11 @@
             this.cbSituacaoAbertaPaga.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbSituacaoAbertaPaga.FormattingEnabled = true;
             this.cbSituacaoAbertaPaga.Items.AddRange(new object[] {
-            "EM ABERTO"});
+            "EM ABERTO",
+            "PAGAS"});
             this.cbSituacaoAbertaPaga.Location = new System.Drawing.Point(709, 338);
             this.cbSituacaoAbertaPaga.Name = "cbSituacaoAbertaPaga";
-            this.cbSituacaoAbertaPaga.Size = new System.Drawing.Size(117, 20);
+            this.cbSituacaoAbertaPaga.Size = new System.Drawing.Size(136, 20);
             this.cbSituacaoAbertaPaga.TabIndex = 452;
             // 
             // lblNumDocPgto
@@ -946,7 +949,7 @@
             this.txtNumDoc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNumDoc.Location = new System.Drawing.Point(709, 314);
             this.txtNumDoc.Name = "txtNumDoc";
-            this.txtNumDoc.Size = new System.Drawing.Size(117, 18);
+            this.txtNumDoc.Size = new System.Drawing.Size(136, 18);
             this.txtNumDoc.TabIndex = 428;
             // 
             // txtIdCdc
@@ -1107,7 +1110,7 @@
             this.txtValorTotal.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtValorTotal.Location = new System.Drawing.Point(709, 364);
             this.txtValorTotal.Name = "txtValorTotal";
-            this.txtValorTotal.Size = new System.Drawing.Size(117, 18);
+            this.txtValorTotal.Size = new System.Drawing.Size(136, 18);
             this.txtValorTotal.TabIndex = 442;
             // 
             // dtLancamento
@@ -1165,14 +1168,17 @@
             // 
             // cbPagoEm
             // 
+            this.cbPagoEm.DataSource = this.cdcBindingSource;
             this.cbPagoEm.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbPagoEm.FormattingEnabled = true;
-            this.cbPagoEm.Items.AddRange(new object[] {
-            "EM ABERTO"});
             this.cbPagoEm.Location = new System.Drawing.Point(709, 434);
             this.cbPagoEm.Name = "cbPagoEm";
-            this.cbPagoEm.Size = new System.Drawing.Size(117, 20);
+            this.cbPagoEm.Size = new System.Drawing.Size(136, 20);
             this.cbPagoEm.TabIndex = 462;
+            // 
+            // cdcBindingSource
+            // 
+            this.cdcBindingSource.DataSource = typeof(prcSystem.Entidades.Cdc);
             // 
             // FormCadPagamentos
             // 
@@ -1269,6 +1275,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgPagamentos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cdcBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1386,5 +1393,6 @@
         private DateTimePicker dtEmissao;
         private TextBox textBox2;
         private ComboBox cbPagoEm;
+        private BindingSource cdcBindingSource;
     }
 }

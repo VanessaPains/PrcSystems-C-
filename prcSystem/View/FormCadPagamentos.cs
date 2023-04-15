@@ -6,22 +6,37 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace prcSystem.View
 {
     public partial class FormCadPagamentos : Form
     {
         Lancamentos obj = new Lancamentos();
+        CdcModel amodelA = new CdcModel();
 
         public FormCadPagamentos()
         {
             InitializeComponent();
             Listar();
             DesabilitarTelaFormPagamento();
+            PreencherCB();
+        }
+
+        /// <summary>
+        /// preenche o combobox de escolher o ano
+        /// </summary>
+        private void PreencherCB()
+        {
+            cbPagoEm.DataSource = amodelA.Listar();
+            cbPagoEm.ValueMember = "DescricaoCdc";
+            cbPagoEm.DisplayMember = " ";
+
         }
 
         /// <summary>
@@ -189,6 +204,9 @@ namespace prcSystem.View
         /// <param name="e"></param>
         private void btnLimpar_Click(object sender, EventArgs e)
         {
+            HabilitarTelaFormPagamentosPesquisas();
+            DesabilitarTelaFormPagamento();
+            AjustarDataGridAumentar();
             Limpar();
             Listar();
         }
@@ -295,7 +313,7 @@ namespace prcSystem.View
         /// <summary>
         /// metodo de aumentar tamanho datagrid e desabilitar os formularios
         /// </summary>
-        public void AjustarDataGridAumentar()
+        public void AjustarDataGridDiminuir()
         {
             dgPagamentos.Visible = true;
             dgPagamentos.Enabled = false;
@@ -303,12 +321,20 @@ namespace prcSystem.View
             dgPagamentos.Location = new Point(12, 290);
         }
 
+        public void AjustarDataGridAumentar()
+        {
+            dgPagamentos.Visible = true;
+            dgPagamentos.Enabled = true;
+            dgPagamentos.Height = 300;
+            dgPagamentos.Location = new Point(14, 206);
+        }
+
         /// <summary>
         /// ajustar localização do formulario de pagementos.
         /// </summary>
         private void AjustarTelaFormPagamento()
         {
-            AjustarDataGridAumentar();
+            AjustarDataGridDiminuir();
 
             lblTipoLancPgto.Location = new Point(12, 65);
             lblIdLancPgto.Location = new Point(414, 65);

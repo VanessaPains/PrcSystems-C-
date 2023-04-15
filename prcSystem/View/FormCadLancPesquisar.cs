@@ -116,13 +116,11 @@ namespace prcSystem.View
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             pesquisaCodCliFornLancamentos();    
-
         }
 
         private void BtnExcluirLanc_Click(object sender, EventArgs e)
         {
             excluir();
-
             limpar();
             Listar();
         }
