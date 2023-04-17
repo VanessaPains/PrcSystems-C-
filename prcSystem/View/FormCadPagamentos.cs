@@ -36,7 +36,6 @@ namespace prcSystem.View
             cbPagoEm.DataSource = amodelA.Listar();
             cbPagoEm.ValueMember = "DescricaoCdc";
             cbPagoEm.DisplayMember = " ";
-
         }
 
         /// <summary>
