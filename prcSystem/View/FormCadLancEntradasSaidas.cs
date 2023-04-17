@@ -144,7 +144,7 @@ namespace prcSystem.View
                 obj.DtPagamento = Convert.ToDateTime(dtPagamento.Text);
                 obj.ValorTotal = Convert.ToDecimal(txtValorTotal.Text);
                 obj.Comentarios = Convert.ToString(txtComentarios.Text);
-                obj.Situacao = Convert.ToString(cbSituacaoAbertaPaga.SelectedValue);               
+                obj.Situacao = Convert.ToString(cbSituacaoAbertaPaga.Text);               
 
                 int x = LancamentoModel.Inserir(obj);
                 if (x > 0)
@@ -281,27 +281,12 @@ namespace prcSystem.View
                 dgCadCdc.Columns[3].Visible = false; //HeaderText = "Data";
 
                 dgCadCdc.Columns[2].Width = 865;
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Não foi possivel listar os dados" + ex);
             }
         }
-
-
-        private void rbDgExibirEditar()
-        {
-            if (rbEntrada.Checked == true)
-            {
-                obj.TipoLancamento = Convert.ToString(rbTipoLancamentoEntrada.Text = "ENTRADA");
-            }
-            else if (rbSaida.Checked == true)
-            {
-                obj.TipoLancamento = Convert.ToString(rbTipoLancamentoSaida.Text = "SAIDA");
-            }
-        }
-
 
         private void PreencherDesc()
         {
@@ -383,7 +368,7 @@ namespace prcSystem.View
         /// <param name="e">colocar datagrig como vsivel</param>
         private void txtCodCliForn_Click(object sender, EventArgs e)
         {
-            DgExibirCliForn.Visible = true;
+            DgExibirCliForn.Visible = true;           
         }
 
         /// <summary>
@@ -393,11 +378,11 @@ namespace prcSystem.View
         /// <param name="e">colocar datagrig como vsivel</param>
         private void txtIdCdc_Click(object sender, EventArgs e)
         {
-            dgCadCdc.Visible = true;
+            dgCadCdc.Visible = true;          
         }
 
         /// <summary>
-        /// metodo de aumentar tamanho datagrid e desabilitar os formularios
+        /// metodo de aumentar tamanho datagrid e desabilitar os formularios  de editar lanacamentos
         /// </summary>
         public void AjustarDataGridAumentar()
         {
@@ -445,12 +430,12 @@ namespace prcSystem.View
         }
 
         /// <summary>
-        /// metodo de diminuir tamanho datagrid e habilitar os formularios
+        /// metodo de diminuir tamanho datagrid e habilitar os formularios de editar lanacamentos
         /// </summary>
         public void AjustarDataGridDiminuir()
         {
             DgExibirLacamentos.Visible = false;
-            DgExibirLacamentos.Height = 248;
+            DgExibirLacamentos.Height = 350;
             DgExibirLacamentos.Location = new Point(11, 260);
 
             txtIdLancamento.Visible = true;

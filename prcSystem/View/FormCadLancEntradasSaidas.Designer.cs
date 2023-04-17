@@ -196,6 +196,7 @@
             // 
             // txtComentarios
             // 
+            this.txtComentarios.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtComentarios.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtComentarios.Location = new System.Drawing.Point(45, 205);
             this.txtComentarios.Multiline = true;
@@ -444,11 +445,11 @@
             // 
             this.DgExibirCliForn.AllowUserToOrderColumns = true;
             this.DgExibirCliForn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgExibirCliForn.Location = new System.Drawing.Point(11, 320);
+            this.DgExibirCliForn.Location = new System.Drawing.Point(12, 257);
             this.DgExibirCliForn.Name = "DgExibirCliForn";
             this.DgExibirCliForn.RowTemplate.Height = 25;
             this.DgExibirCliForn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgExibirCliForn.Size = new System.Drawing.Size(910, 188);
+            this.DgExibirCliForn.Size = new System.Drawing.Size(910, 260);
             this.DgExibirCliForn.TabIndex = 324;
             this.DgExibirCliForn.Visible = false;
             this.DgExibirCliForn.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgExibirCliForn_CellClick);
@@ -466,11 +467,11 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgCadCdc.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgCadCdc.Location = new System.Drawing.Point(11, 320);
+            this.dgCadCdc.Location = new System.Drawing.Point(12, 257);
             this.dgCadCdc.Name = "dgCadCdc";
             this.dgCadCdc.ReadOnly = true;
             this.dgCadCdc.RowTemplate.Height = 25;
-            this.dgCadCdc.Size = new System.Drawing.Size(910, 188);
+            this.dgCadCdc.Size = new System.Drawing.Size(910, 260);
             this.dgCadCdc.TabIndex = 325;
             this.dgCadCdc.Visible = false;
             this.dgCadCdc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCadCdc_CellClick);
@@ -506,12 +507,12 @@
             this.comentariosDataGridViewTextBoxColumn,
             this.SituacaoDataGridViewTextBoxColumn});
             this.DgExibirLacamentos.DataSource = this.lancamentosBindingSource;
-            this.DgExibirLacamentos.Location = new System.Drawing.Point(11, 320);
+            this.DgExibirLacamentos.Location = new System.Drawing.Point(12, 257);
             this.DgExibirLacamentos.Name = "DgExibirLacamentos";
             this.DgExibirLacamentos.ReadOnly = true;
             this.DgExibirLacamentos.RowTemplate.Height = 25;
             this.DgExibirLacamentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgExibirLacamentos.Size = new System.Drawing.Size(910, 188);
+            this.DgExibirLacamentos.Size = new System.Drawing.Size(910, 260);
             this.DgExibirLacamentos.TabIndex = 327;
             this.DgExibirLacamentos.Visible = false;
             this.DgExibirLacamentos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgExibirLacamentos_CellClick);
@@ -620,6 +621,7 @@
             // 
             // txtPesquisarLancamentos
             // 
+            this.txtPesquisarLancamentos.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPesquisarLancamentos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPesquisarLancamentos.Location = new System.Drawing.Point(12, 93);
             this.txtPesquisarLancamentos.Multiline = true;

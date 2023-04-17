@@ -316,7 +316,7 @@ namespace prcSystem.View
         {
             dgPagamentos.Visible = true;
             dgPagamentos.Enabled = false;
-            dgPagamentos.Height = 230;
+            dgPagamentos.Height = 300;
             dgPagamentos.Location = new Point(12, 290);
         }
 

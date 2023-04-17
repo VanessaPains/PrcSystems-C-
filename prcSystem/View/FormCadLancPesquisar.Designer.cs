@@ -34,11 +34,6 @@
             this.LblFormCadCliForn = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dgPesquisarLanc = new System.Windows.Forms.DataGridView();
-            this.lancamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label12 = new System.Windows.Forms.Label();
-            this.btnPesquisar = new System.Windows.Forms.Button();
-            this.BtnExcluirLanc = new System.Windows.Forms.Button();
-            this.txtIdLancamento = new System.Windows.Forms.TextBox();
             this.idLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,6 +48,11 @@
             this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Situacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lancamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.BtnExcluirLanc = new System.Windows.Forms.Button();
+            this.txtIdLancamento = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPesquisarLanc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource)).BeginInit();
@@ -60,6 +60,7 @@
             // 
             // txtPesquisaLancmentos
             // 
+            this.txtPesquisaLancmentos.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPesquisaLancmentos.Location = new System.Drawing.Point(14, 98);
             this.txtPesquisaLancmentos.Name = "txtPesquisaLancmentos";
             this.txtPesquisaLancmentos.Size = new System.Drawing.Size(458, 23);
@@ -124,57 +125,6 @@
             this.dgPesquisarLanc.Size = new System.Drawing.Size(910, 375);
             this.dgPesquisarLanc.TabIndex = 336;
             this.dgPesquisarLanc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPesquisarLanc_CellClick);
-            // 
-            // lancamentosBindingSource
-            // 
-            this.lancamentosBindingSource.DataSource = typeof(prcSystem.Entidades.Lancamentos);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.DimGray;
-            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(437, 540);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 12);
-            this.label12.TabIndex = 337;
-            this.label12.Text = "PRC Systems @";
-            // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.BackColor = System.Drawing.SystemColors.Menu;
-            this.btnPesquisar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPesquisar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnPesquisar.Location = new System.Drawing.Point(478, 98);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(89, 25);
-            this.btnPesquisar.TabIndex = 338;
-            this.btnPesquisar.Text = "PESQUISAR";
-            this.btnPesquisar.UseVisualStyleBackColor = false;
-            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
-            // 
-            // BtnExcluirLanc
-            // 
-            this.BtnExcluirLanc.BackColor = System.Drawing.SystemColors.Menu;
-            this.BtnExcluirLanc.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnExcluirLanc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnExcluirLanc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnExcluirLanc.Location = new System.Drawing.Point(831, 9);
-            this.BtnExcluirLanc.Name = "BtnExcluirLanc";
-            this.BtnExcluirLanc.Size = new System.Drawing.Size(89, 25);
-            this.BtnExcluirLanc.TabIndex = 335;
-            this.BtnExcluirLanc.Text = "EXCLUIR";
-            this.BtnExcluirLanc.UseVisualStyleBackColor = false;
-            this.BtnExcluirLanc.Click += new System.EventHandler(this.BtnExcluirLanc_Click);
-            // 
-            // txtIdLancamento
-            // 
-            this.txtIdLancamento.Enabled = false;
-            this.txtIdLancamento.Location = new System.Drawing.Point(14, 69);
-            this.txtIdLancamento.Name = "txtIdLancamento";
-            this.txtIdLancamento.Size = new System.Drawing.Size(52, 23);
-            this.txtIdLancamento.TabIndex = 339;
             // 
             // idLancamentoDataGridViewTextBoxColumn
             // 
@@ -273,6 +223,57 @@
             this.Situacao.HeaderText = "Situacao";
             this.Situacao.Name = "Situacao";
             this.Situacao.ReadOnly = true;
+            // 
+            // lancamentosBindingSource
+            // 
+            this.lancamentosBindingSource.DataSource = typeof(prcSystem.Entidades.Lancamentos);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.DimGray;
+            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label12.Location = new System.Drawing.Point(437, 540);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(82, 12);
+            this.label12.TabIndex = 337;
+            this.label12.Text = "PRC Systems @";
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnPesquisar.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPesquisar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnPesquisar.Location = new System.Drawing.Point(478, 98);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(89, 25);
+            this.btnPesquisar.TabIndex = 338;
+            this.btnPesquisar.Text = "PESQUISAR";
+            this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
+            // BtnExcluirLanc
+            // 
+            this.BtnExcluirLanc.BackColor = System.Drawing.SystemColors.Menu;
+            this.BtnExcluirLanc.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnExcluirLanc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnExcluirLanc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnExcluirLanc.Location = new System.Drawing.Point(831, 9);
+            this.BtnExcluirLanc.Name = "BtnExcluirLanc";
+            this.BtnExcluirLanc.Size = new System.Drawing.Size(89, 25);
+            this.BtnExcluirLanc.TabIndex = 335;
+            this.BtnExcluirLanc.Text = "EXCLUIR";
+            this.BtnExcluirLanc.UseVisualStyleBackColor = false;
+            this.BtnExcluirLanc.Click += new System.EventHandler(this.BtnExcluirLanc_Click);
+            // 
+            // txtIdLancamento
+            // 
+            this.txtIdLancamento.Enabled = false;
+            this.txtIdLancamento.Location = new System.Drawing.Point(14, 69);
+            this.txtIdLancamento.Name = "txtIdLancamento";
+            this.txtIdLancamento.Size = new System.Drawing.Size(52, 23);
+            this.txtIdLancamento.TabIndex = 339;
             // 
             // FormCadLancPesquisar
             // 
