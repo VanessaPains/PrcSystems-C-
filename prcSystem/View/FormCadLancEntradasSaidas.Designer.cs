@@ -95,6 +95,12 @@
             this.lblSituacaoAbertaPaga = new System.Windows.Forms.Label();
             this.cbSituacaoAbertaPaga = new System.Windows.Forms.ComboBox();
             this.cdcBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cbPagoEm = new System.Windows.Forms.ComboBox();
+            this.lblPagoEm = new System.Windows.Forms.Label();
+            this.lblTotalPagoPagto = new System.Windows.Forms.Label();
+            this.txtTotalPagoPagto = new System.Windows.Forms.TextBox();
+            this.lblJurosPagto = new System.Windows.Forms.Label();
+            this.txtJurosPagto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliForn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgCadCdc)).BeginInit();
@@ -726,11 +732,81 @@
             // 
             this.cdcBindingSource.DataSource = typeof(prcSystem.Entidades.Cdc);
             // 
+            // cbPagoEm
+            // 
+            this.cbPagoEm.DataSource = this.cdcBindingSource;
+            this.cbPagoEm.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbPagoEm.FormattingEnabled = true;
+            this.cbPagoEm.Location = new System.Drawing.Point(706, 362);
+            this.cbPagoEm.Name = "cbPagoEm";
+            this.cbPagoEm.Size = new System.Drawing.Size(136, 20);
+            this.cbPagoEm.TabIndex = 468;
+            this.cbPagoEm.Visible = false;
+            // 
+            // lblPagoEm
+            // 
+            this.lblPagoEm.AutoSize = true;
+            this.lblPagoEm.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPagoEm.Location = new System.Drawing.Point(650, 367);
+            this.lblPagoEm.Name = "lblPagoEm";
+            this.lblPagoEm.Size = new System.Drawing.Size(50, 12);
+            this.lblPagoEm.TabIndex = 467;
+            this.lblPagoEm.Text = "PAGO EM:";
+            this.lblPagoEm.Visible = false;
+            // 
+            // lblTotalPagoPagto
+            // 
+            this.lblTotalPagoPagto.AutoSize = true;
+            this.lblTotalPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalPagoPagto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblTotalPagoPagto.Location = new System.Drawing.Point(633, 343);
+            this.lblTotalPagoPagto.Name = "lblTotalPagoPagto";
+            this.lblTotalPagoPagto.Size = new System.Drawing.Size(67, 12);
+            this.lblTotalPagoPagto.TabIndex = 466;
+            this.lblTotalPagoPagto.Text = "TOTAL PAGO:";
+            this.lblTotalPagoPagto.Visible = false;
+            // 
+            // txtTotalPagoPagto
+            // 
+            this.txtTotalPagoPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalPagoPagto.Location = new System.Drawing.Point(706, 340);
+            this.txtTotalPagoPagto.Name = "txtTotalPagoPagto";
+            this.txtTotalPagoPagto.Size = new System.Drawing.Size(136, 18);
+            this.txtTotalPagoPagto.TabIndex = 465;
+            this.txtTotalPagoPagto.Visible = false;
+            // 
+            // lblJurosPagto
+            // 
+            this.lblJurosPagto.AutoSize = true;
+            this.lblJurosPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblJurosPagto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblJurosPagto.Location = new System.Drawing.Point(661, 319);
+            this.lblJurosPagto.Name = "lblJurosPagto";
+            this.lblJurosPagto.Size = new System.Drawing.Size(39, 12);
+            this.lblJurosPagto.TabIndex = 464;
+            this.lblJurosPagto.Text = "JUROS:";
+            this.lblJurosPagto.Visible = false;
+            // 
+            // txtJurosPagto
+            // 
+            this.txtJurosPagto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtJurosPagto.Location = new System.Drawing.Point(706, 316);
+            this.txtJurosPagto.Name = "txtJurosPagto";
+            this.txtJurosPagto.Size = new System.Drawing.Size(136, 18);
+            this.txtJurosPagto.TabIndex = 463;
+            this.txtJurosPagto.Visible = false;
+            // 
             // FormCadLancEntradasSaidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.cbPagoEm);
+            this.Controls.Add(this.lblPagoEm);
+            this.Controls.Add(this.lblTotalPagoPagto);
+            this.Controls.Add(this.txtTotalPagoPagto);
+            this.Controls.Add(this.lblJurosPagto);
+            this.Controls.Add(this.txtJurosPagto);
             this.Controls.Add(this.cbSituacaoAbertaPaga);
             this.Controls.Add(this.lblSituacaoAbertaPaga);
             this.Controls.Add(this.BtnEditarLanc);
@@ -865,5 +941,11 @@
         private DataGridViewTextBoxColumn valorTotalDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn SituacaoDataGridViewTextBoxColumn;
+        private ComboBox cbPagoEm;
+        private Label lblPagoEm;
+        private Label lblTotalPagoPagto;
+        private TextBox txtTotalPagoPagto;
+        private Label lblJurosPagto;
+        private TextBox txtJurosPagto;
     }
 }

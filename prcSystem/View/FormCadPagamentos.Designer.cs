@@ -87,7 +87,7 @@
             this.txtlinha04 = new System.Windows.Forms.TextBox();
             this.txtlinha02 = new System.Windows.Forms.TextBox();
             this.txtlinha01 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnSalvarPgto = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.txtCodCliForn = new System.Windows.Forms.TextBox();
             this.lblCodCliForn = new System.Windows.Forms.Label();
@@ -615,6 +615,7 @@
             // 
             // txtNumDocumento
             // 
+            this.txtNumDocumento.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNumDocumento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtNumDocumento.Location = new System.Drawing.Point(14, 176);
             this.txtNumDocumento.Margin = new System.Windows.Forms.Padding(2);
@@ -754,18 +755,19 @@
             this.txtlinha01.Size = new System.Drawing.Size(1, 61);
             this.txtlinha01.TabIndex = 289;
             // 
-            // button5
+            // btnSalvarPgto
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.Menu;
-            this.button5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button5.Location = new System.Drawing.Point(718, 10);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(101, 23);
-            this.button5.TabIndex = 294;
-            this.button5.Text = "PESQUISAR";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnSalvarPgto.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnSalvarPgto.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSalvarPgto.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnSalvarPgto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSalvarPgto.Location = new System.Drawing.Point(676, 10);
+            this.btnSalvarPgto.Name = "btnSalvarPgto";
+            this.btnSalvarPgto.Size = new System.Drawing.Size(143, 23);
+            this.btnSalvarPgto.TabIndex = 294;
+            this.btnSalvarPgto.Text = "FAZER PAGAMENTO";
+            this.btnSalvarPgto.UseVisualStyleBackColor = false;
+            this.btnSalvarPgto.Click += new System.EventHandler(this.btnSalvarPgto_Click);
             // 
             // btnLimpar
             // 
@@ -1224,7 +1226,7 @@
             this.Controls.Add(this.lblRazaoNome);
             this.Controls.Add(this.txtCodCliForn);
             this.Controls.Add(this.lblCodCliForn);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnSalvarPgto);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.txtlinha01);
             this.Controls.Add(this.txtlinha02);
@@ -1324,7 +1326,7 @@
         private TextBox txtlinha04;
         private TextBox txtlinha02;
         private TextBox txtlinha01;
-        private Button button5;
+        private Button btnSalvarPgto;
         private Button btnLimpar;
         private TextBox txtCodCliForn;
         private Label lblCodCliForn;

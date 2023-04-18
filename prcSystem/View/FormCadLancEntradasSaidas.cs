@@ -292,8 +292,8 @@ namespace prcSystem.View
         {
             produtos.DescProduto = Convert.ToString(txtRazaoNome.Text);
             cdc.DescricaoCdc = Convert.ToString(txtDescricaoCdc.Text);
-
         }
+
         /// <summary>
         /// editar formulario
         /// </summary>

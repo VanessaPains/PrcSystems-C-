@@ -17,7 +17,11 @@ namespace prcSystem.View
 {
     public partial class FormCadPagamentos : Form
     {
-        Lancamentos obj = new Lancamentos();
+        Pagamentos obj = new Pagamentos();
+        Lancamentos lanc = new Lancamentos();
+        Produtos produtos = new Produtos();
+        Cdc cdc = new Cdc();
+
         CdcModel amodelA = new CdcModel();
 
         public FormCadPagamentos()
@@ -37,6 +41,104 @@ namespace prcSystem.View
             cbPagoEm.ValueMember = "DescricaoCdc";
             cbPagoEm.DisplayMember = " ";
         }
+
+        /// <summary>
+        /// metodo de salvar lançamentos
+        /// </summary>
+        private void salvar()
+        {
+            try
+            {
+                if (rbEntrada.Checked == true)
+                {
+                    obj.TipoLancamento = Convert.ToString(rbEntrada.Text = "ENTRADA");
+                }
+                else if (rbSaida.Checked == true)
+                {
+                    obj.TipoLancamento = Convert.ToString(rbSaida.Text = "SAIDA");
+                }
+
+                obj.IdLancamento = Convert.ToInt32(txtIdCdc.Text);
+                obj.NumDocumento = Convert.ToString(txtNumDocumento.Text);
+                obj.DtLancamento = Convert.ToDateTime(dtLancamento.Text);
+                obj.DtEmissao = Convert.ToDateTime(dtEmissao.Text);
+                obj.DtVencimento = Convert.ToDateTime(dtVencimento.Text);
+                obj.DtPagamento = Convert.ToDateTime(dtPagamento.Text);
+                obj.ValorTotal = Convert.ToDecimal(txtValorTotal.Text);
+                obj.Comentarios = Convert.ToString(txtComentarios.Text);
+                obj.Situacao = Convert.ToString(cbSituacaoAbertaPaga.Text);
+                obj.JurosPagto = Convert.ToDecimal(txtJurosPagto.Text);
+                obj.TotalPagoPagto = Convert.ToDecimal(txtTotalPagoPagto.Text);
+                obj.PagoEm = Convert.ToString(cbPagoEm.Text);
+
+                int x = PagamentoModel.Inserir(obj);
+                if (x > 0)
+                {
+                    MessageBox.Show("Pagamento feito com sucesso.");
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao fazer pagamento.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao fazer pagamento." + ex);
+            }
+        }
+
+        private void PreencherDesc()
+        {
+            produtos.DescProduto = Convert.ToString(txtRazaoNomeDescricao.Text);
+            cdc.DescricaoCdc = Convert.ToString(txtDescricaoCdc.Text);
+        }
+
+        /// <summary>
+        /// editar formulario
+        /// </summary>
+        private void editar()
+        {
+            try
+            {
+                if (rbEntrada.Checked == true)
+                {
+                    obj.TipoLancamento = Convert.ToString(rbEntrada.Text = "ENTRADA");
+                }
+                else if (rbSaida.Checked == true)
+                {
+                    obj.TipoLancamento = Convert.ToString(rbSaida.Text = "SAIDA");
+                }
+
+                PreencherDesc();
+
+                obj.IdLancamento = Convert.ToInt32(txtIdLancamento.Text);
+                obj.IdPessoa = Convert.ToInt32(txtCodCliFornPgto.Text);
+                obj.IdCdc = Convert.ToInt32(txtIdCdc.Text);
+                obj.NumDocumento = Convert.ToString(txtNumDocumento.Text);
+                obj.DtLancamento = Convert.ToDateTime(dtLancamento.Text);
+                obj.DtEmissao = Convert.ToDateTime(dtEmissao.Text);
+                obj.DtVencimento = Convert.ToDateTime(dtVencimento.Text);
+                obj.DtPagamento = Convert.ToDateTime(dtPagamento.Text);
+                obj.ValorTotal = Convert.ToDecimal(txtValorTotal.Text);
+                obj.Comentarios = Convert.ToString(txtComentarios.Text);
+                obj.Situacao = cbSituacaoAbertaPaga.Text;
+
+                int x = LancamentoModel.Editar(lanc);
+                if (x > 0)
+                {
+                    MessageBox.Show("Editado com sucesso.");
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao editar.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao editar." + ex);
+            }
+        }
+
 
         /// <summary>
         /// metodo de listar os lancamento no datagrid
@@ -93,7 +195,7 @@ namespace prcSystem.View
             obj.TipoLancamento = Convert.ToString(btnEntrada.Text = "ENTRADA");
 
             List<Lancamentos> lista = new List<Lancamentos>();
-            lista = new LancamentoModel().PesquisarTipoEntrada(obj);
+            lista = new LancamentoModel().PesquisarTipoEntrada(lanc);
             dgPagamentos.AutoGenerateColumns = false;
             dgPagamentos.DataSource = lista;
         }
@@ -106,7 +208,7 @@ namespace prcSystem.View
             obj.TipoLancamento = Convert.ToString(btnSaida.Text = "SAIDA");
 
             List<Lancamentos> lista = new List<Lancamentos>();
-            lista = new LancamentoModel().PesquisarTipoSaida(obj);
+            lista = new LancamentoModel().PesquisarTipoSaida(lanc);
             dgPagamentos.AutoGenerateColumns = false;
             dgPagamentos.DataSource = lista;
         }
@@ -119,7 +221,7 @@ namespace prcSystem.View
             obj.TipoLancamento = Convert.ToString(btnTodos.Text);
           
             List<Lancamentos> lista = new List<Lancamentos>();
-            lista = new LancamentoModel().PesquisarTipoTodos(obj);
+            lista = new LancamentoModel().PesquisarTipoTodos(lanc);
             dgPagamentos.AutoGenerateColumns = false;
             dgPagamentos.DataSource = lista;
             Listar();
@@ -133,7 +235,7 @@ namespace prcSystem.View
             obj.Situacao = Convert.ToString(btnAberto.Text = "EM ABERTO");
 
             List<Lancamentos> lista = new List<Lancamentos>();
-            lista = new LancamentoModel().PesquisarSituacaoAberto(obj);
+            lista = new LancamentoModel().PesquisarSituacaoAberto(lanc);
             dgPagamentos.AutoGenerateColumns = false;
             dgPagamentos.DataSource = lista;          
         }
@@ -146,7 +248,7 @@ namespace prcSystem.View
             obj.Situacao = Convert.ToString(btnPagas.Text = "PAGAS");
 
             List<Lancamentos> lista = new List<Lancamentos>();
-            lista = new LancamentoModel().PesquisarSituacaoPagas(obj);
+            lista = new LancamentoModel().PesquisarSituacaoPagas(lanc);
             dgPagamentos.AutoGenerateColumns = false;
             dgPagamentos.DataSource = lista;          
         }
@@ -167,7 +269,7 @@ namespace prcSystem.View
             obj.CnpjCpf = Convert.ToString(txtNumDocumento.Text);
 
             List<Lancamentos> lista = new List<Lancamentos>();
-            lista = new LancamentoModel().PesquisarNumDocCnpjCpfCodCdcRazaoNome(obj);
+            lista = new LancamentoModel().PesquisarNumDocCnpjCpfCodCdcRazaoNome(lanc);
             dgPagamentos.AutoGenerateColumns = false;
             dgPagamentos.DataSource = lista;
         }
@@ -185,7 +287,7 @@ namespace prcSystem.View
             obj.IdPessoa = Convert.ToInt32(txtCodCliForn.Text);
 
             List<Lancamentos> lista = new List<Lancamentos>();
-            lista = new LancamentoModel().PesquisarCodCliPagamento(obj);
+            lista = new LancamentoModel().PesquisarCodCliPagamento(lanc);
             dgPagamentos.AutoGenerateColumns = false;
             dgPagamentos.DataSource = lista;
         }
@@ -316,7 +418,7 @@ namespace prcSystem.View
         {
             dgPagamentos.Visible = true;
             dgPagamentos.Enabled = false;
-            dgPagamentos.Height = 300;
+            dgPagamentos.Height = 238;
             dgPagamentos.Location = new Point(12, 290);
         }
 
@@ -324,7 +426,7 @@ namespace prcSystem.View
         {
             dgPagamentos.Visible = true;
             dgPagamentos.Enabled = true;
-            dgPagamentos.Height = 300;
+            dgPagamentos.Height = 308;
             dgPagamentos.Location = new Point(14, 206);
         }
 
@@ -591,6 +693,13 @@ namespace prcSystem.View
 
             cbSituacaoAbertaPaga.Visible = true;
             cbPagoEm.Visible = true;    
+        }
+
+        private void btnSalvarPgto_Click(object sender, EventArgs e)
+        {
+            salvar();
+            Limpar();
+            editar();
         }
         //------------- FIM: DOS METODOS DE HABILITAR E DESABILITAR CAMPOS ----------------------------------------------------
 

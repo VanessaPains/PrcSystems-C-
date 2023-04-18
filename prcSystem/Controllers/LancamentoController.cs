@@ -285,8 +285,6 @@ namespace prcSystem.Controllers
             }
         }
 
-
-
         //buscar dos dados do db campo de pesquisar lancamentos do menu de lancamentos
         public List<Lancamentos> PesquisarTipoSituacao(Lancamentos obj)
         {
