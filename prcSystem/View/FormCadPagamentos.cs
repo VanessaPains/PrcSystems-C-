@@ -102,26 +102,26 @@ namespace prcSystem.View
             {
                 if (rbEntrada.Checked == true)
                 {
-                    obj.TipoLancamento = Convert.ToString(rbEntrada.Text = "ENTRADA");
+                    lanc.TipoLancamento = Convert.ToString(rbEntrada.Text = "ENTRADA");
                 }
                 else if (rbSaida.Checked == true)
                 {
-                    obj.TipoLancamento = Convert.ToString(rbSaida.Text = "SAIDA");
+                    lanc.TipoLancamento = Convert.ToString(rbSaida.Text = "SAIDA");
                 }
 
                 PreencherDesc();
 
-                obj.IdLancamento = Convert.ToInt32(txtIdLancamento.Text);
-                obj.IdPessoa = Convert.ToInt32(txtCodCliFornPgto.Text);
-                obj.IdCdc = Convert.ToInt32(txtIdCdc.Text);
-                obj.NumDocumento = Convert.ToString(txtNumDocumento.Text);
-                obj.DtLancamento = Convert.ToDateTime(dtLancamento.Text);
-                obj.DtEmissao = Convert.ToDateTime(dtEmissao.Text);
-                obj.DtVencimento = Convert.ToDateTime(dtVencimento.Text);
-                obj.DtPagamento = Convert.ToDateTime(dtPagamento.Text);
-                obj.ValorTotal = Convert.ToDecimal(txtValorTotal.Text);
-                obj.Comentarios = Convert.ToString(txtComentarios.Text);
-                obj.Situacao = cbSituacaoAbertaPaga.Text;
+                lanc.IdLancamento = Convert.ToInt32(txtIdLancamento.Text);
+                lanc.IdPessoa = Convert.ToInt32(txtCodCliFornPgto.Text);
+                lanc.IdCdc = Convert.ToInt32(txtIdCdc.Text);
+                lanc.NumDocumento = Convert.ToString(txtNumDocumento.Text);
+                lanc.DtLancamento = Convert.ToDateTime(dtLancamento.Text);
+                lanc.DtEmissao = Convert.ToDateTime(dtEmissao.Text);
+                lanc.DtVencimento = Convert.ToDateTime(dtVencimento.Text);
+                lanc.DtPagamento = Convert.ToDateTime(dtPagamento.Text);
+                lanc.ValorTotal = Convert.ToDecimal(txtValorTotal.Text);
+                lanc.Comentarios = Convert.ToString(txtComentarios.Text);
+                lanc.Situacao = cbSituacaoAbertaPaga.Text;
 
                 int x = LancamentoModel.Editar(lanc);
                 if (x > 0)
@@ -192,7 +192,7 @@ namespace prcSystem.View
         public void PesquisarTipoEntrada()
         {
 
-            obj.TipoLancamento = Convert.ToString(btnEntrada.Text = "ENTRADA");
+            lanc.TipoLancamento = Convert.ToString(btnEntrada.Text = "ENTRADA");
 
             List<Lancamentos> lista = new List<Lancamentos>();
             lista = new LancamentoModel().PesquisarTipoEntrada(lanc);
@@ -205,7 +205,7 @@ namespace prcSystem.View
         /// </summary>
         public void PesquisarTipoSaida()
         {
-            obj.TipoLancamento = Convert.ToString(btnSaida.Text = "SAIDA");
+            lanc.TipoLancamento = Convert.ToString(btnSaida.Text = "SAIDA");
 
             List<Lancamentos> lista = new List<Lancamentos>();
             lista = new LancamentoModel().PesquisarTipoSaida(lanc);
@@ -218,7 +218,7 @@ namespace prcSystem.View
         /// </summary>
         public void PesquisarTipoTodos()
         {
-            obj.TipoLancamento = Convert.ToString(btnTodos.Text);
+            lanc.TipoLancamento = Convert.ToString(btnTodos.Text);
           
             List<Lancamentos> lista = new List<Lancamentos>();
             lista = new LancamentoModel().PesquisarTipoTodos(lanc);
@@ -232,7 +232,7 @@ namespace prcSystem.View
         /// </summary>
         public void PesquisarSituacaoAberto()
         {
-            obj.Situacao = Convert.ToString(btnAberto.Text = "EM ABERTO");
+            lanc.Situacao = Convert.ToString(btnAberto.Text = "EM ABERTO");
 
             List<Lancamentos> lista = new List<Lancamentos>();
             lista = new LancamentoModel().PesquisarSituacaoAberto(lanc);
@@ -245,7 +245,7 @@ namespace prcSystem.View
         /// </summary>
         public void PesquisarSituacaoPagas()
         {
-            obj.Situacao = Convert.ToString(btnPagas.Text = "PAGAS");
+            lanc.Situacao = Convert.ToString(btnPagas.Text = "PAGAS");
 
             List<Lancamentos> lista = new List<Lancamentos>();
             lista = new LancamentoModel().PesquisarSituacaoPagas(lanc);
@@ -263,10 +263,10 @@ namespace prcSystem.View
                 Listar();
                 return;
             }
-            obj.NumDocumento = Convert.ToString(txtNumDocumento.Text);
-            obj.CodCdc = Convert.ToString(txtNumDocumento.Text);
-            obj.RazaoNome = Convert.ToString(txtNumDocumento.Text);
-            obj.CnpjCpf = Convert.ToString(txtNumDocumento.Text);
+            lanc.NumDocumento = Convert.ToString(txtNumDocumento.Text);
+            lanc.CodCdc = Convert.ToString(txtNumDocumento.Text);
+            lanc.RazaoNome = Convert.ToString(txtNumDocumento.Text);
+            lanc.CnpjCpf = Convert.ToString(txtNumDocumento.Text);
 
             List<Lancamentos> lista = new List<Lancamentos>();
             lista = new LancamentoModel().PesquisarNumDocCnpjCpfCodCdcRazaoNome(lanc);
@@ -284,7 +284,7 @@ namespace prcSystem.View
                 Listar();
                 return;
             }
-            obj.IdPessoa = Convert.ToInt32(txtCodCliForn.Text);
+            lanc.IdPessoa = Convert.ToInt32(txtCodCliForn.Text);
 
             List<Lancamentos> lista = new List<Lancamentos>();
             lista = new LancamentoModel().PesquisarCodCliPagamento(lanc);

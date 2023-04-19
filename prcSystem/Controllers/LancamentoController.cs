@@ -337,6 +337,7 @@ namespace prcSystem.Controllers
                         dados.DtPagamento = Convert.ToDateTime(dr["DtPagamento"]);
                         dados.ValorTotal = Convert.ToDecimal(dr["ValorTotal"]);
                         dados.Comentarios = Convert.ToString(dr["Comentarios"]);
+                        dados.Situacao = Convert.ToString(dr["Situacao"]);
 
                         lista.Add(dados);
                     }
@@ -427,7 +428,8 @@ namespace prcSystem.Controllers
                     "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao" +
                     "               FROM Lancamentos l" +
                     "               INNER JOIN Pessoa p ON l.IdPessoa = p.IdPessoa" +
-                    "               INNER JOIN Cdc c ON l.IdCdc = c.CodCdc";
+                    "               INNER JOIN Cdc c ON l.IdCdc = c.CodCdc" +
+                    "               ORDER BY l.IdLancamento";
                
                 cn.Connection = con;
 
