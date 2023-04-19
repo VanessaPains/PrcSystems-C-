@@ -546,5 +546,31 @@ namespace prcSystem.View
             txtRazaoNome.Text = DgExibirCliForn.CurrentRow.Cells[4].Value.ToString();
             DgExibirCliForn.Visible = false;
         }
+
+        /// <summary>
+        /// metodo de pesquisar os clientes/fornecedores cadastrados pela razão social
+        /// </summary>
+        public void PesquisarNumDocCnpjCpfCodCdcRazaoNome()
+        {
+            if (txtNumDocumento.Text == "")
+            {
+                Listar();
+                return;
+            }
+            obj.NumDocumento = Convert.ToString(txtPesquisarLancamentos.Text);
+            obj.CodCdc = Convert.ToString(txtPesquisarLancamentos.Text);
+            obj.RazaoNome = Convert.ToString(txtPesquisarLancamentos.Text);
+            obj.CnpjCpf = Convert.ToString(txtPesquisarLancamentos.Text);
+
+            List<Lancamentos> lista = new List<Lancamentos>();
+            lista = new LancamentoModel().PesquisarNumDocCnpjCpfCodCdcRazaoNome(obj);
+            DgExibirLacamentos.AutoGenerateColumns = false;
+            DgExibirLacamentos.DataSource = lista;
+        }
+
+        private void txtPesquisarLancamentos_TextChanged(object sender, EventArgs e)
+        {
+            PesquisarNumDocCnpjCpfCodCdcRazaoNome();
+        }
     }
 }

@@ -634,6 +634,7 @@
             this.txtPesquisarLancamentos.Name = "txtPesquisarLancamentos";
             this.txtPesquisarLancamentos.Size = new System.Drawing.Size(375, 18);
             this.txtPesquisarLancamentos.TabIndex = 328;
+            this.txtPesquisarLancamentos.TextChanged += new System.EventHandler(this.txtPesquisarLancamentos_TextChanged);
             // 
             // lblPesquisarLancamentos
             // 
