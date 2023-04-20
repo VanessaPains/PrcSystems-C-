@@ -44,6 +44,7 @@
             this.pESQUISARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pAGAMENTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tODOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lISTARPAGAMENTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oRÇAMENTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nOVOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lISTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,7 +66,6 @@
             this.sAIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSairManu = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
-            this.lISTARPAGAMENTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -173,6 +173,12 @@
             resources.ApplyResources(this.tODOSToolStripMenuItem, "tODOSToolStripMenuItem");
             this.tODOSToolStripMenuItem.Name = "tODOSToolStripMenuItem";
             this.tODOSToolStripMenuItem.Click += new System.EventHandler(this.tODOSToolStripMenuItem_Click);
+            // 
+            // lISTARPAGAMENTOSToolStripMenuItem
+            // 
+            resources.ApplyResources(this.lISTARPAGAMENTOSToolStripMenuItem, "lISTARPAGAMENTOSToolStripMenuItem");
+            this.lISTARPAGAMENTOSToolStripMenuItem.Name = "lISTARPAGAMENTOSToolStripMenuItem";
+            this.lISTARPAGAMENTOSToolStripMenuItem.Click += new System.EventHandler(this.lISTARPAGAMENTOSToolStripMenuItem_Click);
             // 
             // oRÇAMENTOSToolStripMenuItem
             // 
@@ -305,11 +311,6 @@
             resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.Color.DimGray;
             this.label3.Name = "label3";
-            // 
-            // lISTARPAGAMENTOSToolStripMenuItem
-            // 
-            resources.ApplyResources(this.lISTARPAGAMENTOSToolStripMenuItem, "lISTARPAGAMENTOSToolStripMenuItem");
-            this.lISTARPAGAMENTOSToolStripMenuItem.Name = "lISTARPAGAMENTOSToolStripMenuItem";
             // 
             // FormMenu
             // 

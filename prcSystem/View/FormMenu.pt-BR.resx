@@ -566,9 +566,6 @@
   <data name="tODOSToolStripMenuItem.Text" xml:space="preserve">
     <value>FAZER PAGAMENTOS</value>
   </data>
-  <data name="lISTARPAGAMENTOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 22</value>
-  </data>
   <data name="lISTARPAGAMENTOSToolStripMenuItem.Text" xml:space="preserve">
     <value>LISTAR PAGAMENTOS</value>
   </data>

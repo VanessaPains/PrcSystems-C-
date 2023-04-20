@@ -104,5 +104,13 @@ namespace prcSystem.View
             formCadUsuarios.ShowDialog();
 
         }
+
+        private void lISTARPAGAMENTOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {   //criando link para outra pagina de cadastro de usuarios
+            FormCadPagaPesquisar formCadPagaPesquisar = new FormCadPagaPesquisar();
+            formCadPagaPesquisar.ShowDialog();
+
+        }
+
     }
 }
