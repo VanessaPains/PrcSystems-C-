@@ -57,9 +57,11 @@ namespace prcSystem.View
                 {
                     obj.TipoLancamento = Convert.ToString(rbSaida.Text = "SAIDA");
                 }
-
-                obj.IdLancamento = Convert.ToInt32(txtIdCdc.Text);
-                obj.NumDocumento = Convert.ToString(txtNumDocumento.Text);
+                //obj.IdPagamentos = Convert.ToInt32(txtIdPagamentos.Text);
+                obj.IdLancamento = Convert.ToInt32(txtIdLancamento.Text);
+                obj.IdPessoa = Convert.ToInt32(txtCodCliFornPgto.Text);
+                obj.IdCdc = Convert.ToInt32(txtIdCdc.Text);
+                obj.NumDoc = Convert.ToString(txtNumDoc.Text);
                 obj.DtLancamento = Convert.ToDateTime(dtLancamento.Text);
                 obj.DtEmissao = Convert.ToDateTime(dtEmissao.Text);
                 obj.DtVencimento = Convert.ToDateTime(dtVencimento.Text);
@@ -94,7 +96,7 @@ namespace prcSystem.View
         }
 
         /// <summary>
-        /// editar formulario
+        /// editar formulario da tabela de lancamentos
         /// </summary>
         private void editar()
         {

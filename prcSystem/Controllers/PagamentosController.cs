@@ -27,13 +27,14 @@ namespace prcSystem.Controllers
                 //cn.CommandText = "INSERT INTO Lancamentos ([TipoLancamento], [IdPessoa], [IdCdc], [NumDocumento], [DtLancamento], [DtEmissao], [DtVencimento], [DtPagamento], [IdUsuario], [Prod01], [Prod02], [Prod03], [Prod04], [Prod05], [Qte01], [Qte02], [Qte03], [Qte04], [Qte05], [VrUnit01], [VrUnit02], [VrUnit03], [VrUnit04], [VrUnit05], [TtItens01], [TtItens02], [TtItens03], [TtItens04], [TtItens05], [ValorTotal], [Comentarios]) VALUES " +
                 //                                     "(@TipoLancamento, @IdPessoa, @IdCdc, @NumDocumento, @DtLancamento, @DtEmissao, @DtVencimento, @DtPagamento, @IdUsuario, @Prod01, @Prod02, @Prod03, @Prod04, @Prod05, @Qte01, @Qte02, @Qte03, @Qte04, @Qte05, @VrUnit01, @VrUnit02, @VrUnit03, @VrUnit04, @VrUnit05, @TtItens01, @TtItens02, @TtItens03, @TtItens04, @TtItens05, @ValorTotal, @Comentarios)";
 
-                cn.CommandText = "INSERT INTO Pagamentos ([TipoLancamento], [IdPessoa], [IdCdc], [NumDocumento], [DtLancamento], [DtEmissao], [DtVencimento], [DtPagamento], [ValorTotal], [Comentarios], [Situacao],[JurosPagto], [TotalPagoPagto], [PagoEm]) " +
-                                            "VALUES (@TipoLancamento, @IdPessoa, @IdCdc, @NumDocumento, @DtLancamento, @DtEmissao, @DtVencimento, @DtPagamento, @ValorTotal, @Comentarios, @Situacao, @JurosPagto, @TotalPagoPagto, @PagoEm)";
+                cn.CommandText = "INSERT INTO Pagamentos ([IdLancamento], [TipoLancamento], [IdPessoa], [IdCdc], [NumDoc], [DtLancamento], [DtEmissao], [DtVencimento], [DtPagamento], [ValorTotal], [Comentarios], [Situacao],[JurosPagto], [TotalPagoPagto], [PagoEm]) " +
+                                            "VALUES (@IdLancamento, @TipoLancamento, @IdPessoa, @IdCdc, @NumDoc, @DtLancamento, @DtEmissao, @DtVencimento, @DtPagamento, @ValorTotal, @Comentarios, @Situacao, @JurosPagto, @TotalPagoPagto, @PagoEm)";
 
+                cn.Parameters.Add("IdLancamento", SqlDbType.Int).Value = obj.IdLancamento;
                 cn.Parameters.Add("TipoLancamento", SqlDbType.VarChar).Value = obj.TipoLancamento;
                 cn.Parameters.Add("IdPessoa", SqlDbType.Int).Value = obj.IdPessoa;
                 cn.Parameters.Add("IdCdc", SqlDbType.Int).Value = obj.IdCdc;
-                cn.Parameters.Add("NumDocumento", SqlDbType.VarChar).Value = obj.NumDocumento;
+                cn.Parameters.Add("NumDoc", SqlDbType.VarChar).Value = obj.NumDoc;
                 cn.Parameters.Add("DtLancamento", SqlDbType.DateTime2).Value = obj.DtLancamento;
                 cn.Parameters.Add("DtEmissao", SqlDbType.DateTime2).Value = obj.DtEmissao;
                 cn.Parameters.Add("DtVencimento", SqlDbType.DateTime2).Value = obj.DtVencimento;
@@ -69,8 +70,8 @@ namespace prcSystem.Controllers
                 cn.CommandText = "UPDATE Lancamentos SET TipoLancamento = @TipoLancamento, IdPessoa = @IdPessoa, IdCdc = @IdCdc, NumDocumento = @NumDocumento, " +
                     "DtLancamento = @DtLancamento, DtEmissao = @DtEmissao, DtVencimento = @DtVencimento, DtPagamento = @DtPagamento, " +
                     "ValorTotal = @ValorTotal, Comentarios = @Comentarios, Situacao = @Situacao," +
-                    "JurosPagto = @JurosPagto, TotalPagoPagto = @TotalPagoPagto, PagoEm = @PagoEm WHERE IdLancamento = @IdLancamento";
-
+                    "JurosPagto = @JurosPagto, TotalPagoPagto = @TotalPagoPagto, PagoEm = @PagoEm WHERE IdPagamntos = @IdPagamentos";
+              
                 cn.Parameters.Add("IdLancamento", SqlDbType.Int).Value = obj.IdLancamento;
                 cn.Parameters.Add("TipoLancamento", SqlDbType.VarChar).Value = obj.TipoLancamento;
                 cn.Parameters.Add("IdPessoa", SqlDbType.Int).Value = obj.IdPessoa;

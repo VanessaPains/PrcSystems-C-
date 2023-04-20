@@ -129,6 +129,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.cbPagoEm = new System.Windows.Forms.ComboBox();
             this.cdcBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtIdPagamentos = new System.Windows.Forms.TextBox();
+            this.lblIdPagamentos = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPagamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource1)).BeginInit();
@@ -1182,11 +1184,33 @@
             // 
             this.cdcBindingSource.DataSource = typeof(prcSystem.Entidades.Cdc);
             // 
+            // txtIdPagamentos
+            // 
+            this.txtIdPagamentos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtIdPagamentos.Location = new System.Drawing.Point(826, 176);
+            this.txtIdPagamentos.Name = "txtIdPagamentos";
+            this.txtIdPagamentos.Size = new System.Drawing.Size(100, 18);
+            this.txtIdPagamentos.TabIndex = 463;
+            this.txtIdPagamentos.Visible = false;
+            // 
+            // lblIdPagamentos
+            // 
+            this.lblIdPagamentos.AutoSize = true;
+            this.lblIdPagamentos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblIdPagamentos.Location = new System.Drawing.Point(829, 161);
+            this.lblIdPagamentos.Name = "lblIdPagamentos";
+            this.lblIdPagamentos.Size = new System.Drawing.Size(89, 12);
+            this.lblIdPagamentos.TabIndex = 464;
+            this.lblIdPagamentos.Text = "COD. PAGAMENTO";
+            this.lblIdPagamentos.Visible = false;
+            // 
             // FormCadPagamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 561);
+            this.Controls.Add(this.txtIdPagamentos);
+            this.Controls.Add(this.lblIdPagamentos);
             this.Controls.Add(this.cbPagoEm);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lblPagoEm);
@@ -1396,5 +1420,7 @@
         private TextBox textBox2;
         private ComboBox cbPagoEm;
         private BindingSource cdcBindingSource;
+        private TextBox txtIdPagamentos;
+        private Label lblIdPagamentos;
     }
 }

@@ -57,6 +57,12 @@ namespace prcSystem.View
             formCadLancEntradasSaidas.ShowDialog();
         }
 
+        private void pESQUISARToolStripMenuItem_Click(object sender, EventArgs e)
+        {   //criando link para outra pagina de cadastro de usuarios
+            FormCadLancPesquisar formCadLancPesquisa = new FormCadLancPesquisar();
+            formCadLancPesquisa.ShowDialog();
+        }
+
         private void cLIENTESFORNECEDORESToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //criando link para outra pagina de cadastro de clientes ou forncedores.
@@ -97,12 +103,6 @@ namespace prcSystem.View
             FormCadUsuarios formCadUsuarios = new FormCadUsuarios();
             formCadUsuarios.ShowDialog();
 
-        }
-
-        private void pESQUISARToolStripMenuItem_Click(object sender, EventArgs e)
-        {   //criando link para outra pagina de cadastro de usuarios
-            FormCadLancPesquisar formCadLancPesquisa = new FormCadLancPesquisar();
-            formCadLancPesquisa.ShowDialog();
         }
     }
 }

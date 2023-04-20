@@ -8,6 +8,7 @@ namespace prcSystem.Entidades
 {
     public class Pagamentos
     {
+        int idPagamentos;
         int idLancamento;
         string tipoLancamento;
         int idPessoa;
@@ -18,7 +19,7 @@ namespace prcSystem.Entidades
         string descricaoCdc;
         string codCdc;
 
-        string? numDocumento;
+        string? numDoc;
         DateTime dtLancamento;
         DateTime dtEmissao;
         DateTime dtVencimento;
@@ -31,12 +32,11 @@ namespace prcSystem.Entidades
         string pagoEm;
         string situacao;
 
-
+        public int IdPagamentos { get => idPagamentos; set => idPagamentos = value; }
         public string? TipoLancamento { get => tipoLancamento; set => tipoLancamento = value; }
         public int IdLancamento { get => idLancamento; set => idLancamento = value; }
         public int IdPessoa { get => idPessoa; set => idPessoa = value; }
         public int IdCdc { get => idCdc; set => idCdc = value; }
-        public string NumDocumento { get => numDocumento; set => numDocumento = value; }
         public DateTime DtLancamento { get => dtLancamento; set => dtLancamento = value; }
         public DateTime DtEmissao { get => DtEmissao1; set => DtEmissao1 = value; }
         public DateTime DtEmissao1 { get => dtEmissao; set => dtEmissao = value; }
@@ -52,5 +52,6 @@ namespace prcSystem.Entidades
         public decimal JurosPagto { get => jurosPagto; set => jurosPagto = value; }
         public decimal TotalPagoPagto { get => totalPagoPagto; set => totalPagoPagto = value; }
         public string PagoEm { get => pagoEm; set => pagoEm = value; }
+        public string? NumDoc { get => numDoc; set => numDoc = value; }
     }
 }

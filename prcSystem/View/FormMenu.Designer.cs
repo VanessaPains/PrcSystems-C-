@@ -65,6 +65,7 @@
             this.sAIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSairManu = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
+            this.lISTARPAGAMENTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -163,7 +164,8 @@
             // 
             resources.ApplyResources(this.pAGAMENTOSToolStripMenuItem, "pAGAMENTOSToolStripMenuItem");
             this.pAGAMENTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tODOSToolStripMenuItem});
+            this.tODOSToolStripMenuItem,
+            this.lISTARPAGAMENTOSToolStripMenuItem});
             this.pAGAMENTOSToolStripMenuItem.Name = "pAGAMENTOSToolStripMenuItem";
             // 
             // tODOSToolStripMenuItem
@@ -304,6 +306,11 @@
             this.label3.ForeColor = System.Drawing.Color.DimGray;
             this.label3.Name = "label3";
             // 
+            // lISTARPAGAMENTOSToolStripMenuItem
+            // 
+            resources.ApplyResources(this.lISTARPAGAMENTOSToolStripMenuItem, "lISTARPAGAMENTOSToolStripMenuItem");
+            this.lISTARPAGAMENTOSToolStripMenuItem.Name = "lISTARPAGAMENTOSToolStripMenuItem";
+            // 
             // FormMenu
             // 
             resources.ApplyResources(this, "$this");
@@ -363,5 +370,6 @@
         private ToolStripMenuItem uSUÁRIOSToolStripMenuItem;
         private ToolStripMenuItem fUNCIONÁRIOSToolStripMenuItem1;
         private ToolStripMenuItem vENDEDORESToolStripMenuItem1;
+        private ToolStripMenuItem lISTARPAGAMENTOSToolStripMenuItem;
     }
 }

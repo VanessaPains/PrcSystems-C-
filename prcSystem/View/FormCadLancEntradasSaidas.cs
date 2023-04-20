@@ -552,7 +552,7 @@ namespace prcSystem.View
         /// </summary>
         public void PesquisarNumDocCnpjCpfCodCdcRazaoNome()
         {
-            if (txtNumDocumento.Text == "")
+            if (txtPesquisarLancamentos.Text == "")
             {
                 Listar();
                 return;

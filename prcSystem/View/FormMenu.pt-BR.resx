@@ -234,6 +234,9 @@
   <data name="cADASTROSToolStripMenuItem.Text" xml:space="preserve">
     <value>CADASTROS</value>
   </data>
+  <data name="btnCadProd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 22</value>
+  </data>
   <data name="btnCadProd.Text" xml:space="preserve">
     <value>NOVO</value>
   </data>
@@ -370,11 +373,17 @@
   <data name="pRODUTOSToolStripMenuItem.Text" xml:space="preserve">
     <value>PRODUTOS</value>
   </data>
+  <data name="eNTRADASToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
   <data name="eNTRADASToolStripMenuItem.Text" xml:space="preserve">
     <value>ENTRADAS/SAÍDAS</value>
   </data>
+  <data name="pESQUISARToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
   <data name="pESQUISARToolStripMenuItem.Text" xml:space="preserve">
-    <value>PESQUISAR</value>
+    <value>PESQUISAR LANÇAMENTOS</value>
   </data>
   <data name="lANÇAMENTOSToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -552,10 +561,16 @@
     <value>LANÇAMENTOS</value>
   </data>
   <data name="tODOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 22</value>
+    <value>188, 22</value>
   </data>
   <data name="tODOSToolStripMenuItem.Text" xml:space="preserve">
-    <value>PESQUISAR</value>
+    <value>FAZER PAGAMENTOS</value>
+  </data>
+  <data name="lISTARPAGAMENTOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="lISTARPAGAMENTOSToolStripMenuItem.Text" xml:space="preserve">
+    <value>LISTAR PAGAMENTOS</value>
   </data>
   <data name="pAGAMENTOSToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1296,7 +1311,7 @@
     <value>SAIR</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>836, 24</value>
+    <value>956, 24</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
