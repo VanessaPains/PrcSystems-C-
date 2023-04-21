@@ -512,7 +512,6 @@ namespace prcSystem.View
             txtRazaoNome.Enabled = false;
             txtDescricaoCdc.Enabled = false;
 
-
             txtIdLancamento.Text = DgExibirLacamentos.CurrentRow.Cells[0].Value.ToString();
             txtCodCliForn.Text = DgExibirLacamentos.CurrentRow.Cells[2].Value.ToString();
             txtRazaoNome.Text = DgExibirLacamentos.CurrentRow.Cells[3].Value.ToString();
