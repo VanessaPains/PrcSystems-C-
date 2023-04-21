@@ -67,7 +67,7 @@ namespace prcSystem.View
         private void BtnSalvarLanc_Click(object sender, EventArgs e)
         {
             //verifica se todos os campos estao preenchidos
-            if (rbEntrada.Text == "" || rbSaida.Text == "" || txtCodCliForn.Text == "" || txtIdCdc.Text == "" || txtNumDocumento.Text == "" || dtEmissao.Text == "" || dtVencimento.Text == "" || txtComentarios.Text == "")
+            if (rbEntrada.Text == "" || rbSaida.Text == "" || txtCodCliForn.Text == "" || txtIdCdc.Text == "" || txtNumDocumento.Text == "" || cbSituacaoAbertaPaga.Text == "" || dtEmissao.Text == "" || dtVencimento.Text == "" || txtComentarios.Text == "")
             {
                 MessageBox.Show("Preencher todos os campos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtCodCliForn.Select();//colocar curso no codigo do cliente fornecedor
@@ -75,14 +75,13 @@ namespace prcSystem.View
             }
             else
             {
-
                 salvar();
                 limpar();
                 //Listar();
 
                 this.Close();
-                FormCadLancEntradasSaidas formCadLancEntradasSaidas = new FormCadLancEntradasSaidas();
-                formCadLancEntradasSaidas.ShowDialog();
+                //FormCadLancEntradasSaidas formCadLancEntradasSaidas = new FormCadLancEntradasSaidas();
+                //formCadLancEntradasSaidas.ShowDialog();
             }
         }
         /// <summary>
@@ -102,9 +101,19 @@ namespace prcSystem.View
         /// <param name="e">e retorno motodo de salvar no banco de dados</param>
         private void BtnEditarLanc_Click(object sender, EventArgs e)
         {
-            editar();
-            limpar();
-            BtnSalvarLanc.Enabled = false;  
+            //verifica se todos os campos estao preenchidos
+            if (rbEntrada.Text == "" || rbSaida.Text == "" || txtCodCliForn.Text == "" || txtIdCdc.Text == "" || txtNumDocumento.Text == "" || cbSituacaoAbertaPaga.Text == "" || dtEmissao.Text == "" || dtVencimento.Text == "" || txtComentarios.Text == "")
+            {
+                MessageBox.Show("Preencher todos os campos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCodCliForn.Select();//colocar curso no codigo do cliente fornecedor
+                return;
+            }
+            else
+            {
+                editar();
+                limpar();
+                BtnSalvarLanc.Enabled = false;
+            }
         }
 
         /// <summary>
