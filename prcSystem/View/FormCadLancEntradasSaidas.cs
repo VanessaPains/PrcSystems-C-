@@ -478,7 +478,7 @@ namespace prcSystem.View
             dtEmissao.Visible = true;
             dtEmis.Visible = true;
 
-            cbSituacaoAbertaPaga.Visible = true;    
+            cbSituacaoAbertaPaga.Visible = true;
 
             lblPesquisarLancamentos.Visible = false;
             txtPesquisarLancamentos.Visible = false;

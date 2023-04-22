@@ -101,10 +101,6 @@
             this.txtTotalPagoPagto = new System.Windows.Forms.TextBox();
             this.lblJurosPagto = new System.Windows.Forms.Label();
             this.txtJurosPagto = new System.Windows.Forms.TextBox();
-            this.lblCnpjCpf = new System.Windows.Forms.Label();
-            this.lblRazaoNome = new System.Windows.Forms.Label();
-            this.lblIdCdc = new System.Windows.Forms.Label();
-            this.lblNumDocumento = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliForn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgCadCdc)).BeginInit();
@@ -644,11 +640,11 @@
             // 
             this.lblPesquisarLancamentos.AutoSize = true;
             this.lblPesquisarLancamentos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPesquisarLancamentos.Location = new System.Drawing.Point(12, 80);
+            this.lblPesquisarLancamentos.Location = new System.Drawing.Point(12, 79);
             this.lblPesquisarLancamentos.Name = "lblPesquisarLancamentos";
-            this.lblPesquisarLancamentos.Size = new System.Drawing.Size(136, 12);
+            this.lblPesquisarLancamentos.Size = new System.Drawing.Size(338, 12);
             this.lblPesquisarLancamentos.TabIndex = 329;
-            this.lblPesquisarLancamentos.Text = "PESQUISAR LANÇAMENTOS:";
+            this.lblPesquisarLancamentos.Text = "PESQUISAR LANÇAMENTOS -  Nº TITULO:  CDC:  CNPJ/CPF:  RAZÃO/NOME";
             // 
             // BtnEditarLanc
             // 
@@ -801,63 +797,11 @@
             this.txtJurosPagto.TabIndex = 463;
             this.txtJurosPagto.Visible = false;
             // 
-            // lblCnpjCpf
-            // 
-            this.lblCnpjCpf.AutoSize = true;
-            this.lblCnpjCpf.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCnpjCpf.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblCnpjCpf.Location = new System.Drawing.Point(239, 80);
-            this.lblCnpjCpf.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCnpjCpf.Name = "lblCnpjCpf";
-            this.lblCnpjCpf.Size = new System.Drawing.Size(56, 12);
-            this.lblCnpjCpf.TabIndex = 472;
-            this.lblCnpjCpf.Text = "CNPJ / CPF:";
-            // 
-            // lblRazaoNome
-            // 
-            this.lblRazaoNome.AutoSize = true;
-            this.lblRazaoNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblRazaoNome.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblRazaoNome.Location = new System.Drawing.Point(299, 80);
-            this.lblRazaoNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRazaoNome.Name = "lblRazaoNome";
-            this.lblRazaoNome.Size = new System.Drawing.Size(75, 12);
-            this.lblRazaoNome.TabIndex = 471;
-            this.lblRazaoNome.Text = "RAZÃO / NOME:";
-            // 
-            // lblIdCdc
-            // 
-            this.lblIdCdc.AutoSize = true;
-            this.lblIdCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblIdCdc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblIdCdc.Location = new System.Drawing.Point(207, 80);
-            this.lblIdCdc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblIdCdc.Name = "lblIdCdc";
-            this.lblIdCdc.Size = new System.Drawing.Size(28, 12);
-            this.lblIdCdc.TabIndex = 470;
-            this.lblIdCdc.Text = "CDC:";
-            // 
-            // lblNumDocumento
-            // 
-            this.lblNumDocumento.AutoSize = true;
-            this.lblNumDocumento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNumDocumento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblNumDocumento.Location = new System.Drawing.Point(147, 80);
-            this.lblNumDocumento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNumDocumento.Name = "lblNumDocumento";
-            this.lblNumDocumento.Size = new System.Drawing.Size(56, 12);
-            this.lblNumDocumento.TabIndex = 469;
-            this.lblNumDocumento.Text = "Nº TITULO:";
-            // 
             // FormCadLancEntradasSaidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
-            this.Controls.Add(this.lblCnpjCpf);
-            this.Controls.Add(this.lblRazaoNome);
-            this.Controls.Add(this.lblIdCdc);
-            this.Controls.Add(this.lblNumDocumento);
             this.Controls.Add(this.cbPagoEm);
             this.Controls.Add(this.lblPagoEm);
             this.Controls.Add(this.lblTotalPagoPagto);
@@ -1004,9 +948,5 @@
         private TextBox txtTotalPagoPagto;
         private Label lblJurosPagto;
         private TextBox txtJurosPagto;
-        private Label lblCnpjCpf;
-        private Label lblRazaoNome;
-        private Label lblIdCdc;
-        private Label lblNumDocumento;
     }
 }
