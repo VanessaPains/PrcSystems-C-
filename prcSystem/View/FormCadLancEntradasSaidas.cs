@@ -40,7 +40,6 @@ namespace prcSystem.View
             lblPesquisarLancamentos.Visible = false;
         }
 
-
         /// <summary>
         /// metodos de habilitar os radio button
         /// </summary>
@@ -213,7 +212,6 @@ namespace prcSystem.View
                 MessageBox.Show("Não foi possivel listar os dados" + ex);
             }
         }
-
 
         /// <summary>
         /// metodo de listas os CLientes/FOrnecedores cadastrado no DB para o datagrid do botao de pesquisar o fornecedor/cliente
