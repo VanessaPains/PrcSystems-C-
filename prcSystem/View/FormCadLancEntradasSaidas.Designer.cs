@@ -82,7 +82,6 @@
             this.SituacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lancamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtPesquisarLancamentos = new System.Windows.Forms.TextBox();
-            this.lblPesquisarLancamentos = new System.Windows.Forms.Label();
             this.BtnEditarLanc = new System.Windows.Forms.Button();
             this.tipoLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -101,6 +100,8 @@
             this.txtTotalPagoPagto = new System.Windows.Forms.TextBox();
             this.lblJurosPagto = new System.Windows.Forms.Label();
             this.txtJurosPagto = new System.Windows.Forms.TextBox();
+            this.lblPesquisarLancamentos = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliForn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgCadCdc)).BeginInit();
@@ -636,16 +637,6 @@
             this.txtPesquisarLancamentos.TabIndex = 328;
             this.txtPesquisarLancamentos.TextChanged += new System.EventHandler(this.txtPesquisarLancamentos_TextChanged);
             // 
-            // lblPesquisarLancamentos
-            // 
-            this.lblPesquisarLancamentos.AutoSize = true;
-            this.lblPesquisarLancamentos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPesquisarLancamentos.Location = new System.Drawing.Point(12, 79);
-            this.lblPesquisarLancamentos.Name = "lblPesquisarLancamentos";
-            this.lblPesquisarLancamentos.Size = new System.Drawing.Size(338, 12);
-            this.lblPesquisarLancamentos.TabIndex = 329;
-            this.lblPesquisarLancamentos.Text = "PESQUISAR LANÇAMENTOS -  Nº TITULO:  CDC:  CNPJ/CPF:  RAZÃO/NOME";
-            // 
             // BtnEditarLanc
             // 
             this.BtnEditarLanc.BackColor = System.Drawing.SystemColors.Menu;
@@ -797,11 +788,31 @@
             this.txtJurosPagto.TabIndex = 463;
             this.txtJurosPagto.Visible = false;
             // 
+            // lblPesquisarLancamentos
+            // 
+            this.lblPesquisarLancamentos.AutoSize = true;
+            this.lblPesquisarLancamentos.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPesquisarLancamentos.Location = new System.Drawing.Point(11, 80);
+            this.lblPesquisarLancamentos.Name = "lblPesquisarLancamentos";
+            this.lblPesquisarLancamentos.Size = new System.Drawing.Size(338, 12);
+            this.lblPesquisarLancamentos.TabIndex = 469;
+            this.lblPesquisarLancamentos.Text = "PESQUISAR LANÇAMENTOS -  Nº TITULO:  CDC:  CNPJ/CPF:  RAZÃO/NOME";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(541, 78);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 22);
+            this.comboBox1.TabIndex = 470;
+            // 
             // FormCadLancEntradasSaidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lblPesquisarLancamentos);
             this.Controls.Add(this.cbPagoEm);
             this.Controls.Add(this.lblPagoEm);
             this.Controls.Add(this.lblTotalPagoPagto);
@@ -811,7 +822,6 @@
             this.Controls.Add(this.cbSituacaoAbertaPaga);
             this.Controls.Add(this.lblSituacaoAbertaPaga);
             this.Controls.Add(this.BtnEditarLanc);
-            this.Controls.Add(this.lblPesquisarLancamentos);
             this.Controls.Add(this.txtPesquisarLancamentos);
             this.Controls.Add(this.DgExibirLacamentos);
             this.Controls.Add(this.txtIdCdc);
@@ -910,7 +920,6 @@
         private TextBox txtIdCdc;
         private DataGridView DgExibirLacamentos;
         private TextBox txtPesquisarLancamentos;
-        private Label lblPesquisarLancamentos;
         private Button BtnEditarLanc;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn tipoLancamentoDataGridViewTextBoxColumn;
@@ -948,5 +957,7 @@
         private TextBox txtTotalPagoPagto;
         private Label lblJurosPagto;
         private TextBox txtJurosPagto;
+        private Label lblPesquisarLancamentos;
+        private ComboBox comboBox1;
     }
 }

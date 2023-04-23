@@ -365,6 +365,7 @@ namespace prcSystem.View
             txtDescricaoCdc.Text = "";
             txtRazaoNome.Text = "";
             cbSituacaoAbertaPaga.Text = "";
+            txtPesquisarLancamentos.Text = "";
             txtCodCliForn.Select();////onde o cursor fica inicializada depois de incluir
         }
 
@@ -577,6 +578,7 @@ namespace prcSystem.View
         private void txtPesquisarLancamentos_TextChanged(object sender, EventArgs e)
         {
             PesquisarNumDocCnpjCpfCodCdcRazaoNome();
+
         }
     }
 }
