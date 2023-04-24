@@ -117,9 +117,6 @@ namespace prcSystem.View
         {   //criando link para outra pagina de cadastro lançamento de entrada ou saidas.
             FormCadLancEntradasSaidas formCadLancEntradasSaidas = new FormCadLancEntradasSaidas();
             formCadLancEntradasSaidas.ShowDialog();
-
-            FormCadLancPesquisar formCadLancPesquisar = new FormCadLancPesquisar();
-            formCadLancPesquisar.Close();
         }
 
         private void dgPesquisarLanc_CellClick(object sender, DataGridViewCellEventArgs e)
