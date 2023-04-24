@@ -383,6 +383,12 @@
     <value>222, 22</value>
   </data>
   <data name="pESQUISARToolStripMenuItem.Text" xml:space="preserve">
+    <value>EXCLUIR LANÇAMENTOS</value>
+  </data>
+  <data name="pESQUISARLANÇAMENTOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
+  <data name="pESQUISARLANÇAMENTOSToolStripMenuItem.Text" xml:space="preserve">
     <value>PESQUISAR LANÇAMENTOS</value>
   </data>
   <data name="lANÇAMENTOSToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -66,6 +66,7 @@
             this.sAIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSairManu = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
+            this.pESQUISARLANÇAMENTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -145,7 +146,8 @@
             resources.ApplyResources(this.lANÇAMENTOSToolStripMenuItem, "lANÇAMENTOSToolStripMenuItem");
             this.lANÇAMENTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eNTRADASToolStripMenuItem,
-            this.pESQUISARToolStripMenuItem});
+            this.pESQUISARToolStripMenuItem,
+            this.pESQUISARLANÇAMENTOSToolStripMenuItem});
             this.lANÇAMENTOSToolStripMenuItem.Name = "lANÇAMENTOSToolStripMenuItem";
             // 
             // eNTRADASToolStripMenuItem
@@ -312,6 +314,12 @@
             this.label3.ForeColor = System.Drawing.Color.DimGray;
             this.label3.Name = "label3";
             // 
+            // pESQUISARLANÇAMENTOSToolStripMenuItem
+            // 
+            resources.ApplyResources(this.pESQUISARLANÇAMENTOSToolStripMenuItem, "pESQUISARLANÇAMENTOSToolStripMenuItem");
+            this.pESQUISARLANÇAMENTOSToolStripMenuItem.Name = "pESQUISARLANÇAMENTOSToolStripMenuItem";
+            this.pESQUISARLANÇAMENTOSToolStripMenuItem.Click += new System.EventHandler(this.pESQUISARLANÇAMENTOSToolStripMenuItem_Click);
+            // 
             // FormMenu
             // 
             resources.ApplyResources(this, "$this");
@@ -372,5 +380,6 @@
         private ToolStripMenuItem fUNCIONÁRIOSToolStripMenuItem1;
         private ToolStripMenuItem vENDEDORESToolStripMenuItem1;
         private ToolStripMenuItem lISTARPAGAMENTOSToolStripMenuItem;
+        private ToolStripMenuItem pESQUISARLANÇAMENTOSToolStripMenuItem;
     }
 }

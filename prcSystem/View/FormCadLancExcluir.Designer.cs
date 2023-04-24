@@ -1,6 +1,6 @@
 ﻿namespace prcSystem.View
 {
-    partial class FormCadLancPesquisar
+    partial class FormCadLancExcluir
     {
         /// <summary>
         /// Required designer variable.
@@ -50,9 +50,9 @@
             this.Situacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lancamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label12 = new System.Windows.Forms.Label();
+            this.BtnExcluirLanc = new System.Windows.Forms.Button();
             this.txtIdLancamento = new System.Windows.Forms.TextBox();
             this.lblPesquisarLancamentos = new System.Windows.Forms.Label();
-            this.BtnExcluirLanc = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPesquisarLanc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource)).BeginInit();
@@ -242,6 +242,20 @@
             this.label12.TabIndex = 337;
             this.label12.Text = "PRC Systems @";
             // 
+            // BtnExcluirLanc
+            // 
+            this.BtnExcluirLanc.BackColor = System.Drawing.SystemColors.Menu;
+            this.BtnExcluirLanc.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnExcluirLanc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnExcluirLanc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnExcluirLanc.Location = new System.Drawing.Point(831, 9);
+            this.BtnExcluirLanc.Name = "BtnExcluirLanc";
+            this.BtnExcluirLanc.Size = new System.Drawing.Size(89, 25);
+            this.BtnExcluirLanc.TabIndex = 335;
+            this.BtnExcluirLanc.Text = "EXCLUIR";
+            this.BtnExcluirLanc.UseVisualStyleBackColor = false;
+            this.BtnExcluirLanc.Click += new System.EventHandler(this.BtnExcluirLanc_Click);
+            // 
             // txtIdLancamento
             // 
             this.txtIdLancamento.Enabled = false;
@@ -261,20 +275,6 @@
             this.lblPesquisarLancamentos.TabIndex = 470;
             this.lblPesquisarLancamentos.Text = "PESQUISAR LANÇAMENTOS -  Nº TITULO:  CDC:  CNPJ/CPF:  RAZÃO/NOME";
             // 
-            // BtnExcluirLanc
-            // 
-            this.BtnExcluirLanc.BackColor = System.Drawing.SystemColors.Menu;
-            this.BtnExcluirLanc.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnExcluirLanc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnExcluirLanc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnExcluirLanc.Location = new System.Drawing.Point(701, 9);
-            this.BtnExcluirLanc.Name = "BtnExcluirLanc";
-            this.BtnExcluirLanc.Size = new System.Drawing.Size(219, 25);
-            this.BtnExcluirLanc.TabIndex = 335;
-            this.BtnExcluirLanc.Text = "INSERIR NOVO LANÇAMENTO";
-            this.BtnExcluirLanc.UseVisualStyleBackColor = false;
-            this.BtnExcluirLanc.Click += new System.EventHandler(this.BtnExcluirLanc_Click);
-            // 
             // FormCadLancPesquisar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -291,7 +291,7 @@
             this.Controls.Add(this.txtPesquisaLancmentos);
             this.Name = "FormCadLancPesquisar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PRC Systems";
+            this.Text = "FormCadLancPesquisa";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPesquisarLanc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lancamentosBindingSource)).EndInit();
@@ -309,6 +309,7 @@
         private DataGridView dgPesquisarLanc;
         private BindingSource lancamentosBindingSource;
         private Label label12;
+        private Button BtnExcluirLanc;
         private TextBox txtIdLancamento;
         private DataGridViewTextBoxColumn idLancamentoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn tipoLancamentoDataGridViewTextBoxColumn;
@@ -325,6 +326,5 @@
         private DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn Situacao;
         private Label lblPesquisarLancamentos;
-        private Button BtnExcluirLanc;
     }
 }

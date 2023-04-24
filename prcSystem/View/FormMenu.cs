@@ -59,8 +59,16 @@ namespace prcSystem.View
 
         private void pESQUISARToolStripMenuItem_Click(object sender, EventArgs e)
         {   //criando link para outra pagina de cadastro de usuarios
-            FormCadLancPesquisar formCadLancPesquisa = new FormCadLancPesquisar();
+            FormCadLancExcluir formCadLancPesquisa = new FormCadLancExcluir();
             formCadLancPesquisa.ShowDialog();
+
+        }
+
+        private void pESQUISARLANÇAMENTOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {//criando link para outra pagina de cadastro de usuarios
+            FormCadLancPesquisar formCadLancPesquisar = new FormCadLancPesquisar();
+            formCadLancPesquisar.ShowDialog();
+
         }
 
         private void cLIENTESFORNECEDORESToolStripMenuItem_Click(object sender, EventArgs e)

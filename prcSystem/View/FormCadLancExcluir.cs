@@ -13,11 +13,11 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace prcSystem.View
 {
-    public partial class FormCadLancPesquisar : Form
+    public partial class FormCadLancExcluir : Form
     {
         Lancamentos obj = new Lancamentos();   
 
-        public FormCadLancPesquisar()
+        public FormCadLancExcluir()
         {
             InitializeComponent();
             Listar();
@@ -114,12 +114,10 @@ namespace prcSystem.View
         }
 
         private void BtnExcluirLanc_Click(object sender, EventArgs e)
-        {   //criando link para outra pagina de cadastro lançamento de entrada ou saidas.
-            FormCadLancEntradasSaidas formCadLancEntradasSaidas = new FormCadLancEntradasSaidas();
-            formCadLancEntradasSaidas.ShowDialog();
-
-            FormCadLancPesquisar formCadLancPesquisar = new FormCadLancPesquisar();
-            formCadLancPesquisar.Close();
+        {
+            excluir();
+            limpar();
+            Listar();
         }
 
         private void dgPesquisarLanc_CellClick(object sender, DataGridViewCellEventArgs e)
