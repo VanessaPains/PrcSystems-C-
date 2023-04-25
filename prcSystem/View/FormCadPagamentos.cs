@@ -383,8 +383,6 @@ namespace prcSystem.View
         }
         //------------- FIM: CAMPO DE PESQUISAR TEXTO ----------------------------------------------------
 
-
-
         //------------- INICIO: CAMPO DE PESQUISAR BOTOES ----------------------------------------------------
         private void btnEntrada_Click(object sender, EventArgs e)
         {
