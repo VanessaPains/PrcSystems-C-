@@ -30,10 +30,9 @@ namespace prcSystem.Models
             return new LancamentoController().Listar();
         }
 
-
-        public List<Lancamentos> ListarLancamentos()
+        public List<Lancamentos> ListarPagamentos()
         {
-            return new LancamentoController().Listar();
+            return new LancamentoController().ListarPagamentos();
         }
 
         /// <summary>

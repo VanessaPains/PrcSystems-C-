@@ -468,5 +468,66 @@ namespace prcSystem.Controllers
                 return lista;
             }
         }
+
+
+        //metodo de listar dos do db do menu de lancamentos
+        public List<Lancamentos> ListarPagamentos()
+        {
+            using (SqlConnection con = new SqlConnection())
+            {
+                con.ConnectionString = Properties.Settings.Default.Configuração;
+                SqlCommand cn = new SqlCommand();
+                cn.CommandType = CommandType.Text;
+                con.Open();
+                //cn.CommandText = "SELECT * FROM Lancamentos ";
+                cn.CommandText = "SELECT " +
+                    "               l.IdLancamento,l.TipoLancamento, " +
+                    "               p.IdPessoa, p.RazaoNome, p.CnpjCpf, " +
+                    "               c.IdCdc, c.CodCdc, c.DescricaoCdc," +
+                    "               l.NumDocumento, l.DtLancamento, l.DtEmissao, l.DtVencimento, " +
+                    "               l.DtPagamento,l.ValorTotal, l.Comentarios, l.Situacao" +
+                    "               FROM Lancamentos l" +
+                    "               INNER JOIN Pessoa p ON l.IdPessoa = p.IdPessoa" +
+                    "               INNER JOIN Cdc c ON l.IdCdc = c.CodCdc" +
+                    "               WHERE Situacao =  'EM ABERTO'" +
+                    "               ORDER BY l.IdLancamento";
+
+                cn.Connection = con;
+
+                SqlDataReader dr;
+                List<Lancamentos> lista = new List<Lancamentos>();
+                dr = cn.ExecuteReader();
+
+                if (dr.HasRows)
+                {
+                    while (dr.Read())
+                    {
+                        Lancamentos dados = new Lancamentos();
+                        Cdc cdc = new Cdc();
+                        Pessoa pessoa = new Pessoa();
+
+                        dados.IdLancamento = Convert.ToInt32(dr["IdLancamento"]);
+                        dados.TipoLancamento = Convert.ToString(dr["TipoLancamento"]);
+                        dados.RazaoNome = Convert.ToString(dr["RazaoNome"]);
+                        dados.IdPessoa = Convert.ToInt32(dr["IdPessoa"]);
+                        dados.CnpjCpf = Convert.ToString(dr["CnpjCpf"]);
+                        dados.IdCdc = Convert.ToInt32(dr["IdCdc"]);
+                        dados.DescricaoCdc = Convert.ToString(dr["DescricaoCdc"]);
+                        dados.CodCdc = Convert.ToString(dr["CodCdc"]);
+                        dados.NumDocumento = Convert.ToString(dr["NumDocumento"]);
+                        dados.DtLancamento = Convert.ToDateTime(dr["DtLancamento"]);
+                        dados.DtEmissao = Convert.ToDateTime(dr["DtEmissao"]);
+                        dados.DtVencimento = Convert.ToDateTime(dr["DtVencimento"]);
+                        dados.DtPagamento = Convert.ToDateTime(dr["DtPagamento"]);
+                        dados.ValorTotal = Convert.ToDecimal(dr["ValorTotal"]);
+                        dados.Comentarios = Convert.ToString(dr["Comentarios"]);
+                        dados.Situacao = Convert.ToString(dr["Situacao"]);
+
+                        lista.Add(dados);
+                    }
+                }
+                return lista;
+            }
+        }
     }
 }

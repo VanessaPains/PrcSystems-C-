@@ -44,8 +44,6 @@
             this.txtNumDocumento = new System.Windows.Forms.TextBox();
             this.lblNumDocumento = new System.Windows.Forms.Label();
             this.dgPagamentos = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pagamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idPagamentosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +65,8 @@
             this.totalPagoPagtoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pagoEmDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numDocDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pagamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPagamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagamentosBindingSource)).BeginInit();
@@ -118,9 +118,9 @@
             this.LblFormCadCliForn.Location = new System.Drawing.Point(99, 9);
             this.LblFormCadCliForn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblFormCadCliForn.Name = "LblFormCadCliForn";
-            this.LblFormCadCliForn.Size = new System.Drawing.Size(146, 22);
+            this.LblFormCadCliForn.Size = new System.Drawing.Size(260, 22);
             this.LblFormCadCliForn.TabIndex = 296;
-            this.LblFormCadCliForn.Text = "PAGAMENTOS";
+            this.LblFormCadCliForn.Text = "PESQUISAR PAGAMENTOS";
             // 
             // textBox1
             // 
@@ -269,23 +269,6 @@
             this.dgPagamentos.Size = new System.Drawing.Size(912, 308);
             this.dgPagamentos.TabIndex = 465;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(439, 540);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 12);
-            this.label3.TabIndex = 475;
-            this.label3.Text = "PRC Systems @";
-            // 
-            // pagamentosBindingSource
-            // 
-            this.pagamentosBindingSource.DataSource = typeof(prcSystem.Entidades.Pagamentos);
-            // 
             // idPagamentosDataGridViewTextBoxColumn
             // 
             this.idPagamentosDataGridViewTextBoxColumn.DataPropertyName = "IdPagamentos";
@@ -432,6 +415,23 @@
             this.numDocDataGridViewTextBoxColumn.HeaderText = "NumDoc";
             this.numDocDataGridViewTextBoxColumn.Name = "numDocDataGridViewTextBoxColumn";
             this.numDocDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // pagamentosBindingSource
+            // 
+            this.pagamentosBindingSource.DataSource = typeof(prcSystem.Entidades.Pagamentos);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label3.Location = new System.Drawing.Point(439, 540);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 12);
+            this.label3.TabIndex = 475;
+            this.label3.Text = "PRC Systems @";
             // 
             // FormCadPagaPesquisar
             // 

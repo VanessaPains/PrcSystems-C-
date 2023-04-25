@@ -16,5 +16,7 @@ namespace prcSystem.View
         {
             InitializeComponent();
         }
+
+
     }
 }

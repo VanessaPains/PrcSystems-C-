@@ -27,7 +27,7 @@ namespace prcSystem.View
         public FormCadPagamentos()
         {
             InitializeComponent();
-            Listar();
+            ListarPagamentos();
             DesabilitarTelaFormPagamento();
             PreencherCB();
         }
@@ -145,12 +145,12 @@ namespace prcSystem.View
         /// <summary>
         /// metodo de listar os lancamento no datagrid
         /// </summary>
-        private void Listar()
+        private void ListarPagamentos()
         {
             try
-            {
+            { 
                 List<Lancamentos> lista = new List<Lancamentos>();//datagrid
-                lista = new LancamentoModel().Listar();
+                lista = new LancamentoModel().ListarPagamentos();
                 //dg.AutoGenerateColumns = false;
 
                 dgPagamentos.DataSource = lista;
@@ -226,7 +226,7 @@ namespace prcSystem.View
             lista = new LancamentoModel().PesquisarTipoTodos(lanc);
             dgPagamentos.AutoGenerateColumns = false;
             dgPagamentos.DataSource = lista;
-            Listar();
+            ListarPagamentos();
         }
 
         /// <summary>
@@ -262,7 +262,7 @@ namespace prcSystem.View
         {
             if (txtNumDocumento.Text == "")
             {
-                Listar();
+                ListarPagamentos();
                 return;
             }
             lanc.NumDocumento = Convert.ToString(txtNumDocumento.Text);
@@ -283,7 +283,7 @@ namespace prcSystem.View
         {
             if (txtCodCliForn.Text == "")
             {
-                Listar();
+                ListarPagamentos();
                 return;
             }
             lanc.IdPessoa = Convert.ToInt32(txtCodCliForn.Text);
@@ -311,7 +311,7 @@ namespace prcSystem.View
             DesabilitarTelaFormPagamento();
             AjustarDataGridAumentar();
             Limpar();
-            Listar();
+            ListarPagamentos();
         }
 
         //------------- INICIO: CAMPOS DATAGRID MOSTRAR NO FORMULARIO ----------------------------------------------------
