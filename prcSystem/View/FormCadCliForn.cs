@@ -107,16 +107,16 @@ namespace prcSystem.View
               int x = PessoaModel.Inserir(obj);
                 if (x > 0)
                 {
-                    MessageBox.Show("Inserido com sucesso.");
+                    MessageBox.Show("CADASTRO CLI/FORN INSERIDO COM SUCESSO.");
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao inserir.");
+                    MessageBox.Show("ERRO AO INSERIR CADASTRO CLI/FORN.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao inserir." + ex);
+                MessageBox.Show("ERRO AO INSERIR CADASTRO CLI/FORN." + ex);
             }
         }
 
@@ -258,7 +258,7 @@ namespace prcSystem.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel listar os dados" + ex);
+                MessageBox.Show("NÃO FOI POSSIVEL LISTAR OS DADOS. CHAME O SUPORTE PARA VERIFICAR O ERRO." + ex);
             }
         }
 
