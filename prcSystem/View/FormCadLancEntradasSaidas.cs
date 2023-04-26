@@ -109,9 +109,16 @@ namespace prcSystem.View
             }
             else
             {
-                editar();
-                limpar();
-                BtnSalvarLanc.Enabled = false;
+                if (MessageBox.Show("DESEJA MESMO EDITAR O LANÇAMENTO?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
+                {
+                    return;
+                }
+                else
+                {
+                    editar();
+                    limpar();
+                    BtnSalvarLanc.Enabled = false;
+                }
             }
         }
 
@@ -157,16 +164,16 @@ namespace prcSystem.View
                 int x = LancamentoModel.Inserir(obj);
                 if (x > 0)
                 {
-                    MessageBox.Show("Inserido com sucesso.");
+                    MessageBox.Show("LANÇAMENTO INSERIDO COM SUCESSO.");
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao inserir.");
+                    MessageBox.Show("ERRO AO INSERIR LANÇAMENTO.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao inserir." + ex);
+                MessageBox.Show("ERRO AO INSERIR LANÇAMENTO." + ex);
             }
         }
 
@@ -209,7 +216,7 @@ namespace prcSystem.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel listar os dados" + ex);
+                MessageBox.Show("NÃO FOI POSSIVEL LISTAR OS DADOS. CHAME O SUPORTE PARA VERIFICAR O ERRO." + ex);
             }
         }
 
@@ -265,7 +272,7 @@ namespace prcSystem.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel listar os dados" + ex);
+                MessageBox.Show("NÃO FOI POSSIVEL LISTAR OS DADOS. CHAME O SUPORTE PARA VERIFICAR O ERRO." + ex);
             }
         }
     
@@ -291,7 +298,7 @@ namespace prcSystem.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não foi possivel listar os dados" + ex);
+                MessageBox.Show("NÃO FOI POSSIVEL LISTAR OS DADOS. CHAME O SUPORTE PARA VERIFICAR O ERRO." + ex);
             }
         }
 
@@ -334,16 +341,16 @@ namespace prcSystem.View
                 int x = LancamentoModel.Editar(obj);
                 if (x > 0)
                 {
-                    MessageBox.Show("Editado com sucesso.");
+                    MessageBox.Show("LANÇAMENTO EDITADO COM SUCESSO.");
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao editar.");
+                    MessageBox.Show("ERRO AO EDITAR LANÇAMENTO.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao editar." + ex);
+                MessageBox.Show("ERRO AO EDITAR LANÇAMENTO.." + ex);
             }
         }
 
