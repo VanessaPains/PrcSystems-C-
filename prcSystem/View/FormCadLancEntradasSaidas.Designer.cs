@@ -101,6 +101,11 @@
             this.lblJurosPagto = new System.Windows.Forms.Label();
             this.txtJurosPagto = new System.Windows.Forms.TextBox();
             this.lblPesquisarLancamentos = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lblTotalPagar = new System.Windows.Forms.Label();
+            this.lblTotalReceber = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliForn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgCadCdc)).BeginInit();
@@ -147,16 +152,16 @@
             // 
             this.txtRazaoNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtRazaoNome.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.txtRazaoNome.Location = new System.Drawing.Point(106, 129);
+            this.txtRazaoNome.Location = new System.Drawing.Point(74, 134);
             this.txtRazaoNome.Name = "txtRazaoNome";
             this.txtRazaoNome.PlaceholderText = "Descrição";
-            this.txtRazaoNome.Size = new System.Drawing.Size(375, 18);
+            this.txtRazaoNome.Size = new System.Drawing.Size(269, 18);
             this.txtRazaoNome.TabIndex = 66;
             // 
             // txtNumDocumento
             // 
             this.txtNumDocumento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNumDocumento.Location = new System.Drawing.Point(487, 129);
+            this.txtNumDocumento.Location = new System.Drawing.Point(349, 134);
             this.txtNumDocumento.Name = "txtNumDocumento";
             this.txtNumDocumento.Size = new System.Drawing.Size(99, 18);
             this.txtNumDocumento.TabIndex = 68;
@@ -165,7 +170,7 @@
             // 
             this.lblNumLancamento.AutoSize = true;
             this.lblNumLancamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNumLancamento.Location = new System.Drawing.Point(487, 114);
+            this.lblNumLancamento.Location = new System.Drawing.Point(349, 119);
             this.lblNumLancamento.Name = "lblNumLancamento";
             this.lblNumLancamento.Size = new System.Drawing.Size(42, 12);
             this.lblNumLancamento.TabIndex = 67;
@@ -175,7 +180,7 @@
             // 
             this.lblCodCdc.AutoSize = true;
             this.lblCodCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCodCdc.Location = new System.Drawing.Point(46, 151);
+            this.lblCodCdc.Location = new System.Drawing.Point(14, 156);
             this.lblCodCdc.Name = "lblCodCdc";
             this.lblCodCdc.Size = new System.Drawing.Size(28, 12);
             this.lblCodCdc.TabIndex = 71;
@@ -184,7 +189,7 @@
             // txtCodCliForn
             // 
             this.txtCodCliForn.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCodCliForn.Location = new System.Drawing.Point(45, 129);
+            this.txtCodCliForn.Location = new System.Drawing.Point(13, 134);
             this.txtCodCliForn.Name = "txtCodCliForn";
             this.txtCodCliForn.Size = new System.Drawing.Size(60, 18);
             this.txtCodCliForn.TabIndex = 74;
@@ -194,7 +199,7 @@
             // 
             this.lblCodCliForn.AutoSize = true;
             this.lblCodCliForn.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCodCliForn.Location = new System.Drawing.Point(45, 114);
+            this.lblCodCliForn.Location = new System.Drawing.Point(13, 119);
             this.lblCodCliForn.Name = "lblCodCliForn";
             this.lblCodCliForn.Size = new System.Drawing.Size(58, 12);
             this.lblCodCliForn.TabIndex = 73;
@@ -204,17 +209,17 @@
             // 
             this.txtComentarios.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtComentarios.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtComentarios.Location = new System.Drawing.Point(45, 205);
+            this.txtComentarios.Location = new System.Drawing.Point(13, 210);
             this.txtComentarios.Multiline = true;
             this.txtComentarios.Name = "txtComentarios";
-            this.txtComentarios.Size = new System.Drawing.Size(664, 18);
+            this.txtComentarios.Size = new System.Drawing.Size(558, 18);
             this.txtComentarios.TabIndex = 76;
             // 
             // lblComentarios
             // 
             this.lblComentarios.AutoSize = true;
             this.lblComentarios.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblComentarios.Location = new System.Drawing.Point(45, 191);
+            this.lblComentarios.Location = new System.Drawing.Point(13, 196);
             this.lblComentarios.Name = "lblComentarios";
             this.lblComentarios.Size = new System.Drawing.Size(78, 12);
             this.lblComentarios.TabIndex = 75;
@@ -224,7 +229,7 @@
             // 
             this.dtEmis.AutoSize = true;
             this.dtEmis.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dtEmis.Location = new System.Drawing.Point(715, 114);
+            this.dtEmis.Location = new System.Drawing.Point(577, 119);
             this.dtEmis.Name = "dtEmis";
             this.dtEmis.Size = new System.Drawing.Size(63, 12);
             this.dtEmis.TabIndex = 77;
@@ -234,7 +239,7 @@
             // 
             this.dtVenc.AutoSize = true;
             this.dtVenc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dtVenc.Location = new System.Drawing.Point(716, 151);
+            this.dtVenc.Location = new System.Drawing.Point(578, 156);
             this.dtVenc.Name = "dtVenc";
             this.dtVenc.Size = new System.Drawing.Size(48, 12);
             this.dtVenc.TabIndex = 79;
@@ -243,10 +248,10 @@
             // txtDescricaoCdc
             // 
             this.txtDescricaoCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDescricaoCdc.Location = new System.Drawing.Point(107, 166);
+            this.txtDescricaoCdc.Location = new System.Drawing.Point(75, 171);
             this.txtDescricaoCdc.Name = "txtDescricaoCdc";
             this.txtDescricaoCdc.PlaceholderText = "Descrição";
-            this.txtDescricaoCdc.Size = new System.Drawing.Size(412, 18);
+            this.txtDescricaoCdc.Size = new System.Drawing.Size(306, 18);
             this.txtDescricaoCdc.TabIndex = 83;
             // 
             // dtLancamento
@@ -274,10 +279,10 @@
             // 
             this.dtVencimento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtVencimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtVencimento.Location = new System.Drawing.Point(716, 166);
+            this.dtVencimento.Location = new System.Drawing.Point(578, 171);
             this.dtVencimento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtVencimento.Name = "dtVencimento";
-            this.dtVencimento.Size = new System.Drawing.Size(127, 18);
+            this.dtVencimento.Size = new System.Drawing.Size(139, 18);
             this.dtVencimento.TabIndex = 87;
             this.dtVencimento.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
@@ -285,10 +290,10 @@
             // 
             this.dtEmissao.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtEmissao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtEmissao.Location = new System.Drawing.Point(715, 129);
+            this.dtEmissao.Location = new System.Drawing.Point(577, 134);
             this.dtEmissao.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtEmissao.Name = "dtEmissao";
-            this.dtEmissao.Size = new System.Drawing.Size(127, 18);
+            this.dtEmissao.Size = new System.Drawing.Size(139, 18);
             this.dtEmissao.TabIndex = 88;
             this.dtEmissao.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
@@ -328,7 +333,7 @@
             this.lblValorTotal.AutoSize = true;
             this.lblValorTotal.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblValorTotal.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblValorTotal.Location = new System.Drawing.Point(592, 114);
+            this.lblValorTotal.Location = new System.Drawing.Point(454, 119);
             this.lblValorTotal.Name = "lblValorTotal";
             this.lblValorTotal.Size = new System.Drawing.Size(70, 12);
             this.lblValorTotal.TabIndex = 267;
@@ -337,7 +342,7 @@
             // txtValorTotal
             // 
             this.txtValorTotal.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtValorTotal.Location = new System.Drawing.Point(592, 129);
+            this.txtValorTotal.Location = new System.Drawing.Point(454, 134);
             this.txtValorTotal.Name = "txtValorTotal";
             this.txtValorTotal.Size = new System.Drawing.Size(117, 18);
             this.txtValorTotal.TabIndex = 266;
@@ -346,10 +351,10 @@
             // 
             this.dtPagamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtPagamento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtPagamento.Location = new System.Drawing.Point(716, 205);
+            this.dtPagamento.Location = new System.Drawing.Point(578, 210);
             this.dtPagamento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtPagamento.Name = "dtPagamento";
-            this.dtPagamento.Size = new System.Drawing.Size(127, 18);
+            this.dtPagamento.Size = new System.Drawing.Size(139, 18);
             this.dtPagamento.TabIndex = 311;
             this.dtPagamento.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
@@ -357,7 +362,7 @@
             // 
             this.dtPgto.AutoSize = true;
             this.dtPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dtPgto.Location = new System.Drawing.Point(716, 190);
+            this.dtPgto.Location = new System.Drawing.Point(578, 195);
             this.dtPgto.Name = "dtPgto";
             this.dtPgto.Size = new System.Drawing.Size(139, 12);
             this.dtPgto.TabIndex = 310;
@@ -485,7 +490,7 @@
             // txtIdCdc
             // 
             this.txtIdCdc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtIdCdc.Location = new System.Drawing.Point(46, 166);
+            this.txtIdCdc.Location = new System.Drawing.Point(14, 171);
             this.txtIdCdc.Name = "txtIdCdc";
             this.txtIdCdc.Size = new System.Drawing.Size(60, 18);
             this.txtIdCdc.TabIndex = 326;
@@ -702,7 +707,7 @@
             // 
             this.lblSituacaoAbertaPaga.AutoSize = true;
             this.lblSituacaoAbertaPaga.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSituacaoAbertaPaga.Location = new System.Drawing.Point(530, 168);
+            this.lblSituacaoAbertaPaga.Location = new System.Drawing.Point(392, 173);
             this.lblSituacaoAbertaPaga.Name = "lblSituacaoAbertaPaga";
             this.lblSituacaoAbertaPaga.Size = new System.Drawing.Size(56, 12);
             this.lblSituacaoAbertaPaga.TabIndex = 332;
@@ -714,7 +719,7 @@
             this.cbSituacaoAbertaPaga.FormattingEnabled = true;
             this.cbSituacaoAbertaPaga.Items.AddRange(new object[] {
             "EM ABERTO"});
-            this.cbSituacaoAbertaPaga.Location = new System.Drawing.Point(592, 164);
+            this.cbSituacaoAbertaPaga.Location = new System.Drawing.Point(454, 169);
             this.cbSituacaoAbertaPaga.Name = "cbSituacaoAbertaPaga";
             this.cbSituacaoAbertaPaga.Size = new System.Drawing.Size(117, 20);
             this.cbSituacaoAbertaPaga.TabIndex = 333;
@@ -797,11 +802,65 @@
             this.lblPesquisarLancamentos.TabIndex = 469;
             this.lblPesquisarLancamentos.Text = "PESQUISAR LANÇAMENTOS -  Nº TITULO:  CDC:  CNPJ/CPF:  RAZÃO/NOME";
             // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox4.Location = new System.Drawing.Point(723, 119);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(2, 110);
+            this.textBox4.TabIndex = 471;
+            // 
+            // lblTotalPagar
+            // 
+            this.lblTotalPagar.AutoSize = true;
+            this.lblTotalPagar.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalPagar.Location = new System.Drawing.Point(749, 119);
+            this.lblTotalPagar.Name = "lblTotalPagar";
+            this.lblTotalPagar.Size = new System.Drawing.Size(90, 12);
+            this.lblTotalPagar.TabIndex = 472;
+            this.lblTotalPagar.Text = "CONTAS A PAGAR:";
+            // 
+            // lblTotalReceber
+            // 
+            this.lblTotalReceber.AutoSize = true;
+            this.lblTotalReceber.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalReceber.Location = new System.Drawing.Point(736, 137);
+            this.lblTotalReceber.Name = "lblTotalReceber";
+            this.lblTotalReceber.Size = new System.Drawing.Size(103, 12);
+            this.lblTotalReceber.TabIndex = 473;
+            this.lblTotalReceber.Text = "CONTAS A RECEBER:";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotal.Location = new System.Drawing.Point(845, 176);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(28, 13);
+            this.lblTotal.TabIndex = 474;
+            this.lblTotal.Text = "0,00";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(792, 176);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.TabIndex = 475;
+            this.label1.Text = "TOTAL:";
+            // 
             // FormCadLancEntradasSaidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.lblTotalReceber);
+            this.Controls.Add(this.lblTotalPagar);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.lblPesquisarLancamentos);
             this.Controls.Add(this.cbPagoEm);
             this.Controls.Add(this.lblPagoEm);
@@ -948,5 +1007,10 @@
         private Label lblJurosPagto;
         private TextBox txtJurosPagto;
         private Label lblPesquisarLancamentos;
+        private TextBox textBox4;
+        private Label lblTotalPagar;
+        private Label lblTotalReceber;
+        private Label lblTotal;
+        private Label label1;
     }
 }

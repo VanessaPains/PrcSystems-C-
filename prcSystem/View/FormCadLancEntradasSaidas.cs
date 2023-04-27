@@ -585,7 +585,46 @@ namespace prcSystem.View
         private void txtPesquisarLancamentos_TextChanged(object sender, EventArgs e)
         {
             PesquisarNumDocCnpjCpfCodCdcRazaoNome();
-
         }
+
+        /// <summary>
+        /// calcular o somatorio de valor total tela de lanaçamentos
+        /// </summary>
+        /// <returns></returns>
+        private decimal valorTotal()
+        {
+            decimal total = 0;
+            decimal totalEntrada = 0;
+            decimal totalSaida = 0;
+            int i = 0;
+            for (i = 0; i < DgExibirLacamentos.Rows.Count; i++)
+            {
+                if (DgExibirLacamentos.Rows[i].Cells[0].Value.ToString() == "ENTRADA")
+                {
+                    totalEntrada = totalEntrada + Convert.ToDecimal(DgExibirLacamentos.Rows[i].Cells[11].Value);
+                }
+                else
+                {
+                    totalSaida = totalSaida + Convert.ToDecimal(DgExibirLacamentos.Rows[i].Cells[11].Value);
+                }
+            }
+            return totalEntrada - totalSaida;
+        }
+
+        private void totalizar()
+        {
+            //chama total somatorio de total
+            lblTotal.Text = valorTotal().ToString();
+            //coloca as cores de vermelho e azul
+            if (Convert.ToDecimal(lblTotal.Text) < 0)
+            {
+                lblTotal.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblTotal.ForeColor = Color.Green;
+            }
+        }
+
     }
 }
