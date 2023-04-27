@@ -38,6 +38,8 @@ namespace prcSystem.View
             txtIdLancamento.Enabled= false;
             txtPesquisarLancamentos.Visible = false;
             lblPesquisarLancamentos.Visible = false;
+
+            totalizar();
         }
 
         /// <summary>
@@ -599,7 +601,7 @@ namespace prcSystem.View
             int i = 0;
             for (i = 0; i < DgExibirLacamentos.Rows.Count; i++)
             {
-                if (DgExibirLacamentos.Rows[i].Cells[0].Value.ToString() == "ENTRADA")
+                if (DgExibirLacamentos.Rows[i].Cells[1].Value.ToString() == "ENTRADA")
                 {
                     totalEntrada = totalEntrada + Convert.ToDecimal(DgExibirLacamentos.Rows[i].Cells[11].Value);
                 }
@@ -608,7 +610,7 @@ namespace prcSystem.View
                     totalSaida = totalSaida + Convert.ToDecimal(DgExibirLacamentos.Rows[i].Cells[11].Value);
                 }
             }
-            return totalEntrada - totalSaida;
+            return (totalEntrada - totalSaida);
         }
 
         private void totalizar()
