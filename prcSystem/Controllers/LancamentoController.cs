@@ -429,6 +429,7 @@ namespace prcSystem.Controllers
                     "               FROM Lancamentos l" +
                     "               INNER JOIN Pessoa p ON l.IdPessoa = p.IdPessoa" +
                     "               INNER JOIN Cdc c ON l.IdCdc = c.CodCdc" +
+                    "               WHERE Situacao = 'EM ABERTO'" +
                     "               ORDER BY l.IdLancamento";
                
                 cn.Connection = con;
