@@ -1,6 +1,7 @@
 ﻿using prcSystem.Entidades;
 using prcSystem.Models;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -593,6 +594,44 @@ namespace prcSystem.View
         /// calcular o somatorio de valor total tela de lanaçamentos
         /// </summary>
         /// <returns></returns>
+        private decimal valorEntradas()
+        {
+            decimal total = 0;
+            decimal totalEntrada = 0;
+            decimal totalSaida = 0;
+            int i = 0;
+            for (i = 0; i < DgExibirLacamentos.Rows.Count; i++)
+            {
+                if (DgExibirLacamentos.Rows[i].Cells[1].Value.ToString() == "ENTRADA")
+                {
+                    totalEntrada = totalEntrada + Convert.ToDecimal(DgExibirLacamentos.Rows[i].Cells[11].Value);
+                }
+            }
+            return (totalEntrada);
+        }
+
+        /// <summary>
+        /// calcular o somatorio de valor total tela de lanaçamentos
+        /// </summary>
+        /// <returns></returns>
+        private decimal valorSaidas()
+        {
+            decimal totalSaida = 0;
+            int i = 0;
+            for (i = 0; i < DgExibirLacamentos.Rows.Count; i++)
+            {
+                if (DgExibirLacamentos.Rows[i].Cells[1].Value.ToString() == "SAIDA")
+                {
+                    totalSaida = totalSaida + Convert.ToDecimal(DgExibirLacamentos.Rows[i].Cells[11].Value);
+                }
+            }
+            return (totalSaida);
+        }
+
+        /// <summary>
+        /// calcular o somatorio de valor total tela de lanaçamentos
+        /// </summary>
+        /// <returns></returns>
         private decimal valorTotal()
         {
             decimal total = 0;
@@ -613,10 +652,18 @@ namespace prcSystem.View
             return (totalEntrada - totalSaida);
         }
 
+        /// <summary>
+        /// faz a totalização do  
+        /// </summary>
         private void totalizar()
         {
             //chama total somatorio de total
             lblTotal.Text = valorTotal().ToString();
+            lblValorTotalPagar.Text = valorSaidas().ToString();
+            lblValorTotalReceber.Text = valorEntradas().ToString();
+            lblValorTotalPagar.ForeColor = Color.Blue;
+            lblValorTotalReceber.ForeColor = Color.Blue;
+
             //coloca as cores de vermelho e azul
             if (Convert.ToDecimal(lblTotal.Text) < 0)
             {

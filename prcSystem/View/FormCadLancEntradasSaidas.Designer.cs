@@ -106,6 +106,8 @@
             this.lblTotalReceber = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblValorTotalReceber = new System.Windows.Forms.Label();
+            this.lblValorTotalPagar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliForn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgCadCdc)).BeginInit();
@@ -851,11 +853,33 @@
             this.label1.TabIndex = 475;
             this.label1.Text = "TOTAL:";
             // 
+            // lblValorTotalReceber
+            // 
+            this.lblValorTotalReceber.AutoSize = true;
+            this.lblValorTotalReceber.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblValorTotalReceber.Location = new System.Drawing.Point(845, 136);
+            this.lblValorTotalReceber.Name = "lblValorTotalReceber";
+            this.lblValorTotalReceber.Size = new System.Drawing.Size(28, 13);
+            this.lblValorTotalReceber.TabIndex = 476;
+            this.lblValorTotalReceber.Text = "0,00";
+            // 
+            // lblValorTotalPagar
+            // 
+            this.lblValorTotalPagar.AutoSize = true;
+            this.lblValorTotalPagar.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblValorTotalPagar.Location = new System.Drawing.Point(845, 118);
+            this.lblValorTotalPagar.Name = "lblValorTotalPagar";
+            this.lblValorTotalPagar.Size = new System.Drawing.Size(28, 13);
+            this.lblValorTotalPagar.TabIndex = 477;
+            this.lblValorTotalPagar.Text = "0,00";
+            // 
             // FormCadLancEntradasSaidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.lblValorTotalPagar);
+            this.Controls.Add(this.lblValorTotalReceber);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblTotalReceber);
@@ -1012,5 +1036,7 @@
         private Label lblTotalReceber;
         private Label lblTotal;
         private Label label1;
+        private Label lblValorTotalReceber;
+        private Label lblValorTotalPagar;
     }
 }
