@@ -439,6 +439,14 @@ namespace prcSystem.View
             dtEmissao.Visible = false;
             dtEmis.Visible = false;
 
+            lblTT.Visible = false;
+            lblTotal.Visible = false;
+            lblTotalReceber.Visible = false;
+            lblValorTotalReceber.Visible = false;
+            lblTotalPagar.Visible = false;
+            lblValorTotalPagar.Visible = false;
+            txtLinha05.Visible = false;
+
             cbSituacaoAbertaPaga.Visible = false;
 
             lblPesquisarLancamentos.Visible = true;
@@ -486,6 +494,14 @@ namespace prcSystem.View
             dtVenc.Visible = true;
             dtEmissao.Visible = true;
             dtEmis.Visible = true;
+
+            lblTT.Visible = true;
+            lblTotal.Visible = true;
+            lblTotalReceber.Visible = true;
+            lblValorTotalReceber.Visible = true;
+            lblTotalPagar.Visible = true;
+            lblValorTotalPagar.Visible = true;
+            txtLinha05.Visible = true;
 
             cbSituacaoAbertaPaga.Visible = true;
 

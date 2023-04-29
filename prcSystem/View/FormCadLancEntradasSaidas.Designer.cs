@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnSalvarLanc = new System.Windows.Forms.Button();
             this.LblFormCadCli = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -101,11 +101,11 @@
             this.lblJurosPagto = new System.Windows.Forms.Label();
             this.txtJurosPagto = new System.Windows.Forms.TextBox();
             this.lblPesquisarLancamentos = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtLinha05 = new System.Windows.Forms.TextBox();
             this.lblTotalPagar = new System.Windows.Forms.Label();
             this.lblTotalReceber = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTT = new System.Windows.Forms.Label();
             this.lblValorTotalReceber = new System.Windows.Forms.Label();
             this.lblValorTotalPagar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -472,14 +472,14 @@
             this.dgCadCdc.AllowUserToAddRows = false;
             this.dgCadCdc.AllowUserToDeleteRows = false;
             this.dgCadCdc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgCadCdc.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgCadCdc.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgCadCdc.Location = new System.Drawing.Point(12, 257);
             this.dgCadCdc.Name = "dgCadCdc";
             this.dgCadCdc.ReadOnly = true;
@@ -804,14 +804,14 @@
             this.lblPesquisarLancamentos.TabIndex = 469;
             this.lblPesquisarLancamentos.Text = "PESQUISAR LANÇAMENTOS -  Nº TITULO:  CDC:  CNPJ/CPF:  RAZÃO/NOME";
             // 
-            // textBox4
+            // txtLinha05
             // 
-            this.textBox4.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox4.Location = new System.Drawing.Point(723, 119);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(2, 110);
-            this.textBox4.TabIndex = 471;
+            this.txtLinha05.BackColor = System.Drawing.Color.DarkGray;
+            this.txtLinha05.Location = new System.Drawing.Point(723, 119);
+            this.txtLinha05.Multiline = true;
+            this.txtLinha05.Name = "txtLinha05";
+            this.txtLinha05.Size = new System.Drawing.Size(2, 110);
+            this.txtLinha05.TabIndex = 471;
             // 
             // lblTotalPagar
             // 
@@ -843,15 +843,15 @@
             this.lblTotal.TabIndex = 474;
             this.lblTotal.Text = "0,00";
             // 
-            // label1
+            // lblTT
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(792, 176);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
-            this.label1.TabIndex = 475;
-            this.label1.Text = "TOTAL:";
+            this.lblTT.AutoSize = true;
+            this.lblTT.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTT.Location = new System.Drawing.Point(792, 176);
+            this.lblTT.Name = "lblTT";
+            this.lblTT.Size = new System.Drawing.Size(47, 13);
+            this.lblTT.TabIndex = 475;
+            this.lblTT.Text = "TOTAL:";
             // 
             // lblValorTotalReceber
             // 
@@ -880,11 +880,11 @@
             this.ClientSize = new System.Drawing.Size(934, 561);
             this.Controls.Add(this.lblValorTotalPagar);
             this.Controls.Add(this.lblValorTotalReceber);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTT);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblTotalReceber);
             this.Controls.Add(this.lblTotalPagar);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtLinha05);
             this.Controls.Add(this.lblPesquisarLancamentos);
             this.Controls.Add(this.cbPagoEm);
             this.Controls.Add(this.lblPagoEm);
@@ -1031,11 +1031,11 @@
         private Label lblJurosPagto;
         private TextBox txtJurosPagto;
         private Label lblPesquisarLancamentos;
-        private TextBox textBox4;
+        private TextBox txtLinha05;
         private Label lblTotalPagar;
         private Label lblTotalReceber;
         private Label lblTotal;
-        private Label label1;
+        private Label lblTT;
         private Label lblValorTotalReceber;
         private Label lblValorTotalPagar;
     }
