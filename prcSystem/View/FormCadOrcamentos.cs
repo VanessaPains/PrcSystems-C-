@@ -21,5 +21,25 @@ namespace prcSystem.View
         {
 
         }
+
+        private void TxtIdCliForn_Click(object sender, EventArgs e)
+        {
+            AjustarDataGridAumentar();
+        }
+
+        public void AjustarDataGridAumentar()
+        {
+            DgExibirCliFornOrcamentos.Visible = true;
+            DgExibirCliFornOrcamentos.Height = 350;
+            DgExibirCliFornOrcamentos.Width = 350;
+            DgExibirCliFornOrcamentos.Location = new Point(12, 151);
+        }
+
+        public void AjustarDataGridDiminuir()
+        {
+            DgExibirCliFornOrcamentos.Visible = false;
+            DgExibirCliFornOrcamentos.Height = 350;
+            DgExibirCliFornOrcamentos.Location = new Point(11, 260);
+        }
     }
 }

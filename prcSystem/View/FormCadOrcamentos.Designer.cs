@@ -48,7 +48,7 @@
             this.TxtEndereco = new System.Windows.Forms.TextBox();
             this.TxtRazaoSocial = new System.Windows.Forms.TextBox();
             this.TxtNome = new System.Windows.Forms.TextBox();
-            this.TxtId = new System.Windows.Forms.TextBox();
+            this.TxtIdCliForn = new System.Windows.Forms.TextBox();
             this.LblIdCod = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -149,7 +149,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.DgExibirCliFornOrcamentos = new System.Windows.Forms.DataGridView();
+            this.SituacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliFornOrcamentos)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -353,13 +356,14 @@
             this.TxtNome.Size = new System.Drawing.Size(477, 18);
             this.TxtNome.TabIndex = 140;
             // 
-            // TxtId
+            // TxtIdCliForn
             // 
-            this.TxtId.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtId.Location = new System.Drawing.Point(99, 60);
-            this.TxtId.Name = "TxtId";
-            this.TxtId.Size = new System.Drawing.Size(100, 18);
-            this.TxtId.TabIndex = 139;
+            this.TxtIdCliForn.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TxtIdCliForn.Location = new System.Drawing.Point(99, 60);
+            this.TxtIdCliForn.Name = "TxtIdCliForn";
+            this.TxtIdCliForn.Size = new System.Drawing.Size(100, 18);
+            this.TxtIdCliForn.TabIndex = 139;
+            this.TxtIdCliForn.Click += new System.EventHandler(this.TxtIdCliForn_Click);
             // 
             // LblIdCod
             // 
@@ -368,9 +372,9 @@
             this.LblIdCod.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.LblIdCod.Location = new System.Drawing.Point(14, 63);
             this.LblIdCod.Name = "LblIdCod";
-            this.LblIdCod.Size = new System.Drawing.Size(80, 12);
+            this.LblIdCod.Size = new System.Drawing.Size(82, 12);
             this.LblIdCod.TabIndex = 129;
-            this.LblIdCod.Text = "COD CLI / FORN:";
+            this.LblIdCod.Text = "COD. CLI / FORN:";
             // 
             // textBox2
             // 
@@ -1249,11 +1253,35 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 20);
             this.comboBox1.TabIndex = 266;
             // 
+            // DgExibirCliFornOrcamentos
+            // 
+            this.DgExibirCliFornOrcamentos.AllowUserToAddRows = false;
+            this.DgExibirCliFornOrcamentos.AllowUserToDeleteRows = false;
+            this.DgExibirCliFornOrcamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgExibirCliFornOrcamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SituacaoDataGridViewTextBoxColumn});
+            this.DgExibirCliFornOrcamentos.Location = new System.Drawing.Point(856, 244);
+            this.DgExibirCliFornOrcamentos.Name = "DgExibirCliFornOrcamentos";
+            this.DgExibirCliFornOrcamentos.ReadOnly = true;
+            this.DgExibirCliFornOrcamentos.RowTemplate.Height = 25;
+            this.DgExibirCliFornOrcamentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgExibirCliFornOrcamentos.Size = new System.Drawing.Size(72, 59);
+            this.DgExibirCliFornOrcamentos.TabIndex = 328;
+            this.DgExibirCliFornOrcamentos.Visible = false;
+            // 
+            // SituacaoDataGridViewTextBoxColumn
+            // 
+            this.SituacaoDataGridViewTextBoxColumn.DataPropertyName = "Situacao";
+            this.SituacaoDataGridViewTextBoxColumn.HeaderText = "Situacao";
+            this.SituacaoDataGridViewTextBoxColumn.Name = "SituacaoDataGridViewTextBoxColumn";
+            this.SituacaoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // FormCadOrcamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.DgExibirCliFornOrcamentos);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -1367,7 +1395,7 @@
             this.Controls.Add(this.TxtEndereco);
             this.Controls.Add(this.TxtRazaoSocial);
             this.Controls.Add(this.TxtNome);
-            this.Controls.Add(this.TxtId);
+            this.Controls.Add(this.TxtIdCliForn);
             this.Controls.Add(this.LblIdCod);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnCancelar);
@@ -1380,6 +1408,7 @@
             this.Text = "PRC Systems";
             this.Load += new System.EventHandler(this.FormCadOrcamentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliFornOrcamentos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1407,7 +1436,7 @@
         private TextBox TxtEndereco;
         private TextBox TxtRazaoSocial;
         private TextBox TxtNome;
-        private TextBox TxtId;
+        private TextBox TxtIdCliForn;
         private Label LblIdCod;
         private TextBox textBox2;
         private Label label1;
@@ -1508,5 +1537,7 @@
         private Label label16;
         private Label label17;
         private ComboBox comboBox1;
+        private DataGridView DgExibirCliFornOrcamentos;
+        private DataGridViewTextBoxColumn SituacaoDataGridViewTextBoxColumn;
     }
 }
