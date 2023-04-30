@@ -14,5 +14,10 @@ namespace prcSystem.Models
         {
             return new PagamentosController().Inserir(obj);
         }
+
+        public List<Pagamentos> ListarTodos()
+        {
+            return new PagamentosController().ListarTodos();
+        }
     }
 }

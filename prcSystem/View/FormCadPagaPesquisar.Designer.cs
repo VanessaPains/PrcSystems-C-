@@ -44,29 +44,27 @@
             this.txtNumDocumento = new System.Windows.Forms.TextBox();
             this.lblNumDocumento = new System.Windows.Forms.Label();
             this.dgPagamentos = new System.Windows.Forms.DataGridView();
+            this.pagamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             this.idPagamentosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.razaoNomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricaoCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numDocDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cnpjCpfDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtEmissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtEmissao1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtVencimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtPagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentariosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.razaoNomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descricaoCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codCdcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.situacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cnpjCpfDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jurosPagtoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalPagoPagtoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pagoEmDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numDocDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pagamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label3 = new System.Windows.Forms.Label();
+            this.idLancamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPagamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pagamentosBindingSource)).BeginInit();
@@ -240,25 +238,23 @@
             this.dgPagamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idPagamentosDataGridViewTextBoxColumn,
             this.tipoLancamentoDataGridViewTextBoxColumn,
-            this.idLancamentoDataGridViewTextBoxColumn,
             this.idPessoaDataGridViewTextBoxColumn,
-            this.idCdcDataGridViewTextBoxColumn,
+            this.razaoNomeDataGridViewTextBoxColumn,
+            this.codCdcDataGridViewTextBoxColumn,
+            this.descricaoCdcDataGridViewTextBoxColumn,
+            this.numDocDataGridViewTextBoxColumn,
+            this.cnpjCpfDataGridViewTextBoxColumn1,
             this.dtLancamentoDataGridViewTextBoxColumn,
             this.dtEmissaoDataGridViewTextBoxColumn,
-            this.dtEmissao1DataGridViewTextBoxColumn,
             this.dtVencimentoDataGridViewTextBoxColumn,
             this.dtPagamentoDataGridViewTextBoxColumn,
             this.valorTotalDataGridViewTextBoxColumn,
             this.comentariosDataGridViewTextBoxColumn,
-            this.razaoNomeDataGridViewTextBoxColumn,
-            this.descricaoCdcDataGridViewTextBoxColumn,
-            this.codCdcDataGridViewTextBoxColumn,
             this.situacaoDataGridViewTextBoxColumn,
-            this.cnpjCpfDataGridViewTextBoxColumn1,
             this.jurosPagtoDataGridViewTextBoxColumn,
             this.totalPagoPagtoDataGridViewTextBoxColumn,
             this.pagoEmDataGridViewTextBoxColumn,
-            this.numDocDataGridViewTextBoxColumn});
+            this.idLancamentoDataGridViewTextBoxColumn});
             this.dgPagamentos.DataSource = this.pagamentosBindingSource;
             this.dgPagamentos.Location = new System.Drawing.Point(12, 215);
             this.dgPagamentos.Margin = new System.Windows.Forms.Padding(2);
@@ -268,6 +264,23 @@
             this.dgPagamentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgPagamentos.Size = new System.Drawing.Size(912, 308);
             this.dgPagamentos.TabIndex = 465;
+            // 
+            // pagamentosBindingSource
+            // 
+            this.pagamentosBindingSource.DataSource = typeof(prcSystem.Entidades.Pagamentos);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label3.Location = new System.Drawing.Point(439, 540);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 12);
+            this.label3.TabIndex = 475;
+            this.label3.Text = "PRC Systems @";
             // 
             // idPagamentosDataGridViewTextBoxColumn
             // 
@@ -283,13 +296,6 @@
             this.tipoLancamentoDataGridViewTextBoxColumn.Name = "tipoLancamentoDataGridViewTextBoxColumn";
             this.tipoLancamentoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // idLancamentoDataGridViewTextBoxColumn
-            // 
-            this.idLancamentoDataGridViewTextBoxColumn.DataPropertyName = "IdLancamento";
-            this.idLancamentoDataGridViewTextBoxColumn.HeaderText = "IdLancamento";
-            this.idLancamentoDataGridViewTextBoxColumn.Name = "idLancamentoDataGridViewTextBoxColumn";
-            this.idLancamentoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // idPessoaDataGridViewTextBoxColumn
             // 
             this.idPessoaDataGridViewTextBoxColumn.DataPropertyName = "IdPessoa";
@@ -297,12 +303,40 @@
             this.idPessoaDataGridViewTextBoxColumn.Name = "idPessoaDataGridViewTextBoxColumn";
             this.idPessoaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // idCdcDataGridViewTextBoxColumn
+            // razaoNomeDataGridViewTextBoxColumn
             // 
-            this.idCdcDataGridViewTextBoxColumn.DataPropertyName = "IdCdc";
-            this.idCdcDataGridViewTextBoxColumn.HeaderText = "IdCdc";
-            this.idCdcDataGridViewTextBoxColumn.Name = "idCdcDataGridViewTextBoxColumn";
-            this.idCdcDataGridViewTextBoxColumn.ReadOnly = true;
+            this.razaoNomeDataGridViewTextBoxColumn.DataPropertyName = "RazaoNome";
+            this.razaoNomeDataGridViewTextBoxColumn.HeaderText = "RazaoNome";
+            this.razaoNomeDataGridViewTextBoxColumn.Name = "razaoNomeDataGridViewTextBoxColumn";
+            this.razaoNomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // codCdcDataGridViewTextBoxColumn
+            // 
+            this.codCdcDataGridViewTextBoxColumn.DataPropertyName = "CodCdc";
+            this.codCdcDataGridViewTextBoxColumn.HeaderText = "CodCdc";
+            this.codCdcDataGridViewTextBoxColumn.Name = "codCdcDataGridViewTextBoxColumn";
+            this.codCdcDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descricaoCdcDataGridViewTextBoxColumn
+            // 
+            this.descricaoCdcDataGridViewTextBoxColumn.DataPropertyName = "DescricaoCdc";
+            this.descricaoCdcDataGridViewTextBoxColumn.HeaderText = "DescricaoCdc";
+            this.descricaoCdcDataGridViewTextBoxColumn.Name = "descricaoCdcDataGridViewTextBoxColumn";
+            this.descricaoCdcDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // numDocDataGridViewTextBoxColumn
+            // 
+            this.numDocDataGridViewTextBoxColumn.DataPropertyName = "NumDoc";
+            this.numDocDataGridViewTextBoxColumn.HeaderText = "NumDoc";
+            this.numDocDataGridViewTextBoxColumn.Name = "numDocDataGridViewTextBoxColumn";
+            this.numDocDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cnpjCpfDataGridViewTextBoxColumn1
+            // 
+            this.cnpjCpfDataGridViewTextBoxColumn1.DataPropertyName = "CnpjCpf";
+            this.cnpjCpfDataGridViewTextBoxColumn1.HeaderText = "CnpjCpf";
+            this.cnpjCpfDataGridViewTextBoxColumn1.Name = "cnpjCpfDataGridViewTextBoxColumn1";
+            this.cnpjCpfDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dtLancamentoDataGridViewTextBoxColumn
             // 
@@ -317,13 +351,6 @@
             this.dtEmissaoDataGridViewTextBoxColumn.HeaderText = "DtEmissao";
             this.dtEmissaoDataGridViewTextBoxColumn.Name = "dtEmissaoDataGridViewTextBoxColumn";
             this.dtEmissaoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dtEmissao1DataGridViewTextBoxColumn
-            // 
-            this.dtEmissao1DataGridViewTextBoxColumn.DataPropertyName = "DtEmissao1";
-            this.dtEmissao1DataGridViewTextBoxColumn.HeaderText = "DtEmissao1";
-            this.dtEmissao1DataGridViewTextBoxColumn.Name = "dtEmissao1DataGridViewTextBoxColumn";
-            this.dtEmissao1DataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // dtVencimentoDataGridViewTextBoxColumn
             // 
@@ -353,40 +380,12 @@
             this.comentariosDataGridViewTextBoxColumn.Name = "comentariosDataGridViewTextBoxColumn";
             this.comentariosDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // razaoNomeDataGridViewTextBoxColumn
-            // 
-            this.razaoNomeDataGridViewTextBoxColumn.DataPropertyName = "RazaoNome";
-            this.razaoNomeDataGridViewTextBoxColumn.HeaderText = "RazaoNome";
-            this.razaoNomeDataGridViewTextBoxColumn.Name = "razaoNomeDataGridViewTextBoxColumn";
-            this.razaoNomeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // descricaoCdcDataGridViewTextBoxColumn
-            // 
-            this.descricaoCdcDataGridViewTextBoxColumn.DataPropertyName = "DescricaoCdc";
-            this.descricaoCdcDataGridViewTextBoxColumn.HeaderText = "DescricaoCdc";
-            this.descricaoCdcDataGridViewTextBoxColumn.Name = "descricaoCdcDataGridViewTextBoxColumn";
-            this.descricaoCdcDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // codCdcDataGridViewTextBoxColumn
-            // 
-            this.codCdcDataGridViewTextBoxColumn.DataPropertyName = "CodCdc";
-            this.codCdcDataGridViewTextBoxColumn.HeaderText = "CodCdc";
-            this.codCdcDataGridViewTextBoxColumn.Name = "codCdcDataGridViewTextBoxColumn";
-            this.codCdcDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // situacaoDataGridViewTextBoxColumn
             // 
             this.situacaoDataGridViewTextBoxColumn.DataPropertyName = "Situacao";
             this.situacaoDataGridViewTextBoxColumn.HeaderText = "Situacao";
             this.situacaoDataGridViewTextBoxColumn.Name = "situacaoDataGridViewTextBoxColumn";
             this.situacaoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cnpjCpfDataGridViewTextBoxColumn1
-            // 
-            this.cnpjCpfDataGridViewTextBoxColumn1.DataPropertyName = "CnpjCpf";
-            this.cnpjCpfDataGridViewTextBoxColumn1.HeaderText = "CnpjCpf";
-            this.cnpjCpfDataGridViewTextBoxColumn1.Name = "cnpjCpfDataGridViewTextBoxColumn1";
-            this.cnpjCpfDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // jurosPagtoDataGridViewTextBoxColumn
             // 
@@ -409,29 +408,12 @@
             this.pagoEmDataGridViewTextBoxColumn.Name = "pagoEmDataGridViewTextBoxColumn";
             this.pagoEmDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // numDocDataGridViewTextBoxColumn
+            // idLancamentoDataGridViewTextBoxColumn
             // 
-            this.numDocDataGridViewTextBoxColumn.DataPropertyName = "NumDoc";
-            this.numDocDataGridViewTextBoxColumn.HeaderText = "NumDoc";
-            this.numDocDataGridViewTextBoxColumn.Name = "numDocDataGridViewTextBoxColumn";
-            this.numDocDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pagamentosBindingSource
-            // 
-            this.pagamentosBindingSource.DataSource = typeof(prcSystem.Entidades.Pagamentos);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(439, 540);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 12);
-            this.label3.TabIndex = 475;
-            this.label3.Text = "PRC Systems @";
+            this.idLancamentoDataGridViewTextBoxColumn.DataPropertyName = "IdLancamento";
+            this.idLancamentoDataGridViewTextBoxColumn.HeaderText = "IdLancamento";
+            this.idLancamentoDataGridViewTextBoxColumn.Name = "idLancamentoDataGridViewTextBoxColumn";
+            this.idLancamentoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // FormCadPagaPesquisar
             // 
@@ -483,27 +465,25 @@
         private Label lblNumDocumento;
         private DataGridView dgPagamentos;
         private Label label3;
+        private BindingSource pagamentosBindingSource;
         private DataGridViewTextBoxColumn idPagamentosDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn tipoLancamentoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn idLancamentoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn idPessoaDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn idCdcDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn razaoNomeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn codCdcDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn descricaoCdcDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn numDocDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn cnpjCpfDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dtLancamentoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dtEmissaoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn dtEmissao1DataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dtVencimentoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dtPagamentoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn valorTotalDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn comentariosDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn razaoNomeDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn descricaoCdcDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn codCdcDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn situacaoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn cnpjCpfDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn jurosPagtoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn totalPagoPagtoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn pagoEmDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn numDocDataGridViewTextBoxColumn;
-        private BindingSource pagamentosBindingSource;
+        private DataGridViewTextBoxColumn idLancamentoDataGridViewTextBoxColumn;
     }
 }
