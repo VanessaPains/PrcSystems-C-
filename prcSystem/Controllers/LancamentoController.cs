@@ -365,7 +365,7 @@ namespace prcSystem.Controllers
                     "               FROM Lancamentos l" +
                     "               INNER JOIN Cdc c ON l.IdCdc = c.CodCdc" +
                     "               INNER JOIN Pessoa p ON l.IdPessoa = p.IdPessoa " +
-                    "               WHERE NumDocumento = @NumDocumento OR CodCdc = @CodCdc OR RazaoNome = @RazaoNome OR CnpjCpf = @CnpjCpf";
+                    "               WHERE Situacao = 'EM ABERTO' AND (NumDocumento = @NumDocumento OR CodCdc = @CodCdc OR RazaoNome = @RazaoNome OR CnpjCpf = @CnpjCpf)";
 
                 cn.Parameters.Add("CnpjCpf", SqlDbType.VarChar).Value = obj.CnpjCpf;
                 cn.Parameters.Add("NumDocumento", SqlDbType.VarChar).Value = obj.NumDocumento;
