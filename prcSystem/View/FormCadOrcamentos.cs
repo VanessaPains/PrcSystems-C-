@@ -31,8 +31,8 @@ namespace prcSystem.View
         {
             DgExibirCliFornOrcamentos.Visible = true;
             DgExibirCliFornOrcamentos.Height = 350;
-            DgExibirCliFornOrcamentos.Width = 350;
-            DgExibirCliFornOrcamentos.Location = new Point(12, 151);
+            DgExibirCliFornOrcamentos.Width = 910;
+            DgExibirCliFornOrcamentos.Location = new Point(14, 151);
         }
 
         public void AjustarDataGridDiminuir()
@@ -41,5 +41,26 @@ namespace prcSystem.View
             DgExibirCliFornOrcamentos.Height = 350;
             DgExibirCliFornOrcamentos.Location = new Point(11, 260);
         }
+
+        public void OcutarFormularioOrcamento() 
+        {
+            LblIdCodCliForn.Visible = false;
+            TxtIdCliForn.Visible = false;
+            lblStatusOrcamento.Visible = false;
+            cbStatusOrcamento.Visible = false;
+            lblDtLancOrcamento.Visible = false;
+            dtLancOrcamento.Visible = false;
+            lblNumOrcamento.Visible = false;
+            txtCnpjCpf.Visible = false;
+            txtNome.Visible = false;
+            txtRazaoSocial.Visible = false;
+            txtInscEstadual.Visible = false;
+            lblOutrasInsc.Visible = false;
+            txtOutrasInsc.Visible = false;
+            txtEndereco.Visible = false;
+
+        }
+
+
     }
 }

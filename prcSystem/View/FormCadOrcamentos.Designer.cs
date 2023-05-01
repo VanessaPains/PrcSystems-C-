@@ -34,10 +34,10 @@
             this.LblFormCadCliForn = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.LblOutrasInsc = new System.Windows.Forms.Label();
-            this.TxtOutrasInsc = new System.Windows.Forms.TextBox();
-            this.TxtInscEstadual = new System.Windows.Forms.TextBox();
-            this.TxtCnpjCpf = new System.Windows.Forms.TextBox();
+            this.lblOutrasInsc = new System.Windows.Forms.Label();
+            this.txtOutrasInsc = new System.Windows.Forms.TextBox();
+            this.txtInscEstadual = new System.Windows.Forms.TextBox();
+            this.txtCnpjCpf = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.TxtUf = new System.Windows.Forms.TextBox();
             this.TxtCep = new System.Windows.Forms.TextBox();
@@ -45,13 +45,13 @@
             this.TxtCidade = new System.Windows.Forms.TextBox();
             this.TxtBairro = new System.Windows.Forms.TextBox();
             this.TxtComplemento = new System.Windows.Forms.TextBox();
-            this.TxtEndereco = new System.Windows.Forms.TextBox();
-            this.TxtRazaoSocial = new System.Windows.Forms.TextBox();
-            this.TxtNome = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.txtRazaoSocial = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.TxtIdCliForn = new System.Windows.Forms.TextBox();
-            this.LblIdCod = new System.Windows.Forms.Label();
+            this.LblIdCodCliForn = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNumOrcamento = new System.Windows.Forms.Label();
             this.TxtSite = new System.Windows.Forms.TextBox();
             this.TxtEmail = new System.Windows.Forms.TextBox();
             this.TxtCelular = new System.Windows.Forms.TextBox();
@@ -141,14 +141,14 @@
             this.label12 = new System.Windows.Forms.Label();
             this.textBox68 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.DtCadastro = new System.Windows.Forms.DateTimePicker();
-            this.LblDtCadastroCli = new System.Windows.Forms.Label();
+            this.dtLancOrcamento = new System.Windows.Forms.DateTimePicker();
+            this.lblDtLancOrcamento = new System.Windows.Forms.Label();
             this.textBox69 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.TxtObservacao = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblStatusOrcamento = new System.Windows.Forms.Label();
+            this.cbStatusOrcamento = new System.Windows.Forms.ComboBox();
             this.DgExibirCliFornOrcamentos = new System.Windows.Forms.DataGridView();
             this.SituacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -224,43 +224,43 @@
             this.pictureBox1.TabIndex = 128;
             this.pictureBox1.TabStop = false;
             // 
-            // LblOutrasInsc
+            // lblOutrasInsc
             // 
-            this.LblOutrasInsc.AutoSize = true;
-            this.LblOutrasInsc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblOutrasInsc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblOutrasInsc.Location = new System.Drawing.Point(162, 157);
-            this.LblOutrasInsc.Name = "LblOutrasInsc";
-            this.LblOutrasInsc.Size = new System.Drawing.Size(74, 12);
-            this.LblOutrasInsc.TabIndex = 155;
-            this.LblOutrasInsc.Text = "OUTRAS INSC.:";
+            this.lblOutrasInsc.AutoSize = true;
+            this.lblOutrasInsc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblOutrasInsc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblOutrasInsc.Location = new System.Drawing.Point(162, 157);
+            this.lblOutrasInsc.Name = "lblOutrasInsc";
+            this.lblOutrasInsc.Size = new System.Drawing.Size(74, 12);
+            this.lblOutrasInsc.TabIndex = 155;
+            this.lblOutrasInsc.Text = "OUTRAS INSC.:";
             // 
-            // TxtOutrasInsc
+            // txtOutrasInsc
             // 
-            this.TxtOutrasInsc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtOutrasInsc.Location = new System.Drawing.Point(239, 154);
-            this.TxtOutrasInsc.Name = "TxtOutrasInsc";
-            this.TxtOutrasInsc.PlaceholderText = "OUTRAS INSC.";
-            this.TxtOutrasInsc.Size = new System.Drawing.Size(146, 18);
-            this.TxtOutrasInsc.TabIndex = 153;
+            this.txtOutrasInsc.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtOutrasInsc.Location = new System.Drawing.Point(239, 154);
+            this.txtOutrasInsc.Name = "txtOutrasInsc";
+            this.txtOutrasInsc.PlaceholderText = "OUTRAS INSC.";
+            this.txtOutrasInsc.Size = new System.Drawing.Size(146, 18);
+            this.txtOutrasInsc.TabIndex = 153;
             // 
-            // TxtInscEstadual
+            // txtInscEstadual
             // 
-            this.TxtInscEstadual.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtInscEstadual.Location = new System.Drawing.Point(14, 154);
-            this.TxtInscEstadual.Name = "TxtInscEstadual";
-            this.TxtInscEstadual.PlaceholderText = "INSC. ESTADUAL";
-            this.TxtInscEstadual.Size = new System.Drawing.Size(131, 18);
-            this.TxtInscEstadual.TabIndex = 152;
+            this.txtInscEstadual.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtInscEstadual.Location = new System.Drawing.Point(14, 154);
+            this.txtInscEstadual.Name = "txtInscEstadual";
+            this.txtInscEstadual.PlaceholderText = "INSC. ESTADUAL";
+            this.txtInscEstadual.Size = new System.Drawing.Size(131, 18);
+            this.txtInscEstadual.TabIndex = 152;
             // 
-            // TxtCnpjCpf
+            // txtCnpjCpf
             // 
-            this.TxtCnpjCpf.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtCnpjCpf.Location = new System.Drawing.Point(14, 94);
-            this.TxtCnpjCpf.Name = "TxtCnpjCpf";
-            this.TxtCnpjCpf.PlaceholderText = "CNPJ/CPF";
-            this.TxtCnpjCpf.Size = new System.Drawing.Size(158, 18);
-            this.TxtCnpjCpf.TabIndex = 151;
+            this.txtCnpjCpf.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtCnpjCpf.Location = new System.Drawing.Point(14, 94);
+            this.txtCnpjCpf.Name = "txtCnpjCpf";
+            this.txtCnpjCpf.PlaceholderText = "CNPJ/CPF";
+            this.txtCnpjCpf.Size = new System.Drawing.Size(158, 18);
+            this.txtCnpjCpf.TabIndex = 151;
             // 
             // textBox10
             // 
@@ -329,32 +329,32 @@
             this.TxtComplemento.Size = new System.Drawing.Size(307, 18);
             this.TxtComplemento.TabIndex = 143;
             // 
-            // TxtEndereco
+            // txtEndereco
             // 
-            this.TxtEndereco.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtEndereco.Location = new System.Drawing.Point(497, 113);
-            this.TxtEndereco.Name = "TxtEndereco";
-            this.TxtEndereco.PlaceholderText = "ENDEREÇO";
-            this.TxtEndereco.Size = new System.Drawing.Size(335, 18);
-            this.TxtEndereco.TabIndex = 142;
+            this.txtEndereco.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtEndereco.Location = new System.Drawing.Point(497, 113);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.PlaceholderText = "ENDEREÇO";
+            this.txtEndereco.Size = new System.Drawing.Size(335, 18);
+            this.txtEndereco.TabIndex = 142;
             // 
-            // TxtRazaoSocial
+            // txtRazaoSocial
             // 
-            this.TxtRazaoSocial.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtRazaoSocial.Location = new System.Drawing.Point(14, 134);
-            this.TxtRazaoSocial.Name = "TxtRazaoSocial";
-            this.TxtRazaoSocial.PlaceholderText = "FANTASIA";
-            this.TxtRazaoSocial.Size = new System.Drawing.Size(477, 18);
-            this.TxtRazaoSocial.TabIndex = 141;
+            this.txtRazaoSocial.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtRazaoSocial.Location = new System.Drawing.Point(14, 134);
+            this.txtRazaoSocial.Name = "txtRazaoSocial";
+            this.txtRazaoSocial.PlaceholderText = "FANTASIA";
+            this.txtRazaoSocial.Size = new System.Drawing.Size(477, 18);
+            this.txtRazaoSocial.TabIndex = 141;
             // 
-            // TxtNome
+            // txtNome
             // 
-            this.TxtNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtNome.Location = new System.Drawing.Point(14, 114);
-            this.TxtNome.Name = "TxtNome";
-            this.TxtNome.PlaceholderText = "NOME / RAZÃO SOCIAL";
-            this.TxtNome.Size = new System.Drawing.Size(477, 18);
-            this.TxtNome.TabIndex = 140;
+            this.txtNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtNome.Location = new System.Drawing.Point(14, 114);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.PlaceholderText = "NOME / RAZÃO SOCIAL";
+            this.txtNome.Size = new System.Drawing.Size(477, 18);
+            this.txtNome.TabIndex = 140;
             // 
             // TxtIdCliForn
             // 
@@ -365,16 +365,16 @@
             this.TxtIdCliForn.TabIndex = 139;
             this.TxtIdCliForn.Click += new System.EventHandler(this.TxtIdCliForn_Click);
             // 
-            // LblIdCod
+            // LblIdCodCliForn
             // 
-            this.LblIdCod.AutoSize = true;
-            this.LblIdCod.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblIdCod.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblIdCod.Location = new System.Drawing.Point(14, 63);
-            this.LblIdCod.Name = "LblIdCod";
-            this.LblIdCod.Size = new System.Drawing.Size(82, 12);
-            this.LblIdCod.TabIndex = 129;
-            this.LblIdCod.Text = "COD. CLI / FORN:";
+            this.LblIdCodCliForn.AutoSize = true;
+            this.LblIdCodCliForn.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblIdCodCliForn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.LblIdCodCliForn.Location = new System.Drawing.Point(14, 63);
+            this.LblIdCodCliForn.Name = "LblIdCodCliForn";
+            this.LblIdCodCliForn.Size = new System.Drawing.Size(82, 12);
+            this.LblIdCodCliForn.TabIndex = 129;
+            this.LblIdCodCliForn.Text = "COD. CLI / FORN:";
             // 
             // textBox2
             // 
@@ -384,16 +384,16 @@
             this.textBox2.Size = new System.Drawing.Size(100, 18);
             this.textBox2.TabIndex = 157;
             // 
-            // label1
+            // lblNumOrcamento
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(731, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 12);
-            this.label1.TabIndex = 156;
-            this.label1.Text = "Nº. ORÇAMENTO:";
+            this.lblNumOrcamento.AutoSize = true;
+            this.lblNumOrcamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNumOrcamento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblNumOrcamento.Location = new System.Drawing.Point(731, 63);
+            this.lblNumOrcamento.Name = "lblNumOrcamento";
+            this.lblNumOrcamento.Size = new System.Drawing.Size(83, 12);
+            this.lblNumOrcamento.TabIndex = 156;
+            this.lblNumOrcamento.Text = "Nº. ORÇAMENTO:";
             // 
             // TxtSite
             // 
@@ -1169,27 +1169,27 @@
             this.label14.TabIndex = 257;
             this.label14.Text = "ORÇAMENTO VALIDO POR:";
             // 
-            // DtCadastro
+            // dtLancOrcamento
             // 
-            this.DtCadastro.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DtCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DtCadastro.Location = new System.Drawing.Point(514, 60);
-            this.DtCadastro.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.DtCadastro.Name = "DtCadastro";
-            this.DtCadastro.Size = new System.Drawing.Size(127, 18);
-            this.DtCadastro.TabIndex = 260;
-            this.DtCadastro.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
+            this.dtLancOrcamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dtLancOrcamento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtLancOrcamento.Location = new System.Drawing.Point(514, 60);
+            this.dtLancOrcamento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtLancOrcamento.Name = "dtLancOrcamento";
+            this.dtLancOrcamento.Size = new System.Drawing.Size(127, 18);
+            this.dtLancOrcamento.TabIndex = 260;
+            this.dtLancOrcamento.Value = new System.DateTime(2022, 11, 14, 0, 0, 0, 0);
             // 
-            // LblDtCadastroCli
+            // lblDtLancOrcamento
             // 
-            this.LblDtCadastroCli.AutoSize = true;
-            this.LblDtCadastroCli.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblDtCadastroCli.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblDtCadastroCli.Location = new System.Drawing.Point(479, 63);
-            this.LblDtCadastroCli.Name = "LblDtCadastroCli";
-            this.LblDtCadastroCli.Size = new System.Drawing.Size(32, 12);
-            this.LblDtCadastroCli.TabIndex = 259;
-            this.LblDtCadastroCli.Text = "DATA:";
+            this.lblDtLancOrcamento.AutoSize = true;
+            this.lblDtLancOrcamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDtLancOrcamento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblDtLancOrcamento.Location = new System.Drawing.Point(479, 63);
+            this.lblDtLancOrcamento.Name = "lblDtLancOrcamento";
+            this.lblDtLancOrcamento.Size = new System.Drawing.Size(32, 12);
+            this.lblDtLancOrcamento.TabIndex = 259;
+            this.lblDtLancOrcamento.Text = "DATA:";
             // 
             // textBox69
             // 
@@ -1230,28 +1230,28 @@
             this.label16.TabIndex = 264;
             this.label16.Text = "OBS.:";
             // 
-            // label17
+            // lblStatusOrcamento
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label17.Location = new System.Drawing.Point(253, 63);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(39, 12);
-            this.label17.TabIndex = 265;
-            this.label17.Text = "STATUS";
+            this.lblStatusOrcamento.AutoSize = true;
+            this.lblStatusOrcamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblStatusOrcamento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblStatusOrcamento.Location = new System.Drawing.Point(253, 63);
+            this.lblStatusOrcamento.Name = "lblStatusOrcamento";
+            this.lblStatusOrcamento.Size = new System.Drawing.Size(39, 12);
+            this.lblStatusOrcamento.TabIndex = 265;
+            this.lblStatusOrcamento.Text = "STATUS";
             // 
-            // comboBox1
+            // cbStatusOrcamento
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbStatusOrcamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbStatusOrcamento.FormattingEnabled = true;
+            this.cbStatusOrcamento.Items.AddRange(new object[] {
             "ABERTO",
             "FECHADO"});
-            this.comboBox1.Location = new System.Drawing.Point(295, 60);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
-            this.comboBox1.TabIndex = 266;
+            this.cbStatusOrcamento.Location = new System.Drawing.Point(295, 60);
+            this.cbStatusOrcamento.Name = "cbStatusOrcamento";
+            this.cbStatusOrcamento.Size = new System.Drawing.Size(121, 20);
+            this.cbStatusOrcamento.TabIndex = 266;
             // 
             // DgExibirCliFornOrcamentos
             // 
@@ -1282,14 +1282,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
             this.Controls.Add(this.DgExibirCliFornOrcamentos);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label17);
+            this.Controls.Add(this.cbStatusOrcamento);
+            this.Controls.Add(this.lblStatusOrcamento);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.TxtObservacao);
             this.Controls.Add(this.textBox69);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.DtCadastro);
-            this.Controls.Add(this.LblDtCadastroCli);
+            this.Controls.Add(this.dtLancOrcamento);
+            this.Controls.Add(this.lblDtLancOrcamento);
             this.Controls.Add(this.textBox68);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textBox67);
@@ -1380,11 +1380,11 @@
             this.Controls.Add(this.LblCelular);
             this.Controls.Add(this.LblTelefone);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.LblOutrasInsc);
-            this.Controls.Add(this.TxtOutrasInsc);
-            this.Controls.Add(this.TxtInscEstadual);
-            this.Controls.Add(this.TxtCnpjCpf);
+            this.Controls.Add(this.lblNumOrcamento);
+            this.Controls.Add(this.lblOutrasInsc);
+            this.Controls.Add(this.txtOutrasInsc);
+            this.Controls.Add(this.txtInscEstadual);
+            this.Controls.Add(this.txtCnpjCpf);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.TxtUf);
             this.Controls.Add(this.TxtCep);
@@ -1392,11 +1392,11 @@
             this.Controls.Add(this.TxtCidade);
             this.Controls.Add(this.TxtBairro);
             this.Controls.Add(this.TxtComplemento);
-            this.Controls.Add(this.TxtEndereco);
-            this.Controls.Add(this.TxtRazaoSocial);
-            this.Controls.Add(this.TxtNome);
+            this.Controls.Add(this.txtEndereco);
+            this.Controls.Add(this.txtRazaoSocial);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.TxtIdCliForn);
-            this.Controls.Add(this.LblIdCod);
+            this.Controls.Add(this.LblIdCodCliForn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnSalvar);
@@ -1422,10 +1422,10 @@
         private Label LblFormCadCliForn;
         private TextBox textBox1;
         private PictureBox pictureBox1;
-        private Label LblOutrasInsc;
-        private TextBox TxtOutrasInsc;
-        private TextBox TxtInscEstadual;
-        private TextBox TxtCnpjCpf;
+        private Label lblOutrasInsc;
+        private TextBox txtOutrasInsc;
+        private TextBox txtInscEstadual;
+        private TextBox txtCnpjCpf;
         private TextBox textBox10;
         private TextBox TxtUf;
         private TextBox TxtCep;
@@ -1433,13 +1433,13 @@
         private TextBox TxtCidade;
         private TextBox TxtBairro;
         private TextBox TxtComplemento;
-        private TextBox TxtEndereco;
-        private TextBox TxtRazaoSocial;
-        private TextBox TxtNome;
+        private TextBox txtEndereco;
+        private TextBox txtRazaoSocial;
+        private TextBox txtNome;
         private TextBox TxtIdCliForn;
-        private Label LblIdCod;
+        private Label LblIdCodCliForn;
         private TextBox textBox2;
-        private Label label1;
+        private Label lblNumOrcamento;
         private TextBox TxtSite;
         private TextBox TxtEmail;
         private TextBox TxtCelular;
@@ -1529,14 +1529,14 @@
         private Label label12;
         private TextBox textBox68;
         private Label label14;
-        private DateTimePicker DtCadastro;
-        private Label LblDtCadastroCli;
+        private DateTimePicker dtLancOrcamento;
+        private Label lblDtLancOrcamento;
         private TextBox textBox69;
         private Label label15;
         private TextBox TxtObservacao;
         private Label label16;
-        private Label label17;
-        private ComboBox comboBox1;
+        private Label lblStatusOrcamento;
+        private ComboBox cbStatusOrcamento;
         private DataGridView DgExibirCliFornOrcamentos;
         private DataGridViewTextBoxColumn SituacaoDataGridViewTextBoxColumn;
     }
