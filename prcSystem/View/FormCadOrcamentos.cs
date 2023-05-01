@@ -51,6 +51,7 @@ namespace prcSystem.View
             lblDtLancOrcamento.Visible = false;
             dtLancOrcamento.Visible = false;
             lblNumOrcamento.Visible = false;
+
             txtCnpjCpf.Visible = false;
             txtNome.Visible = false;
             txtRazaoSocial.Visible = false;
@@ -58,6 +59,48 @@ namespace prcSystem.View
             lblOutrasInsc.Visible = false;
             txtOutrasInsc.Visible = false;
             txtEndereco.Visible = false;
+            txtComplemento.Visible = false;
+            txtBairro.Visible = false;
+            txtNum.Visible = false;
+            txtCep.Visible = false;
+            txtCidade.Visible = false;
+            txtUf.Visible = false;
+
+            txtLinha06.Visible = false;
+
+            lblTelefone.Visible = false;
+            txtTelefone.Visible = false;
+            txtEmail.Visible = false;
+            txtSite.Visible = false;
+            txtLinha07.Visible = false;
+            lblSolicitantea.Visible = false;
+            txtSolicitante.Visible = false;
+            lblVendedor.Visible = false;
+
+            txtLinha08.Visible = false;
+
+            lblFormaPgto.Visible = false;
+            txtFormaPgto.Visible = false;
+            lblPrazoPgto.Visible = false;
+            txtPrazoPgto.Visible = false;
+
+            txtLinha09.Visible = false;
+
+            lblProzoEntrega.Visible = false;
+            txtProzoEntrega.Visible = false;
+            lblValidadeOrcamento.Visible = false;
+            txtValidadeOrcamento.Visible = false;
+
+            txtLinha10.Visible = false;
+
+            lblListaProdutos.Visible = false;
+
+
+
+
+
+
+
 
         }
 
