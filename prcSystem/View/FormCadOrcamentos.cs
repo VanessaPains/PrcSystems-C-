@@ -95,7 +95,7 @@ namespace prcSystem.View
             txtLinha09.Visible = false;
 
             lblProzoEntrega.Visible = false;
-            txtProzoEntrega.Visible = false;
+            txtPrazoEntrega.Visible = false;
             lblValidadeOrcamento.Visible = false;
             txtValidadeOrcamento.Visible = false;
 

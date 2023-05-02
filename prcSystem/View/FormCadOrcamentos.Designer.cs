@@ -136,7 +136,7 @@
             this.txtPrazoPgto = new System.Windows.Forms.TextBox();
             this.lblPrazoPgto = new System.Windows.Forms.Label();
             this.txtLinha09 = new System.Windows.Forms.TextBox();
-            this.txtProzoEntrega = new System.Windows.Forms.TextBox();
+            this.txtPrazoEntrega = new System.Windows.Forms.TextBox();
             this.lblProzoEntrega = new System.Windows.Forms.Label();
             this.txtValidadeOrcamento = new System.Windows.Forms.TextBox();
             this.lblValidadeOrcamento = new System.Windows.Forms.Label();
@@ -1107,7 +1107,7 @@
             this.lblPrazoPgto.AutoSize = true;
             this.lblPrazoPgto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPrazoPgto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblPrazoPgto.Location = new System.Drawing.Point(580, 210);
+            this.lblPrazoPgto.Location = new System.Drawing.Point(566, 210);
             this.lblPrazoPgto.Name = "lblPrazoPgto";
             this.lblPrazoPgto.Size = new System.Drawing.Size(55, 12);
             this.lblPrazoPgto.TabIndex = 252;
@@ -1123,13 +1123,13 @@
             this.txtLinha09.Size = new System.Drawing.Size(2, 45);
             this.txtLinha09.TabIndex = 254;
             // 
-            // txtProzoEntrega
+            // txtPrazoEntrega
             // 
-            this.txtProzoEntrega.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtProzoEntrega.Location = new System.Drawing.Point(852, 188);
-            this.txtProzoEntrega.Name = "txtProzoEntrega";
-            this.txtProzoEntrega.Size = new System.Drawing.Size(72, 18);
-            this.txtProzoEntrega.TabIndex = 256;
+            this.txtPrazoEntrega.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPrazoEntrega.Location = new System.Drawing.Point(852, 188);
+            this.txtPrazoEntrega.Name = "txtPrazoEntrega";
+            this.txtPrazoEntrega.Size = new System.Drawing.Size(72, 18);
+            this.txtPrazoEntrega.TabIndex = 256;
             // 
             // lblProzoEntrega
             // 
@@ -1297,7 +1297,7 @@
             this.Controls.Add(this.lblDtLancOrcamento);
             this.Controls.Add(this.txtValidadeOrcamento);
             this.Controls.Add(this.lblValidadeOrcamento);
-            this.Controls.Add(this.txtProzoEntrega);
+            this.Controls.Add(this.txtPrazoEntrega);
             this.Controls.Add(this.lblProzoEntrega);
             this.Controls.Add(this.txtLinha09);
             this.Controls.Add(this.txtPrazoPgto);
@@ -1528,7 +1528,7 @@
         private TextBox txtPrazoPgto;
         private Label lblPrazoPgto;
         private TextBox txtLinha09;
-        private TextBox txtProzoEntrega;
+        private TextBox txtPrazoEntrega;
         private Label lblProzoEntrega;
         private TextBox txtValidadeOrcamento;
         private Label lblValidadeOrcamento;
