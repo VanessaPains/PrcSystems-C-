@@ -50,7 +50,7 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.TxtIdCliForn = new System.Windows.Forms.TextBox();
             this.LblIdCodCliForn = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNumOrcamento = new System.Windows.Forms.TextBox();
             this.lblNumOrcamento = new System.Windows.Forms.Label();
             this.txtSite = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -59,74 +59,73 @@
             this.lblCelular = new System.Windows.Forms.Label();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.txtLinha10 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.TxtValorTotalProduto = new System.Windows.Forms.TextBox();
-            this.TxtIdProduto = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.TxtDescProduto = new System.Windows.Forms.TextBox();
-            this.TxtValorProduto = new System.Windows.Forms.TextBox();
-            this.TxtUnidadeProduto = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblQte = new System.Windows.Forms.Label();
+            this.txtTotalItem01 = new System.Windows.Forms.TextBox();
+            this.txtCodProd01 = new System.Windows.Forms.TextBox();
+            this.lblTotalItem = new System.Windows.Forms.Label();
+            this.lblValorUnProd = new System.Windows.Forms.Label();
+            this.txtDescProduto01 = new System.Windows.Forms.TextBox();
+            this.txtValorUnProd01 = new System.Windows.Forms.TextBox();
+            this.txtQte01 = new System.Windows.Forms.TextBox();
+            this.lblCodProd = new System.Windows.Forms.Label();
+            this.lblItem = new System.Windows.Forms.Label();
             this.lblListaProdutos = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
-            this.textBox48 = new System.Windows.Forms.TextBox();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
-            this.textBox52 = new System.Windows.Forms.TextBox();
-            this.textBox53 = new System.Windows.Forms.TextBox();
-            this.textBox54 = new System.Windows.Forms.TextBox();
-            this.textBox55 = new System.Windows.Forms.TextBox();
-            this.textBox56 = new System.Windows.Forms.TextBox();
-            this.textBox57 = new System.Windows.Forms.TextBox();
-            this.textBox58 = new System.Windows.Forms.TextBox();
-            this.textBox59 = new System.Windows.Forms.TextBox();
-            this.textBox60 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.txtItem01 = new System.Windows.Forms.TextBox();
+            this.txtItem02 = new System.Windows.Forms.TextBox();
+            this.txtTotalItem02 = new System.Windows.Forms.TextBox();
+            this.txtCodProd02 = new System.Windows.Forms.TextBox();
+            this.txtDescProduto02 = new System.Windows.Forms.TextBox();
+            this.txtValorUnProd02 = new System.Windows.Forms.TextBox();
+            this.txtQte02 = new System.Windows.Forms.TextBox();
+            this.txtItem04 = new System.Windows.Forms.TextBox();
+            this.txtTotalItem04 = new System.Windows.Forms.TextBox();
+            this.txtCodProd04 = new System.Windows.Forms.TextBox();
+            this.txtDescProduto04 = new System.Windows.Forms.TextBox();
+            this.txtValorUnProd04 = new System.Windows.Forms.TextBox();
+            this.txtQte04 = new System.Windows.Forms.TextBox();
+            this.txtItem03 = new System.Windows.Forms.TextBox();
+            this.txtTotalItem03 = new System.Windows.Forms.TextBox();
+            this.txtCodProd03 = new System.Windows.Forms.TextBox();
+            this.txtDescProduto03 = new System.Windows.Forms.TextBox();
+            this.txtValorUnProd03 = new System.Windows.Forms.TextBox();
+            this.txtQte03 = new System.Windows.Forms.TextBox();
+            this.txtItem08 = new System.Windows.Forms.TextBox();
+            this.txtTotalItem08 = new System.Windows.Forms.TextBox();
+            this.txtCodProd08 = new System.Windows.Forms.TextBox();
+            this.txtDescProduto08 = new System.Windows.Forms.TextBox();
+            this.txtValorUnProd08 = new System.Windows.Forms.TextBox();
+            this.txtQte08 = new System.Windows.Forms.TextBox();
+            this.txtItem07 = new System.Windows.Forms.TextBox();
+            this.txtTotalItem07 = new System.Windows.Forms.TextBox();
+            this.txtCodProd07 = new System.Windows.Forms.TextBox();
+            this.txtDescProduto07 = new System.Windows.Forms.TextBox();
+            this.txtValorUnProd07 = new System.Windows.Forms.TextBox();
+            this.txtQte07 = new System.Windows.Forms.TextBox();
+            this.txtItem06 = new System.Windows.Forms.TextBox();
+            this.txtTotalItem06 = new System.Windows.Forms.TextBox();
+            this.txtCodProd06 = new System.Windows.Forms.TextBox();
+            this.txtDescProduto06 = new System.Windows.Forms.TextBox();
+            this.txtValorUnProd06 = new System.Windows.Forms.TextBox();
+            this.txtQte06 = new System.Windows.Forms.TextBox();
+            this.txtItem05 = new System.Windows.Forms.TextBox();
+            this.txtTotalItem05 = new System.Windows.Forms.TextBox();
+            this.txtCodProd05 = new System.Windows.Forms.TextBox();
+            this.txtDescProduto05 = new System.Windows.Forms.TextBox();
+            this.txtValorUnProd05 = new System.Windows.Forms.TextBox();
+            this.txtQte05 = new System.Windows.Forms.TextBox();
+            this.txtItem10 = new System.Windows.Forms.TextBox();
+            this.txtTotalItem10 = new System.Windows.Forms.TextBox();
+            this.txtCodProd10 = new System.Windows.Forms.TextBox();
+            this.txtDescProduto10 = new System.Windows.Forms.TextBox();
+            this.txtValorUnProd10 = new System.Windows.Forms.TextBox();
+            this.txtQte10 = new System.Windows.Forms.TextBox();
+            this.txtItem09 = new System.Windows.Forms.TextBox();
+            this.txtTotalItem09 = new System.Windows.Forms.TextBox();
+            this.txtCodProd09 = new System.Windows.Forms.TextBox();
+            this.txtDescProduto09 = new System.Windows.Forms.TextBox();
+            this.txtValorUnProd09 = new System.Windows.Forms.TextBox();
+            this.txtQte09 = new System.Windows.Forms.TextBox();
+            this.lblValorTotalOrcamento = new System.Windows.Forms.Label();
             this.btnAddItens = new System.Windows.Forms.Button();
             this.txtFormaPgto = new System.Windows.Forms.TextBox();
             this.txtSolicitante = new System.Windows.Forms.TextBox();
@@ -145,12 +144,13 @@
             this.lblDtLancOrcamento = new System.Windows.Forms.Label();
             this.txtVendedor = new System.Windows.Forms.TextBox();
             this.lblVendedor = new System.Windows.Forms.Label();
-            this.TxtObservacao = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.txtObservacao = new System.Windows.Forms.TextBox();
+            this.lblObservacao = new System.Windows.Forms.Label();
             this.lblStatusOrcamento = new System.Windows.Forms.Label();
             this.cbStatusOrcamento = new System.Windows.Forms.ComboBox();
             this.DgExibirCliFornOrcamentos = new System.Windows.Forms.DataGridView();
             this.SituacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblValorTT = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliFornOrcamentos)).BeginInit();
             this.SuspendLayout();
@@ -376,13 +376,13 @@
             this.LblIdCodCliForn.TabIndex = 129;
             this.LblIdCodCliForn.Text = "COD. CLI / FORN:";
             // 
-            // textBox2
+            // txtNumOrcamento
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(816, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 18);
-            this.textBox2.TabIndex = 157;
+            this.txtNumOrcamento.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtNumOrcamento.Location = new System.Drawing.Point(816, 60);
+            this.txtNumOrcamento.Name = "txtNumOrcamento";
+            this.txtNumOrcamento.Size = new System.Drawing.Size(100, 18);
+            this.txtNumOrcamento.TabIndex = 157;
             // 
             // lblNumOrcamento
             // 
@@ -463,97 +463,97 @@
             this.txtLinha10.Size = new System.Drawing.Size(910, 2);
             this.txtLinha10.TabIndex = 176;
             // 
-            // label13
+            // lblQte
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(556, 261);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(28, 12);
-            this.label13.TabIndex = 186;
-            this.label13.Text = "QTE:";
+            this.lblQte.AutoSize = true;
+            this.lblQte.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblQte.Location = new System.Drawing.Point(556, 261);
+            this.lblQte.Name = "lblQte";
+            this.lblQte.Size = new System.Drawing.Size(28, 12);
+            this.lblQte.TabIndex = 186;
+            this.lblQte.Text = "QTE:";
             // 
-            // TxtValorTotalProduto
+            // txtTotalItem01
             // 
-            this.TxtValorTotalProduto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtValorTotalProduto.Location = new System.Drawing.Point(737, 277);
-            this.TxtValorTotalProduto.Name = "TxtValorTotalProduto";
-            this.TxtValorTotalProduto.Size = new System.Drawing.Size(109, 18);
-            this.TxtValorTotalProduto.TabIndex = 184;
+            this.txtTotalItem01.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalItem01.Location = new System.Drawing.Point(737, 277);
+            this.txtTotalItem01.Name = "txtTotalItem01";
+            this.txtTotalItem01.Size = new System.Drawing.Size(109, 18);
+            this.txtTotalItem01.TabIndex = 184;
             // 
-            // TxtIdProduto
+            // txtCodProd01
             // 
-            this.TxtIdProduto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtIdProduto.Location = new System.Drawing.Point(50, 277);
-            this.TxtIdProduto.Name = "TxtIdProduto";
-            this.TxtIdProduto.Size = new System.Drawing.Size(64, 18);
-            this.TxtIdProduto.TabIndex = 179;
+            this.txtCodProd01.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodProd01.Location = new System.Drawing.Point(50, 277);
+            this.txtCodProd01.Name = "txtCodProd01";
+            this.txtCodProd01.Size = new System.Drawing.Size(64, 18);
+            this.txtCodProd01.TabIndex = 179;
             // 
-            // label10
+            // lblTotalItem
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(737, 261);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 12);
-            this.label10.TabIndex = 185;
-            this.label10.Text = "TOTAL ITENS:";
+            this.lblTotalItem.AutoSize = true;
+            this.lblTotalItem.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTotalItem.Location = new System.Drawing.Point(737, 261);
+            this.lblTotalItem.Name = "lblTotalItem";
+            this.lblTotalItem.Size = new System.Drawing.Size(69, 12);
+            this.lblTotalItem.TabIndex = 185;
+            this.lblTotalItem.Text = "TOTAL ITENS:";
             // 
-            // label8
+            // lblValorUnProd
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(628, 261);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 12);
-            this.label8.TabIndex = 183;
-            this.label8.Text = "VR UN.:";
+            this.lblValorUnProd.AutoSize = true;
+            this.lblValorUnProd.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblValorUnProd.Location = new System.Drawing.Point(628, 261);
+            this.lblValorUnProd.Name = "lblValorUnProd";
+            this.lblValorUnProd.Size = new System.Drawing.Size(39, 12);
+            this.lblValorUnProd.TabIndex = 183;
+            this.lblValorUnProd.Text = "VR UN.:";
             // 
-            // TxtDescProduto
+            // txtDescProduto01
             // 
-            this.TxtDescProduto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtDescProduto.Location = new System.Drawing.Point(120, 277);
-            this.TxtDescProduto.Name = "TxtDescProduto";
-            this.TxtDescProduto.PlaceholderText = "DESCRIÇÃO";
-            this.TxtDescProduto.Size = new System.Drawing.Size(429, 18);
-            this.TxtDescProduto.TabIndex = 180;
+            this.txtDescProduto01.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescProduto01.Location = new System.Drawing.Point(120, 277);
+            this.txtDescProduto01.Name = "txtDescProduto01";
+            this.txtDescProduto01.PlaceholderText = "DESCRIÇÃO";
+            this.txtDescProduto01.Size = new System.Drawing.Size(429, 18);
+            this.txtDescProduto01.TabIndex = 180;
             // 
-            // TxtValorProduto
+            // txtValorUnProd01
             // 
-            this.TxtValorProduto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtValorProduto.Location = new System.Drawing.Point(628, 277);
-            this.TxtValorProduto.Name = "TxtValorProduto";
-            this.TxtValorProduto.Size = new System.Drawing.Size(104, 18);
-            this.TxtValorProduto.TabIndex = 182;
+            this.txtValorUnProd01.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValorUnProd01.Location = new System.Drawing.Point(628, 277);
+            this.txtValorUnProd01.Name = "txtValorUnProd01";
+            this.txtValorUnProd01.Size = new System.Drawing.Size(104, 18);
+            this.txtValorUnProd01.TabIndex = 182;
             // 
-            // TxtUnidadeProduto
+            // txtQte01
             // 
-            this.TxtUnidadeProduto.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtUnidadeProduto.Location = new System.Drawing.Point(556, 277);
-            this.TxtUnidadeProduto.Name = "TxtUnidadeProduto";
-            this.TxtUnidadeProduto.Size = new System.Drawing.Size(66, 18);
-            this.TxtUnidadeProduto.TabIndex = 181;
+            this.txtQte01.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQte01.Location = new System.Drawing.Point(556, 277);
+            this.txtQte01.Name = "txtQte01";
+            this.txtQte01.Size = new System.Drawing.Size(66, 18);
+            this.txtQte01.TabIndex = 181;
             // 
-            // label4
+            // lblCodProd
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(50, 262);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 12);
-            this.label4.TabIndex = 178;
-            this.label4.Text = "COD. PROD.:";
+            this.lblCodProd.AutoSize = true;
+            this.lblCodProd.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCodProd.Location = new System.Drawing.Point(50, 262);
+            this.lblCodProd.Name = "lblCodProd";
+            this.lblCodProd.Size = new System.Drawing.Size(59, 12);
+            this.lblCodProd.TabIndex = 178;
+            this.lblCodProd.Text = "COD. PROD.:";
             // 
-            // label2
+            // lblItem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(13, 262);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 12);
-            this.label2.TabIndex = 177;
-            this.label2.Text = "ITENS";
+            this.lblItem.AutoSize = true;
+            this.lblItem.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblItem.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblItem.Location = new System.Drawing.Point(13, 262);
+            this.lblItem.Name = "lblItem";
+            this.lblItem.Size = new System.Drawing.Size(33, 12);
+            this.lblItem.TabIndex = 177;
+            this.lblItem.Text = "ITENS";
             // 
             // lblListaProdutos
             // 
@@ -566,473 +566,465 @@
             this.lblListaProdutos.TabIndex = 187;
             this.lblListaProdutos.Text = "PRODUTOS";
             // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(13, 277);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(31, 18);
-            this.textBox4.TabIndex = 188;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(13, 297);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(31, 18);
-            this.textBox5.TabIndex = 194;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(737, 297);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(109, 18);
-            this.textBox6.TabIndex = 193;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(50, 297);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(64, 18);
-            this.textBox7.TabIndex = 189;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox8.Location = new System.Drawing.Point(120, 297);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.PlaceholderText = "DESCRIÇÃO";
-            this.textBox8.Size = new System.Drawing.Size(429, 18);
-            this.textBox8.TabIndex = 190;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox9.Location = new System.Drawing.Point(628, 297);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(104, 18);
-            this.textBox9.TabIndex = 192;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox11.Location = new System.Drawing.Point(556, 297);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(66, 18);
-            this.textBox11.TabIndex = 191;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox12.Location = new System.Drawing.Point(13, 337);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(31, 18);
-            this.textBox12.TabIndex = 206;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox13.Location = new System.Drawing.Point(737, 337);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(109, 18);
-            this.textBox13.TabIndex = 205;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox14.Location = new System.Drawing.Point(50, 337);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(64, 18);
-            this.textBox14.TabIndex = 201;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox15.Location = new System.Drawing.Point(120, 337);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.PlaceholderText = "DESCRIÇÃO";
-            this.textBox15.Size = new System.Drawing.Size(429, 18);
-            this.textBox15.TabIndex = 202;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox16.Location = new System.Drawing.Point(628, 337);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(104, 18);
-            this.textBox16.TabIndex = 204;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox17.Location = new System.Drawing.Point(556, 337);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(66, 18);
-            this.textBox17.TabIndex = 203;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox18.Location = new System.Drawing.Point(13, 317);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(31, 18);
-            this.textBox18.TabIndex = 200;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox19.Location = new System.Drawing.Point(737, 317);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(109, 18);
-            this.textBox19.TabIndex = 199;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox20.Location = new System.Drawing.Point(50, 317);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(64, 18);
-            this.textBox20.TabIndex = 195;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox21.Location = new System.Drawing.Point(120, 317);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.PlaceholderText = "DESCRIÇÃO";
-            this.textBox21.Size = new System.Drawing.Size(429, 18);
-            this.textBox21.TabIndex = 196;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox22.Location = new System.Drawing.Point(628, 317);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(104, 18);
-            this.textBox22.TabIndex = 198;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox23.Location = new System.Drawing.Point(556, 317);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(66, 18);
-            this.textBox23.TabIndex = 197;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox24.Location = new System.Drawing.Point(13, 417);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(31, 18);
-            this.textBox24.TabIndex = 230;
-            // 
-            // textBox25
-            // 
-            this.textBox25.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox25.Location = new System.Drawing.Point(737, 417);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(109, 18);
-            this.textBox25.TabIndex = 229;
-            // 
-            // textBox26
-            // 
-            this.textBox26.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox26.Location = new System.Drawing.Point(50, 417);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(64, 18);
-            this.textBox26.TabIndex = 225;
-            // 
-            // textBox27
-            // 
-            this.textBox27.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox27.Location = new System.Drawing.Point(120, 417);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.PlaceholderText = "DESCRIÇÃO";
-            this.textBox27.Size = new System.Drawing.Size(429, 18);
-            this.textBox27.TabIndex = 226;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox28.Location = new System.Drawing.Point(628, 417);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(104, 18);
-            this.textBox28.TabIndex = 228;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox29.Location = new System.Drawing.Point(556, 417);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(66, 18);
-            this.textBox29.TabIndex = 227;
-            // 
-            // textBox30
-            // 
-            this.textBox30.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox30.Location = new System.Drawing.Point(13, 397);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(31, 18);
-            this.textBox30.TabIndex = 224;
-            // 
-            // textBox31
-            // 
-            this.textBox31.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox31.Location = new System.Drawing.Point(737, 397);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(109, 18);
-            this.textBox31.TabIndex = 223;
-            // 
-            // textBox32
-            // 
-            this.textBox32.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox32.Location = new System.Drawing.Point(50, 397);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(64, 18);
-            this.textBox32.TabIndex = 219;
-            // 
-            // textBox33
-            // 
-            this.textBox33.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox33.Location = new System.Drawing.Point(120, 397);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.PlaceholderText = "DESCRIÇÃO";
-            this.textBox33.Size = new System.Drawing.Size(429, 18);
-            this.textBox33.TabIndex = 220;
-            // 
-            // textBox34
-            // 
-            this.textBox34.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox34.Location = new System.Drawing.Point(628, 397);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(104, 18);
-            this.textBox34.TabIndex = 222;
-            // 
-            // textBox35
-            // 
-            this.textBox35.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox35.Location = new System.Drawing.Point(556, 397);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(66, 18);
-            this.textBox35.TabIndex = 221;
-            // 
-            // textBox36
-            // 
-            this.textBox36.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox36.Location = new System.Drawing.Point(13, 377);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(31, 18);
-            this.textBox36.TabIndex = 218;
-            // 
-            // textBox37
-            // 
-            this.textBox37.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox37.Location = new System.Drawing.Point(737, 377);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(109, 18);
-            this.textBox37.TabIndex = 217;
-            // 
-            // textBox38
-            // 
-            this.textBox38.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox38.Location = new System.Drawing.Point(50, 377);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(64, 18);
-            this.textBox38.TabIndex = 213;
-            // 
-            // textBox39
-            // 
-            this.textBox39.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox39.Location = new System.Drawing.Point(120, 377);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.PlaceholderText = "DESCRIÇÃO";
-            this.textBox39.Size = new System.Drawing.Size(429, 18);
-            this.textBox39.TabIndex = 214;
-            // 
-            // textBox40
-            // 
-            this.textBox40.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox40.Location = new System.Drawing.Point(628, 377);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(104, 18);
-            this.textBox40.TabIndex = 216;
-            // 
-            // textBox41
-            // 
-            this.textBox41.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox41.Location = new System.Drawing.Point(556, 377);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(66, 18);
-            this.textBox41.TabIndex = 215;
-            // 
-            // textBox42
-            // 
-            this.textBox42.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox42.Location = new System.Drawing.Point(13, 357);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(31, 18);
-            this.textBox42.TabIndex = 212;
-            // 
-            // textBox43
-            // 
-            this.textBox43.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox43.Location = new System.Drawing.Point(737, 357);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(109, 18);
-            this.textBox43.TabIndex = 211;
-            // 
-            // textBox44
-            // 
-            this.textBox44.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox44.Location = new System.Drawing.Point(50, 357);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(64, 18);
-            this.textBox44.TabIndex = 207;
-            // 
-            // textBox45
-            // 
-            this.textBox45.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox45.Location = new System.Drawing.Point(120, 357);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.PlaceholderText = "DESCRIÇÃO";
-            this.textBox45.Size = new System.Drawing.Size(429, 18);
-            this.textBox45.TabIndex = 208;
-            // 
-            // textBox46
-            // 
-            this.textBox46.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox46.Location = new System.Drawing.Point(628, 357);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(104, 18);
-            this.textBox46.TabIndex = 210;
-            // 
-            // textBox47
-            // 
-            this.textBox47.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox47.Location = new System.Drawing.Point(556, 357);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(66, 18);
-            this.textBox47.TabIndex = 209;
-            // 
-            // textBox48
-            // 
-            this.textBox48.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox48.Location = new System.Drawing.Point(13, 457);
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(31, 18);
-            this.textBox48.TabIndex = 242;
-            // 
-            // textBox49
-            // 
-            this.textBox49.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox49.Location = new System.Drawing.Point(737, 457);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(109, 18);
-            this.textBox49.TabIndex = 241;
-            // 
-            // textBox50
-            // 
-            this.textBox50.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox50.Location = new System.Drawing.Point(50, 457);
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(64, 18);
-            this.textBox50.TabIndex = 237;
-            // 
-            // textBox51
-            // 
-            this.textBox51.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox51.Location = new System.Drawing.Point(120, 457);
-            this.textBox51.Name = "textBox51";
-            this.textBox51.PlaceholderText = "DESCRIÇÃO";
-            this.textBox51.Size = new System.Drawing.Size(429, 18);
-            this.textBox51.TabIndex = 238;
-            // 
-            // textBox52
-            // 
-            this.textBox52.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox52.Location = new System.Drawing.Point(628, 457);
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(104, 18);
-            this.textBox52.TabIndex = 240;
-            // 
-            // textBox53
-            // 
-            this.textBox53.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox53.Location = new System.Drawing.Point(556, 457);
-            this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(66, 18);
-            this.textBox53.TabIndex = 239;
-            // 
-            // textBox54
-            // 
-            this.textBox54.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox54.Location = new System.Drawing.Point(13, 437);
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(31, 18);
-            this.textBox54.TabIndex = 236;
-            // 
-            // textBox55
-            // 
-            this.textBox55.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox55.Location = new System.Drawing.Point(737, 437);
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(109, 18);
-            this.textBox55.TabIndex = 235;
-            // 
-            // textBox56
-            // 
-            this.textBox56.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox56.Location = new System.Drawing.Point(50, 437);
-            this.textBox56.Name = "textBox56";
-            this.textBox56.Size = new System.Drawing.Size(64, 18);
-            this.textBox56.TabIndex = 231;
-            // 
-            // textBox57
-            // 
-            this.textBox57.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox57.Location = new System.Drawing.Point(120, 437);
-            this.textBox57.Name = "textBox57";
-            this.textBox57.PlaceholderText = "DESCRIÇÃO";
-            this.textBox57.Size = new System.Drawing.Size(429, 18);
-            this.textBox57.TabIndex = 232;
-            // 
-            // textBox58
-            // 
-            this.textBox58.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox58.Location = new System.Drawing.Point(628, 437);
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(104, 18);
-            this.textBox58.TabIndex = 234;
-            // 
-            // textBox59
-            // 
-            this.textBox59.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox59.Location = new System.Drawing.Point(556, 437);
-            this.textBox59.Name = "textBox59";
-            this.textBox59.Size = new System.Drawing.Size(66, 18);
-            this.textBox59.TabIndex = 233;
-            // 
-            // textBox60
-            // 
-            this.textBox60.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox60.Location = new System.Drawing.Point(686, 512);
-            this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(139, 26);
-            this.textBox60.TabIndex = 243;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(561, 516);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 19);
-            this.label6.TabIndex = 244;
-            this.label6.Text = "VALOR TOTAL";
+            // txtItem01
+            // 
+            this.txtItem01.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem01.Location = new System.Drawing.Point(13, 277);
+            this.txtItem01.Name = "txtItem01";
+            this.txtItem01.Size = new System.Drawing.Size(31, 18);
+            this.txtItem01.TabIndex = 188;
+            // 
+            // txtItem02
+            // 
+            this.txtItem02.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem02.Location = new System.Drawing.Point(13, 297);
+            this.txtItem02.Name = "txtItem02";
+            this.txtItem02.Size = new System.Drawing.Size(31, 18);
+            this.txtItem02.TabIndex = 194;
+            // 
+            // txtTotalItem02
+            // 
+            this.txtTotalItem02.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalItem02.Location = new System.Drawing.Point(737, 297);
+            this.txtTotalItem02.Name = "txtTotalItem02";
+            this.txtTotalItem02.Size = new System.Drawing.Size(109, 18);
+            this.txtTotalItem02.TabIndex = 193;
+            // 
+            // txtCodProd02
+            // 
+            this.txtCodProd02.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodProd02.Location = new System.Drawing.Point(50, 297);
+            this.txtCodProd02.Name = "txtCodProd02";
+            this.txtCodProd02.Size = new System.Drawing.Size(64, 18);
+            this.txtCodProd02.TabIndex = 189;
+            // 
+            // txtDescProduto02
+            // 
+            this.txtDescProduto02.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescProduto02.Location = new System.Drawing.Point(120, 297);
+            this.txtDescProduto02.Name = "txtDescProduto02";
+            this.txtDescProduto02.PlaceholderText = "DESCRIÇÃO";
+            this.txtDescProduto02.Size = new System.Drawing.Size(429, 18);
+            this.txtDescProduto02.TabIndex = 190;
+            // 
+            // txtValorUnProd02
+            // 
+            this.txtValorUnProd02.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValorUnProd02.Location = new System.Drawing.Point(628, 297);
+            this.txtValorUnProd02.Name = "txtValorUnProd02";
+            this.txtValorUnProd02.Size = new System.Drawing.Size(104, 18);
+            this.txtValorUnProd02.TabIndex = 192;
+            // 
+            // txtQte02
+            // 
+            this.txtQte02.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQte02.Location = new System.Drawing.Point(556, 297);
+            this.txtQte02.Name = "txtQte02";
+            this.txtQte02.Size = new System.Drawing.Size(66, 18);
+            this.txtQte02.TabIndex = 191;
+            // 
+            // txtItem04
+            // 
+            this.txtItem04.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem04.Location = new System.Drawing.Point(13, 337);
+            this.txtItem04.Name = "txtItem04";
+            this.txtItem04.Size = new System.Drawing.Size(31, 18);
+            this.txtItem04.TabIndex = 206;
+            // 
+            // txtTotalItem04
+            // 
+            this.txtTotalItem04.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalItem04.Location = new System.Drawing.Point(737, 337);
+            this.txtTotalItem04.Name = "txtTotalItem04";
+            this.txtTotalItem04.Size = new System.Drawing.Size(109, 18);
+            this.txtTotalItem04.TabIndex = 205;
+            // 
+            // txtCodProd04
+            // 
+            this.txtCodProd04.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodProd04.Location = new System.Drawing.Point(50, 337);
+            this.txtCodProd04.Name = "txtCodProd04";
+            this.txtCodProd04.Size = new System.Drawing.Size(64, 18);
+            this.txtCodProd04.TabIndex = 201;
+            // 
+            // txtDescProduto04
+            // 
+            this.txtDescProduto04.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescProduto04.Location = new System.Drawing.Point(120, 337);
+            this.txtDescProduto04.Name = "txtDescProduto04";
+            this.txtDescProduto04.PlaceholderText = "DESCRIÇÃO";
+            this.txtDescProduto04.Size = new System.Drawing.Size(429, 18);
+            this.txtDescProduto04.TabIndex = 202;
+            // 
+            // txtValorUnProd04
+            // 
+            this.txtValorUnProd04.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValorUnProd04.Location = new System.Drawing.Point(628, 337);
+            this.txtValorUnProd04.Name = "txtValorUnProd04";
+            this.txtValorUnProd04.Size = new System.Drawing.Size(104, 18);
+            this.txtValorUnProd04.TabIndex = 204;
+            // 
+            // txtQte04
+            // 
+            this.txtQte04.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQte04.Location = new System.Drawing.Point(556, 337);
+            this.txtQte04.Name = "txtQte04";
+            this.txtQte04.Size = new System.Drawing.Size(66, 18);
+            this.txtQte04.TabIndex = 203;
+            // 
+            // txtItem03
+            // 
+            this.txtItem03.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem03.Location = new System.Drawing.Point(13, 317);
+            this.txtItem03.Name = "txtItem03";
+            this.txtItem03.Size = new System.Drawing.Size(31, 18);
+            this.txtItem03.TabIndex = 200;
+            // 
+            // txtTotalItem03
+            // 
+            this.txtTotalItem03.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalItem03.Location = new System.Drawing.Point(737, 317);
+            this.txtTotalItem03.Name = "txtTotalItem03";
+            this.txtTotalItem03.Size = new System.Drawing.Size(109, 18);
+            this.txtTotalItem03.TabIndex = 199;
+            // 
+            // txtCodProd03
+            // 
+            this.txtCodProd03.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodProd03.Location = new System.Drawing.Point(50, 317);
+            this.txtCodProd03.Name = "txtCodProd03";
+            this.txtCodProd03.Size = new System.Drawing.Size(64, 18);
+            this.txtCodProd03.TabIndex = 195;
+            // 
+            // txtDescProduto03
+            // 
+            this.txtDescProduto03.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescProduto03.Location = new System.Drawing.Point(120, 317);
+            this.txtDescProduto03.Name = "txtDescProduto03";
+            this.txtDescProduto03.PlaceholderText = "DESCRIÇÃO";
+            this.txtDescProduto03.Size = new System.Drawing.Size(429, 18);
+            this.txtDescProduto03.TabIndex = 196;
+            // 
+            // txtValorUnProd03
+            // 
+            this.txtValorUnProd03.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValorUnProd03.Location = new System.Drawing.Point(628, 317);
+            this.txtValorUnProd03.Name = "txtValorUnProd03";
+            this.txtValorUnProd03.Size = new System.Drawing.Size(104, 18);
+            this.txtValorUnProd03.TabIndex = 198;
+            // 
+            // txtQte03
+            // 
+            this.txtQte03.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQte03.Location = new System.Drawing.Point(556, 317);
+            this.txtQte03.Name = "txtQte03";
+            this.txtQte03.Size = new System.Drawing.Size(66, 18);
+            this.txtQte03.TabIndex = 197;
+            // 
+            // txtItem08
+            // 
+            this.txtItem08.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem08.Location = new System.Drawing.Point(13, 417);
+            this.txtItem08.Name = "txtItem08";
+            this.txtItem08.Size = new System.Drawing.Size(31, 18);
+            this.txtItem08.TabIndex = 230;
+            // 
+            // txtTotalItem08
+            // 
+            this.txtTotalItem08.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalItem08.Location = new System.Drawing.Point(737, 417);
+            this.txtTotalItem08.Name = "txtTotalItem08";
+            this.txtTotalItem08.Size = new System.Drawing.Size(109, 18);
+            this.txtTotalItem08.TabIndex = 229;
+            // 
+            // txtCodProd08
+            // 
+            this.txtCodProd08.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodProd08.Location = new System.Drawing.Point(50, 417);
+            this.txtCodProd08.Name = "txtCodProd08";
+            this.txtCodProd08.Size = new System.Drawing.Size(64, 18);
+            this.txtCodProd08.TabIndex = 225;
+            // 
+            // txtDescProduto08
+            // 
+            this.txtDescProduto08.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescProduto08.Location = new System.Drawing.Point(120, 417);
+            this.txtDescProduto08.Name = "txtDescProduto08";
+            this.txtDescProduto08.PlaceholderText = "DESCRIÇÃO";
+            this.txtDescProduto08.Size = new System.Drawing.Size(429, 18);
+            this.txtDescProduto08.TabIndex = 226;
+            // 
+            // txtValorUnProd08
+            // 
+            this.txtValorUnProd08.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValorUnProd08.Location = new System.Drawing.Point(628, 417);
+            this.txtValorUnProd08.Name = "txtValorUnProd08";
+            this.txtValorUnProd08.Size = new System.Drawing.Size(104, 18);
+            this.txtValorUnProd08.TabIndex = 228;
+            // 
+            // txtQte08
+            // 
+            this.txtQte08.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQte08.Location = new System.Drawing.Point(556, 417);
+            this.txtQte08.Name = "txtQte08";
+            this.txtQte08.Size = new System.Drawing.Size(66, 18);
+            this.txtQte08.TabIndex = 227;
+            // 
+            // txtItem07
+            // 
+            this.txtItem07.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem07.Location = new System.Drawing.Point(13, 397);
+            this.txtItem07.Name = "txtItem07";
+            this.txtItem07.Size = new System.Drawing.Size(31, 18);
+            this.txtItem07.TabIndex = 224;
+            // 
+            // txtTotalItem07
+            // 
+            this.txtTotalItem07.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalItem07.Location = new System.Drawing.Point(737, 397);
+            this.txtTotalItem07.Name = "txtTotalItem07";
+            this.txtTotalItem07.Size = new System.Drawing.Size(109, 18);
+            this.txtTotalItem07.TabIndex = 223;
+            // 
+            // txtCodProd07
+            // 
+            this.txtCodProd07.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodProd07.Location = new System.Drawing.Point(50, 397);
+            this.txtCodProd07.Name = "txtCodProd07";
+            this.txtCodProd07.Size = new System.Drawing.Size(64, 18);
+            this.txtCodProd07.TabIndex = 219;
+            // 
+            // txtDescProduto07
+            // 
+            this.txtDescProduto07.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescProduto07.Location = new System.Drawing.Point(120, 397);
+            this.txtDescProduto07.Name = "txtDescProduto07";
+            this.txtDescProduto07.PlaceholderText = "DESCRIÇÃO";
+            this.txtDescProduto07.Size = new System.Drawing.Size(429, 18);
+            this.txtDescProduto07.TabIndex = 220;
+            // 
+            // txtValorUnProd07
+            // 
+            this.txtValorUnProd07.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValorUnProd07.Location = new System.Drawing.Point(628, 397);
+            this.txtValorUnProd07.Name = "txtValorUnProd07";
+            this.txtValorUnProd07.Size = new System.Drawing.Size(104, 18);
+            this.txtValorUnProd07.TabIndex = 222;
+            // 
+            // txtQte07
+            // 
+            this.txtQte07.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQte07.Location = new System.Drawing.Point(556, 397);
+            this.txtQte07.Name = "txtQte07";
+            this.txtQte07.Size = new System.Drawing.Size(66, 18);
+            this.txtQte07.TabIndex = 221;
+            // 
+            // txtItem06
+            // 
+            this.txtItem06.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem06.Location = new System.Drawing.Point(13, 377);
+            this.txtItem06.Name = "txtItem06";
+            this.txtItem06.Size = new System.Drawing.Size(31, 18);
+            this.txtItem06.TabIndex = 218;
+            // 
+            // txtTotalItem06
+            // 
+            this.txtTotalItem06.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalItem06.Location = new System.Drawing.Point(737, 377);
+            this.txtTotalItem06.Name = "txtTotalItem06";
+            this.txtTotalItem06.Size = new System.Drawing.Size(109, 18);
+            this.txtTotalItem06.TabIndex = 217;
+            // 
+            // txtCodProd06
+            // 
+            this.txtCodProd06.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodProd06.Location = new System.Drawing.Point(50, 377);
+            this.txtCodProd06.Name = "txtCodProd06";
+            this.txtCodProd06.Size = new System.Drawing.Size(64, 18);
+            this.txtCodProd06.TabIndex = 213;
+            // 
+            // txtDescProduto06
+            // 
+            this.txtDescProduto06.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescProduto06.Location = new System.Drawing.Point(120, 377);
+            this.txtDescProduto06.Name = "txtDescProduto06";
+            this.txtDescProduto06.PlaceholderText = "DESCRIÇÃO";
+            this.txtDescProduto06.Size = new System.Drawing.Size(429, 18);
+            this.txtDescProduto06.TabIndex = 214;
+            // 
+            // txtValorUnProd06
+            // 
+            this.txtValorUnProd06.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValorUnProd06.Location = new System.Drawing.Point(628, 377);
+            this.txtValorUnProd06.Name = "txtValorUnProd06";
+            this.txtValorUnProd06.Size = new System.Drawing.Size(104, 18);
+            this.txtValorUnProd06.TabIndex = 216;
+            // 
+            // txtQte06
+            // 
+            this.txtQte06.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQte06.Location = new System.Drawing.Point(556, 377);
+            this.txtQte06.Name = "txtQte06";
+            this.txtQte06.Size = new System.Drawing.Size(66, 18);
+            this.txtQte06.TabIndex = 215;
+            // 
+            // txtItem05
+            // 
+            this.txtItem05.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem05.Location = new System.Drawing.Point(13, 357);
+            this.txtItem05.Name = "txtItem05";
+            this.txtItem05.Size = new System.Drawing.Size(31, 18);
+            this.txtItem05.TabIndex = 212;
+            // 
+            // txtTotalItem05
+            // 
+            this.txtTotalItem05.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalItem05.Location = new System.Drawing.Point(737, 357);
+            this.txtTotalItem05.Name = "txtTotalItem05";
+            this.txtTotalItem05.Size = new System.Drawing.Size(109, 18);
+            this.txtTotalItem05.TabIndex = 211;
+            // 
+            // txtCodProd05
+            // 
+            this.txtCodProd05.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodProd05.Location = new System.Drawing.Point(50, 357);
+            this.txtCodProd05.Name = "txtCodProd05";
+            this.txtCodProd05.Size = new System.Drawing.Size(64, 18);
+            this.txtCodProd05.TabIndex = 207;
+            // 
+            // txtDescProduto05
+            // 
+            this.txtDescProduto05.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescProduto05.Location = new System.Drawing.Point(120, 357);
+            this.txtDescProduto05.Name = "txtDescProduto05";
+            this.txtDescProduto05.PlaceholderText = "DESCRIÇÃO";
+            this.txtDescProduto05.Size = new System.Drawing.Size(429, 18);
+            this.txtDescProduto05.TabIndex = 208;
+            // 
+            // txtValorUnProd05
+            // 
+            this.txtValorUnProd05.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValorUnProd05.Location = new System.Drawing.Point(628, 357);
+            this.txtValorUnProd05.Name = "txtValorUnProd05";
+            this.txtValorUnProd05.Size = new System.Drawing.Size(104, 18);
+            this.txtValorUnProd05.TabIndex = 210;
+            // 
+            // txtQte05
+            // 
+            this.txtQte05.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQte05.Location = new System.Drawing.Point(556, 357);
+            this.txtQte05.Name = "txtQte05";
+            this.txtQte05.Size = new System.Drawing.Size(66, 18);
+            this.txtQte05.TabIndex = 209;
+            // 
+            // txtItem10
+            // 
+            this.txtItem10.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem10.Location = new System.Drawing.Point(13, 457);
+            this.txtItem10.Name = "txtItem10";
+            this.txtItem10.Size = new System.Drawing.Size(31, 18);
+            this.txtItem10.TabIndex = 242;
+            // 
+            // txtTotalItem10
+            // 
+            this.txtTotalItem10.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalItem10.Location = new System.Drawing.Point(737, 457);
+            this.txtTotalItem10.Name = "txtTotalItem10";
+            this.txtTotalItem10.Size = new System.Drawing.Size(109, 18);
+            this.txtTotalItem10.TabIndex = 241;
+            // 
+            // txtCodProd10
+            // 
+            this.txtCodProd10.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodProd10.Location = new System.Drawing.Point(50, 457);
+            this.txtCodProd10.Name = "txtCodProd10";
+            this.txtCodProd10.Size = new System.Drawing.Size(64, 18);
+            this.txtCodProd10.TabIndex = 237;
+            // 
+            // txtDescProduto10
+            // 
+            this.txtDescProduto10.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescProduto10.Location = new System.Drawing.Point(120, 457);
+            this.txtDescProduto10.Name = "txtDescProduto10";
+            this.txtDescProduto10.PlaceholderText = "DESCRIÇÃO";
+            this.txtDescProduto10.Size = new System.Drawing.Size(429, 18);
+            this.txtDescProduto10.TabIndex = 238;
+            // 
+            // txtValorUnProd10
+            // 
+            this.txtValorUnProd10.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValorUnProd10.Location = new System.Drawing.Point(628, 457);
+            this.txtValorUnProd10.Name = "txtValorUnProd10";
+            this.txtValorUnProd10.Size = new System.Drawing.Size(104, 18);
+            this.txtValorUnProd10.TabIndex = 240;
+            // 
+            // txtQte10
+            // 
+            this.txtQte10.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQte10.Location = new System.Drawing.Point(556, 457);
+            this.txtQte10.Name = "txtQte10";
+            this.txtQte10.Size = new System.Drawing.Size(66, 18);
+            this.txtQte10.TabIndex = 239;
+            // 
+            // txtItem09
+            // 
+            this.txtItem09.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem09.Location = new System.Drawing.Point(13, 437);
+            this.txtItem09.Name = "txtItem09";
+            this.txtItem09.Size = new System.Drawing.Size(31, 18);
+            this.txtItem09.TabIndex = 236;
+            // 
+            // txtTotalItem09
+            // 
+            this.txtTotalItem09.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalItem09.Location = new System.Drawing.Point(737, 437);
+            this.txtTotalItem09.Name = "txtTotalItem09";
+            this.txtTotalItem09.Size = new System.Drawing.Size(109, 18);
+            this.txtTotalItem09.TabIndex = 235;
+            // 
+            // txtCodProd09
+            // 
+            this.txtCodProd09.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodProd09.Location = new System.Drawing.Point(50, 437);
+            this.txtCodProd09.Name = "txtCodProd09";
+            this.txtCodProd09.Size = new System.Drawing.Size(64, 18);
+            this.txtCodProd09.TabIndex = 231;
+            // 
+            // txtDescProduto09
+            // 
+            this.txtDescProduto09.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescProduto09.Location = new System.Drawing.Point(120, 437);
+            this.txtDescProduto09.Name = "txtDescProduto09";
+            this.txtDescProduto09.PlaceholderText = "DESCRIÇÃO";
+            this.txtDescProduto09.Size = new System.Drawing.Size(429, 18);
+            this.txtDescProduto09.TabIndex = 232;
+            // 
+            // txtValorUnProd09
+            // 
+            this.txtValorUnProd09.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValorUnProd09.Location = new System.Drawing.Point(628, 437);
+            this.txtValorUnProd09.Name = "txtValorUnProd09";
+            this.txtValorUnProd09.Size = new System.Drawing.Size(104, 18);
+            this.txtValorUnProd09.TabIndex = 234;
+            // 
+            // txtQte09
+            // 
+            this.txtQte09.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQte09.Location = new System.Drawing.Point(556, 437);
+            this.txtQte09.Name = "txtQte09";
+            this.txtQte09.Size = new System.Drawing.Size(66, 18);
+            this.txtQte09.TabIndex = 233;
+            // 
+            // lblValorTotalOrcamento
+            // 
+            this.lblValorTotalOrcamento.AutoSize = true;
+            this.lblValorTotalOrcamento.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblValorTotalOrcamento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblValorTotalOrcamento.Location = new System.Drawing.Point(561, 516);
+            this.lblValorTotalOrcamento.Name = "lblValorTotalOrcamento";
+            this.lblValorTotalOrcamento.Size = new System.Drawing.Size(119, 19);
+            this.lblValorTotalOrcamento.TabIndex = 244;
+            this.lblValorTotalOrcamento.Text = "VALOR TOTAL";
             // 
             // btnAddItens
             // 
@@ -1210,25 +1202,25 @@
             this.lblVendedor.TabIndex = 261;
             this.lblVendedor.Text = "VENDEDOR:";
             // 
-            // TxtObservacao
+            // txtObservacao
             // 
-            this.TxtObservacao.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtObservacao.Location = new System.Drawing.Point(54, 489);
-            this.TxtObservacao.Multiline = true;
-            this.TxtObservacao.Name = "TxtObservacao";
-            this.TxtObservacao.Size = new System.Drawing.Size(302, 30);
-            this.TxtObservacao.TabIndex = 263;
+            this.txtObservacao.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtObservacao.Location = new System.Drawing.Point(54, 489);
+            this.txtObservacao.Multiline = true;
+            this.txtObservacao.Name = "txtObservacao";
+            this.txtObservacao.Size = new System.Drawing.Size(353, 34);
+            this.txtObservacao.TabIndex = 263;
             // 
-            // label16
+            // lblObservacao
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label16.Location = new System.Drawing.Point(13, 488);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(39, 13);
-            this.label16.TabIndex = 264;
-            this.label16.Text = "OBS.:";
+            this.lblObservacao.AutoSize = true;
+            this.lblObservacao.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblObservacao.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblObservacao.Location = new System.Drawing.Point(13, 488);
+            this.lblObservacao.Name = "lblObservacao";
+            this.lblObservacao.Size = new System.Drawing.Size(39, 13);
+            this.lblObservacao.TabIndex = 264;
+            this.lblObservacao.Text = "OBS.:";
             // 
             // lblStatusOrcamento
             // 
@@ -1268,6 +1260,7 @@
             this.DgExibirCliFornOrcamentos.Size = new System.Drawing.Size(72, 59);
             this.DgExibirCliFornOrcamentos.TabIndex = 328;
             this.DgExibirCliFornOrcamentos.Visible = false;
+            this.DgExibirCliFornOrcamentos.Click += new System.EventHandler(this.DgExibirCliFornOrcamentos_Click);
             // 
             // SituacaoDataGridViewTextBoxColumn
             // 
@@ -1276,16 +1269,28 @@
             this.SituacaoDataGridViewTextBoxColumn.Name = "SituacaoDataGridViewTextBoxColumn";
             this.SituacaoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // lblValorTT
+            // 
+            this.lblValorTT.AutoSize = true;
+            this.lblValorTT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblValorTT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblValorTT.Location = new System.Drawing.Point(695, 516);
+            this.lblValorTT.Name = "lblValorTT";
+            this.lblValorTT.Size = new System.Drawing.Size(37, 19);
+            this.lblValorTT.TabIndex = 329;
+            this.lblValorTT.Text = "0,00";
+            // 
             // FormCadOrcamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.lblValorTT);
             this.Controls.Add(this.DgExibirCliFornOrcamentos);
             this.Controls.Add(this.cbStatusOrcamento);
             this.Controls.Add(this.lblStatusOrcamento);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.TxtObservacao);
+            this.Controls.Add(this.lblObservacao);
+            this.Controls.Add(this.txtObservacao);
             this.Controls.Add(this.txtVendedor);
             this.Controls.Add(this.lblVendedor);
             this.Controls.Add(this.dtLancOrcamento);
@@ -1304,74 +1309,73 @@
             this.Controls.Add(this.lblFormaPgto);
             this.Controls.Add(this.lblSolicitante);
             this.Controls.Add(this.btnAddItens);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox60);
-            this.Controls.Add(this.textBox48);
-            this.Controls.Add(this.textBox49);
-            this.Controls.Add(this.textBox50);
-            this.Controls.Add(this.textBox51);
-            this.Controls.Add(this.textBox52);
-            this.Controls.Add(this.textBox53);
-            this.Controls.Add(this.textBox54);
-            this.Controls.Add(this.textBox55);
-            this.Controls.Add(this.textBox56);
-            this.Controls.Add(this.textBox57);
-            this.Controls.Add(this.textBox58);
-            this.Controls.Add(this.textBox59);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.textBox31);
-            this.Controls.Add(this.textBox32);
-            this.Controls.Add(this.textBox33);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox35);
-            this.Controls.Add(this.textBox36);
-            this.Controls.Add(this.textBox37);
-            this.Controls.Add(this.textBox38);
-            this.Controls.Add(this.textBox39);
-            this.Controls.Add(this.textBox40);
-            this.Controls.Add(this.textBox41);
-            this.Controls.Add(this.textBox42);
-            this.Controls.Add(this.textBox43);
-            this.Controls.Add(this.textBox44);
-            this.Controls.Add(this.textBox45);
-            this.Controls.Add(this.textBox46);
-            this.Controls.Add(this.textBox47);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.lblValorTotalOrcamento);
+            this.Controls.Add(this.txtItem10);
+            this.Controls.Add(this.txtTotalItem10);
+            this.Controls.Add(this.txtCodProd10);
+            this.Controls.Add(this.txtDescProduto10);
+            this.Controls.Add(this.txtValorUnProd10);
+            this.Controls.Add(this.txtQte10);
+            this.Controls.Add(this.txtItem09);
+            this.Controls.Add(this.txtTotalItem09);
+            this.Controls.Add(this.txtCodProd09);
+            this.Controls.Add(this.txtDescProduto09);
+            this.Controls.Add(this.txtValorUnProd09);
+            this.Controls.Add(this.txtQte09);
+            this.Controls.Add(this.txtItem08);
+            this.Controls.Add(this.txtTotalItem08);
+            this.Controls.Add(this.txtCodProd08);
+            this.Controls.Add(this.txtDescProduto08);
+            this.Controls.Add(this.txtValorUnProd08);
+            this.Controls.Add(this.txtQte08);
+            this.Controls.Add(this.txtItem07);
+            this.Controls.Add(this.txtTotalItem07);
+            this.Controls.Add(this.txtCodProd07);
+            this.Controls.Add(this.txtDescProduto07);
+            this.Controls.Add(this.txtValorUnProd07);
+            this.Controls.Add(this.txtQte07);
+            this.Controls.Add(this.txtItem06);
+            this.Controls.Add(this.txtTotalItem06);
+            this.Controls.Add(this.txtCodProd06);
+            this.Controls.Add(this.txtDescProduto06);
+            this.Controls.Add(this.txtValorUnProd06);
+            this.Controls.Add(this.txtQte06);
+            this.Controls.Add(this.txtItem05);
+            this.Controls.Add(this.txtTotalItem05);
+            this.Controls.Add(this.txtCodProd05);
+            this.Controls.Add(this.txtDescProduto05);
+            this.Controls.Add(this.txtValorUnProd05);
+            this.Controls.Add(this.txtQte05);
+            this.Controls.Add(this.txtItem04);
+            this.Controls.Add(this.txtTotalItem04);
+            this.Controls.Add(this.txtCodProd04);
+            this.Controls.Add(this.txtDescProduto04);
+            this.Controls.Add(this.txtValorUnProd04);
+            this.Controls.Add(this.txtQte04);
+            this.Controls.Add(this.txtItem03);
+            this.Controls.Add(this.txtTotalItem03);
+            this.Controls.Add(this.txtCodProd03);
+            this.Controls.Add(this.txtDescProduto03);
+            this.Controls.Add(this.txtValorUnProd03);
+            this.Controls.Add(this.txtQte03);
+            this.Controls.Add(this.txtItem02);
+            this.Controls.Add(this.txtTotalItem02);
+            this.Controls.Add(this.txtCodProd02);
+            this.Controls.Add(this.txtDescProduto02);
+            this.Controls.Add(this.txtValorUnProd02);
+            this.Controls.Add(this.txtQte02);
+            this.Controls.Add(this.txtItem01);
             this.Controls.Add(this.lblListaProdutos);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.TxtValorTotalProduto);
-            this.Controls.Add(this.TxtIdProduto);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.TxtDescProduto);
-            this.Controls.Add(this.TxtValorProduto);
-            this.Controls.Add(this.TxtUnidadeProduto);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblQte);
+            this.Controls.Add(this.txtTotalItem01);
+            this.Controls.Add(this.txtCodProd01);
+            this.Controls.Add(this.lblTotalItem);
+            this.Controls.Add(this.lblValorUnProd);
+            this.Controls.Add(this.txtDescProduto01);
+            this.Controls.Add(this.txtValorUnProd01);
+            this.Controls.Add(this.txtQte01);
+            this.Controls.Add(this.lblCodProd);
+            this.Controls.Add(this.lblItem);
             this.Controls.Add(this.txtLinha10);
             this.Controls.Add(this.txtSite);
             this.Controls.Add(this.txtEmail);
@@ -1379,7 +1383,7 @@
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.lblCelular);
             this.Controls.Add(this.lblTelefone);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNumOrcamento);
             this.Controls.Add(this.lblNumOrcamento);
             this.Controls.Add(this.lblOutrasInsc);
             this.Controls.Add(this.txtOutrasInsc);
@@ -1438,7 +1442,7 @@
         private TextBox txtNome;
         private TextBox TxtIdCliForn;
         private Label LblIdCodCliForn;
-        private TextBox textBox2;
+        private TextBox txtNumOrcamento;
         private Label lblNumOrcamento;
         private TextBox txtSite;
         private TextBox txtEmail;
@@ -1447,74 +1451,73 @@
         private Label lblCelular;
         private Label lblTelefone;
         private TextBox txtLinha10;
-        private Label label13;
-        private TextBox TxtValorTotalProduto;
-        private TextBox TxtIdProduto;
-        private Label label10;
-        private Label label8;
-        private TextBox TxtDescProduto;
-        private TextBox TxtValorProduto;
-        private TextBox TxtUnidadeProduto;
-        private Label label4;
-        private Label label2;
+        private Label lblQte;
+        private TextBox txtTotalItem01;
+        private TextBox txtCodProd01;
+        private Label lblTotalItem;
+        private Label lblValorUnProd;
+        private TextBox txtDescProduto01;
+        private TextBox txtValorUnProd01;
+        private TextBox txtQte01;
+        private Label lblCodProd;
+        private Label lblItem;
         private Label lblListaProdutos;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox11;
-        private TextBox textBox12;
-        private TextBox textBox13;
-        private TextBox textBox14;
-        private TextBox textBox15;
-        private TextBox textBox16;
-        private TextBox textBox17;
-        private TextBox textBox18;
-        private TextBox textBox19;
-        private TextBox textBox20;
-        private TextBox textBox21;
-        private TextBox textBox22;
-        private TextBox textBox23;
-        private TextBox textBox24;
-        private TextBox textBox25;
-        private TextBox textBox26;
-        private TextBox textBox27;
-        private TextBox textBox28;
-        private TextBox textBox29;
-        private TextBox textBox30;
-        private TextBox textBox31;
-        private TextBox textBox32;
-        private TextBox textBox33;
-        private TextBox textBox34;
-        private TextBox textBox35;
-        private TextBox textBox36;
-        private TextBox textBox37;
-        private TextBox textBox38;
-        private TextBox textBox39;
-        private TextBox textBox40;
-        private TextBox textBox41;
-        private TextBox textBox42;
-        private TextBox textBox43;
-        private TextBox textBox44;
-        private TextBox textBox45;
-        private TextBox textBox46;
-        private TextBox textBox47;
-        private TextBox textBox48;
-        private TextBox textBox49;
-        private TextBox textBox50;
-        private TextBox textBox51;
-        private TextBox textBox52;
-        private TextBox textBox53;
-        private TextBox textBox54;
-        private TextBox textBox55;
-        private TextBox textBox56;
-        private TextBox textBox57;
-        private TextBox textBox58;
-        private TextBox textBox59;
-        private TextBox textBox60;
-        private Label label6;
+        private TextBox txtItem01;
+        private TextBox txtItem02;
+        private TextBox txtTotalItem02;
+        private TextBox txtCodProd02;
+        private TextBox txtDescProduto02;
+        private TextBox txtValorUnProd02;
+        private TextBox txtQte02;
+        private TextBox txtItem04;
+        private TextBox txtTotalItem04;
+        private TextBox txtCodProd04;
+        private TextBox txtDescProduto04;
+        private TextBox txtValorUnProd04;
+        private TextBox txtQte04;
+        private TextBox txtItem03;
+        private TextBox txtTotalItem03;
+        private TextBox txtCodProd03;
+        private TextBox txtDescProduto03;
+        private TextBox txtValorUnProd03;
+        private TextBox txtQte03;
+        private TextBox txtItem08;
+        private TextBox txtTotalItem08;
+        private TextBox txtCodProd08;
+        private TextBox txtDescProduto08;
+        private TextBox txtValorUnProd08;
+        private TextBox txtQte08;
+        private TextBox txtItem07;
+        private TextBox txtTotalItem07;
+        private TextBox txtCodProd07;
+        private TextBox txtDescProduto07;
+        private TextBox txtValorUnProd07;
+        private TextBox txtQte07;
+        private TextBox txtItem06;
+        private TextBox txtTotalItem06;
+        private TextBox txtCodProd06;
+        private TextBox txtDescProduto06;
+        private TextBox txtValorUnProd06;
+        private TextBox txtQte06;
+        private TextBox txtItem05;
+        private TextBox txtTotalItem05;
+        private TextBox txtCodProd05;
+        private TextBox txtDescProduto05;
+        private TextBox txtValorUnProd05;
+        private TextBox txtQte05;
+        private TextBox txtItem10;
+        private TextBox txtTotalItem10;
+        private TextBox txtCodProd10;
+        private TextBox txtDescProduto10;
+        private TextBox txtValorUnProd10;
+        private TextBox txtQte10;
+        private TextBox txtItem09;
+        private TextBox txtTotalItem09;
+        private TextBox txtCodProd09;
+        private TextBox txtDescProduto09;
+        private TextBox txtValorUnProd09;
+        private TextBox txtQte09;
+        private Label lblValorTotalOrcamento;
         private Button btnAddItens;
         private TextBox txtFormaPgto;
         private TextBox txtSolicitante;
@@ -1533,11 +1536,12 @@
         private Label lblDtLancOrcamento;
         private TextBox txtVendedor;
         private Label lblVendedor;
-        private TextBox TxtObservacao;
-        private Label label16;
+        private TextBox txtObservacao;
+        private Label lblObservacao;
         private Label lblStatusOrcamento;
         private ComboBox cbStatusOrcamento;
         private DataGridView DgExibirCliFornOrcamentos;
         private DataGridViewTextBoxColumn SituacaoDataGridViewTextBoxColumn;
+        private Label lblValorTT;
     }
 }
