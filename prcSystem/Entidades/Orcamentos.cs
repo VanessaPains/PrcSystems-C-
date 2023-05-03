@@ -10,27 +10,11 @@ namespace prcSystem.Entidades
     public class Orcamentos
     {
         int idOrcamento;
-        int idCliForn;
+        int idPessoa;
         string StatusOrcamento;
         DateTime dtLancOrcamento;
         int numOrcamento;
 
-        string cnpjCpf;
-        string nome;
-        string razaoSocial;
-        string inscEstadual;
-        string outrasInsc;
-        string endereco;
-        string complemento;
-        string bairro;
-        string num;
-        string cep;
-        string cidade;
-        string uf;
-
-        string telefone;
-        string email;
-        string site;
         string solicitante;
 
         string formaPgto;
@@ -60,17 +44,6 @@ namespace prcSystem.Entidades
         int codProd08;
         int codProd09;
         int codProd10;
-
-        string descProduto01;
-        string descProduto02;
-        string descProduto03;
-        string descProduto04;
-        string descProduto05;
-        string descProduto06;
-        string descProduto07;
-        string descProduto08;
-        string descProduto09;
-        string descProduto10;
 
         decimal qte01;
         decimal qte02;
@@ -110,25 +83,11 @@ namespace prcSystem.Entidades
         decimal valorTT;
 
         public int IdOrcamento { get => idOrcamento; set => idOrcamento = value; }
-        public int IdCliForn { get => idCliForn; set => idCliForn = value; }
+        public int IdPessoa { get => idPessoa; set => idPessoa = value; }
         public string StatusOrcamento1 { get => StatusOrcamento; set => StatusOrcamento = value; }
         public DateTime DtLancOrcamento { get => dtLancOrcamento; set => dtLancOrcamento = value; }
         public int NumOrcamento { get => numOrcamento; set => numOrcamento = value; }
-        public string CnpjCpf { get => cnpjCpf; set => cnpjCpf = value; }
-        public string Nome { get => nome; set => nome = value; }
-        public string RazaoSocial { get => razaoSocial; set => razaoSocial = value; }
-        public string InscEstadual { get => inscEstadual; set => inscEstadual = value; }
-        public string OutrasInsc { get => outrasInsc; set => outrasInsc = value; }
-        public string Endereco { get => endereco; set => endereco = value; }
-        public string Complemento { get => complemento; set => complemento = value; }
-        public string Bairro { get => bairro; set => bairro = value; }
-        public string Num { get => num; set => num = value; }
-        public string Cep { get => cep; set => cep = value; }
-        public string Cidade { get => cidade; set => cidade = value; }
-        public string Uf { get => uf; set => uf = value; }
-        public string Telefone { get => telefone; set => telefone = value; }
-        public string Email { get => email; set => email = value; }
-        public string Site { get => site; set => site = value; }
+  
         public string Solicitante { get => solicitante; set => solicitante = value; }
         public string FormaPgto { get => formaPgto; set => formaPgto = value; }
         public string PrazoPgto { get => prazoPgto; set => prazoPgto = value; }
@@ -155,16 +114,7 @@ namespace prcSystem.Entidades
         public int CodProd08 { get => codProd08; set => codProd08 = value; }
         public int CodProd09 { get => codProd09; set => codProd09 = value; }
         public int CodProd10 { get => codProd10; set => codProd10 = value; }
-        public string DescProduto01 { get => descProduto01; set => descProduto01 = value; }
-        public string DescProduto02 { get => descProduto02; set => descProduto02 = value; }
-        public string DescProduto03 { get => descProduto03; set => descProduto03 = value; }
-        public string DescProduto04 { get => descProduto04; set => descProduto04 = value; }
-        public string DescProduto05 { get => descProduto05; set => descProduto05 = value; }
-        public string DescProduto06 { get => descProduto06; set => descProduto06 = value; }
-        public string DescProduto07 { get => descProduto07; set => descProduto07 = value; }
-        public string DescProduto08 { get => descProduto08; set => descProduto08 = value; }
-        public string DescProduto09 { get => descProduto09; set => descProduto09 = value; }
-        public string DescProduto10 { get => descProduto10; set => descProduto10 = value; }
+
         public decimal Qte01 { get => qte01; set => qte01 = value; }
         public decimal Qte02 { get => qte02; set => qte02 = value; }
         public decimal Qte03 { get => qte03; set => qte03 = value; }

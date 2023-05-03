@@ -21,6 +21,7 @@ namespace prcSystem.View
         public FormCadOrcamentos()
         {
             InitializeComponent();
+            ListarCliForn();
         }
 
         private void FormCadOrcamentos_Load(object sender, EventArgs e)
@@ -52,7 +53,7 @@ namespace prcSystem.View
         public void OcutarFormularioOrcamento() 
         {
             LblIdCodCliForn.Visible = false;
-            TxtIdCliForn.Visible = false;
+            idPessoa.Visible = false;
             lblStatusOrcamento.Visible = false;
             cbStatusOrcamento.Visible = false;
             lblDtLancOrcamento.Visible = false;
@@ -61,7 +62,7 @@ namespace prcSystem.View
             txtNumOrcamento.Visible = true;
 
             txtCnpjCpf.Visible = false;
-            txtNome.Visible = false;
+            txtRazaoNome.Visible = false;
             txtRazaoSocial.Visible = false;
             txtInscEstadual.Visible = false;
             lblOutrasInsc.Visible = false;
@@ -238,7 +239,7 @@ namespace prcSystem.View
 
         private void DgExibirCliFornOrcamentos_Click(object sender, EventArgs e)
         {
-            Listar
+            
         }
     }
 }

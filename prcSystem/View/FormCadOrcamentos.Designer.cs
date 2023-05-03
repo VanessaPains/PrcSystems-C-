@@ -47,8 +47,8 @@
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.txtRazaoSocial = new System.Windows.Forms.TextBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.TxtIdCliForn = new System.Windows.Forms.TextBox();
+            this.txtRazaoNome = new System.Windows.Forms.TextBox();
+            this.idPessoa = new System.Windows.Forms.TextBox();
             this.LblIdCodCliForn = new System.Windows.Forms.Label();
             this.txtNumOrcamento = new System.Windows.Forms.TextBox();
             this.lblNumOrcamento = new System.Windows.Forms.Label();
@@ -347,23 +347,23 @@
             this.txtRazaoSocial.Size = new System.Drawing.Size(477, 18);
             this.txtRazaoSocial.TabIndex = 141;
             // 
-            // txtNome
+            // txtRazaoNome
             // 
-            this.txtNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtNome.Location = new System.Drawing.Point(14, 114);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.PlaceholderText = "NOME / RAZÃO SOCIAL";
-            this.txtNome.Size = new System.Drawing.Size(477, 18);
-            this.txtNome.TabIndex = 140;
+            this.txtRazaoNome.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtRazaoNome.Location = new System.Drawing.Point(14, 114);
+            this.txtRazaoNome.Name = "txtRazaoNome";
+            this.txtRazaoNome.PlaceholderText = "NOME / RAZÃO SOCIAL";
+            this.txtRazaoNome.Size = new System.Drawing.Size(477, 18);
+            this.txtRazaoNome.TabIndex = 140;
             // 
-            // TxtIdCliForn
+            // idPessoa
             // 
-            this.TxtIdCliForn.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtIdCliForn.Location = new System.Drawing.Point(99, 60);
-            this.TxtIdCliForn.Name = "TxtIdCliForn";
-            this.TxtIdCliForn.Size = new System.Drawing.Size(100, 18);
-            this.TxtIdCliForn.TabIndex = 139;
-            this.TxtIdCliForn.Click += new System.EventHandler(this.TxtIdCliForn_Click);
+            this.idPessoa.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.idPessoa.Location = new System.Drawing.Point(99, 60);
+            this.idPessoa.Name = "idPessoa";
+            this.idPessoa.Size = new System.Drawing.Size(100, 18);
+            this.idPessoa.TabIndex = 139;
+            this.idPessoa.Click += new System.EventHandler(this.TxtIdCliForn_Click);
             // 
             // LblIdCodCliForn
             // 
@@ -1398,8 +1398,8 @@
             this.Controls.Add(this.txtComplemento);
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.txtRazaoSocial);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.TxtIdCliForn);
+            this.Controls.Add(this.txtRazaoNome);
+            this.Controls.Add(this.idPessoa);
             this.Controls.Add(this.LblIdCodCliForn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnCancelar);
@@ -1439,8 +1439,8 @@
         private TextBox txtComplemento;
         private TextBox txtEndereco;
         private TextBox txtRazaoSocial;
-        private TextBox txtNome;
-        private TextBox TxtIdCliForn;
+        private TextBox txtRazaoNome;
+        private TextBox idPessoa;
         private Label LblIdCodCliForn;
         private TextBox txtNumOrcamento;
         private Label lblNumOrcamento;
