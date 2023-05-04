@@ -71,7 +71,7 @@ namespace prcSystem.Entidades
         decimal totalItem02;
         decimal totalItem03;
         decimal totalItem04;
-        decimal totalItem05e;
+        decimal totalItem05;
         decimal totalItem06;
         decimal totalItem07;
         decimal totalItem08;
@@ -87,7 +87,6 @@ namespace prcSystem.Entidades
         public string StatusOrcamento1 { get => StatusOrcamento; set => StatusOrcamento = value; }
         public DateTime DtLancOrcamento { get => dtLancOrcamento; set => dtLancOrcamento = value; }
         public int NumOrcamento { get => numOrcamento; set => numOrcamento = value; }
-  
         public string Solicitante { get => solicitante; set => solicitante = value; }
         public string FormaPgto { get => formaPgto; set => formaPgto = value; }
         public string PrazoPgto { get => prazoPgto; set => prazoPgto = value; }
@@ -104,8 +103,7 @@ namespace prcSystem.Entidades
         public int Item09 { get => item09; set => item09 = value; }
         public int Item10 { get => item10; set => item10 = value; }
         public int CodProd01 { get => codProd01; set => codProd01 = value; }
-        public int CodProd02 { get => CodProd021; set => CodProd021 = value; }
-        public int CodProd021 { get => codProd02; set => codProd02 = value; }
+        public int CodProd02 { get => codProd02; set => codProd02 = value; }
         public int CodProd03 { get => codProd03; set => codProd03 = value; }
         public int CodProd04 { get => codProd04; set => codProd04 = value; }
         public int CodProd05 { get => codProd05; set => codProd05 = value; }
@@ -139,7 +137,7 @@ namespace prcSystem.Entidades
         public decimal TotalItem02 { get => totalItem02; set => totalItem02 = value; }
         public decimal TotalItem03 { get => totalItem03; set => totalItem03 = value; }
         public decimal TotalItem04 { get => totalItem04; set => totalItem04 = value; }
-        public decimal TotalItem05e { get => totalItem05e; set => totalItem05e = value; }
+        public decimal TotalItem05 { get => totalItem05; set => totalItem05 = value; }
         public decimal TotalItem06 { get => totalItem06; set => totalItem06 = value; }
         public decimal TotalItem07 { get => totalItem07; set => totalItem07 = value; }
         public decimal TotalItem08 { get => totalItem08; set => totalItem08 = value; }

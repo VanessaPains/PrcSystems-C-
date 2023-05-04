@@ -32,7 +32,7 @@ namespace prcSystem.View
         private void TxtIdCliForn_Click(object sender, EventArgs e)
         {
             AjustarDataGridAumentar();
-            OcutarFormularioOrcamento();
+            OcultarFormularioOrcamento();
         }
 
         public void AjustarDataGridAumentar()
@@ -50,7 +50,7 @@ namespace prcSystem.View
             DgExibirCliFornOrcamentos.Location = new Point(11, 260);
         }
 
-        public void OcutarFormularioOrcamento() 
+        public void OcultarFormularioOrcamento() 
         {
             LblIdCodCliForn.Visible = false;
             idPessoa.Visible = false;
@@ -180,6 +180,137 @@ namespace prcSystem.View
             lblValorTT.Visible = false;
         }
 
+        public void DesocultarFormularioOrcamento()
+        {
+            LblIdCodCliForn.Visible = true;
+            idPessoa.Visible = true;
+            lblStatusOrcamento.Visible = true;
+            cbStatusOrcamento.Visible = true;
+            lblDtLancOrcamento.Visible = true;
+            dtLancOrcamento.Visible = true;
+            lblNumOrcamento.Visible = true;
+            txtNumOrcamento.Visible = true;
+
+            txtCnpjCpf.Visible = true;
+            txtRazaoNome.Visible = true;
+            txtRazaoSocial.Visible = true;
+            txtInscEstadual.Visible = true;
+            lblOutrasInsc.Visible = true;
+            txtOutrasInsc.Visible = true;
+            txtEndereco.Visible = true;
+            txtComplemento.Visible = true;
+            txtBairro.Visible = true;
+            txtNum.Visible = true;
+            txtCep.Visible = true;
+            txtCidade.Visible = true;
+            txtUf.Visible = true;
+
+            txtLinha06.Visible = true;
+
+            lblTelefone.Visible = true;
+            txtTelefone.Visible = true;
+            txtEmail.Visible = true;
+            txtSite.Visible = true;
+            txtLinha07.Visible = true;
+            lblSolicitante.Visible = true;
+            txtSolicitante.Visible = true;
+            lblVendedor.Visible = true;
+
+            txtLinha08.Visible = true;
+
+            lblFormaPgto.Visible = true;
+            txtFormaPgto.Visible = true;
+            lblPrazoPgto.Visible = true;
+            txtPrazoPgto.Visible = true;
+
+            txtLinha09.Visible = true;
+
+            lblProzoEntrega.Visible = true;
+            txtPrazoEntrega.Visible = true;
+            lblValidadeOrcamento.Visible = true;
+            txtValidadeOrcamento.Visible = true;
+
+            txtLinha10.Visible = true;
+
+            lblListaProdutos.Visible = true;
+            lblItem.Visible = true;
+            txtItem01.Visible = true;
+            txtItem02.Visible = true;
+            txtItem03.Visible = true;
+            txtItem04.Visible = true;
+            txtItem05.Visible = true;
+            txtItem06.Visible = true;
+            txtItem07.Visible = true;
+            txtItem08.Visible = true;
+            txtItem09.Visible = true;
+            txtItem10.Visible = true;
+
+            lblCodProd.Visible = true;
+            txtCodProd01.Visible = true;
+            txtCodProd02.Visible = true;
+            txtCodProd03.Visible = true;
+            txtCodProd04.Visible = true;
+            txtCodProd05.Visible = true;
+            txtCodProd06.Visible = true;
+            txtCodProd07.Visible = true;
+            txtCodProd08.Visible = true;
+            txtCodProd09.Visible = true;
+            txtCodProd10.Visible = true;
+
+            txtDescProduto01.Visible = true;
+            txtDescProduto02.Visible = true;
+            txtDescProduto03.Visible = true;
+            txtDescProduto04.Visible = true;
+            txtDescProduto05.Visible = true;
+            txtDescProduto06.Visible = true;
+            txtDescProduto07.Visible = true;
+            txtDescProduto08.Visible = true;
+            txtDescProduto09.Visible = true;
+            txtDescProduto10.Visible = true;
+
+            txtQte01.Visible = true;
+            txtQte02.Visible = true;
+            txtQte03.Visible = true;
+            txtQte04.Visible = true;
+            txtQte05.Visible = true;
+            txtQte06.Visible = true;
+            txtQte07.Visible = true;
+            txtQte08.Visible = true;
+            txtQte09.Visible = true;
+            txtQte10.Visible = true;
+
+            lblValorUnProd.Visible = true;
+            txtValorUnProd01.Visible = true;
+            txtValorUnProd02.Visible = true;
+            txtValorUnProd03.Visible = true;
+            txtValorUnProd04.Visible = true;
+            txtValorUnProd05.Visible = true;
+            txtValorUnProd06.Visible = true;
+            txtValorUnProd07.Visible = true;
+            txtValorUnProd08.Visible = true;
+            txtValorUnProd09.Visible = true;
+            txtValorUnProd10.Visible = true;
+
+            lblTotalItem.Visible = true;
+            txtTotalItem01.Visible = true;
+            txtTotalItem02.Visible = true;
+            txtTotalItem03.Visible = true;
+            txtTotalItem04.Visible = true;
+            txtTotalItem05.Visible = true;
+            txtTotalItem06.Visible = true;
+            txtTotalItem07.Visible = true;
+            txtTotalItem08.Visible = true;
+            txtTotalItem09.Visible = true;
+            txtTotalItem10.Visible = true;
+
+            lblObservacao.Visible = true;
+            txtObservacao.Visible = true;
+
+            lblValorTotalOrcamento.Visible = true;
+            lblValorTT.Visible = true;
+        }
+
+
         /// <summary>
         /// metodo de listas os CLientes/FOrnecedores cadastrado no DB para o datagrid do botao de pesquisar o fornecedor/cliente
         /// </summary>
@@ -195,8 +326,8 @@ namespace prcSystem.View
                 // dg.Columns[0].Visible = false;//colunas datagrid
 
                 DgExibirCliFornOrcamentos.Columns[0].HeaderText = "Cod. Forn/Cli.";//determinaar o nome da coluna
-                DgExibirCliFornOrcamentos.Columns[1].Visible = false;//HeaderText = "Tipo";
-                DgExibirCliFornOrcamentos.Columns[2].Visible = false;//Visible= false;HeaderText = "Pessoa";
+                DgExibirCliFornOrcamentos.Columns[1].HeaderText = "Tipo";
+                DgExibirCliFornOrcamentos.Columns[2].HeaderText = "Pessoa";
                 DgExibirCliFornOrcamentos.Columns[3].HeaderText = "Cnpj/Cpf";
                 DgExibirCliFornOrcamentos.Columns[4].HeaderText = "Razão/Nome.";
                 DgExibirCliFornOrcamentos.Columns[5].HeaderText = "Fantasia";
@@ -239,7 +370,8 @@ namespace prcSystem.View
 
         private void DgExibirCliFornOrcamentos_Click(object sender, EventArgs e)
         {
-            
+            DesocultarFormularioOrcamento();
+            AjustarDataGridDiminuir();
         }
     }
 }
