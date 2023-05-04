@@ -47,7 +47,7 @@
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.txtRazaoSocial = new System.Windows.Forms.TextBox();
+            this.txtFantasia = new System.Windows.Forms.TextBox();
             this.txtRazaoNome = new System.Windows.Forms.TextBox();
             this.idPessoa = new System.Windows.Forms.TextBox();
             this.LblIdCodCliForn = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.lblNumOrcamento = new System.Windows.Forms.Label();
             this.txtSite = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.TxtCelular = new System.Windows.Forms.TextBox();
+            this.txtCelular = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.lblCelular = new System.Windows.Forms.Label();
             this.lblTelefone = new System.Windows.Forms.Label();
@@ -150,8 +150,6 @@
             this.lblStatusOrcamento = new System.Windows.Forms.Label();
             this.cbStatusOrcamento = new System.Windows.Forms.ComboBox();
             this.DgExibirCliFornOrcamentos = new System.Windows.Forms.DataGridView();
-            this.lblValorTT = new System.Windows.Forms.Label();
-            this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoCadastroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -181,6 +179,8 @@
             this.observacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtCadPessoaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lblValorTT = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliFornOrcamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
@@ -369,14 +369,14 @@
             this.txtEndereco.Size = new System.Drawing.Size(335, 18);
             this.txtEndereco.TabIndex = 142;
             // 
-            // txtRazaoSocial
+            // txtFantasia
             // 
-            this.txtRazaoSocial.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtRazaoSocial.Location = new System.Drawing.Point(14, 134);
-            this.txtRazaoSocial.Name = "txtRazaoSocial";
-            this.txtRazaoSocial.PlaceholderText = "FANTASIA";
-            this.txtRazaoSocial.Size = new System.Drawing.Size(477, 18);
-            this.txtRazaoSocial.TabIndex = 141;
+            this.txtFantasia.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtFantasia.Location = new System.Drawing.Point(14, 134);
+            this.txtFantasia.Name = "txtFantasia";
+            this.txtFantasia.PlaceholderText = "FANTASIA";
+            this.txtFantasia.Size = new System.Drawing.Size(477, 18);
+            this.txtFantasia.TabIndex = 141;
             // 
             // txtRazaoNome
             // 
@@ -444,14 +444,14 @@
             this.txtEmail.Size = new System.Drawing.Size(150, 18);
             this.txtEmail.TabIndex = 164;
             // 
-            // TxtCelular
+            // txtCelular
             // 
-            this.TxtCelular.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtCelular.Location = new System.Drawing.Point(74, 208);
-            this.TxtCelular.Name = "TxtCelular";
-            this.TxtCelular.PlaceholderText = "(00)00000-0000";
-            this.TxtCelular.Size = new System.Drawing.Size(82, 18);
-            this.TxtCelular.TabIndex = 161;
+            this.txtCelular.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCelular.Location = new System.Drawing.Point(74, 208);
+            this.txtCelular.Name = "txtCelular";
+            this.txtCelular.PlaceholderText = "(00)00000-0000";
+            this.txtCelular.Size = new System.Drawing.Size(82, 18);
+            this.txtCelular.TabIndex = 161;
             // 
             // txtTelefone
             // 
@@ -1323,21 +1323,6 @@
             this.DgExibirCliFornOrcamentos.Visible = false;
             this.DgExibirCliFornOrcamentos.Click += new System.EventHandler(this.DgExibirCliFornOrcamentos_Click);
             // 
-            // lblValorTT
-            // 
-            this.lblValorTT.AutoSize = true;
-            this.lblValorTT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblValorTT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblValorTT.Location = new System.Drawing.Point(695, 516);
-            this.lblValorTT.Name = "lblValorTT";
-            this.lblValorTT.Size = new System.Drawing.Size(37, 19);
-            this.lblValorTT.TabIndex = 329;
-            this.lblValorTT.Text = "0,00";
-            // 
-            // pessoaBindingSource
-            // 
-            this.pessoaBindingSource.DataSource = typeof(prcSystem.Entidades.Pessoa);
-            // 
             // idPessoaDataGridViewTextBoxColumn
             // 
             this.idPessoaDataGridViewTextBoxColumn.DataPropertyName = "IdPessoa";
@@ -1541,6 +1526,21 @@
             this.fotoDataGridViewImageColumn.Name = "fotoDataGridViewImageColumn";
             this.fotoDataGridViewImageColumn.ReadOnly = true;
             // 
+            // pessoaBindingSource
+            // 
+            this.pessoaBindingSource.DataSource = typeof(prcSystem.Entidades.Pessoa);
+            // 
+            // lblValorTT
+            // 
+            this.lblValorTT.AutoSize = true;
+            this.lblValorTT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblValorTT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblValorTT.Location = new System.Drawing.Point(695, 516);
+            this.lblValorTT.Name = "lblValorTT";
+            this.lblValorTT.Size = new System.Drawing.Size(37, 19);
+            this.lblValorTT.TabIndex = 329;
+            this.lblValorTT.Text = "0,00";
+            // 
             // FormCadOrcamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1640,7 +1640,7 @@
             this.Controls.Add(this.txtLinha10);
             this.Controls.Add(this.txtSite);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.TxtCelular);
+            this.Controls.Add(this.txtCelular);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.lblCelular);
             this.Controls.Add(this.lblTelefone);
@@ -1658,7 +1658,7 @@
             this.Controls.Add(this.txtBairro);
             this.Controls.Add(this.txtComplemento);
             this.Controls.Add(this.txtEndereco);
-            this.Controls.Add(this.txtRazaoSocial);
+            this.Controls.Add(this.txtFantasia);
             this.Controls.Add(this.txtRazaoNome);
             this.Controls.Add(this.idPessoa);
             this.Controls.Add(this.LblIdCodCliForn);
@@ -1700,7 +1700,7 @@
         private TextBox txtBairro;
         private TextBox txtComplemento;
         private TextBox txtEndereco;
-        private TextBox txtRazaoSocial;
+        private TextBox txtFantasia;
         private TextBox txtRazaoNome;
         private TextBox idPessoa;
         private Label LblIdCodCliForn;
@@ -1708,7 +1708,7 @@
         private Label lblNumOrcamento;
         private TextBox txtSite;
         private TextBox txtEmail;
-        private TextBox TxtCelular;
+        private TextBox txtCelular;
         private TextBox txtTelefone;
         private Label lblCelular;
         private Label lblTelefone;

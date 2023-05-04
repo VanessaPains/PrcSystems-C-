@@ -63,7 +63,7 @@ namespace prcSystem.View
 
             txtCnpjCpf.Visible = false;
             txtRazaoNome.Visible = false;
-            txtRazaoSocial.Visible = false;
+            txtFantasia.Visible = false;
             txtInscEstadual.Visible = false;
             lblOutrasInsc.Visible = false;
             txtOutrasInsc.Visible = false;
@@ -193,7 +193,7 @@ namespace prcSystem.View
 
             txtCnpjCpf.Visible = true;
             txtRazaoNome.Visible = true;
-            txtRazaoSocial.Visible = true;
+            txtFantasia.Visible = true;
             txtInscEstadual.Visible = true;
             lblOutrasInsc.Visible = true;
             txtOutrasInsc.Visible = true;
@@ -372,6 +372,24 @@ namespace prcSystem.View
         {
             DesocultarFormularioOrcamento();
             AjustarDataGridDiminuir();
+
+            idPessoa.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[0].Value.ToString();
+            txtCnpjCpf.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[3].Value.ToString();
+            txtRazaoNome.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[4].Value.ToString();
+            txtFantasia.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[5].Value.ToString();
+            txtInscEstadual.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[6].Value.ToString();
+            txtOutrasInsc.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[7].Value.ToString();
+            txtEndereco.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[8].Value.ToString();
+            txtNum.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[9].Value.ToString();
+            txtComplemento.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[10].Value.ToString();
+            txtCep.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[11].Value.ToString();
+            txtBairro.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[12].Value.ToString();
+            txtCidade.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[13].Value.ToString();
+            txtUf.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[14].Value.ToString();
+            txtTelefone.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[15].Value.ToString();
+            txtCelular.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[16].Value.ToString();
+            txtEmail.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[17].Value.ToString();
+            txtSite.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[18].Value.ToString();         
         }
     }
 }
