@@ -181,9 +181,19 @@
             this.fotoDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lblValorTT = new System.Windows.Forms.Label();
+            this.dgExibirProdutosOrcamentos = new System.Windows.Forms.DataGridView();
+            this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marcaProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unidadeProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtCadastroProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliFornOrcamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgExibirProdutosOrcamentos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -1541,11 +1551,81 @@
             this.lblValorTT.TabIndex = 329;
             this.lblValorTT.Text = "0,00";
             // 
+            // dgExibirProdutosOrcamentos
+            // 
+            this.dgExibirProdutosOrcamentos.AllowUserToAddRows = false;
+            this.dgExibirProdutosOrcamentos.AllowUserToDeleteRows = false;
+            this.dgExibirProdutosOrcamentos.AutoGenerateColumns = false;
+            this.dgExibirProdutosOrcamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgExibirProdutosOrcamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idProdutoDataGridViewTextBoxColumn,
+            this.descProdutoDataGridViewTextBoxColumn,
+            this.marcaProdutoDataGridViewTextBoxColumn,
+            this.unidadeProdutoDataGridViewTextBoxColumn,
+            this.valorProdutoDataGridViewTextBoxColumn,
+            this.dtCadastroProdutoDataGridViewTextBoxColumn});
+            this.dgExibirProdutosOrcamentos.DataSource = this.produtosBindingSource;
+            this.dgExibirProdutosOrcamentos.Location = new System.Drawing.Point(856, 309);
+            this.dgExibirProdutosOrcamentos.Name = "dgExibirProdutosOrcamentos";
+            this.dgExibirProdutosOrcamentos.ReadOnly = true;
+            this.dgExibirProdutosOrcamentos.RowTemplate.Height = 25;
+            this.dgExibirProdutosOrcamentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgExibirProdutosOrcamentos.Size = new System.Drawing.Size(72, 70);
+            this.dgExibirProdutosOrcamentos.TabIndex = 330;
+            this.dgExibirProdutosOrcamentos.Click += new System.EventHandler(this.dgExibirProdutosOrcamentos_Click);
+            // 
+            // produtosBindingSource
+            // 
+            this.produtosBindingSource.DataSource = typeof(prcSystem.Entidades.Produtos);
+            // 
+            // idProdutoDataGridViewTextBoxColumn
+            // 
+            this.idProdutoDataGridViewTextBoxColumn.DataPropertyName = "IdProduto";
+            this.idProdutoDataGridViewTextBoxColumn.HeaderText = "IdProduto";
+            this.idProdutoDataGridViewTextBoxColumn.Name = "idProdutoDataGridViewTextBoxColumn";
+            this.idProdutoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descProdutoDataGridViewTextBoxColumn
+            // 
+            this.descProdutoDataGridViewTextBoxColumn.DataPropertyName = "DescProduto";
+            this.descProdutoDataGridViewTextBoxColumn.HeaderText = "DescProduto";
+            this.descProdutoDataGridViewTextBoxColumn.Name = "descProdutoDataGridViewTextBoxColumn";
+            this.descProdutoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // marcaProdutoDataGridViewTextBoxColumn
+            // 
+            this.marcaProdutoDataGridViewTextBoxColumn.DataPropertyName = "MarcaProduto";
+            this.marcaProdutoDataGridViewTextBoxColumn.HeaderText = "MarcaProduto";
+            this.marcaProdutoDataGridViewTextBoxColumn.Name = "marcaProdutoDataGridViewTextBoxColumn";
+            this.marcaProdutoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // unidadeProdutoDataGridViewTextBoxColumn
+            // 
+            this.unidadeProdutoDataGridViewTextBoxColumn.DataPropertyName = "UnidadeProduto";
+            this.unidadeProdutoDataGridViewTextBoxColumn.HeaderText = "UnidadeProduto";
+            this.unidadeProdutoDataGridViewTextBoxColumn.Name = "unidadeProdutoDataGridViewTextBoxColumn";
+            this.unidadeProdutoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // valorProdutoDataGridViewTextBoxColumn
+            // 
+            this.valorProdutoDataGridViewTextBoxColumn.DataPropertyName = "ValorProduto";
+            this.valorProdutoDataGridViewTextBoxColumn.HeaderText = "ValorProduto";
+            this.valorProdutoDataGridViewTextBoxColumn.Name = "valorProdutoDataGridViewTextBoxColumn";
+            this.valorProdutoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dtCadastroProdutoDataGridViewTextBoxColumn
+            // 
+            this.dtCadastroProdutoDataGridViewTextBoxColumn.DataPropertyName = "DtCadastroProduto";
+            this.dtCadastroProdutoDataGridViewTextBoxColumn.HeaderText = "DtCadastroProduto";
+            this.dtCadastroProdutoDataGridViewTextBoxColumn.Name = "dtCadastroProdutoDataGridViewTextBoxColumn";
+            this.dtCadastroProdutoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // FormCadOrcamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.dgExibirProdutosOrcamentos);
             this.Controls.Add(this.lblValorTT);
             this.Controls.Add(this.DgExibirCliFornOrcamentos);
             this.Controls.Add(this.cbStatusOrcamento);
@@ -1675,6 +1755,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliFornOrcamentos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgExibirProdutosOrcamentos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1834,5 +1916,13 @@
         private DataGridViewTextBoxColumn dtCadPessoaDataGridViewTextBoxColumn;
         private DataGridViewImageColumn fotoDataGridViewImageColumn;
         private BindingSource pessoaBindingSource;
+        private DataGridView dgExibirProdutosOrcamentos;
+        private DataGridViewTextBoxColumn idProdutoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn descProdutoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn marcaProdutoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn unidadeProdutoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn valorProdutoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dtCadastroProdutoDataGridViewTextBoxColumn;
+        private BindingSource produtosBindingSource;
     }
 }

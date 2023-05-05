@@ -31,11 +31,11 @@ namespace prcSystem.View
 
         private void TxtIdCliForn_Click(object sender, EventArgs e)
         {
-            AjustarDataGridAumentar();
+            AjustarDataGridCliFornAumentar();
             OcultarFormularioOrcamento();
         }
 
-        public void AjustarDataGridAumentar()
+        public void AjustarDataGridCliFornAumentar()
         {
             DgExibirCliFornOrcamentos.Visible = true;
             DgExibirCliFornOrcamentos.Height = 350;
@@ -43,11 +43,27 @@ namespace prcSystem.View
             DgExibirCliFornOrcamentos.Location = new Point(14, 151);
         }
 
-        public void AjustarDataGridDiminuir()
+        public void AjustarDataGridCliFornDiminuir()
         {
             DgExibirCliFornOrcamentos.Visible = false;
             DgExibirCliFornOrcamentos.Height = 350;
             DgExibirCliFornOrcamentos.Location = new Point(11, 260);
+        }
+
+
+        public void AjustarDataGridProdutosAumentar()
+        {
+            dgExibirProdutosOrcamentos.Visible = true;
+            dgExibirProdutosOrcamentos.Height = 350;
+            dgExibirProdutosOrcamentos.Width = 910;
+            dgExibirProdutosOrcamentos.Location = new Point(14, 151);
+        }
+
+        public void AjustarDataGridProdutosDiminuir()
+        {
+            dgExibirProdutosOrcamentos.Visible = false;
+            dgExibirProdutosOrcamentos.Height = 350;
+            dgExibirProdutosOrcamentos.Location = new Point(11, 260);
         }
 
         public void OcultarFormularioOrcamento() 
@@ -367,11 +383,15 @@ namespace prcSystem.View
             }
         }
 
-
+        /// <summary>
+        /// metodo para puxar dados do datagrid dos clientes/fornecedores
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DgExibirCliFornOrcamentos_Click(object sender, EventArgs e)
         {
             DesocultarFormularioOrcamento();
-            AjustarDataGridDiminuir();
+            AjustarDataGridCliFornDiminuir();
 
             idPessoa.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[0].Value.ToString();
             txtCnpjCpf.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[3].Value.ToString();
@@ -390,6 +410,12 @@ namespace prcSystem.View
             txtCelular.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[16].Value.ToString();
             txtEmail.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[17].Value.ToString();
             txtSite.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[18].Value.ToString();         
+        }
+
+        private void dgExibirProdutosOrcamentos_Click(object sender, EventArgs e)
+        {
+            DesocultarFormularioOrcamento();
+            AjustarDataGridProdutosDiminuir();
         }
     }
 }
