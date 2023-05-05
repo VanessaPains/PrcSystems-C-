@@ -412,6 +412,11 @@ namespace prcSystem.View
             txtSite.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[18].Value.ToString();         
         }
 
+        /// <summary>
+        /// metodo para puxar dados do datagrid dos produtos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dgExibirProdutosOrcamentos_Click(object sender, EventArgs e)
         {
             DesocultarFormularioOrcamento();
