@@ -13,10 +13,19 @@ namespace prcSystem.Models
         /// <summary>
         /// lista os clientes e fornecedores do PessoaController
         /// </summary>
-        /// <returns>lista dos clientes e fornecedores na tela de lançamentos de entradas e saidas</returns>
+        /// <returns>lista dos clientes e fornecedores na tela de orçamentos de entradas e saidas</returns>
         public List<Pessoa> ListarCliForn()
         {
             return new PessoaController().Listar();
+        }
+
+        /// <summary>
+        /// lista os produtos do ProdutosController
+        /// </summary>
+        /// <returns>lista dos produtos na tela de orçamentos de entradas e saidas</returns>
+        public List<Produtos> ListarProdutos()
+        {
+            return new ProdutosController().Listar();
         }
 
     }

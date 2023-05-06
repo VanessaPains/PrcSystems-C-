@@ -35,6 +35,12 @@ namespace prcSystem.View
             OcultarFormularioOrcamento();
         }
 
+        private void txtCodProd01_Click(object sender, EventArgs e)
+        {
+            AjustarDataGridProdutosAumentar();
+            OcultarFormularioOrcamento();
+        }
+
         public void AjustarDataGridCliFornAumentar()
         {
             DgExibirCliFornOrcamentos.Visible = true;
@@ -75,7 +81,7 @@ namespace prcSystem.View
             lblDtLancOrcamento.Visible = false;
             dtLancOrcamento.Visible = false;
             lblNumOrcamento.Visible = false;
-            txtNumOrcamento.Visible = true;
+            txtNumOrcamento.Visible = false;
 
             txtCnpjCpf.Visible = false;
             txtRazaoNome.Visible = false;
@@ -422,5 +428,7 @@ namespace prcSystem.View
             DesocultarFormularioOrcamento();
             AjustarDataGridProdutosDiminuir();
         }
+
+
     }
 }

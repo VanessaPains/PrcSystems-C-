@@ -182,13 +182,13 @@
             this.pessoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lblValorTT = new System.Windows.Forms.Label();
             this.dgExibirProdutosOrcamentos = new System.Windows.Forms.DataGridView();
-            this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.marcaProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unidadeProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtCadastroProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliFornOrcamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
@@ -529,6 +529,7 @@
             this.txtCodProd01.Name = "txtCodProd01";
             this.txtCodProd01.Size = new System.Drawing.Size(64, 18);
             this.txtCodProd01.TabIndex = 179;
+            this.txtCodProd01.Click += new System.EventHandler(this.txtCodProd01_Click);
             // 
             // lblTotalItem
             // 
@@ -1574,10 +1575,6 @@
             this.dgExibirProdutosOrcamentos.TabIndex = 330;
             this.dgExibirProdutosOrcamentos.Click += new System.EventHandler(this.dgExibirProdutosOrcamentos_Click);
             // 
-            // produtosBindingSource
-            // 
-            this.produtosBindingSource.DataSource = typeof(prcSystem.Entidades.Produtos);
-            // 
             // idProdutoDataGridViewTextBoxColumn
             // 
             this.idProdutoDataGridViewTextBoxColumn.DataPropertyName = "IdProduto";
@@ -1619,6 +1616,10 @@
             this.dtCadastroProdutoDataGridViewTextBoxColumn.HeaderText = "DtCadastroProduto";
             this.dtCadastroProdutoDataGridViewTextBoxColumn.Name = "dtCadastroProdutoDataGridViewTextBoxColumn";
             this.dtCadastroProdutoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // produtosBindingSource
+            // 
+            this.produtosBindingSource.DataSource = typeof(prcSystem.Entidades.Produtos);
             // 
             // FormCadOrcamentos
             // 
