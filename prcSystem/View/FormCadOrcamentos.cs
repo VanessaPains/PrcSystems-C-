@@ -22,6 +22,7 @@ namespace prcSystem.View
         {
             InitializeComponent();
             ListarCliForn();
+            ListarProdutos();   
         }
 
         private void FormCadOrcamentos_Load(object sender, EventArgs e)
@@ -386,6 +387,30 @@ namespace prcSystem.View
             catch (Exception ex)
             {
                 MessageBox.Show("NÃO FOI POSSIVEL LISTAR OS DADOS. CHAME O SUPORTE PARA VERIFICAR O ERRO." + ex);
+            }
+        }
+
+        private void ListarProdutos()
+        {
+            try
+            {
+                List<Produtos> lista = new List<Produtos>();//datagrid
+                lista = new ProdutoModel().Listar();
+                //dg.AutoGenerateColumns = false;
+
+                dgExibirProdutosOrcamentos.DataSource = lista;
+                // dg.Columns[0].Visible = false;//colunas datagrid
+
+                dgExibirProdutosOrcamentos.Columns[0].HeaderText = "Cod.";
+                dgExibirProdutosOrcamentos.Columns[1].HeaderText = "Descrição";
+                dgExibirProdutosOrcamentos.Columns[2].HeaderText = "Marca";
+                dgExibirProdutosOrcamentos.Columns[3].HeaderText = "Unidade";
+                dgExibirProdutosOrcamentos.Columns[4].HeaderText = "Valor";
+                dgExibirProdutosOrcamentos.Columns[5].HeaderText = "Data";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("NÃO FOI POSSIVEL LISTAR OS DADOS. " + ex);
             }
         }
 
