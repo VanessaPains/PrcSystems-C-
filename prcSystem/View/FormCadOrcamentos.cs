@@ -407,6 +407,12 @@ namespace prcSystem.View
                 dgExibirProdutosOrcamentos.Columns[3].HeaderText = "Unidade";
                 dgExibirProdutosOrcamentos.Columns[4].HeaderText = "Valor";
                 dgExibirProdutosOrcamentos.Columns[5].HeaderText = "Data";
+
+                dgExibirProdutosOrcamentos.Columns[0].Width = 60;//determinar a largura das colunas
+                dgExibirProdutosOrcamentos.Columns[1].Width = 130;
+                dgExibirProdutosOrcamentos.Columns[2].Width = 90;
+                dgExibirProdutosOrcamentos.Columns[3].Width = 50;
+                dgExibirProdutosOrcamentos.Columns[4].Width = 60;
             }
             catch (Exception ex)
             {

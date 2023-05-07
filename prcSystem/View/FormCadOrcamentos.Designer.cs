@@ -1573,6 +1573,7 @@
             this.dgExibirProdutosOrcamentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgExibirProdutosOrcamentos.Size = new System.Drawing.Size(72, 70);
             this.dgExibirProdutosOrcamentos.TabIndex = 330;
+            this.dgExibirProdutosOrcamentos.Visible = false;
             this.dgExibirProdutosOrcamentos.Click += new System.EventHandler(this.dgExibirProdutosOrcamentos_Click);
             // 
             // idProdutoDataGridViewTextBoxColumn
