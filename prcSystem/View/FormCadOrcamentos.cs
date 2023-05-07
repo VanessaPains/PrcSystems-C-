@@ -409,10 +409,10 @@ namespace prcSystem.View
                 dgExibirProdutosOrcamentos.Columns[5].HeaderText = "Data";
 
                 dgExibirProdutosOrcamentos.Columns[0].Width = 60;//determinar a largura das colunas
-                dgExibirProdutosOrcamentos.Columns[1].Width = 130;
-                dgExibirProdutosOrcamentos.Columns[2].Width = 90;
-                dgExibirProdutosOrcamentos.Columns[3].Width = 50;
-                dgExibirProdutosOrcamentos.Columns[4].Width = 60;
+                dgExibirProdutosOrcamentos.Columns[1].Width = 367;
+                dgExibirProdutosOrcamentos.Columns[2].Width = 150;
+                dgExibirProdutosOrcamentos.Columns[3].Width = 70;
+                dgExibirProdutosOrcamentos.Columns[4].Width = 120;
             }
             catch (Exception ex)
             {
@@ -458,6 +458,10 @@ namespace prcSystem.View
         {
             DesocultarFormularioOrcamento();
             AjustarDataGridProdutosDiminuir();
+
+            txtCodProd01.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[0].Value.ToString();
+            txtDescProduto01.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[1].Value.ToString();           
+            txtValorUnProd01.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[4].Value.ToString();
         }
 
 
