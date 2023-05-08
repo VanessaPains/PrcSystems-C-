@@ -610,19 +610,23 @@
             // 
             // txtItem01
             // 
-            this.txtItem01.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem01.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtItem01.Location = new System.Drawing.Point(13, 277);
             this.txtItem01.Name = "txtItem01";
             this.txtItem01.Size = new System.Drawing.Size(31, 18);
             this.txtItem01.TabIndex = 188;
+            this.txtItem01.Text = "1";
+            this.txtItem01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtItem02
             // 
-            this.txtItem02.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem02.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtItem02.Location = new System.Drawing.Point(13, 297);
             this.txtItem02.Name = "txtItem02";
             this.txtItem02.Size = new System.Drawing.Size(31, 18);
             this.txtItem02.TabIndex = 194;
+            this.txtItem02.Text = "2";
+            this.txtItem02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTotalItem02
             // 
@@ -667,11 +671,13 @@
             // 
             // txtItem04
             // 
-            this.txtItem04.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem04.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtItem04.Location = new System.Drawing.Point(13, 337);
             this.txtItem04.Name = "txtItem04";
             this.txtItem04.Size = new System.Drawing.Size(31, 18);
             this.txtItem04.TabIndex = 206;
+            this.txtItem04.Text = "4";
+            this.txtItem04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTotalItem04
             // 
@@ -716,11 +722,13 @@
             // 
             // txtItem03
             // 
-            this.txtItem03.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem03.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtItem03.Location = new System.Drawing.Point(13, 317);
             this.txtItem03.Name = "txtItem03";
             this.txtItem03.Size = new System.Drawing.Size(31, 18);
             this.txtItem03.TabIndex = 200;
+            this.txtItem03.Text = "3";
+            this.txtItem03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTotalItem03
             // 
@@ -765,11 +773,13 @@
             // 
             // txtItem08
             // 
-            this.txtItem08.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem08.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtItem08.Location = new System.Drawing.Point(13, 417);
             this.txtItem08.Name = "txtItem08";
             this.txtItem08.Size = new System.Drawing.Size(31, 18);
             this.txtItem08.TabIndex = 230;
+            this.txtItem08.Text = "8";
+            this.txtItem08.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTotalItem08
             // 
@@ -814,11 +824,13 @@
             // 
             // txtItem07
             // 
-            this.txtItem07.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem07.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtItem07.Location = new System.Drawing.Point(13, 397);
             this.txtItem07.Name = "txtItem07";
             this.txtItem07.Size = new System.Drawing.Size(31, 18);
             this.txtItem07.TabIndex = 224;
+            this.txtItem07.Text = "7";
+            this.txtItem07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTotalItem07
             // 
@@ -863,11 +875,13 @@
             // 
             // txtItem06
             // 
-            this.txtItem06.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem06.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtItem06.Location = new System.Drawing.Point(13, 377);
             this.txtItem06.Name = "txtItem06";
             this.txtItem06.Size = new System.Drawing.Size(31, 18);
             this.txtItem06.TabIndex = 218;
+            this.txtItem06.Text = "6";
+            this.txtItem06.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTotalItem06
             // 
@@ -912,11 +926,13 @@
             // 
             // txtItem05
             // 
-            this.txtItem05.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem05.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtItem05.Location = new System.Drawing.Point(13, 357);
             this.txtItem05.Name = "txtItem05";
             this.txtItem05.Size = new System.Drawing.Size(31, 18);
             this.txtItem05.TabIndex = 212;
+            this.txtItem05.Text = "5";
+            this.txtItem05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTotalItem05
             // 
@@ -961,11 +977,13 @@
             // 
             // txtItem10
             // 
-            this.txtItem10.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem10.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtItem10.Location = new System.Drawing.Point(13, 457);
             this.txtItem10.Name = "txtItem10";
             this.txtItem10.Size = new System.Drawing.Size(31, 18);
             this.txtItem10.TabIndex = 242;
+            this.txtItem10.Text = "10";
+            this.txtItem10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTotalItem10
             // 
@@ -1010,11 +1028,13 @@
             // 
             // txtItem09
             // 
-            this.txtItem09.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtItem09.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtItem09.Location = new System.Drawing.Point(13, 437);
             this.txtItem09.Name = "txtItem09";
             this.txtItem09.Size = new System.Drawing.Size(31, 18);
             this.txtItem09.TabIndex = 236;
+            this.txtItem09.Text = "9";
+            this.txtItem09.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTotalItem09
             // 
