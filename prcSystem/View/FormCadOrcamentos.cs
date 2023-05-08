@@ -459,9 +459,9 @@ namespace prcSystem.View
             DesocultarFormularioOrcamento();
             AjustarDataGridProdutosDiminuir();
 
-            txtCodProd01.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[0].Value.ToString();
-            txtDescProduto01.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[1].Value.ToString();           
-            txtValorUnProd01.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[4].Value.ToString();
+            txtCodProd01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
+            txtDescProduto01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();           
+            txtValorUnProd01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
         }
 
 

@@ -11,6 +11,7 @@ namespace prcSystem.Entidades
     {
         int idOrcamento;
         int idPessoa;
+        int idProduto;
         string StatusOrcamento;
         DateTime dtLancOrcamento;
         int numOrcamento;
@@ -145,5 +146,6 @@ namespace prcSystem.Entidades
         public decimal TotalItem10 { get => totalItem10; set => totalItem10 = value; }
         public string Observacao { get => observacao; set => observacao = value; }
         public decimal ValorTT { get => valorTT; set => valorTT = value; }
+        public int IdProduto { get => idProduto; set => idProduto = value; }
     }
 }
