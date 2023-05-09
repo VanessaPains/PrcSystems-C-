@@ -42,6 +42,13 @@ namespace prcSystem.View
             OcultarFormularioOrcamento();
         }
 
+
+        private void txtCodProd02_Click(object sender, EventArgs e)
+        {
+            AjustarDataGridProdutosAumentar();
+            OcultarFormularioOrcamento();
+        }
+
         public void AjustarDataGridCliFornAumentar()
         {
             DgExibirCliFornOrcamentos.Visible = true;
@@ -459,11 +466,20 @@ namespace prcSystem.View
             DesocultarFormularioOrcamento();
             AjustarDataGridProdutosDiminuir();
 
-            txtCodProd01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-            txtDescProduto01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();           
-            txtValorUnProd01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-        }
+            if (txtCodProd01.Text == "")
+            {
+                txtCodProd01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
+                txtDescProduto01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
+                txtValorUnProd01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
+            }
+            else if(txtCodProd02.Text == "") {
+                txtCodProd02.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
+                txtDescProduto02.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
+                txtValorUnProd02.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
+            }
 
+
+        }
 
     }
 }

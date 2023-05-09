@@ -643,6 +643,7 @@
             this.txtCodProd02.Name = "txtCodProd02";
             this.txtCodProd02.Size = new System.Drawing.Size(64, 18);
             this.txtCodProd02.TabIndex = 189;
+            this.txtCodProd02.Click += new System.EventHandler(this.txtCodProd02_Click);
             // 
             // txtDescProduto02
             // 
