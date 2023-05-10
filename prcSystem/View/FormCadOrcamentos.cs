@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -465,67 +466,79 @@ namespace prcSystem.View
         {
             DesocultarFormularioOrcamento();
             AjustarDataGridProdutosDiminuir();
+            int i = 10;
 
             if (txtCodProd01.Text == "")
             {
                 txtCodProd01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
                 txtDescProduto01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
                 txtValorUnProd01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
+                Stopwatch;
+
             }
-            else if(txtCodProd02.Text == "") {
+            else if (txtCodProd01.Text == "")
+            {
                 txtCodProd02.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
                 txtDescProduto02.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
                 txtValorUnProd02.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
             }
-            else if (txtCodProd03.Text == "")
-            {
-                txtCodProd03.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                txtDescProduto03.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                txtValorUnProd03.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-            }
-            else if (txtCodProd04.Text == "")
-            {
-                txtCodProd04.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                txtDescProduto04.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                txtValorUnProd04.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-            }
-            else if (txtCodProd05.Text == "")
-            {
-                txtCodProd05.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                txtDescProduto05.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                txtValorUnProd05.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-            }
-            else if (txtCodProd06.Text == "")
-            {
-                txtCodProd06.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                txtDescProduto06.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                txtValorUnProd06.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-            }
-            else if (txtCodProd07.Text == "")
-            {
-                txtCodProd07.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                txtDescProduto07.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                txtValorUnProd07.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-            }
-            else if (txtCodProd08.Text == "")
-            {
-                txtCodProd08.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                txtDescProduto08.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                txtValorUnProd08.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-            }
-            else if (txtCodProd09.Text == "")
-            {
-                txtCodProd09.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                txtDescProduto09.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                txtValorUnProd09.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-            }
-            else if (txtCodProd10.Text == "")
-            {
-                txtCodProd10.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                txtDescProduto10.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                txtValorUnProd10.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-            }
         }
 
+            /*
+                case 3:
+                    txtCodProd03.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
+                    txtDescProduto03.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
+                    txtValorUnProd03.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
+                    break;
+
+                case 4:
+                    txtCodProd04.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
+                    txtDescProduto04.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
+                    txtValorUnProd04.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
+                    break;
+
+                case 5:
+                    txtCodProd05.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
+                    txtDescProduto05.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
+                    txtValorUnProd05.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
+                    break;
+
+                case 6:
+                    txtCodProd06.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
+                    txtDescProduto06.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
+                    txtValorUnProd06.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
+                    break;
+
+                case 7:
+                    txtCodProd07.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
+                    txtDescProduto07.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
+                    txtValorUnProd07.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
+                    break;  
+
+                case 8:
+                    txtCodProd08.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
+                    txtDescProduto08.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
+                    txtValorUnProd08.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
+                    break;
+
+                case 9:
+                    txtCodProd09.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
+                    txtDescProduto09.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
+                    txtValorUnProd09.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
+                    break;
+
+                case 10:
+                    txtCodProd10.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
+                    txtDescProduto10.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
+                    txtValorUnProd10.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
+                    break;*/
+            
+        }
+
+        private void txtCodProd03_Enter(object sender, EventArgs e)
+        {
+            AjustarDataGridProdutosAumentar();
+            OcultarFormularioOrcamento();
+        }
     }
 }

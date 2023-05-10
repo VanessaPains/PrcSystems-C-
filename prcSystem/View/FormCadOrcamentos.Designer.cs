@@ -746,6 +746,7 @@
             this.txtCodProd03.Name = "txtCodProd03";
             this.txtCodProd03.Size = new System.Drawing.Size(64, 18);
             this.txtCodProd03.TabIndex = 195;
+            this.txtCodProd03.Enter += new System.EventHandler(this.txtCodProd03_Enter);
             // 
             // txtDescProduto03
             // 
