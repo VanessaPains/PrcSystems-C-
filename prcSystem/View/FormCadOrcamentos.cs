@@ -23,30 +23,12 @@ namespace prcSystem.View
         {
             InitializeComponent();
             ListarCliForn();
-            ListarProdutos();   
-        }
-
-        private void FormCadOrcamentos_Load(object sender, EventArgs e)
-        {
-
+            ListarProdutos();
         }
 
         private void TxtIdCliForn_Click(object sender, EventArgs e)
         {
             AjustarDataGridCliFornAumentar();
-            OcultarFormularioOrcamento();
-        }
-
-        private void txtCodProd01_Click(object sender, EventArgs e)
-        {
-            AjustarDataGridProdutosAumentar();
-            OcultarFormularioOrcamento();
-        }
-
-
-        private void txtCodProd02_Click(object sender, EventArgs e)
-        {
-            AjustarDataGridProdutosAumentar();
             OcultarFormularioOrcamento();
         }
 
@@ -398,6 +380,9 @@ namespace prcSystem.View
             }
         }
 
+        
+        
+
         private void ListarProdutos()
         {
             try
@@ -457,6 +442,7 @@ namespace prcSystem.View
             txtSite.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[18].Value.ToString();         
         }
 
+
         /// <summary>
         /// metodo para puxar dados do datagrid dos produtos
         /// </summary>
@@ -464,81 +450,58 @@ namespace prcSystem.View
         /// <param name="e"></param>
         private void dgExibirProdutosOrcamentos_Click(object sender, EventArgs e)
         {
-            DesocultarFormularioOrcamento();
-            AjustarDataGridProdutosDiminuir();
-            int i = 10;
-
-            if (txtCodProd01.Text == "")
-            {
-                txtCodProd01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                txtDescProduto01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                txtValorUnProd01.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-                Stopwatch;
-
-            }
-            else if (txtCodProd01.Text == "")
-            {
-                txtCodProd02.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                txtDescProduto02.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                txtValorUnProd02.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-            }
-        }
-
-            /*
-                case 3:
-                    txtCodProd03.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                    txtDescProduto03.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                    txtValorUnProd03.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-                    break;
-
-                case 4:
-                    txtCodProd04.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                    txtDescProduto04.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                    txtValorUnProd04.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-                    break;
-
-                case 5:
-                    txtCodProd05.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                    txtDescProduto05.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                    txtValorUnProd05.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-                    break;
-
-                case 6:
-                    txtCodProd06.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                    txtDescProduto06.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                    txtValorUnProd06.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-                    break;
-
-                case 7:
-                    txtCodProd07.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                    txtDescProduto07.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                    txtValorUnProd07.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-                    break;  
-
-                case 8:
-                    txtCodProd08.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                    txtDescProduto08.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                    txtValorUnProd08.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-                    break;
-
-                case 9:
-                    txtCodProd09.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                    txtDescProduto09.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                    txtValorUnProd09.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-                    break;
-
-                case 10:
-                    txtCodProd10.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[0].Value.ToString();
-                    txtDescProduto10.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[1].Value.ToString();
-                    txtValorUnProd10.Text = dgExibirProdutosOrcamentos.CurrentRow.Cells[4].Value.ToString();
-                    break;*/
             
+
         }
 
-        private void txtCodProd03_Enter(object sender, EventArgs e)
+        private void btnPesquisarProd_Click(object sender, EventArgs e)
         {
             AjustarDataGridProdutosAumentar();
             OcultarFormularioOrcamento();
+        }
+
+
+        private DataGridViewRow Adicionar(DataGridViewRow row)
+        {
+            DataGridViewRow newRow = (DataGridViewRow)row.Clone();
+            newRow.Cells[0].Value = row.Cells[0].Value.ToString(); 
+            newRow.Cells[1].Value = row.Cells[1].Value.ToString(); 
+            newRow.Cells[2].Value = row.Cells[2].Value.ToString(); 
+            newRow.Cells[3].Value = row.Cells[3].Value.ToString(); 
+            newRow.Cells[4].Value = row.Cells[4].Value.ToString(); 
+            newRow.Cells[5].Value = row.Cells[5].Value.ToString(); 
+            newRow.Cells.Remove(newRow.Cells[0]);
+            return newRow;
+        }
+
+        private void dgExibirOrcamentos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgExibirOrcamentos_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        private void dgExibirProdutosOrcamentos_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DesocultarFormularioOrcamento();
+            AjustarDataGridProdutosDiminuir();
+            dgExibirProdutosOrcamentos.Refresh();
+
+
+            foreach (DataGridViewRow selectedRow in dgExibirProdutosOrcamentos.SelectedRows)
+            {
+                dgExibirOrcamentos.ColumnCount = 6;
+                dgExibirOrcamentos.Columns[0].HeaderText = "Cod.";
+                dgExibirOrcamentos.Columns[1].HeaderText = "Descrição";
+                dgExibirOrcamentos.Columns[2].HeaderText = "Marca";
+                dgExibirOrcamentos.Columns[3].HeaderText = "Unidade";
+                dgExibirOrcamentos.Columns[4].HeaderText = "Valor";
+                dgExibirOrcamentos.Columns[5].HeaderText = "Data";
+                dgExibirOrcamentos.Rows.Add(Adicionar(selectedRow));
+            }
         }
     }
 }

@@ -189,11 +189,18 @@
             this.valorProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtCadastroProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnPesquisarProd = new System.Windows.Forms.Button();
+            this.dgExibirOrcamentos = new System.Windows.Forms.DataGridView();
+            this.produtosBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.produtosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliFornOrcamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgExibirProdutosOrcamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgExibirOrcamentos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -529,7 +536,6 @@
             this.txtCodProd01.Name = "txtCodProd01";
             this.txtCodProd01.Size = new System.Drawing.Size(64, 18);
             this.txtCodProd01.TabIndex = 179;
-            this.txtCodProd01.Click += new System.EventHandler(this.txtCodProd01_Click);
             // 
             // lblTotalItem
             // 
@@ -643,7 +649,6 @@
             this.txtCodProd02.Name = "txtCodProd02";
             this.txtCodProd02.Size = new System.Drawing.Size(64, 18);
             this.txtCodProd02.TabIndex = 189;
-            this.txtCodProd02.Click += new System.EventHandler(this.txtCodProd02_Click);
             // 
             // txtDescProduto02
             // 
@@ -746,7 +751,6 @@
             this.txtCodProd03.Name = "txtCodProd03";
             this.txtCodProd03.Size = new System.Drawing.Size(64, 18);
             this.txtCodProd03.TabIndex = 195;
-            this.txtCodProd03.Enter += new System.EventHandler(this.txtCodProd03_Enter);
             // 
             // txtDescProduto03
             // 
@@ -1596,7 +1600,7 @@
             this.dgExibirProdutosOrcamentos.Size = new System.Drawing.Size(72, 70);
             this.dgExibirProdutosOrcamentos.TabIndex = 330;
             this.dgExibirProdutosOrcamentos.Visible = false;
-            this.dgExibirProdutosOrcamentos.Click += new System.EventHandler(this.dgExibirProdutosOrcamentos_Click);
+            this.dgExibirProdutosOrcamentos.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgExibirProdutosOrcamentos_CellMouseDoubleClick);
             // 
             // idProdutoDataGridViewTextBoxColumn
             // 
@@ -1644,11 +1648,49 @@
             // 
             this.produtosBindingSource.DataSource = typeof(prcSystem.Entidades.Produtos);
             // 
+            // btnPesquisarProd
+            // 
+            this.btnPesquisarProd.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnPesquisarProd.Font = new System.Drawing.Font("Times New Roman", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPesquisarProd.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnPesquisarProd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnPesquisarProd.Location = new System.Drawing.Point(189, 246);
+            this.btnPesquisarProd.Name = "btnPesquisarProd";
+            this.btnPesquisarProd.Size = new System.Drawing.Size(121, 25);
+            this.btnPesquisarProd.TabIndex = 331;
+            this.btnPesquisarProd.Text = "PESQUISAR ITENS";
+            this.btnPesquisarProd.UseVisualStyleBackColor = false;
+            this.btnPesquisarProd.Click += new System.EventHandler(this.btnPesquisarProd_Click);
+            // 
+            // dgExibirOrcamentos
+            // 
+            this.dgExibirOrcamentos.AllowUserToAddRows = false;
+            this.dgExibirOrcamentos.AllowUserToDeleteRows = false;
+            this.dgExibirOrcamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgExibirOrcamentos.Location = new System.Drawing.Point(74, 357);
+            this.dgExibirOrcamentos.Name = "dgExibirOrcamentos";
+            this.dgExibirOrcamentos.ReadOnly = true;
+            this.dgExibirOrcamentos.RowTemplate.Height = 25;
+            this.dgExibirOrcamentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgExibirOrcamentos.Size = new System.Drawing.Size(829, 142);
+            this.dgExibirOrcamentos.TabIndex = 332;
+            this.dgExibirOrcamentos.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgExibirOrcamentos_CellMouseDoubleClick);
+            // 
+            // produtosBindingSource2
+            // 
+            this.produtosBindingSource2.DataSource = typeof(prcSystem.Entidades.Produtos);
+            // 
+            // produtosBindingSource1
+            // 
+            this.produtosBindingSource1.DataSource = typeof(prcSystem.Entidades.Produtos);
+            // 
             // FormCadOrcamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.dgExibirOrcamentos);
+            this.Controls.Add(this.btnPesquisarProd);
             this.Controls.Add(this.dgExibirProdutosOrcamentos);
             this.Controls.Add(this.lblValorTT);
             this.Controls.Add(this.DgExibirCliFornOrcamentos);
@@ -1775,12 +1817,14 @@
             this.Name = "FormCadOrcamentos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PRC Systems";
-            this.Load += new System.EventHandler(this.FormCadOrcamentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgExibirCliFornOrcamentos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pessoaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgExibirProdutosOrcamentos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgExibirOrcamentos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1948,5 +1992,15 @@
         private DataGridViewTextBoxColumn valorProdutoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dtCadastroProdutoDataGridViewTextBoxColumn;
         private BindingSource produtosBindingSource;
+        private Button btnPesquisarProd;
+        private DataGridView dgExibirOrcamentos;
+        private DataGridViewTextBoxColumn idProdutoDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn descProdutoDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn marcaProdutoDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn unidadeProdutoDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn valorProdutoDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dtCadastroProdutoDataGridViewTextBoxColumn1;
+        private BindingSource produtosBindingSource1;
+        private BindingSource produtosBindingSource2;
     }
 }
