@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
@@ -24,12 +25,15 @@ namespace prcSystem.View
             InitializeComponent();
             ListarCliForn();
             ListarProdutos();
+            
         }
 
         private void TxtIdCliForn_Click(object sender, EventArgs e)
         {
             AjustarDataGridCliFornAumentar();
             OcultarFormularioOrcamento();
+            dgExibirOrcamentos.Visible = false;
+            btnPesquisarProd.Visible = false;
         }
 
         public void AjustarDataGridCliFornAumentar()
@@ -62,6 +66,7 @@ namespace prcSystem.View
             dgExibirProdutosOrcamentos.Height = 350;
             dgExibirProdutosOrcamentos.Location = new Point(11, 260);
         }
+
 
         public void OcultarFormularioOrcamento() 
         {
@@ -114,83 +119,12 @@ namespace prcSystem.View
             txtValidadeOrcamento.Visible = false;
 
             txtLinha10.Visible = false;
-
-            lblListaProdutos.Visible = false;
-            lblItem.Visible = false;
-            txtItem01.Visible = false;
-            txtItem02.Visible = false;
-            txtItem03.Visible = false;
-            txtItem04.Visible = false;
-            txtItem05.Visible = false;
-            txtItem06.Visible = false;
-            txtItem07.Visible = false;
-            txtItem08.Visible = false;
-            txtItem09.Visible = false;
-            txtItem10.Visible = false;
-
-            lblCodProd.Visible = false;
-            txtCodProd01.Visible = false;
-            txtCodProd02.Visible = false;
-            txtCodProd03.Visible = false;
-            txtCodProd04.Visible = false;
-            txtCodProd05.Visible = false;
-            txtCodProd06.Visible = false;
-            txtCodProd07.Visible = false;
-            txtCodProd08.Visible = false;
-            txtCodProd09.Visible = false;
-            txtCodProd10.Visible = false;
-
-            txtDescProduto01.Visible = false;
-            txtDescProduto02.Visible = false;
-            txtDescProduto03.Visible = false;
-            txtDescProduto04.Visible = false;
-            txtDescProduto05.Visible = false;
-            txtDescProduto06.Visible = false;
-            txtDescProduto07.Visible = false;
-            txtDescProduto08.Visible = false;
-            txtDescProduto09.Visible = false;
-            txtDescProduto10.Visible = false;
-
-            txtQte01.Visible = false;
-            txtQte02.Visible = false;
-            txtQte03.Visible = false;
-            txtQte04.Visible = false;
-            txtQte05.Visible = false;
-            txtQte06.Visible = false;
-            txtQte07.Visible = false;
-            txtQte08.Visible = false;
-            txtQte09.Visible = false;
-            txtQte10.Visible = false;
-
-            lblValorUnProd.Visible = false;
-            txtValorUnProd01.Visible = false;
-            txtValorUnProd02.Visible = false;
-            txtValorUnProd03.Visible = false;
-            txtValorUnProd04.Visible = false;
-            txtValorUnProd05.Visible = false;
-            txtValorUnProd06.Visible = false;
-            txtValorUnProd07.Visible = false;
-            txtValorUnProd08.Visible = false;
-            txtValorUnProd09.Visible = false;
-            txtValorUnProd10.Visible = false;
-
-            lblTotalItem.Visible = false; 
-            txtTotalItem01.Visible = false;
-            txtTotalItem02.Visible = false;
-            txtTotalItem03.Visible = false;
-            txtTotalItem04.Visible = false;
-            txtTotalItem05.Visible = false;
-            txtTotalItem06.Visible = false;
-            txtTotalItem07.Visible = false;
-            txtTotalItem08.Visible = false;
-            txtTotalItem09.Visible = false;
-            txtTotalItem10.Visible = false;
-
+ 
             lblObservacao.Visible = false;
             txtObservacao.Visible = false;
 
             lblValorTotalOrcamento.Visible = false;
-            lblValorTT.Visible = false;
+            txtValorTT.Visible = false;
         }
 
         public void DesocultarFormularioOrcamento()
@@ -245,82 +179,11 @@ namespace prcSystem.View
 
             txtLinha10.Visible = true;
 
-            lblListaProdutos.Visible = true;
-            lblItem.Visible = true;
-            txtItem01.Visible = true;
-            txtItem02.Visible = true;
-            txtItem03.Visible = true;
-            txtItem04.Visible = true;
-            txtItem05.Visible = true;
-            txtItem06.Visible = true;
-            txtItem07.Visible = true;
-            txtItem08.Visible = true;
-            txtItem09.Visible = true;
-            txtItem10.Visible = true;
-
-            lblCodProd.Visible = true;
-            txtCodProd01.Visible = true;
-            txtCodProd02.Visible = true;
-            txtCodProd03.Visible = true;
-            txtCodProd04.Visible = true;
-            txtCodProd05.Visible = true;
-            txtCodProd06.Visible = true;
-            txtCodProd07.Visible = true;
-            txtCodProd08.Visible = true;
-            txtCodProd09.Visible = true;
-            txtCodProd10.Visible = true;
-
-            txtDescProduto01.Visible = true;
-            txtDescProduto02.Visible = true;
-            txtDescProduto03.Visible = true;
-            txtDescProduto04.Visible = true;
-            txtDescProduto05.Visible = true;
-            txtDescProduto06.Visible = true;
-            txtDescProduto07.Visible = true;
-            txtDescProduto08.Visible = true;
-            txtDescProduto09.Visible = true;
-            txtDescProduto10.Visible = true;
-
-            txtQte01.Visible = true;
-            txtQte02.Visible = true;
-            txtQte03.Visible = true;
-            txtQte04.Visible = true;
-            txtQte05.Visible = true;
-            txtQte06.Visible = true;
-            txtQte07.Visible = true;
-            txtQte08.Visible = true;
-            txtQte09.Visible = true;
-            txtQte10.Visible = true;
-
-            lblValorUnProd.Visible = true;
-            txtValorUnProd01.Visible = true;
-            txtValorUnProd02.Visible = true;
-            txtValorUnProd03.Visible = true;
-            txtValorUnProd04.Visible = true;
-            txtValorUnProd05.Visible = true;
-            txtValorUnProd06.Visible = true;
-            txtValorUnProd07.Visible = true;
-            txtValorUnProd08.Visible = true;
-            txtValorUnProd09.Visible = true;
-            txtValorUnProd10.Visible = true;
-
-            lblTotalItem.Visible = true;
-            txtTotalItem01.Visible = true;
-            txtTotalItem02.Visible = true;
-            txtTotalItem03.Visible = true;
-            txtTotalItem04.Visible = true;
-            txtTotalItem05.Visible = true;
-            txtTotalItem06.Visible = true;
-            txtTotalItem07.Visible = true;
-            txtTotalItem08.Visible = true;
-            txtTotalItem09.Visible = true;
-            txtTotalItem10.Visible = true;
-
             lblObservacao.Visible = true;
             txtObservacao.Visible = true;
 
             lblValorTotalOrcamento.Visible = true;
-            lblValorTT.Visible = true;
+            txtValorTT.Visible = true;
         }
 
 
@@ -380,9 +243,6 @@ namespace prcSystem.View
             }
         }
 
-        
-        
-
         private void ListarProdutos()
         {
             try
@@ -422,6 +282,8 @@ namespace prcSystem.View
         {
             DesocultarFormularioOrcamento();
             AjustarDataGridCliFornDiminuir();
+            dgExibirOrcamentos.Visible = true;
+
 
             idPessoa.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[0].Value.ToString();
             txtCnpjCpf.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[3].Value.ToString();
@@ -439,7 +301,10 @@ namespace prcSystem.View
             txtTelefone.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[15].Value.ToString();
             txtCelular.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[16].Value.ToString();
             txtEmail.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[17].Value.ToString();
-            txtSite.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[18].Value.ToString();         
+            txtSite.Text = DgExibirCliFornOrcamentos.CurrentRow.Cells[18].Value.ToString();
+
+            dgExibirOrcamentos.Visible = true;
+            btnPesquisarProd.Visible = true;
         }
 
 
@@ -448,16 +313,13 @@ namespace prcSystem.View
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void dgExibirProdutosOrcamentos_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
         private void btnPesquisarProd_Click(object sender, EventArgs e)
         {
             AjustarDataGridProdutosAumentar();
             OcultarFormularioOrcamento();
+            dgExibirOrcamentos.Visible = false;
+            btnPesquisarProd.Visible = false;   
+            
         }
 
 
@@ -469,39 +331,106 @@ namespace prcSystem.View
             newRow.Cells[2].Value = row.Cells[2].Value.ToString(); 
             newRow.Cells[3].Value = row.Cells[3].Value.ToString(); 
             newRow.Cells[4].Value = row.Cells[4].Value.ToString(); 
-            newRow.Cells[5].Value = row.Cells[5].Value.ToString(); 
-            newRow.Cells.Remove(newRow.Cells[0]);
+            newRow.Cells[5].Value = row.Cells[5].Value.ToString();
+            //newRow.Cells.Remove(newRow.Cells[0]);
             return newRow;
-        }
-
-        private void dgExibirOrcamentos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dgExibirOrcamentos_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-
         }
 
         private void dgExibirProdutosOrcamentos_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             DesocultarFormularioOrcamento();
             AjustarDataGridProdutosDiminuir();
-            dgExibirProdutosOrcamentos.Refresh();
-
+            //dgExibirProdutosOrcamentos.Refresh();
 
             foreach (DataGridViewRow selectedRow in dgExibirProdutosOrcamentos.SelectedRows)
             {
-                dgExibirOrcamentos.ColumnCount = 6;
+                dgExibirOrcamentos.ColumnCount = 8;
                 dgExibirOrcamentos.Columns[0].HeaderText = "Cod.";
                 dgExibirOrcamentos.Columns[1].HeaderText = "Descrição";
                 dgExibirOrcamentos.Columns[2].HeaderText = "Marca";
                 dgExibirOrcamentos.Columns[3].HeaderText = "Unidade";
                 dgExibirOrcamentos.Columns[4].HeaderText = "Valor";
                 dgExibirOrcamentos.Columns[5].HeaderText = "Data";
+                dgExibirOrcamentos.Columns[6].HeaderText = "Qte";
+                dgExibirOrcamentos.Columns[7].HeaderText = "Vr Total";
                 dgExibirOrcamentos.Rows.Add(Adicionar(selectedRow));
+
+                dgExibirOrcamentos.Columns[2].Visible = false;//colunas datagrid
+                dgExibirOrcamentos.Columns[5].Visible = false;//colunas datagrid
+               
+                dgExibirOrcamentos.Columns[0].Width = 60;//determinar a largura das colunas
+                dgExibirOrcamentos.Columns[1].Width = 450;
+                dgExibirOrcamentos.Columns[3].Width = 70;
+                dgExibirOrcamentos.Columns[4].Width = 120;
+                dgExibirOrcamentos.Columns[6].Width = 60;
+                dgExibirOrcamentos.Columns[7].Width = 100;
+
+                //dgExibirOrcamentos.Rows.Clear();
+                //dgExibirOrcamentos.Refresh();
+                dgExibirOrcamentos.Visible = true;
+                btnPesquisarProd.Visible = true;          
             }
+        }
+
+        /// <summary>
+        /// metodo para fazer o calculo entre a quantidade e valor e jogar no campo valor total de produto. 
+        /// faz tambem a soma total do orçamento.
+        /// </summary>
+        private void SomaLinhaProtutos()
+        {
+            try
+            {
+                decimal cell1 = Convert.ToDecimal(dgExibirOrcamentos.CurrentRow.Cells[4].Value);
+                decimal cell2 = Convert.ToDecimal(dgExibirOrcamentos.CurrentRow.Cells[6].Value);
+                if (cell1.ToString() != "" && cell2.ToString() != "")
+                {
+                    dgExibirOrcamentos.CurrentRow.Cells[7].Value = cell1 * cell2;
+                }
+                
+                decimal valorTotal = 0;//valor se inicia com 0.
+                string valor = "";//string valor se inicia vazia.
+                if (dgExibirOrcamentos.CurrentRow.Cells[7].Value != null)
+                {
+                    valor = dgExibirOrcamentos.CurrentRow.Cells[7].Value.ToString();
+                    if (!valor.Equals(""))
+                    {
+                        for (int i = 0; i <= dgExibirOrcamentos.RowCount - 1; i++)
+                        {
+                            if (dgExibirOrcamentos.Rows[i].Cells[7].Value != null)
+                                valorTotal += Convert.ToDecimal(dgExibirOrcamentos.Rows[i].Cells[7].Value);
+                        }
+                        txtValorTT.Text = valorTotal.ToString("C");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void dgExibirOrcamentos_Enter(object sender, EventArgs e)
+        {
+            dgExibirOrcamentos.ReadOnly = false;
+            dgExibirOrcamentos.Columns[6].ReadOnly = true;
+
+            foreach (DataGridViewColumn dc in dgExibirOrcamentos.Columns)
+            {
+                if (dc.Index.Equals(6))
+                {
+                    dc.ReadOnly = false;
+                }
+                else
+                {
+                    dc.ReadOnly = true;
+                }
+            }
+            SomaLinhaProtutos();          
+        }
+
+        private void dgExibirOrcamentos_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            SomaLinhaProtutos();
         }
     }
 }
